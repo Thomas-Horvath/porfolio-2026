@@ -1,0 +1,807 @@
+{
+    "nav": {
+        "link1": "Home",
+        "link2": "About",
+        "link3": "Skills",
+        "link4": "Portfolio",
+        "link5": "Blog",
+        "link6": "Contact"
+    },
+    "home": {
+        "name": "Thomas Horvath",
+        "profession1": "Full-Stack web developer",
+        "profession2": "Database specialist",
+        "subTitle": "„Code beauty, create an experience!”",
+        "buttonText": "Contact me!"
+    },
+    "about": {
+        "headingTitle": "Some words",
+        "headingSpan": "About me",
+        "mainTitle": "Let me introduce myself in a few lines.",
+        "firstParagraph": "My name is <strong>Thomas Horváth</strong>, originally a musician, composer, creator. I started to deal more seriously with web development in 2022.",
+        "secundParagraph": "I like creating, learning is my hobby. I like logical systems. To solve tasks precisely, striving for perfection, but also creatively.",
+        "thirdParagraph": "<strong>In the spring of 2022</strong>, I was given the opportunity to gain insight into the world of IT as part of the \"Redesign\" program. During the <strong>system operator</strong> training, I mastered computer technology principles, the basics of network operation, and the construction, use, and operation of client (Windows, Linux) and server-side (Windows Server, Linux Server) operating systems, virtual machines (Hyper-V, Docker), and cloud platforms (Azure, AWS).",
+        "forthParagraph": "After that, I took part in <strong>database specialist</strong> training, where I learned the SQL language at an advanced level, as well as the use, configuration, and operation of various database software (MS SQL, MySQL, MongoDB). In addition, I also mastered the design and optimization of databases.",
+        "fifthParagraph": "Due to my commitment to continuous learning, and because I always like to see the big picture, I set my sights on a <strong>full-stack development</strong> career. In addition to mastering <strong>front-end development</strong> at an advanced level, my current goal is to learn about the back-end side, with which I will be able to implement complete systems on the web development platform.",
+        "contactButton": "Let's get in touch!",
+        "cvButton": "Download my CV!"
+    },
+    "aboutInfo": {
+        "title": "A Few More Things About Me",
+        "firstInfoTitle": "1. The Guitarist",
+        "firstInfoContent": "<p>Music has been an integral part of my life since childhood. I have been playing the guitar since I was thirteen, and it remains a lifelong passion.</p><p>I graduated from the Kőbánya Music Studio as a professional guitarist. It was an immense honor to play alongside renowned Hungarian music icons such as Egon Póka, Gyula Babos, and István Vörös.</p><p>On the following page, you can learn more about my musical career: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
+        "secundInfoTitle": "2. The IT Professional",
+        "secundInfoContent": "<p>The world of computers fascinated me from a young age, during the era of MS-DOS and the Commodore 64.</p><p>Although I initially pursued music, the advent of COVID-19 radically transformed my life. Music took a backseat, but seizing a great opportunity, I began studying IT. This field ignited the same enthusiasm in me as when I first started with music.</p>",
+        "thirdInfoTitle": "3. Hobbies",
+        "thirdInfoContent": "<p>In my free time, I enjoy creating things. I like DIY projects and solving problems around the house, whether it's painting, electrical work, or car repairs.</p><p>I'm eager to immerse myself in learning new things. I enjoy hiking, reading, listening to music, playing guitar, and continually learning.</p>",
+        "forthInfoTitle": "4. Sports",
+        "forthInfoContent": "<p>Fitness and bodybuilding have always amazed me. As a teenager, I eagerly went to the gym, though as I entered the professional world, I found it harder to make time for regular workouts. I plan to start exercising again soon.</p><p>My greatest inspiration is Arnold Schwarzenegger.</p>",
+        "fifthInfoTitle": "5. Personality",
+        "fifthInfoContent": "<p>You can count on me to perform my tasks reliably and precisely in any situation.</p><p>I am determined to achieve my goals while adapting easily to new situations and working effectively with others.</p>"
+    },
+    "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
+    "skills": {
+        "headingTitle": "Skills",
+        "headingSpan": "I have",
+        "frontEndTitle": "Front-End",
+        "frontEndSkills": [
+            {
+                "name": "HTML 5",
+                "icon": "htmlIcon",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+                "name": "CSS 3",
+                "icon": "cssIcon",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },
+            {
+                "name": "Javascript",
+                "icon": "jsIcon",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            {
+                "name": "Sass",
+                "icon": "sassIcon",
+                "link": "https://sass-lang.com/"
+            },
+            {
+                "name": "React",
+                "icon": "reactIcon",
+                "link": "https://react.dev/"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "bootstrapIcon",
+                "link": "https://getbootstrap.com/"
+            }
+        ],
+        "backEndTitle": "Back-End",
+        "backEndSkills": [
+            {
+                "name": "Node js",
+                "icon": "nodejsIcon",
+                "link": "https://nodejs.org/en"
+            },
+            {
+                "name": "Express",
+                "icon": "expressIcon",
+                "link": "https://expressjs.com/"
+            },
+            {
+                "name": "Python",
+                "icon": "pythonIcon",
+                "link": "https://www.python.org/"
+            },
+            {
+                "name": "Django",
+                "icon": "djangoIcon",
+                "link": "https://www.djangoproject.com/"
+            },
+            {
+                "name": "PHP",
+                "icon": "phpIcon",
+                "link": "https://www.php.net/"
+            },
+            {
+                "name": "Laravel",
+                "icon": "laravelIcon",
+                "link": "https://laravel.com/"
+            }
+        ],
+        "databaseTitle": "Adatbázisok",
+        "databaseSkills": [
+            {
+                "name": "MsSql",
+                "icon": "mssqlIcon",
+                "link": "https://www.microsoft.com/en-us/sql-server"
+            },
+            {
+                "name": "Mysql",
+                "icon": "mysqlIcon",
+                "link": "https://www.mysql.com/"
+            },
+            {
+                "name": "SQLite",
+                "icon": "sqliteIcon",
+                "link": "https://www.sqlite.org/"
+            },
+            {
+                "name": "MongoDb",
+                "icon": "mongodbIcon",
+                "link": "https://www.mongodb.com/"
+            }
+        ],
+        "otherTitle": "Egyéb",
+        "otherSkills": [
+            {
+                "name": "Git",
+                "icon": "gitIcon",
+                "link": "https://git-scm.com/"
+            },
+            {
+                "name": "Github",
+                "icon": "githubIcon",
+                "link": "https://github.com/"
+            },
+            {
+                "name": "Figma",
+                "icon": "figmaIcon",
+                "link": "https://www.figma.com"
+            },
+            {
+                "name": "VsCode",
+                "icon": "vscodeIcon",
+                "link": "https://code.visualstudio.com/"
+            },
+            {
+                "name": "Linux",
+                "icon": "linuxIcon",
+                "link": "https://ubuntu.hu/"
+            },
+            {
+                "name": "Docker",
+                "icon": "docker",
+                "link": "https://www.docker.com/"
+            }
+        ]
+    },
+    "projectPageContent": {
+        "headingTitle": "Portfolio",
+        "subHeading": "My Work So Far",
+        "buttonsAll": "All",
+        "buttonFront": "Front-end",
+        "buttonBack": "Back-end",
+        "buttonApps": "Databases",
+        "buttonsAllType": "All",
+        "buttonFrontType": "Website",
+        "buttonBackType": "Back-end",
+        "buttonAppsType": "Data"
+    },
+    "projectCard": {
+        "buttonDetails": "Details"
+    },
+    "backButton": "Back",
+    "mainProjectPage": {
+        "headingTitle": "Portfolio",
+        "subHeading": "Some of My Projects",
+        "buttonNext": "Next"
+    },
+    "mainBlogPage": {
+        "headingTitle": "Blog",
+        "subHeading": "Some of My Thoughts",
+        "blogContent1": {
+            "cardtitle": "1. HTML in Practice",
+            "imageSrc": "/blog_img/HTML.svg",
+            "imageAlt": "HTML blog image",
+            "description": "Let's start with what HTML is....",
+            "link": "/blog/1",
+            "buttonText": "Read More.."
+        },
+        "blogContent2": {
+            "cardtitle": "2. The Magic of CSS",
+            "imageSrc": "/blog_img/css.svg",
+            "imageAlt": "CSS blog image",
+            "description": "CSS is the magical tool for modern web page styling...",
+            "link": "/blog/2",
+            "buttonText": "Read More.."
+        },
+        "blogContent3": {
+            "cardtitle": "3. JavaScript",
+            "imageSrc": "/blog_img/js.svg",
+            "imageAlt": "JavaScript blog image",
+            "description": "When you want your website to work interactively...",
+            "link": "/blog/3",
+            "buttonText": "Read More.."
+        },
+        "blogContent4": {
+            "cardtitle": "4. Protect Your Data",
+            "imageSrc": "/blog_img/security.svg",
+            "imageAlt": "Security blog post",
+            "description": "Have you ever felt like you're being watched? In today's digital age...",
+            "link": "/blog/4",
+            "buttonText": "Read More.."
+        }
+    },
+    "contactPageContent": {
+        "headingTitle": "Contact",
+        "subHeading": "Feel free to ask",
+        "contactInfoItems": [
+            {
+                "icon": "FaPhoneSquare",
+                "title": "Phone",
+                "subtitle": "+36 30 854 4452"
+            },
+            {
+                "icon": "FaEnvelope",
+                "title": "Email",
+                "subtitle": "thomashorvathweb@gmail.hu"
+            },
+            {
+                "icon": "FaLocationDot",
+                "title": "Address",
+                "subtitle": "Pomáz - HU"
+            }
+        ],
+        "formLabels": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "statusMessage": "statusMessagePlaceholder",
+        "submitButtonText": "Send",
+        "successMessage": "Your message has been successfully sent! ✅",
+        "failMessage": "Failed to send the message! ❌",
+        "validationErrorMessage": "This field is required!",
+        "emailFormatErrorMessage": "The email format is incorrect!"
+    },
+    "footer": {
+        "policy": "Privacy Policy",
+        "impressum": "Impress",
+        "cookies": "Cookie Management",
+        "additionalText": "All rights reserved!"
+    },
+    "blogpage": {
+        "blog1": {
+            "title1": "1. HTML in Practice",
+            "content1": [
+                "Let's start by understanding what the HTML language is.",
+                "HTML (HyperText Markup Language) is one of the core technologies that defines how websites are built. HTML is not a programming language, but a markup language that describes the structure and content of a web page. Elements like headings, paragraphs, images, or links are defined using HTML tags.",
+                "HTML was created by Tim Berners-Lee in the early 1990s to allow the sharing and linking of information through the internet. Since then, HTML has evolved and expanded to support the needs of modern web, such as displaying multimedia content and creating interactive elements.",
+                "The basics of HTML include that every webpage is actually a document made up of elements. These elements can be text blocks, images, links, or embedded media files. Each element is surrounded by an opening and closing tag, which defines its role and appearance in the browser."
+            ],
+            "example": {
+                "title": "For example:",
+                "example1": "<h1>Heading</h1>",
+                "example2": "<p>This is a paragraph.</p>",
+                "explanation": "The example above defines a heading and a paragraph. However, HTML is much more than that, and you can use countless other elements to build a webpage."
+            },
+            "title2": "Why is HTML Important?",
+            "content2": [
+                "HTML is the foundation of every website. Everything you see on the internet is defined using HTML, including text, images, and interactive elements. In today's world of more interactive and visually rich pages, HTML remains essential as it provides the basic structure for web pages."
+            ],
+            "title3": "HTML in Modern Web Development",
+            "content3": [
+                "Today, HTML alone is not enough to create a complete website. CSS (Cascading Style Sheets) is needed to define the styles, while JavaScript adds interactivity for dynamic behavior. However, HTML remains the language that defines the structure of the webpage, and without it, modern web development would not exist.",
+                "Due to its simplicity and flexibility, HTML is still one of the most important technologies in every web developer's toolkit."
+            ]
+        },
+        "blog2": {
+            "title1": "2. The Magic of CSS",
+            "content1": [
+                "Let's start by explaining what CSS is.",
+                "CSS (Cascading Style Sheets) is a styling language that is used to design the appearance of web pages. While HTML defines the structure of a web page, CSS is responsible for the visual aspects, like colors, fonts, layouts, and animations.",
+                "CSS separates the content of a webpage from its design, making it easier for developers to change the layout without modifying the HTML structure. This is very useful when managing large websites or creating reusable design templates.",
+                "CSS is made up of rules that apply to different elements. A rule usually targets an element (like a paragraph or a heading) and defines its visual properties, such as color, size, or position on the page."
+            ],
+            "example": {
+                "title": "For example:",
+                "example1": "p { color: red; }",
+                "example2": "h1 { font-size: 24px; }",
+                "explanation": "The first example changes the text color of a paragraph to red, while the second example sets the font size of a heading to 24 pixels. CSS allows precise control over the appearance of web pages."
+            },
+            "title2": "Why is CSS important?",
+            "content2": [
+                "CSS is essential for designing the look and feel of websites. It allows developers to create customized layouts and visually appealing designs. Most modern websites use CSS to control their layout and style."
+            ],
+            "title3": "CSS in modern web development",
+            "content3": [
+                "CSS is one of the most important tools for web developers. There are many frameworks and predefined style sheets that make it easier to work with CSS. Its flexibility allows developers to change the appearance of a website without altering the HTML structure."
+            ]
+        },
+        "blog3": {
+            "title1": "3. JavaScript",
+            "content1": [
+                "Let's start by explaining what JavaScript is.",
+                "JavaScript is a programming language that brings dynamic interactivity to websites. While HTML defines the structure and CSS handles the design, JavaScript allows websites to react to user actions, like clicks, form submissions, or animations.",
+                "JavaScript runs in the browser and directly interacts with the HTML and CSS elements of a page. This makes it possible to update the content of a page in real-time without refreshing it.",
+                "In modern web development, JavaScript plays a key role. It allows the creation of complex web applications, games, and interactive tools that enhance user experience."
+            ],
+            "example": {
+                "title": "For example:",
+                "example1": "document.getElementById( 'myButton').addEventListener( 'click', function() { alert('Hello World!'); });",
+                "explanation": "The example adds a click event to a button that shows the message 'Hello World!'. JavaScript makes it easy to add interactive features to web pages."
+            },
+            "title2": "Why is JavaScript important?",
+            "content2": [
+                "JavaScript is one of the most popular languages in web development. It allows the creation of dynamic and interactive websites that respond to user needs. Most modern web applications are built using JavaScript."
+            ],
+            "title3": "JavaScript in modern web development",
+            "content3": [
+                "Nowadays, it's almost impossible to imagine a modern website without JavaScript. Many frameworks and libraries, like React or Vue.js, extend the capabilities of JavaScript and make it easier to build complex features."
+            ]
+        },
+        "blog4": {
+            "title1": "4. Protect Your Data",
+            "content1": [
+                "Why is data protection important in the digital age?",
+                "In the digital age, data protection is becoming more and more important. During our online activities, we share a lot of information that can be sensitive. This data can range from personal information to browsing habits and even financial data.",
+                "Cybercrime is a growing threat to users. Hackers constantly develop new ways to steal personal information and use it for fraud or identity theft.",
+                "That's why it's important to handle your data carefully online. Make sure to use strong passwords and avoid suspicious links or unknown websites. Being aware of data protection can reduce risks and keep you safe from the dangers of the digital world."
+            ],
+            "example": {
+                "title": "Tips for data protection:",
+                "example1": "- Use strong and unique passwords for all your accounts.",
+                "example2": "- Don't click on suspicious links or email attachments.",
+                "explanation": "To protect your data, it's important to manage your online accounts and information securely. Strong passwords and caution are key to defending against cybercrime."
+            },
+            "title2": "Why is data protection important?",
+            "content2": [
+                "Data protection concerns everyone, and it's crucial for keeping personal information safe. With the increasing number of online threats, it's important to be aware of how to protect your data."
+            ],
+            "title3": "Data protection in the modern world",
+            "content3": [
+                "As the digital world evolves, we need to focus more on data protection. Our personal information is constantly at risk during online activities, so it's essential to take security measures, like using two-factor authentication and trusted antivirus software."
+            ]
+        }
+    },
+    "policy": {
+        "main_title": "Privacy Policy",
+        "wrapper_content": [
+            {
+                "title": "1. Data Protection and Security",
+                "content": "We treat your customer data as strictly confidential and take all necessary measures to protect it. Only those employees who are explicitly authorized and need access to the data for their work can access it. We conduct regular data security audits to prevent unauthorized access and security incidents."
+            },
+            {
+                "title": "2. Data Collection and Use",
+                "content": "We collect and use customer data solely for fair and lawful purposes. The data is used exclusively to maintain relationships with customers and to improve and enhance our services. We do not sell or disclose customer data to third parties without permission."
+            },
+            {
+                "title": "3. User Rights",
+                "content": "Our customers have the right to access their personal data provided to us and may request its correction or deletion if necessary. If our customers wish to express their preferences regarding data management, please contact us using the details below."
+            },
+            {
+                "title": "4. Privacy Notice and Review",
+                "content": "We regularly update our privacy policy to comply with legal requirements and meet customer expectations. We notify our customers of any changes, and all new data protection measures are reviewed and approved in advance."
+            }
+        ]
+    },
+    "impressum": {
+        "main_title": "Imprint",
+        "page_owner": {
+            "title": "Website Operator Details",
+            "name": "Name:",
+            "address": "Address:",
+            "phone": "Phone number:",
+            "email": "Email address:"
+        },
+        "hosting_provider": {
+            "title": "Hosting Provider Details",
+            "company_name": "Company name:",
+            "company_address": "Company address:",
+            "branch_office": "Branch office:",
+            "website": "Website:",
+            "contact_page": "Contact page:"
+        }
+    },
+    "cookiesSection": {
+        "title": "Cookie Management",
+        "content": {
+            "introduction": {
+                "text": "When you access my portfolio website, the site may automatically save information from your computer or the device used for browsing (tablet, smartphone). For this purpose, so-called computer 'cookies' are used."
+            },
+            "whatIsCookie": {
+                "title": "What is a cookie?",
+                "text": "A cookie is a small piece of text that the visited website sends to your browser. It allows the site to remember information about your visit, such as the language you used and other settings. This makes your next visit smoother and easier to use. Cookies play an important role; without them, using the internet would be much more cumbersome."
+            },
+            "cookiesPurpose": {
+                "title": "What types of cookies do we use and for what purpose?",
+                "types": [
+                    {
+                        "type": "PERMANENT OR TEMPORARY COOKIES",
+                        "text": "Our website uses so-called 'temporary cookies' (session cookies) and 'permanent cookies'. Temporary cookies remain on your computer until you leave the website, while permanent cookies stay on your device for a longer period (depending on your browser settings), or until you manually delete them."
+                    },
+                    {
+                        "type": "SESSION COOKIES",
+                        "text": "These are temporary cookies that are only stored for the duration of your visit. They are automatically deleted from your computer at the end of your session or when you close your browser. Session cookies are essential for navigating our website and ensuring its proper functionality. They do not collect any information that could identify you personally."
+                    },
+                    {
+                        "type": "PERFORMANCE COOKIES (ANALYTICS)",
+                        "text": "We use Google Analytics cookies to gather information about the behavior and characteristics of our visitors. This helps us make our website clearer and easier to use. These cookies do not personally identify you, for instance, we do not store your name or email address; data is collected and stored anonymously and in aggregate. Even the IP address is only partially recorded.",
+                        "link_title": "More information:",
+                        "link": "On this page."
+                    },
+                    {
+                        "type": "FUNCTIONAL COOKIES",
+                        "text": "These cookies allow us to remember your choices on our website (e.g., the data entered on forms, etc.). These cookies track your activity solely on the visited website and not on others. They may store personal data you have provided, such as your email address."
+                    },
+                    {
+                        "type": "THIRD-PARTY COOKIES",
+                        "text": "We may use external web services on our website provided by third parties. In such cases, the storage of cookies is not controlled by us, and we have no influence over what information these external providers collect.",
+                        "link_title": "You can find out about the types of cookies used by Google",
+                        "link": "HERE",
+                        "link_end": "."
+                    }
+                ]
+            },
+            "cookieManagement": {
+                "title": "Cookie management, control, and disabling",
+                "consentWithdrawal": {
+                    "title": "How to withdraw consent?",
+                    "text": "Consent validity may expire occasionally. However, if you wish to withdraw your consent, you can do so at any time through your browser's cookie settings."
+                },
+                "browserSettings": {
+                    "title": "Browser Settings",
+                    "text": "These cookies do not store personal data, such as your name, address, or payment information. If you still wish to disable, block, or delete cookies from my site, you can do so using your browser. You can find the cookie settings for major browsers here:"
+                }
+            },
+            "googleAnalyticsDisable": {
+                "title": "DISABLING ANONYMOUS GOOGLE ANALYTICS COOKIES",
+                "text": "To prevent Google Analytics cookies from collecting information about you, you need to install a browser extension (Google Analytics plug-in).",
+                "additionalInfo": {
+                    "description": "Further information can be found at the following links:",
+                    "links": {
+                        "text1": "Cookies can also be disabled in Google services, on the Google Ads Opt-out page:",
+                        "text2": "Google information stored on your device can be managed at the following page:",
+                        "text3": "You can read more about 'Google Privacy and Security' here:"
+                    }
+                }
+            }
+        }
+    },
+    "projects": [
+        {
+            "id": 1,
+            "type": "Website",
+            "title": "GitArt Rehearsal Room and Studio Website",
+            "cardDescription": "GitArt",
+            "popupDescription": [
+                "This project implements the website for the GitArt Rehearsal Room and Studio.",
+                "The site functionally implements online booking for the rooms.",
+                "It allows users to register, authenticate, and manage room bookings as logged-in users.",
+                "Test user email: 'testuser@gmail.com', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
+            "imageAlt": "GitArt Practice Room and Studio Website",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-frontend",
+            "githubPagesLink": "https://thomas-horvath.github.io/GITART-frontend/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 2,
+            "type": "Website",
+            "title": "Electric Guitar Shop E-commerce Webshop",
+            "cardDescription": "EGS webshop",
+            "popupDescription": [
+                "This project implements the client-side frontend for the EGS musical instrument store and webshop.",
+                "The site enables product display, order placement, and cart management.",
+                "It includes user registration, authentication, and profile management for logged-in users.",
+                "Test user username: 'testuser', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_2/project_2_card.webp",
+            "gallery": [
+                "/project_img/project_2/1.webp",
+                "/project_img/project_2/2.webp",
+                "/project_img/project_2/3.webp",
+                "/project_img/project_2/4.webp",
+                "/project_img/project_2/5.webp",
+                "/project_img/project_2/6.webp"
+            ],
+            "imageAlt": "EGS Webshop Client Frontend",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 3,
+            "type": "Back-end",
+            "title": "Electric Guitar Shop - Webshop Server",
+            "cardDescription": "EGS - server",
+            "popupDescription": [
+                "The server-side implementation for the EGS musical instrument store client and admin interface.",
+                "The server handles incoming requests using a NodeJs Express server.",
+                "The database runs on a MongoDb server."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "NodeJs",
+                "Express",
+                "MongoDb"
+            ],
+            "imageSrc": "/project_img/project_3/project_3_card.webp",
+            "gallery": [
+                "/project_img/project_3/1.webp",
+                "/project_img/project_3/2.webp",
+                "/project_img/project_3/3.webp"
+            ],
+            "imageAlt": "Electric Guitar Shop - Webshop Server",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
+            "githubPagesLink": "https://egs.thomasapi.eu",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 4,
+            "type": "Website",
+            "title": "Electric Guitar Shop Webshop - Admin Interface",
+            "cardDescription": "EGS - admin panel",
+            "popupDescription": [
+                "The administration interface of the Electric Guitar Shop Webshop, where users with admin rights can manage the shop data after logging in.",
+                "Admins can view general sales data, manage product details, update them, create or delete products.",
+                "Admins can manage customer and admin data, as well as create new administrators.",
+                "They can monitor customer activity. Inactive users cannot log into the shop's profile.",
+                "Admins can view, modify, and delete orders.",
+                "Newsletter subscriptions are also managed via this interface.",
+                "Test administrator username: 'admin', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS - Sass",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_4/project_4_card.webp",
+            "gallery": [
+                "/project_img/project_4/1.webp",
+                "/project_img/project_4/2.webp",
+                "/project_img/project_4/3.webp",
+                "/project_img/project_4/4.webp",
+                "/project_img/project_4/5.webp",
+                "/project_img/project_4/6.webp"
+            ],
+            "imageAlt": "EGS Webshop Admin Interface",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 5,
+            "type": "Database",
+            "title": "MS SQL - EGS Webshop Database",
+            "cardDescription": "EGS - MsSql database",
+            "popupDescription": [
+                "Relational database designed up to the third normal form on a Microsoft SQL Server 2022.",
+                "The goal was to store data for users, products, and orders.",
+                "In addition to tables and dictionary tables, custom functions, views, and triggers were implemented.",
+                "A full project documentation is available and can be downloaded by clicking the button below."
+            ],
+            "technologies": [
+                "MS SQL Server",
+                "SQL"
+            ],
+            "imageSrc": "/project_img/project_5/project_5_card.webp",
+            "gallery": [
+                "/project_img/project_5/1.webp",
+                "/project_img/project_5/2.webp"
+            ],
+            "imageAlt": "MS SQL Server",
+            "downloadDocs_title": "Download Documentation",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 6,
+            "type": "Website",
+            "title": "Thomas Coffee Corner - Café Website",
+            "cardDescription": "Thomas Coffee Corner",
+            "popupDescription": [
+                "A front-end implementation of a fictional café using HTML, CSS, and JavaScript.",
+                "The project includes product display, filtering, and a product search function."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project_6/project_6_card.webp",
+            "gallery": [
+                "/project_img/project_6/1.webp",
+                "/project_img/project_6/2.webp",
+                "/project_img/project_6/3.webp",
+                "/project_img/project_6/4.webp",
+                "/project_img/project_6/5.webp",
+                "/project_img/project_6/6.webp"
+            ],
+            "imageAlt": "Thomas Coffee Corner Café Website",
+            "githubLink": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
+            "githubPagesLink": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 7,
+            "type": "Back-end",
+            "title": "GitArt Rehearsal Room and Studio Server",
+            "cardDescription": "GitArt - server",
+            "popupDescription": [
+                "This project is the back-end server part of the GitArt rehearsal room and studio website.",
+                "The project is implemented using a Node.js Express server.",
+                "It handles user registration, login, authentication, and the online booking management for the rehearsal rooms.",
+                "The database runs on a MongoDB server."
+            ],
+            "technologies": [
+                "Node.js",
+                "Express",
+                "JavaScript",
+                "MongoDB",
+                "JSON"
+            ],
+            "imageSrc": "/project_img/project_7/project_7_card.webp",
+            "gallery": [
+                "/project_img/project_7/1.webp",
+                "/project_img/project_7/2.webp",
+                "/project_img/project_7/3.webp"
+            ],
+            "imageAlt": "Node.js Express server",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-server",
+            "githubPagesLink": "https://gitart.thomasapi.eu/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 8,
+            "type": "Website",
+            "title": "Róbert Csibi - Leather Craftsman Portfolio",
+            "cardDescription": "Leather Craftsman Portfolio",
+            "popupDescription": [
+                "The portfolio website for Róbert Csibi, a leather craftsman. In addition to general information, a photo gallery has also been implemented.",
+                "The images can be viewed enlarged in a modal window."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_8/project_8_card.webp",
+            "gallery": [
+                "/project_img/project_8/1.webp",
+                "/project_img/project_8/2.webp",
+                "/project_img/project_8/3.webp",
+                "/project_img/project_8/4.webp",
+                "/project_img/project_8/5.webp",
+                "/project_img/project_8/6.webp"
+            ],
+            "imageAlt": "Róbert Csibi Leather Craftsman Portfolio",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 9,
+            "type": "Database",
+            "title": "MongoDB - EGS Webshop Database",
+            "cardDescription": "EGS - MongoDB database",
+            "popupDescription": [
+                "This database manages the products, orders, and users."
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_9/project_9_card.webp",
+            "gallery": [
+                "/project_img/project_9/1.webp",
+                "/project_img/project_9/2.webp"
+            ],
+            "imageAlt": "MongoDB database",
+            "downloadDocs_title": "Download the Documentation",
+            "docsHref": "/project_docs/ElectricGuitarShop_Database_Documentation.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 10,
+            "type": "Website",
+            "title": "Calculator Application",
+            "cardDescription": "Calculator",
+            "popupDescription": [
+                "A calculator application implemented using HTML, CSS, and JavaScript.",
+                "The project offers two different user interfaces: an old-fashioned and a modern design."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_10/project_10_card.webp",
+            "gallery": [
+                "/project_img/project_10/1.webp",
+                "/project_img/project_10/2.webp"
+            ],
+            "imageAlt": "Calculator",
+            "githubLink": "https://github.com/Thomas-Horvath/CalculatorApp",
+            "githubPagesLink": "https://thomas-horvath.github.io/CalculatorApp/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 11,
+            "type": "Database",
+            "title": "MongoDB - GitArt Rehearsal Room and Studio Database",
+            "cardDescription": "GitArt - MongoDb database",
+            "popupDescription": [
+                "This project is the back-end database for the GitArt rehearsal room and studio website.",
+                "It stores user data and rehearsal room bookings.",
+                "In addition to the online booking system, the data for individual rooms and the studio is stored in separate collections."
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_11/project_11_card.webp",
+            "gallery": [
+                "/project_img/project_11/1.webp",
+                "/project_img/project_11/2.webp"
+            ],
+            "imageAlt": "Example project 9 image",
+            "downloadDocs_title": "Download the Documentation",
+            "docsHref": "/project_docs/GitArt_Database_Documentation.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        }
+    ]
+}
