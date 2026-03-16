@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className="relative min-h-screen overflow-hidden">
 
           {/* BACKGROUND IMAGE */}
-          <div className="absolute inset-0 bg-fixed bg-cover -mt-22 bg-top bg-no-repeat bg-[url('/bg3.png')]" />
+          <div className="absolute inset-0 bg-fixed bg-cover -mt-22 bg-top bg-no-repeat bg-[url('/body-bg.png')]" />
 
 
           <Navbar />

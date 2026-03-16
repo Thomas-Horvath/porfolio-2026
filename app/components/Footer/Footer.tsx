@@ -14,7 +14,7 @@ export default function Footer() {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="relative border-t border-zinc-900/70 bg-white/70">
+        <footer className="relative border-t border-zinc-900/70 bg-gray-200/70">
             {/* finom glow a jobb oldalon */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute right-0 h-80 w-80 rounded-full bg-blue-600/10 blur-3xl -top-24" />
