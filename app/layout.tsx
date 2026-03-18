@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Inter, Space_Grotesk } from "next/font/google"
 import "./globals.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import PageUpBtn from "./components/PageUpBtn/PageUpBtn";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
   subsets: ["latin"],
+})
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
+  variable: "--font-space-grotesk",
 });
+
+
 
 export const metadata: Metadata = {
   title: "ThomasHorvath.hu - Webfejlesztés",
@@ -27,12 +33,12 @@ export default function RootLayout({
   return (
     <html lang="hu">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen  bg-zinc-100 text-zinc-950`}
+        className={` ${inter.variable} ${spaceGrotesk.variable} min-w-87.5 antialiased min-h-screen  bg-zinc-100 text-zinc-950`}
       >
         <div className="relative min-h-screen overflow-hidden">
 
           {/* BACKGROUND IMAGE */}
-          <div className="absolute inset-0 bg-fixed bg-cover -mt-22 bg-top bg-no-repeat bg-[url('/body-bg.png')]" />
+          <div className="absolute inset-0 bg-fixed bg-cover -mt-22 bg-top bg-no-repeat bg-[url('/body-bg2.png')]" />
 
 
           <Navbar />
@@ -44,6 +50,7 @@ export default function RootLayout({
 
         </div>
         <Footer />
+        <PageUpBtn />
       </body>
     </html>
   );

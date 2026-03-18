@@ -1,12 +1,6 @@
 @import "tailwindcss";
 
 
-.btn {
-  @apply inline-block px-4 py-2 bg-linear-to-r from-blue-600 to-cyan-500 text-zinc-200 rounded hover:bg-blue-700 transition;
-}
-.btn-2 {
-  @apply inline-block px-4 py-2 bg-blue-500  text-slate-800 rounded hover:bg-blue-700 transition;
-}
 
 
 @keyframes tech-marquee {
@@ -27,4 +21,33 @@
 
 .animate-tech-marquee:hover {
   animation-play-state: paused;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center border font-semibold uppercase tracking-[0.12em] text-xs md:text-sm transition shadow-sm backdrop-blur px-6 py-3 md:px-8 active:scale-[0.98];
+}
+
+.btn-blue {
+  @apply  border-sky-600 bg-sky-600  text-white  hover:bg-sky-700  ;
+}
+
+.btn-white {
+  @apply border-slate-200 bg-white text-sky-700 hover:bg-gray-100 ;
+} 
+
+.btn-white-blue {
+  @apply border-sky-600 bg-white text-sky-700  hover:bg-sky-700 hover:text-white ;
+}
+
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.heading-font {
+  font-family: var(--font-space-grotesk), sans-serif;
 }

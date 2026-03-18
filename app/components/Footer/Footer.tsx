@@ -1,181 +1,126 @@
-// components/Footer.tsx
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa";
+const navItems = [
+  { label: "Főoldal", href: "/" },
+  { label: "Rólam", href: "/rolam" },
+  { label: "Munkák", href: "/munkak" },
+  { label: "Kapcsolat", href: "/kapcsolat" },
+];
 
-let navItems = [
-    { label: "Főoldal", href: "/" },
-    { label: "Rólam", href: "/rolam" },];
-
-
+const socialItems = [
+  { label: "GitHub", href: "#", icon: <FaGithub size={15} /> },
+  { label: "LinkedIn", href: "#", icon: <FaLinkedinIn size={15} /> },
+];
 
 export default function Footer() {
-    const year = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
-    return (
-        <footer className="relative border-t border-zinc-900/70 bg-gray-200/70">
-            {/* finom glow a jobb oldalon */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute right-0 h-80 w-80 rounded-full bg-blue-600/10 blur-3xl -top-24" />
+  return (
+    <footer className="relative overflow-hidden  bg-white">
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sky-300 to-transparent" />
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-0 top-0 h-40 w-40 rounded-full bg-sky-300/10 blur-3xl" />
+        <div className="absolute right-0 bottom-0 h-52 w-52 rounded-full bg-blue-400/10 blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto max-w-[1400px] px-6 py-10 lg:px-10 lg:py-12">
+        {/* felső sor */}
+        <div className="flex flex-col gap-8 border-b border-slate-200 pb-8 lg:flex-row lg:items-start lg:justify-between">
+          {/* brand */}
+          <div className="flex items-start gap-4">
+            <Image
+              src="/logo.png"
+              alt="Horváth Tamás logó"
+              width={56}
+              height={56}
+              className="h-16 w-16 object-contain"
+            />
+
+            <div className="leading-tight">
+              <p className="text-lg font-semibold tracking-[0.06em] text-slate-900">
+                Horváth Tamás
+              </p>
+              <p className="text-[14px] font-medium tracking-[0.14em] text-sky-600">
+                Frontend / Full Stack Developer
+              </p>
             </div>
+          </div>
 
-            <div className="relative mx-auto max-w-350 px-6 py-16">
-                <div className="grid md:grid-cols-12 gap-12">
-                    {/* BRAND */}
-                    <div className="md:col-span-5">
-                        <Link href="/" className="flex items-center gap-3">
-                            <Image
-                                src="/logo.png"
-                                alt="Emberline Tattoo logó"
-                                width={140}
-                                height={140}
-                                className="h-14 w-14"
-                            />
-                            <div className="leading-none">
-                                <div className="text-lg font-semibold tracking-[0.18em]">
-                                    Horváth
-                                </div>
-                                <div className="text-xs font-medium tracking-[0.22em] text-blue-600">
-                                    TAmás
-                                </div>
-                            </div>
-                        </Link>
+          {/* nav + social */}
+          <div className="flex flex-col gap-6 lg:items-end">
+            <nav className="flex flex-wrap gap-x-6 gap-y-3">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-md text-slate-600 transition hover:text-sky-600"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
 
-                        <p className="mt-5 max-w-sm text-sm leading-6 text-zinc-900">
-                            Egy alkotói tér, ahol a történetek formát kapnak. Sötét tónusok,
-                            tiszta kompozíciók, nyugodt és precíz kivitelezés.
-                        </p>
+            <div className="flex flex-wrap items-center gap-3">
+              {/* <a
+                href="mailto:info@thomashorvath.hu"
+                className="text-sm text-slate-600 transition hover:text-sky-600"
+              >
+                info@thomashorvath.hu
+              </a> */}
 
-                        {/* Social */}
-                        <div className="flex items-center mt-6 gap-3">
-                            <div className="flex items-center mt-6 gap-3">
-                                <SocialIcon href="#" label="Instagram">
-                                    <FaInstagram size={16} />
-                                </SocialIcon>
+              {/* <div className="h-4 w-px bg-slate-200" /> */}
 
-                                <SocialIcon href="#" label="Facebook">
-                                    <FaFacebookF size={14} />
-                                </SocialIcon>
-
-                                <SocialIcon href="#" label="TikTok">
-                                    <FaTiktok size={14} />
-                                </SocialIcon>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* QUICK LINKS */}
-                    <div className="md:col-span-3">
-                        <h3 className="text-xs font-semibold tracking-[0.26em] text-zinc-900">
-                            GYORS LINKEK
-                        </h3>
-
-                        <ul className="mt-4 space-y-2 text-sm">
-                            {navItems.map((l) => (
-                                <li key={l.href}>
-                                    <Link
-                                        href={l.href}
-                                        className="hover:text-orange-400 transition text-zinc-900"
-                                    >
-                                        {l.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* KAPCSOLAT */}
-                    <div className="md:col-span-4">
-                        <h3 className="text-xs font-semibold tracking-[0.26em] text-zinc-900">
-                            KAPCSOLAT
-                        </h3>
-
-                        <div className="relative overflow-hidden mt-4 space-y-2">
-
-
-                            {/* Telefonszám */}
-                            <div className="flex items-center gap-3">
-                                <p className="block w-18 text-xs tracking-[0.22em] text-zinc-400">
-                                    TELEFON
-                                </p>
-                                <a
-                                    href="tel:+36303820891"
-                                    className="text-sm hover:text-orange-400 transition text-zinc-200"
-                                >
-                                    +36 30 123 4567
-                                </a>
-                            </div>
-
-                            {/* Email */}
-                            <div className="flex items-center gap-3">
-                                <p className="block w-18 text-xs tracking-[0.22em] text-zinc-400">
-                                    EMAIL
-                                </p>
-                                <a
-                                    href="mailto:info@emberlinetattoo.hu"
-                                    className="text-sm hover:text-orange-400 transition text-zinc-200"
-                                >
-                                    info@emberlinetattoo.hu
-                                </a>
-                            </div>
-
-                            {/* Nyitvatartás */}
-                            <div className="mt-6 pt-5 border-t border-zinc-800/70">
-                                <p className="text-xs tracking-[0.22em] text-zinc-400">
-                                    NYITVATARTÁS
-                                </p>
-                                <div className="flex items-center mt-3 gap-3">
-                                    <p className="text-sm text-zinc-300">
-                                        Hétfő – Vasárnap
-                                    </p>
-                                    <p className="text-sm text-orange-400">
-                                        12:00 – 20:00
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* bottom bar */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between
-                                gap-3 mt-12 pt-6
-                                border-t border-zinc-800/70">
-                    <p className="text-xs text-zinc-500">
-                        © {year} Emberline Tattoo. Minden jog fenntartva.
-                    </p>
-
-                    <div className="flex flex-wrap gap-4 text-xs">
-                        <Link href="/adatkezeles" className="transition text-zinc-500 hover:text-zinc-200">
-                            Adatkezelés
-                        </Link>
-                        <Link href="/ASZF" className="transition text-zinc-500 hover:text-zinc-200">
-                            ÁSZF
-                        </Link>
-                    </div>
-                </div>
+              {socialItems.map((item) => (
+                <SocialIcon key={item.label} href={item.href} label={item.label}>
+                  {item.icon}
+                </SocialIcon>
+              ))}
             </div>
-        </footer>
-    );
+          </div>
+        </div>
+
+        {/* alsó sor */}
+        <div className="flex flex-col gap-4 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {year} Horváth Tamás. Minden jog fenntartva.</p>
+
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/impresszum"
+              className="transition hover:text-slate-700"
+            >
+              Impresszum
+            </Link>
+            <Link
+              href="/adatvedelem"
+              className="transition hover:text-slate-700"
+            >
+              Adatvédelem
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-
-
-
-function SocialIcon({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
-    return (
-        <Link
-            href={href}
-            aria-label={label}
-            className="inline-flex items-center justify-center
-                       h-10 rounded-lg w-10
-                       bg-zinc-950/40 border border-zinc-800/70 hover:bg-zinc-950/60
-                       hover:border-orange-500/40
-                       transition
-                        hover:text-orange-400 text-zinc-300"
-        >
-            {children}
-        </Link>
-    );
+function SocialIcon({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      aria-label={label}
+      className="inline-flex h-9 w-9 items-center justify-center border border-slate-200 bg-slate-50 text-slate-600 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-600"
+    >
+      {children}
+    </Link>
+  );
 }

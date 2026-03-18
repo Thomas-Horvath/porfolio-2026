@@ -90,17 +90,17 @@ import TechStack from "./TechStack";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden bg-gradient-to-b from-transparent from-80% to-white to-100%">
       <div className="  absolute inset-0 -z-10 bg-white/10" />
 
-      <div className="mx-auto flex min-h-screen max-w-350 flex-col justify-center px-6 pb-10 pt-24 lg:px-10">
+      <div className="mt-10 mx-auto flex h-screen max-w-350 flex-col justify-center px-6 pb-10 pt-24 lg:px-10">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div className="max-w-2xl">
             <div className="mb-5 inline-flex border border-sky-100 bg-white/80 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm backdrop-blur">
               Frontend / Full Stack Web Developer
             </div>
 
-            <h1 className="text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+            <h1 className="heading-font text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
               Horváth Tamás
             </h1>
 
@@ -112,14 +112,14 @@ export default function HeroSection() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/munkak"
-                className="inline-flex items-center justify-center border border-sky-600 bg-sky-600 px-8 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-sky-700"
+                className="btn btn-blue"
               >
                 Projektek
               </Link>
 
               <Link
                 href="/kapcsolat"
-                className="inline-flex items-center justify-center border border-slate-200 bg-white px-8 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-sky-700 shadow-sm backdrop-blur transition hover:bg-gray-100"
+                className="btn btn-white"
               >
                 Kapcsolat
               </Link>
@@ -151,10 +151,12 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="mt-20 sm:mt-24 lg:mt-26">
+        <div className="mb-20 mt-12 lg:mt-4" >
           <TechStack />
         </div>
       </div>
+    <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white pointer-events-none" />
+    
     </section>
   );
 }

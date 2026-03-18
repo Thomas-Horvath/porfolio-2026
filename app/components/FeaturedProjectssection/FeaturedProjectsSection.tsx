@@ -17,15 +17,15 @@ const featuredProjects: Project[] = [
       "Angol–magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
     image: "/works/wordy.png",
     href: "/works/wordy.png",
-    tags: ["Next.js", "TypeScript", "SQLite"],
+    tags: ["Next.js", "TypeScript", "SQLite", "Tailwind"],
   },
   {
-    title: "Kóstolj Bele!",
+    title: "Electric guitar shop",
     description:
       "Receptes full stack projekt Prisma + SQLite alappal, strukturált tartalomkezeléssel és modern felhasználói élménnyel.",
-    image: "/projects/kostolj-bele-cover.jpg",
+    image: "/works/egs.webp",
     href: "/munkak/kostolj-bele",
-    tags: ["Next.js", "Prisma", "SQLite"],
+    tags: ["React", "Express", "MongoDb", "Sass"],
   },
   {
     title: "Inegratív Medicina",
@@ -39,7 +39,7 @@ const featuredProjects: Project[] = [
 
 export default function FeaturedProjectsSection() {
   return (
-    <section className="bg-slate-50 py-24 sm:py-28 lg:py-32">
+    <section className="bg-slate-50 px-6 lg:px-0 py-24 sm:py-28 lg:py-32">
       <div className="mx-auto max-w-350 ">
         <SectionHeader
           eyebrow="Munkáim"
@@ -53,7 +53,7 @@ export default function FeaturedProjectsSection() {
           {featuredProjects.map((project) => (
             <article
               key={project.title}
-              className="group mx-auto max-w-120 flex h-full flex-col border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.08)]"
+              className="group mx-auto max-w-120 flex h-full flex-col border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)] transition duration-300  hover:shadow-[0_24px_70px_rgba(15,23,42,0.08)]"
             >
               <Link href={project.href} className="block">
                 <div className="relative aspect-[16/10] overflow-hidden border-b border-slate-200 bg-slate-100">
@@ -89,9 +89,9 @@ export default function FeaturedProjectsSection() {
                 <div className="mt-8">
                   <Link
                     href={project.href}
-                    className="inline-flex items-center justify-center border border-slate-300 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-slate-800 transition hover:border-sky-600 hover:bg-sky-600 hover:text-white"
+                    className="btn btn-blue"
                   >
-                    Részletek
+                    Részletek <span> →</span>
                   </Link>
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function FeaturedProjectsSection() {
         <div className="mt-14 flex justify-center">
           <Link
             href="/munkak"
-            className="inline-flex items-center justify-center border border-sky-600 px-7 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-sky-700 transition hover:bg-sky-600 hover:text-white"
+            className="btn btn-white-blue"
           >
             Összes projektem
           </Link>

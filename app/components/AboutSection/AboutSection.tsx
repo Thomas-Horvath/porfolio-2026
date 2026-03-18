@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader";
 
 export default function AboutSection() {
   return (
-    <section className="bg-white py-24 px-6 lg:px-0 sm:py-28 lg:py-32">
+    <section className=" bg-white py-24 px-6 lg:px-0 sm:py-28 lg:py-32">
 <div className="max-w-350 mx-auto">
       <SectionHeader
         eyebrow="Bemutatkozás"
@@ -35,11 +35,7 @@ export default function AboutSection() {
         <div className="order-2 max-w-2xl">
 
 
-          {/* <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-5xl">
-            Modern webes felületek
-
-            átgondolt fejlesztéssel
-          </h2> */}
+      
 
           <div className=" leading-8 text-slate-600 sm:text-lg">
             <p>
@@ -59,7 +55,7 @@ export default function AboutSection() {
           <div className="mt-10">
             <Link
               href="/rolam"
-              className="inline-flex items-center justify-center border border-sky-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-sky-700 transition hover:bg-sky-600 hover:text-white"
+              className="btn btn-white-blue"
             >
               Bővebben rólam
             </Link>

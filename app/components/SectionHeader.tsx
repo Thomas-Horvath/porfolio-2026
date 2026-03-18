@@ -34,7 +34,7 @@ export default function SectionHeader({
         </p>
       )}
 
-      <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+      <h2 className="heading-font text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         {title}
       </h2>
 
