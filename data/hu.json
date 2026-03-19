@@ -1,18 +1,21 @@
 {
     "nav": {
-        "link1": "Kezdőlap",
-        "link2": "Rólam",
-        "link3": "Ismereteim",
-        "link4": "Munkáim",
-        "link5": "Blog",
-        "link6": "Kapcsolat"
+        "home": "Kezdőlap",
+        "about": "Rólam",
+        "projects": "Munkáim",
+        "contact": "Kapcsolat"
+    },
+    "navLogo": {
+        "alt": "Horváth Tamás logó",
+        "name": "Horváth Tamás",
+        "subTitle": "Frontend / Full Stack Fejlesztő"
     },
     "home": {
         "name": "Horváth Tamás",
-        "profession1": "Full-Stack webfejlesztő",
-        "profession2": "Adatbázis specialista",
-        "subTitle": "„Kódolj szépséget, hozz létre élményt!”",
-        "buttonText": "Küldj üzenetet"
+        "profession": "Frontend / Full Stack Web Fejlesztő",
+        "subTitle": "Modern webes felületek és full stack projektek fejlesztése Reacttel, Next.js-szel és korszerű webes technológiákkal.",
+        "button1": "projektek",
+        "button2": "kapcsolat"
     },
     "about": {
         "headingTitle": "Néhány szó",

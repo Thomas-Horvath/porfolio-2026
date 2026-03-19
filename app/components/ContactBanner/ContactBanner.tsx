@@ -32,7 +32,7 @@ export default function ContactBanner() {
 
                 <div className="mt-5">
                   <Link
-                    href="/kapcsolat"
+                    href="/contact"
                     className="btn btn-white"
                   >
                     Kapcsolatfelvétel

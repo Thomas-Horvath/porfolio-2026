@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import PageUpBtn from "./components/PageUpBtn/PageUpBtn";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -35,23 +36,27 @@ export default function RootLayout({
       <body
         className={` ${inter.variable} ${spaceGrotesk.variable} min-w-87.5 antialiased min-h-screen  bg-zinc-100 text-zinc-950`}
       >
-        <div className="relative min-h-screen overflow-hidden">
+        <LanguageProvider>
+          <div className="relative min-h-screen overflow-hidden">
 
-          {/* BACKGROUND IMAGE */}
-          <div className="absolute inset-0 bg-fixed bg-cover -mt-22 bg-top bg-no-repeat bg-[url('/body-bg2.png')]" />
+            {/* BACKGROUND IMAGE */}
+            <div className="absolute inset-0 bg-fixed bg-cover -mt-22 bg-top bg-no-repeat bg-[url('/body-bg2.png')]" />
 
 
-          <Navbar />
 
-          {/* PAGE CONTENT */}
-          <div className="relative z-10">
-            {children}
+
+            <Navbar />
+
+            {/* PAGE CONTENT */}
+            <div className="relative z-10">
+              {children}
+            </div>
+
           </div>
-
-        </div>
-        <Footer />
-        <PageUpBtn />
+          <Footer />
+          <PageUpBtn />
+        </LanguageProvider>
       </body>
-    </html>
+    </html >
   );
 }

@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const navItems = [
   { label: "Főoldal", href: "/" },
-  { label: "Rólam", href: "/rolam" },
-  { label: "Munkák", href: "/munkak" },
-  { label: "Kapcsolat", href: "/kapcsolat" },
+  { label: "Rólam", href: "/about" },
+  { label: "Munkák", href: "/projects" },
+  { label: "Kapcsolat", href: "/contact" },
 ];
 
 const socialItems = [

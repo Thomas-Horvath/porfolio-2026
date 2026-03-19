@@ -1,18 +1,21 @@
 {
     "nav": {
-        "link1": "Home",
-        "link2": "About",
-        "link3": "Skills",
-        "link4": "Portfolio",
-        "link5": "Blog",
-        "link6": "Contact"
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "navLogo": {
+        "alt": "Thomas Horvath logo",
+        "name": "Thomas Horvath",
+        "subTitle": "Frontend / Full Stack Developer"
     },
     "home": {
         "name": "Thomas Horvath",
-        "profession1": "Full-Stack web developer",
-        "profession2": "Database specialist",
-        "subTitle": "„Code beauty, create an experience!”",
-        "buttonText": "Contact me!"
+        "profession": "Frontend / Full Stack Web Developer",
+        "subTitle": "Developing modern web interfaces and full stack projects with React, Next.js and modern web technologies.",
+        "button1": "projects",
+        "button2": "contact"
     },
     "about": {
         "headingTitle": "Some words",

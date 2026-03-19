@@ -54,7 +54,7 @@ export default function AboutSection() {
 
           <div className="mt-10">
             <Link
-              href="/rolam"
+              href="/about"
               className="btn btn-white-blue"
             >
               Bővebben rólam

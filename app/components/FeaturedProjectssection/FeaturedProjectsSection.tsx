@@ -16,7 +16,7 @@ const featuredProjects: Project[] = [
     description:
       "Angol–magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
     image: "/works/wordy.png",
-    href: "/works/wordy.png",
+    href: "/projects/wordy",
     tags: ["Next.js", "TypeScript", "SQLite", "Tailwind"],
   },
   {
@@ -24,7 +24,7 @@ const featuredProjects: Project[] = [
     description:
       "Receptes full stack projekt Prisma + SQLite alappal, strukturált tartalomkezeléssel és modern felhasználói élménnyel.",
     image: "/works/egs.webp",
-    href: "/munkak/kostolj-bele",
+    href: "/projects/kostolj-bele",
     tags: ["React", "Express", "MongoDb", "Sass"],
   },
   {
@@ -32,7 +32,7 @@ const featuredProjects: Project[] = [
     description:
       "Online angol tanári landing page kurzusblokkokkal, modern tartalmi felépítéssel és átgondolt vizuális hierarchiával.",
     image: "/works/im.png",
-    href: "/munkak/levelup-english",
+    href: "/projects/levelup-english",
     tags: ["React", "Tailwind", "Prisma", "Electron", "SQLite"],
   },
 ];
@@ -101,7 +101,7 @@ export default function FeaturedProjectsSection() {
 
         <div className="mt-14 flex justify-center">
           <Link
-            href="/munkak"
+            href="/projects"
             className="btn btn-white-blue"
           >
             Összes projektem
