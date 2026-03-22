@@ -1,10 +1,13 @@
+'use client';
 import { FaQuoteRight } from "react-icons/fa";
+import { useLanguage } from "@/contexts/useLanguage";
 
 
 export default function QuoteSection() {
+  const { t } = useLanguage();
   return (
     <section>
-      <div className="w-full px-6 lg:px-0 bg-gradient-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-10 py-14">
+      <div className="w-full lg:px-0 bg-linear-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-10 py-14">
 
         <div className="relative max-w-350 mx-auto overflow-hidden border-l-4 border-white/20 pl-6 ">
 
@@ -13,8 +16,7 @@ export default function QuoteSection() {
           </div>
 
           <blockquote className=" max-w-3xl text-3xl italic font-semibold tracking-wide text-white leading-relaxed">
-            Ne csak dolgozz, alkoss is valamit. Az igazi siker abban rejlik,
-            ha szereted, amit csinálsz.
+           {t.quote}
           </blockquote>
 
           <p className="mt-6 text-lg uppercase tracking-[0.18em] text-white/70">

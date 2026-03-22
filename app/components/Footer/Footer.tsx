@@ -1,13 +1,12 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { useLanguage } from "@/contexts/useLanguage";
 
-const navItems = [
-  { label: "Főoldal", href: "/" },
-  { label: "Rólam", href: "/about" },
-  { label: "Munkák", href: "/projects" },
-  { label: "Kapcsolat", href: "/contact" },
-];
+
+
+
 
 const socialItems = [
   { label: "GitHub", href: "#", icon: <FaGithub size={15} /> },
@@ -15,17 +14,25 @@ const socialItems = [
 ];
 
 export default function Footer() {
+  const { t } = useLanguage();
   const year = new Date().getFullYear();
+
+  const navItems = [
+    { name: t.navLinks.home, href: "/" },
+    { name: t.navLinks.about, href: "/about" },
+    { name: t.navLinks.projects, href: "/projects" },
+    { name: t.navLinks.contact, href: "/contact" },
+];
 
   return (
     <footer className="relative overflow-hidden  bg-white">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sky-300 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-sky-300 to-transparent" />
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-0 top-0 h-40 w-40 rounded-full bg-sky-300/10 blur-3xl" />
         <div className="absolute right-0 bottom-0 h-52 w-52 rounded-full bg-blue-400/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-[1400px] px-6 py-10 lg:px-10 lg:py-12">
+      <div className="relative mx-auto max-w-350 px-6 py-10 lg:px-10 lg:py-12">
         {/* felső sor */}
         <div className="flex flex-col gap-8 border-b border-slate-200 pb-8 lg:flex-row lg:items-start lg:justify-between">
           {/* brand */}
@@ -40,10 +47,10 @@ export default function Footer() {
 
             <div className="leading-tight">
               <p className="text-lg font-semibold tracking-[0.06em] text-slate-900">
-                Horváth Tamás
+                {t.homePage.name}
               </p>
               <p className="text-[14px] font-medium tracking-[0.14em] text-sky-600">
-                Frontend / Full Stack Developer
+                {t.homePage.profession}
               </p>
             </div>
           </div>
@@ -57,46 +64,38 @@ export default function Footer() {
                   href={item.href}
                   className="text-md text-slate-600 transition hover:text-sky-600"
                 >
-                  {item.label}
+                  {item.name}
                 </Link>
               ))}
             </nav>
 
             <div className="flex flex-wrap items-center gap-3">
-              {/* <a
-                href="mailto:info@thomashorvath.hu"
-                className="text-sm text-slate-600 transition hover:text-sky-600"
-              >
-                info@thomashorvath.hu
-              </a> */}
-
-              {/* <div className="h-4 w-px bg-slate-200" /> */}
-
               {socialItems.map((item) => (
                 <SocialIcon key={item.label} href={item.href} label={item.label}>
                   {item.icon}
                 </SocialIcon>
               ))}
             </div>
+
           </div>
         </div>
 
         {/* alsó sor */}
         <div className="flex flex-col gap-4 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} Horváth Tamás. Minden jog fenntartva.</p>
+          <p>© {year} {t.homePage.name}. {t.footer.additionalText}</p>
 
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/impresszum"
+              href="/imprint"
               className="transition hover:text-slate-700"
             >
-              Impresszum
+              {t.footer.impressum}
             </Link>
             <Link
-              href="/adatvedelem"
+              href="/privacy"
               className="transition hover:text-slate-700"
             >
-              Adatvédelem
+              {t.footer.policy}
             </Link>
           </div>
         </div>

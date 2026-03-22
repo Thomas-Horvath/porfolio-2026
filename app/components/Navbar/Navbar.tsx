@@ -9,15 +9,15 @@ const Navbar = () => {
   const { t, language, switchLanguage } = useLanguage();
 
   const navLinks = [
-    { name: t.nav.home, href: "/" },
-    { name: t.nav.about, href: "/about" },
-    { name: t.nav.projects, href: "/projects" },
-    { name: t.nav.contact, href: "/contact" },
+    { name: t.navLinks.home, href: "/" },
+    { name: t.navLinks.about, href: "/about" },
+    { name: t.navLinks.projects, href: "/projects" },
+    { name: t.navLinks.contact, href: "/contact" },
   ];
 
   return (
-    <header className="w-full h-[76px] fixed top-0 left-0 z-50 bg-slate-50/90 backdrop-blur-sm border-b border-zinc-900/10">
-      <div className="mx-auto h-full flex max-w-350 items-center justify-between px-6 lg:px-10">
+    <header className="w-full h-19 fixed top-0 left-0 z-50 bg-slate-50/90 backdrop-blur-sm border-b border-zinc-900/10">
+      <div className="mx-auto h-full flex max-w-350 items-center justify-between px-6 own:px-0">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative flex items-center h-11 w-11 overflow-hidden rounded-xl bg-white/80 shadow-sm ring-1 ring-sky-100 backdrop-blur">
             <Image

@@ -1,5 +1,31 @@
 {
-    "nav": {
+    "meta": {
+        "home": {
+            "title": "Home | Thomas Horvath",
+            "description": "Portfolio of Thomas Horvath."
+        },
+        "about": {
+            "title": "About | Thomas Horvath",
+            "description": "Introduction and professional background."
+        },
+        "projects": {
+            "title": "Projects | Thomas Horvath",
+            "description": "My projects and selected work."
+        },
+        "contact": {
+            "title": "Contact | Thomas Horvath",
+            "description": "Contact details and ways to get in touch."
+        },
+        "imprint": {
+            "title": "Imprint | Thomas Horvath",
+            "description": "Imprint page."
+        },
+        "privacy": {
+            "title": "Privacy | Thomas Horvath",
+            "description": "Privacy policy."
+        }
+    },
+    "navLinks": {
         "home": "Home",
         "about": "About",
         "projects": "Projects",
@@ -10,12 +36,167 @@
         "name": "Thomas Horvath",
         "subTitle": "Frontend / Full Stack Developer"
     },
-    "home": {
+    "homePage": {
         "name": "Thomas Horvath",
         "profession": "Frontend / Full Stack Web Developer",
         "subTitle": "Developing modern web interfaces and full stack projects with React, Next.js and modern web technologies.",
+        "earthLabel1": "Modern UI development",
+        "earthLabel2": "Fast and modern web apps",
         "button1": "projects",
-        "button2": "contact"
+        "button2": "contact me"
+    },
+    "footer": {
+        "policy": "Privacy Policy",
+        "impressum": "Imprint",
+        "cookies": "Cookie Management",
+        "additionalText": "All rights reserved!"
+    },
+    "aboutSection": {
+        "headeringTitle": "Introduction",
+        "headeringSubtitle": "Web development with modern technologies",
+        "headeringSpan": "Modern frontend and full stack solutions, with a well-thought-out structure and a clean visual approach.",
+        "p1": "As a frontend and full stack web developer, I create modern, fast, and user-friendly web applications with React, Next.js, and cutting-edge web technologies.",
+        "p2": "For me, a clean visual appearance, a good user experience, and maintainable code are essential.",
+        "button": "learn more about me"
+    },
+    "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
+    "projectsPage": {
+        "eyebrow": "Munkáim",
+        "title": "Összes projektem",
+        "featuredTitle": "Kiemelt projektjeim",
+        "featuredDescription": "Néhány projekt, amelyek jól megmutatják, hogyan gondolkodom a modern frontend és full stack fejlesztésről.",
+        "description": "Itt találod azokat a projekteket, amelyek jól mutatják a frontend, backend és adatbázis területeken szerzett tapasztalataimat.",
+        "emptyText": "Ebben a kategóriában még nincs megjeleníthető projektem.",
+        "notFoundTitle": "Ez a projekt nem található",
+        "notFoundDescription": "Lehet, hogy a projekt még nincs publikálva, vagy a hivatkozás hibás.",
+        "filters": {
+            "all": "Összes",
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Adatbázis",
+            "fullstack": "Full Stack"
+        },
+        "buttons": {
+            "details": "Details",
+            "allProjects": "All Projects",
+            "backToProjects": "Back to Projects",
+            "github": "GitHub",
+            "liveDemo": "Live Demo",
+            "viewProject": "View Project"
+        },
+        "detailSections": {
+            "overview": "Project Overview",
+            "technologies": "Technologies Used",
+            "gallery": "Gallery"
+        },
+        "items": [
+            {
+                "slug": "wordy",
+                "featured": true,
+                "title": "Wordy",
+                "cardDescription": "Angol–magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
+                "description": [
+                    "A Wordy egy nyelvtanulást támogató projekt, amelynek célja a gyors és kényelmes szótanulás modern felületen.",
+                    "A felület letisztult, mobilbarát és a tanulási élményre optimalizált.",
+                    "A projekt során külön figyelmet kapott a vizuális hierarchia, az áttekinthetőség és a gyors használhatóság."
+                ],
+                "image": "/works/wordy.png",
+                "gallery": [
+                    "/works/wordy.png",
+                    "/works/egs.webp",
+                    "/works/im.png"
+                ],
+                "tags": [
+                    "Next.js",
+                    "TypeScript",
+                    "SQLite",
+                    "Tailwind"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/example/wordy",
+                "liveUrl": "https://example.com/wordy"
+            },
+            {
+                "slug": "electric-guitar-shop",
+                "featured": true,
+                "title": "Electric Guitar Shop",
+                "cardDescription": "Full stack webshop koncepció strukturált tartalomkezeléssel és modern felhasználói élménnyel.",
+                "description": [
+                    "Ez a projekt egy modern hangszeres webshop vizuális és funkcionális koncepcióját mutatja be.",
+                    "A fókusz a termékmegjelenítésen, a kategorizáláson és az átlátható vásárlói élményen volt.",
+                    "A megoldás jól szemlélteti, hogyan lehet modern frontend struktúrával professzionális felületet építeni."
+                ],
+                "image": "/works/egs.webp",
+                "gallery": [
+                    "/works/egs.webp",
+                    "/works/wordy.png",
+                    "/works/im.png"
+                ],
+                "tags": [
+                    "React",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "category": "backend",
+                "githubUrl": "https://github.com/example/electric-guitar-shop",
+                "liveUrl": "https://example.com/electric-guitar-shop"
+            },
+            {
+                "slug": "integrative-medicine",
+                "featured": true,
+                "title": "Integratív Medicina",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "database",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            },
+            {
+                "slug": "integrative-medicine2",
+                "featured": false,
+                "title": "Integratív Medicina2",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            }
+        ]
     },
     "about": {
         "headingTitle": "Some words",
@@ -42,7 +223,6 @@
         "fifthInfoTitle": "5. Personality",
         "fifthInfoContent": "<p>You can count on me to perform my tasks reliably and precisely in any situation.</p><p>I am determined to achieve my goals while adapting easily to new situations and working effectively with others.</p>"
     },
-    "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
     "skills": {
         "headingTitle": "Skills",
         "headingSpan": "I have",
@@ -190,42 +370,6 @@
         "subHeading": "Some of My Projects",
         "buttonNext": "Next"
     },
-    "mainBlogPage": {
-        "headingTitle": "Blog",
-        "subHeading": "Some of My Thoughts",
-        "blogContent1": {
-            "cardtitle": "1. HTML in Practice",
-            "imageSrc": "/blog_img/HTML.svg",
-            "imageAlt": "HTML blog image",
-            "description": "Let's start with what HTML is....",
-            "link": "/blog/1",
-            "buttonText": "Read More.."
-        },
-        "blogContent2": {
-            "cardtitle": "2. The Magic of CSS",
-            "imageSrc": "/blog_img/css.svg",
-            "imageAlt": "CSS blog image",
-            "description": "CSS is the magical tool for modern web page styling...",
-            "link": "/blog/2",
-            "buttonText": "Read More.."
-        },
-        "blogContent3": {
-            "cardtitle": "3. JavaScript",
-            "imageSrc": "/blog_img/js.svg",
-            "imageAlt": "JavaScript blog image",
-            "description": "When you want your website to work interactively...",
-            "link": "/blog/3",
-            "buttonText": "Read More.."
-        },
-        "blogContent4": {
-            "cardtitle": "4. Protect Your Data",
-            "imageSrc": "/blog_img/security.svg",
-            "imageAlt": "Security blog post",
-            "description": "Have you ever felt like you're being watched? In today's digital age...",
-            "link": "/blog/4",
-            "buttonText": "Read More.."
-        }
-    },
     "contactPageContent": {
         "headingTitle": "Contact",
         "subHeading": "Feel free to ask",
@@ -258,106 +402,6 @@
         "failMessage": "Failed to send the message! ❌",
         "validationErrorMessage": "This field is required!",
         "emailFormatErrorMessage": "The email format is incorrect!"
-    },
-    "footer": {
-        "policy": "Privacy Policy",
-        "impressum": "Impress",
-        "cookies": "Cookie Management",
-        "additionalText": "All rights reserved!"
-    },
-    "blogpage": {
-        "blog1": {
-            "title1": "1. HTML in Practice",
-            "content1": [
-                "Let's start by understanding what the HTML language is.",
-                "HTML (HyperText Markup Language) is one of the core technologies that defines how websites are built. HTML is not a programming language, but a markup language that describes the structure and content of a web page. Elements like headings, paragraphs, images, or links are defined using HTML tags.",
-                "HTML was created by Tim Berners-Lee in the early 1990s to allow the sharing and linking of information through the internet. Since then, HTML has evolved and expanded to support the needs of modern web, such as displaying multimedia content and creating interactive elements.",
-                "The basics of HTML include that every webpage is actually a document made up of elements. These elements can be text blocks, images, links, or embedded media files. Each element is surrounded by an opening and closing tag, which defines its role and appearance in the browser."
-            ],
-            "example": {
-                "title": "For example:",
-                "example1": "<h1>Heading</h1>",
-                "example2": "<p>This is a paragraph.</p>",
-                "explanation": "The example above defines a heading and a paragraph. However, HTML is much more than that, and you can use countless other elements to build a webpage."
-            },
-            "title2": "Why is HTML Important?",
-            "content2": [
-                "HTML is the foundation of every website. Everything you see on the internet is defined using HTML, including text, images, and interactive elements. In today's world of more interactive and visually rich pages, HTML remains essential as it provides the basic structure for web pages."
-            ],
-            "title3": "HTML in Modern Web Development",
-            "content3": [
-                "Today, HTML alone is not enough to create a complete website. CSS (Cascading Style Sheets) is needed to define the styles, while JavaScript adds interactivity for dynamic behavior. However, HTML remains the language that defines the structure of the webpage, and without it, modern web development would not exist.",
-                "Due to its simplicity and flexibility, HTML is still one of the most important technologies in every web developer's toolkit."
-            ]
-        },
-        "blog2": {
-            "title1": "2. The Magic of CSS",
-            "content1": [
-                "Let's start by explaining what CSS is.",
-                "CSS (Cascading Style Sheets) is a styling language that is used to design the appearance of web pages. While HTML defines the structure of a web page, CSS is responsible for the visual aspects, like colors, fonts, layouts, and animations.",
-                "CSS separates the content of a webpage from its design, making it easier for developers to change the layout without modifying the HTML structure. This is very useful when managing large websites or creating reusable design templates.",
-                "CSS is made up of rules that apply to different elements. A rule usually targets an element (like a paragraph or a heading) and defines its visual properties, such as color, size, or position on the page."
-            ],
-            "example": {
-                "title": "For example:",
-                "example1": "p { color: red; }",
-                "example2": "h1 { font-size: 24px; }",
-                "explanation": "The first example changes the text color of a paragraph to red, while the second example sets the font size of a heading to 24 pixels. CSS allows precise control over the appearance of web pages."
-            },
-            "title2": "Why is CSS important?",
-            "content2": [
-                "CSS is essential for designing the look and feel of websites. It allows developers to create customized layouts and visually appealing designs. Most modern websites use CSS to control their layout and style."
-            ],
-            "title3": "CSS in modern web development",
-            "content3": [
-                "CSS is one of the most important tools for web developers. There are many frameworks and predefined style sheets that make it easier to work with CSS. Its flexibility allows developers to change the appearance of a website without altering the HTML structure."
-            ]
-        },
-        "blog3": {
-            "title1": "3. JavaScript",
-            "content1": [
-                "Let's start by explaining what JavaScript is.",
-                "JavaScript is a programming language that brings dynamic interactivity to websites. While HTML defines the structure and CSS handles the design, JavaScript allows websites to react to user actions, like clicks, form submissions, or animations.",
-                "JavaScript runs in the browser and directly interacts with the HTML and CSS elements of a page. This makes it possible to update the content of a page in real-time without refreshing it.",
-                "In modern web development, JavaScript plays a key role. It allows the creation of complex web applications, games, and interactive tools that enhance user experience."
-            ],
-            "example": {
-                "title": "For example:",
-                "example1": "document.getElementById( 'myButton').addEventListener( 'click', function() { alert('Hello World!'); });",
-                "explanation": "The example adds a click event to a button that shows the message 'Hello World!'. JavaScript makes it easy to add interactive features to web pages."
-            },
-            "title2": "Why is JavaScript important?",
-            "content2": [
-                "JavaScript is one of the most popular languages in web development. It allows the creation of dynamic and interactive websites that respond to user needs. Most modern web applications are built using JavaScript."
-            ],
-            "title3": "JavaScript in modern web development",
-            "content3": [
-                "Nowadays, it's almost impossible to imagine a modern website without JavaScript. Many frameworks and libraries, like React or Vue.js, extend the capabilities of JavaScript and make it easier to build complex features."
-            ]
-        },
-        "blog4": {
-            "title1": "4. Protect Your Data",
-            "content1": [
-                "Why is data protection important in the digital age?",
-                "In the digital age, data protection is becoming more and more important. During our online activities, we share a lot of information that can be sensitive. This data can range from personal information to browsing habits and even financial data.",
-                "Cybercrime is a growing threat to users. Hackers constantly develop new ways to steal personal information and use it for fraud or identity theft.",
-                "That's why it's important to handle your data carefully online. Make sure to use strong passwords and avoid suspicious links or unknown websites. Being aware of data protection can reduce risks and keep you safe from the dangers of the digital world."
-            ],
-            "example": {
-                "title": "Tips for data protection:",
-                "example1": "- Use strong and unique passwords for all your accounts.",
-                "example2": "- Don't click on suspicious links or email attachments.",
-                "explanation": "To protect your data, it's important to manage your online accounts and information securely. Strong passwords and caution are key to defending against cybercrime."
-            },
-            "title2": "Why is data protection important?",
-            "content2": [
-                "Data protection concerns everyone, and it's crucial for keeping personal information safe. With the increasing number of online threats, it's important to be aware of how to protect your data."
-            ],
-            "title3": "Data protection in the modern world",
-            "content3": [
-                "As the digital world evolves, we need to focus more on data protection. Our personal information is constantly at risk during online activities, so it's essential to take security measures, like using two-factor authentication and trusted antivirus software."
-            ]
-        }
     },
     "policy": {
         "main_title": "Privacy Policy",

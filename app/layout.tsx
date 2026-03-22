@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import PageUpBtn from "./components/PageUpBtn/PageUpBtn";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import SeoUpdater from "./components/SeoUpdater";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "ThomasHorvath.hu - Webfejlesztés",
+  title: "ThomasHorvath.hu",
   description: "Horváth Thomas webfejlesztő portfóliója és szolgáltatásai.",
 };
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={` ${inter.variable} ${spaceGrotesk.variable} min-w-87.5 antialiased min-h-screen  bg-zinc-100 text-zinc-950`}
       >
         <LanguageProvider>
+          <SeoUpdater />
           <div className="relative min-h-screen overflow-hidden">
 
             {/* BACKGROUND IMAGE */}

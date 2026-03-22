@@ -1,9 +1,5 @@
-import React from 'react'
+import ProjectsPageContent from "@/app/components/projects/ProjectsPageContent";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function ProjectsPage() {
+  return <ProjectsPageContent />;
 }
-
-export default page

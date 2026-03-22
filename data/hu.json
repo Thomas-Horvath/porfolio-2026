@@ -1,5 +1,31 @@
 {
-    "nav": {
+    "meta": {
+        "home": {
+            "title": "Főoldal | Horváth Tamás",
+            "description": "Horváth Tamás portfóliója."
+        },
+        "about": {
+            "title": "Rólam | Horváth Tamás",
+            "description": "Bemutatkozás és szakmai háttér."
+        },
+        "projects": {
+            "title": "Munkáim | Horváth Tamás",
+            "description": "Projektjeim és referenciáim."
+        },
+        "contact": {
+            "title": "Kapcsolat | Horváth Tamás",
+            "description": "Kapcsolatfelvétel és elérhetőségek."
+        },
+        "imprint": {
+            "title": "Impresszum | Horváth Tamás",
+            "description": "Impresszum oldal."
+        },
+        "privacy": {
+            "title": "Adatvédelem | Horváth Tamás",
+            "description": "Adatvédelmi tájékoztató."
+        }
+    },
+    "navLinks": {
         "home": "Kezdőlap",
         "about": "Rólam",
         "projects": "Munkáim",
@@ -10,12 +36,167 @@
         "name": "Horváth Tamás",
         "subTitle": "Frontend / Full Stack Fejlesztő"
     },
-    "home": {
+    "homePage": {
         "name": "Horváth Tamás",
         "profession": "Frontend / Full Stack Web Fejlesztő",
         "subTitle": "Modern webes felületek és full stack projektek fejlesztése Reacttel, Next.js-szel és korszerű webes technológiákkal.",
+        "earthLabel1": "Modern UI fejlesztés",
+        "earthLabel2": "Gyors és modern webappok",
         "button1": "projektek",
         "button2": "kapcsolat"
+    },
+    "footer": {
+        "policy": "Adatvédelem",
+        "impressum": "Impresszum",
+        "cookies": "Sütik kezelése",
+        "additionalText": "Minden jog fenntartva!"
+    },
+    "aboutSection": {
+        "headeringTitle": "Bemutatkozás",
+        "headeringSubtitle": "Webfejlesztés modern technológiákkal",
+        "headeringSpan": "Modern frontend és full stack megoldások, átgondolt felépítéssel és letisztult vizuális szemlélettel.",
+        "p1": "Frontend és full stack webfejlesztőként modern, gyors és felhasználóbarát webes alkalmazásokat építek Reacttel, Next.js-szel és korszerű webes technológiákkal.",
+        "p2": "Fontos számomra a letisztult vizuális megjelenés, a jó felhasználói élmény és az átlátható, jól karbantartható kód.",
+        "button": "bővebben rólam"
+    },
+    "quote": "\"Ne csak dolgozz, alkoss is valamit. Az igazi siker abban rejlik, ha szereted, amit csinálsz.\"",
+    "projectsPage": {
+        "eyebrow": "Munkáim",
+        "title": "Összes projektem",
+        "featuredTitle": "Kiemelt projektjeim",
+        "featuredDescription": "Néhány projekt, amelyek jól megmutatják, hogyan gondolkodom a modern frontend és full stack fejlesztésről.",
+        "description": "Itt találod azokat a projekteket, amelyek jól mutatják a frontend, backend és adatbázis területeken szerzett tapasztalataimat.",
+        "emptyText": "Ebben a kategóriában még nincs megjeleníthető projektem.",
+        "notFoundTitle": "Ez a projekt nem található",
+        "notFoundDescription": "Lehet, hogy a projekt még nincs publikálva, vagy a hivatkozás hibás.",
+        "filters": {
+            "all": "Összes",
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Adatbázis",
+            "fullstack": "Full Stack"
+        },
+        "buttons": {
+            "details": "Részletek",
+            "allProjects": "Összes projektem",
+            "backToProjects": "Vissza a projektekhez",
+            "github": "GitHub",
+            "liveDemo": "Élő oldal",
+            "viewProject": "Projekt megtekintése"
+        },
+        "detailSections": {
+            "overview": "Projekt áttekintés",
+            "technologies": "Felhasznált technológiák",
+            "gallery": "Galéria"
+        },
+        "items": [
+            {
+                "slug": "wordy",
+                "featured": true,
+                "title": "Wordy",
+                "cardDescription": "Angol–magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
+                "description": [
+                    "A Wordy egy nyelvtanulást támogató projekt, amelynek célja a gyors és kényelmes szótanulás modern felületen.",
+                    "A felület letisztult, mobilbarát és a tanulási élményre optimalizált.",
+                    "A projekt során külön figyelmet kapott a vizuális hierarchia, az áttekinthetőség és a gyors használhatóság."
+                ],
+                "image": "/works/wordy.png",
+                "gallery": [
+                    "/works/wordy.png",
+                    "/works/egs.webp",
+                    "/works/im.png"
+                ],
+                "tags": [
+                    "Next.js",
+                    "TypeScript",
+                    "SQLite",
+                    "Tailwind"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/example/wordy",
+                "liveUrl": "https://example.com/wordy"
+            },
+            {
+                "slug": "electric-guitar-shop",
+                "featured": true,
+                "title": "Electric Guitar Shop",
+                "cardDescription": "Full stack webshop koncepció strukturált tartalomkezeléssel és modern felhasználói élménnyel.",
+                "description": [
+                    "Ez a projekt egy modern hangszeres webshop vizuális és funkcionális koncepcióját mutatja be.",
+                    "A fókusz a termékmegjelenítésen, a kategorizáláson és az átlátható vásárlói élményen volt.",
+                    "A megoldás jól szemlélteti, hogyan lehet modern frontend struktúrával professzionális felületet építeni."
+                ],
+                "image": "/works/egs.webp",
+                "gallery": [
+                    "/works/egs.webp",
+                    "/works/wordy.png",
+                    "/works/im.png"
+                ],
+                "tags": [
+                    "React",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "category": "backend",
+                "githubUrl": "https://github.com/example/electric-guitar-shop",
+                "liveUrl": "https://example.com/electric-guitar-shop"
+            },
+            {
+                "slug": "integrative-medicine",
+                "featured": true,
+                "title": "Integratív Medicina",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "database",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            },
+            {
+                "slug": "integrative-medicine2",
+                "featured": false,
+                "title": "Integratív Medicina2",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            }
+        ]
     },
     "about": {
         "headingTitle": "Néhány szó",
@@ -43,7 +224,6 @@
         "fifthInfoTitle": "5. Hivatástudat",
         "fifthInfoContent": "<p>Számíthatsz rá, hogy minden helyzetben megbízhatóan és precízen végzem el a feladataimat.</p><p>Kitartó vagyok az elérni kívánt célokért, miközben könnyen alkalmazkodom az új helyzetekhez és képes vagyok hatékonyan együttműködni másokkal.</p>"
     },
-    "quote": "\"Ne csak dolgozz, alkoss is valamit. Az igazi siker abban rejlik, ha szereted, amit csinálsz.\"",
     "skills": {
         "headingTitle": "Készségek",
         "headingSpan": "Amikkel rendelkezem",
@@ -191,42 +371,6 @@
         "subHeading": "Néhány Projektem",
         "buttonNext": "Tovább"
     },
-    "mainBlogPage": {
-        "headingTitle": "Blog",
-        "subHeading": "Webfejlesztés kisokos",
-        "blogContent1": {
-            "cardtitle": "1. Html a gyakorlatban",
-            "imageSrc": "/blog_img/HTML.svg",
-            "imageAlt": "html blog kép",
-            "description": "Kezdjük azzal, hogy mi is az a HTML nyelv....",
-            "link": "/blog/1",
-            "buttonText": "Tovább..."
-        },
-        "blogContent2": {
-            "cardtitle": "2. A CSS varázslat",
-            "imageSrc": "/blog_img/css.svg",
-            "imageAlt": "css blog kép",
-            "description": "A css a modern weboldal megjelenítésének varázslatos eszköze...",
-            "link": "/blog/2",
-            "buttonText": "Tovább..."
-        },
-        "blogContent3": {
-            "cardtitle": "3. JavaScript",
-            "imageSrc": "/blog_img/js.svg",
-            "imageAlt": "javascript blog kép",
-            "description": "Mikor azt szeretnéd, hogy weboldalad interaktívan működjön...",
-            "link": "/blog/3",
-            "buttonText": "Tovább..."
-        },
-        "blogContent4": {
-            "cardtitle": "4. Vigyázz az adataidra",
-            "imageSrc": "/blog_img/security.svg",
-            "imageAlt": "biztonság blog bejegyzés",
-            "description": "Volt már úgy, hogy azt érezted figyelnek?...",
-            "link": "/blog/4",
-            "buttonText": "Tovább..."
-        }
-    },
     "contactPageContent": {
         "headingTitle": "Kapcsolat",
         "subHeading": "Kérdezz bátran",
@@ -259,106 +403,6 @@
         "failMessage": "Az üzenetet nem sikerült elküldeni! ❌",
         "validationErrorMessage": "A mező kitöltése kötelező!",
         "emailFormatErrorMessage": "Az email cím formátuma nem megfelelő!"
-    },
-    "footer": {
-        "policy": "Adatkezelési irányelvek",
-        "impressum": "Impresszum",
-        "cookies": "Sütik kezelése",
-        "additionalText": "Minden jog fenntartva!"
-    },
-    "blogpage": {
-        "blog1": {
-            "title1": "1. Html a gyakorlatban",
-            "content1": [
-                "Kezdjük azzal, hogy mi is az a HTML nyelv.",
-                "A HTML (HyperText Markup Language) az egyik alapvető technológia, amely meghatározza, hogyan épülnek fel az internetes oldalak. A HTML nem egy programozási nyelv, hanem egy leíró nyelv, amely arra szolgál, hogy meghatározza a weboldalak szerkezetét és tartalmát. Az egyes elemek, mint például a címek, bekezdések, képek vagy linkek, HTML tag-ek segítségével kerülnek definiálásra.",
-                "Az 1990-es évek elején Tim Berners-Lee alkotta meg a HTML-t, hogy lehetővé tegye az információk megosztását és összekapcsolását az interneten keresztül. Azóta a HTML fejlődött és bővült, hogy támogassa a modern web igényeit, mint például a multimédiás tartalmak megjelenítését és az interaktív elemek létrehozását",
-                "A HTML alapjaihoz tartozik, hogy minden weboldal valójában egy dokumentum, amely elemekből épül fel. Ezek az elemek lehetnek szöveges blokkok, képek, linkek vagy beágyazott médiafájlok. Minden ilyen elem egy nyitó és egy záró címkével van körülvéve, amelyek meghatározzák az adott elem szerepét és megjelenését a böngészőben."
-            ],
-            "example": {
-                "title": "Például:",
-                "example1": "<h1>Címsor</h1>",
-                "example2": "<p>Ez egy bekezdés.</p>",
-                "explanetion": "A fent említett példa egy címsort és egy bekezdést definiál. A HTML azonban sokkal többről szól ennél, és számtalan egyéb elemet használhatunk a weboldalak felépítéséhez."
-            },
-            "title2": "Miért fontos a HTML?",
-            "content2": [
-                "A HTML az alapja minden weboldalnak. Minden, amit az interneten látunk, HTML segítségével van meghatározva, beleértve a szövegeket, képeket és interaktív elemeket. Az egyre inkább interaktív és vizuálisan gazdag oldalak világában a HTML továbbra is kulcsszerepet játszik, mivel ez biztosítja a weblapok alapvető szerkezetét."
-            ],
-            "title3": "HTML a modern webfejlesztésben",
-            "content3": [
-                "Ma már a HTML önmagában nem elegendő egy teljes weboldal létrehozásához. A stílusok meghatározásához CSS (Cascading Style Sheets) szükséges, míg a dinamikus működéshez JavaScript ad hozzá interaktivitást. Azonban a HTML marad az a nyelv, amely meghatározza a weboldal struktúráját, és amely nélkül nem létezhetne a modern webfejlesztés.",
-                "A HTML egyszerűsége és rugalmassága miatt továbbra is az egyik legfontosabb technológia minden webfejlesztő eszköztárában."
-            ]
-        },
-        "blog2": {
-            "title1": "2. A CSS varázslat",
-            "content1": [
-                "Kezdjük azzal, hogy mi is az a CSS.",
-                "A CSS (Cascading Style Sheets) egy stílusleíró nyelv, amely arra szolgál, hogy megformázza a HTML elemek megjelenését a weboldalakon. Míg a HTML a szerkezetet adja meg, a CSS a vizuális elemekért felelős, mint például a színek, betűtípusok, elrendezések és animációk.",
-                "A CSS különválasztja a weboldal tartalmát a megjelenésétől, így a webfejlesztők könnyedén módosíthatják a design-t anélkül, hogy megváltoztatnák a HTML szerkezetet. Ez különösen hasznos, amikor nagyobb weboldalakat kell karbantartani vagy újrafelhasználható stílusokat kell létrehozni.",
-                "A CSS szabályokból áll, amelyek különböző elemekre vonatkoznak. Egy szabály általában egy elemre (például egy bekezdésre vagy címre) hivatkozik, és meghatározza annak vizuális tulajdonságait, például a színét, méretét vagy helyzetét a weboldalon."
-            ],
-            "example": {
-                "title": "Például:",
-                "example1": "p { color: red; }",
-                "example2": "h1 { font-size: 24px; }",
-                "explanation": "Az első példa egy bekezdés színét pirosra állítja, míg a második példa a címsor méretét 24 pixelre módosítja. A CSS lehetővé teszi a weboldalak megjelenésének pontos szabályozását."
-            },
-            "title2": "Miért fontos a CSS?",
-            "content2": [
-                "A CSS az internetes oldalak megjelenésének meghatározó eszköze. Lehetővé teszi a weboldalak testreszabását, és segít abban, hogy vizuálisan vonzóbbak legyenek. A modern weboldalak többsége CSS-t használ az elrendezés és a stílus kialakítására."
-            ],
-            "title3": "CSS a modern webfejlesztésben",
-            "content3": [
-                "A CSS az egyik legfontosabb technológia a webfejlesztők számára. Számos keretrendszer és előre definiált stíluslap létezik, amelyek megkönnyítik a fejlesztők munkáját. A CSS rugalmassága lehetővé teszi, hogy bármilyen weboldal kinézetét megváltoztassuk anélkül, hogy a HTML-t módosítanánk."
-            ]
-        },
-        "blog3": {
-            "title1": "3. JavaScript",
-            "content1": [
-                "Kezdjük azzal, hogy mi is az a JavaScript.",
-                "A JavaScript egy programozási nyelv, amely dinamikus interaktivitást biztosít a weboldalaknak. Míg a HTML a szerkezetet, a CSS a megjelenést határozza meg, addig a JavaScript lehetővé teszi a weboldalak számára, hogy reagáljanak a felhasználói interakciókra, mint például kattintásokra, űrlapbeküldésekre vagy animációkra.",
-                "A JavaScript a böngészőben fut, és közvetlenül kommunikál a weboldal HTML és CSS elemeivel. Ezáltal lehetővé teszi például a tartalom valós idejű frissítését anélkül, hogy újratöltenénk az oldalt.",
-                "A modern webfejlesztésben a JavaScript kulcsszerepet játszik. Segítségével komplex webalkalmazásokat, játékokat és interaktív eszközöket lehet létrehozni, amelyek növelik a felhasználói élményt."
-            ],
-            "example": {
-                "title": "Például:",
-                "example1": "document.getElementById( 'myButton' ).addEventListener( 'click', function() { alert('Hello World!'); });",
-                "explanation": "A fenti példa egy gombhoz egy kattintás eseményt ad hozzá, amely megjeleníti a 'Hello World!' üzenetet. A JavaScript használatával egyszerűen lehet interaktív funkciókat hozzáadni a weboldalakhoz."
-            },
-            "title2": "Miért fontos a JavaScript?",
-            "content2": [
-                "A JavaScript az egyik legnépszerűbb nyelv a webfejlesztésben. Lehetővé teszi a dinamikus és interaktív weboldalak létrehozását, amelyek jobban alkalmazkodnak a felhasználói igényekhez. A legtöbb modern webalkalmazás JavaScript-en alapul."
-            ],
-            "title3": "JavaScript a modern webfejlesztésben",
-            "content3": [
-                "Ma már szinte elképzelhetetlen egy modern weboldal JavaScript nélkül. Számos keretrendszer és könyvtár, mint például a React vagy a Vue.js, tovább bővítik a JavaScript lehetőségeit, és megkönnyítik az összetett feladatok megvalósítását."
-            ]
-        },
-        "blog4": {
-            "title1": "4. Vigyázz az adataidra",
-            "content1": [
-                "Miért fontos az adatvédelem a digitális világban?",
-                "A digitális korban az adatvédelem egyre fontosabbá válik. Az internetes tevékenységeink során rengeteg adatot osztunk meg, amelyek potenciálisan érzékenyek lehetnek. Ezek az adatok a személyes információktól kezdve a böngészési szokásokon át egészen a pénzügyi adatokig terjedhetnek.",
-                "A kiberbűnözés egyre nagyobb fenyegetést jelent a felhasználókra. A hackerek folyamatosan új módszereket találnak ki arra, hogy ellopják a személyes adatokat, és azokat felhasználják csalásokra vagy az identitásunk megszerzésére.",
-                "Ezért fontos, hogy gondosan kezeljük adatainkat az interneten. Biztosítsuk, hogy erős jelszavakat használjunk, és kerüljük a gyanús linkeket vagy ismeretlen weboldalakat. Az adatvédelem tudatosításával minimalizálhatjuk a kockázatokat, és megvédhetjük magunkat a digitális világ veszélyeitől."
-            ],
-            "example": {
-                "title": "Tippek az adatvédelemhez:",
-                "example1": "- Használj erős és egyedi jelszavakat minden fiókodhoz.",
-                "example2": "- Ne kattints gyanús linkekre vagy email mellékletekre.",
-                "explanation": "Az adatvédelem érdekében fontos, hogy biztonságosan kezeljük online fiókjainkat és adatainkat. A jelszavak és az óvatosság kulcsfontosságú a kiberbűnözés elleni védekezésben."
-            },
-            "title2": "Miért fontos az adatvédelem?",
-            "content2": [
-                "Az adatvédelem minden felhasználót érint, és elengedhetetlen a személyes információk biztonságának megőrzése érdekében. Az internetes világban egyre több támadás történik, ezért fontos, hogy tudatosan védjük meg adatainkat."
-            ],
-            "title3": "Adatvédelem a modern világban",
-            "content3": [
-                "A digitális világ fejlődésével egyre nagyobb hangsúlyt kell fektetnünk az adatvédelemre. Az online tevékenységeink során folyamatosan veszélyben vannak személyes adataink, ezért fontos, hogy megfelelő védelmi intézkedéseket hozzunk, mint például a kétfaktoros hitelesítés használata és a megbízható vírusirtó programok telepítése."
-            ]
-        }
     },
     "policy": {
         "main_title": "Adatkezelési Irányelvek",
