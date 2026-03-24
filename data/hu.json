@@ -207,12 +207,12 @@
         "thirdParagraph": "Az „Újratervezés” program keretében <strong>2022-ben </strong> részt vettem egy <strong>rendszerüzemeltetői</strong> képzésen, amely során elsajátítottam a számítástechnika és hálózatüzemeltetés alapjait, valamint a Windows és Linux rendszerek, a virtualizáció (Hyper-V, Docker) és a cloud platformok (Azure, Digital Ocean) kezelését.",
         "forthParagraph": "Ezt követően <strong>adatbázis specialista</strong> képzésen haladó szinten sajátítottam el az SQL nyelvet, valamint az MS SQL, MySQL és MongoDB adatbázisok tervezését, optimalizálását és üzemeltetését.",
         "fifthParagraph": "Folyamatos tanulás iránti elkötelezettségemnek köszönhetően, és mivel mindig a teljes képet szeretem látni, <strong>full-stack fejlesztő </strong>karrier felé vettem az irányt. A <strong>front-end fejlesztés</strong> haladó szintű elsajátítása mellett jelenlegi célom a back-end oldal megismerése, amellyel teljes rendszereket tudok majd megvalósítani a webfejlesztés platformján.",
-        "sixthParagraph": "Szeretek alkotni és folyamatosan fejlődni. Precízen, kreatívan oldom meg a feladatokat.",
         "contactButton": "Lépjünk kapcsolatba!",
         "cvButton": "Töltsd le az önéletrajzom!"
     },
     "aboutInfo": {
         "title": "Még néhány infó rólam",
+        "intro": " sdfgsfg",
         "firstInfoTitle": "1. A gitáros",
         "firstInfoContent": "<p>A zene gyerekkorom óta meghatározó része az életemnek. Tizenhárom éves korom óta gitározom, ami azóta is egyfajta örök szerelem.</p><p>Hivatásos gitárosként a Kőbányai Zenei Stúdióban végeztem, ahol fantasztikus élmény volt olyan ikonikus zenészekkel együtt játszani, mint Póka Egon, Babos Gyula és Vörös István. Az ő tapasztalatuk és szenvedélyük hatalmas motivációt adott, és rengeteget tanultam tőlük – nemcsak a zenéről, hanem az elhivatottságról és a folyamatos fejlődés fontosságáról is.</p><p>A következő oldalon többet is megtudhatsz zenei karrieremről: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
         "secundInfoTitle": "2. Az informatikus",
@@ -223,132 +223,6 @@
         "forthInfoContent": "<p>A fitness és a testépítés már tinédzser korom óta érdekel. Az évek során egyre inkább felismertem, hogy a rendszeres edzés nemcsak a fizikai egészségemet javítja, hanem segít a mentális frissesség megőrzésében is. Rendszeres otthoni edzésekkel igyekszem karbantartani a testemet, és hosszú távon szeretném a sportot még inkább integrálni a mindennapjaimba.</p><p>A legnagyobb inspirációk: Arnold Schwarzenegger, Jay Cutler, valamint a magyar sportolók, Molnár Péter és Illés Norbert.</p><p> Az ő kitartásuk és kemény munkájuk inspirál, és arra motiválnak, hogy mindig a legjobb formámat hozzam, bármivel is foglalkozom.</p>",
         "fifthInfoTitle": "5. Hivatástudat",
         "fifthInfoContent": "<p>Számíthatsz rá, hogy minden helyzetben megbízhatóan és precízen végzem el a feladataimat.</p><p>Kitartó vagyok az elérni kívánt célokért, miközben könnyen alkalmazkodom az új helyzetekhez és képes vagyok hatékonyan együttműködni másokkal.</p>"
-    },
-    "skills": {
-        "headingTitle": "Készségek",
-        "headingSpan": "Amikkel rendelkezem",
-        "frontEndTitle": "Front-End",
-        "frontEndSkills": [
-            {
-                "name": "HTML 5",
-                "icon": "htmlIcon",
-                "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-            },
-            {
-                "name": "CSS 3",
-                "icon": "cssIcon",
-                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-            },
-            {
-                "name": "Javascript",
-                "icon": "jsIcon",
-                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            },
-            {
-                "name": "Sass",
-                "icon": "sassIcon",
-                "link": "https://sass-lang.com/"
-            },
-            {
-                "name": "React",
-                "icon": "reactIcon",
-                "link": "https://react.dev/"
-            },
-            {
-                "name": "Bootstrap",
-                "icon": "bootstrapIcon",
-                "link": "https://getbootstrap.com/"
-            }
-        ],
-        "backEndTitle": "Back-End",
-        "backEndSkills": [
-            {
-                "name": "Node js",
-                "icon": "nodejsIcon",
-                "link": "https://nodejs.org/en"
-            },
-            {
-                "name": "Express",
-                "icon": "expressIcon",
-                "link": "https://expressjs.com/"
-            },
-            {
-                "name": "Python",
-                "icon": "pythonIcon",
-                "link": "https://www.python.org/"
-            },
-            {
-                "name": "Django",
-                "icon": "djangoIcon",
-                "link": "https://www.djangoproject.com/"
-            },
-            {
-                "name": "PHP",
-                "icon": "phpIcon",
-                "link": "https://www.php.net/"
-            },
-            {
-                "name": "Laravel",
-                "icon": "laravelIcon",
-                "link": "https://laravel.com/"
-            }
-        ],
-        "databaseTitle": "Adatbázisok",
-        "databaseSkills": [
-            {
-                "name": "MsSql",
-                "icon": "mssqlIcon",
-                "link": "https://www.microsoft.com/en-us/sql-server"
-            },
-            {
-                "name": "Mysql",
-                "icon": "mysqlIcon",
-                "link": "https://www.mysql.com/"
-            },
-            {
-                "name": "SQLite",
-                "icon": "sqliteIcon",
-                "link": "https://www.sqlite.org/"
-            },
-            {
-                "name": "MongoDb",
-                "icon": "mongodbIcon",
-                "link": "https://www.mongodb.com/"
-            }
-        ],
-        "otherTitle": "Egyéb",
-        "otherSkills": [
-            {
-                "name": "Git",
-                "icon": "gitIcon",
-                "link": "https://git-scm.com/"
-            },
-            {
-                "name": "Github",
-                "icon": "githubIcon",
-                "link": "https://github.com/"
-            },
-            {
-                "name": "Figma",
-                "icon": "figmaIcon",
-                "link": "https://www.figma.com"
-            },
-            {
-                "name": "VsCode",
-                "icon": "vscodeIcon",
-                "link": "https://code.visualstudio.com/"
-            },
-            {
-                "name": "Linux",
-                "icon": "linuxIcon",
-                "link": "https://ubuntu.hu/"
-            },
-            {
-                "name": "Docker",
-                "icon": "docker",
-                "link": "https://www.docker.com/"
-            }
-        ]
     },
     "projectPageContent": {
         "headingTitle": "Portfólió",
@@ -373,36 +247,43 @@
     },
     "contactPageContent": {
         "headingTitle": "Kapcsolat",
-        "subHeading": "Kérdezz bátran",
+        "subHeading": "Lépjünk kapcsolatba",
+        "introText": "Ha kérdésed van, szeretnél írni, vagy csak felvennéd velem a kapcsolatot, itt egyszerűen megteheted.",
+        "infoEyebrow": "Elérhetőségek",
+        "infoTitle": "Írj bátran",
+        "infoDescription": "Akár egy kérdésről, akár egy jövőbeli ötletről van szó, szívesen válaszolok.",
+        "formEyebrow": "Üzenetküldés",
+        "formTitle": "Küldj üzenetet",
+        "formDescription": "Töltsd ki az alábbi űrlapot, és amint tudok, válaszolok.",
+        "validationErrorMessage": "Ez a mező kötelező.",
+        "emailFormatErrorMessage": "Kérlek, adj meg egy érvényes email címet.",
+        "successMessage": "Az üzenet sikeresen elküldve.",
+        "failMessage": "Hiba történt az üzenet küldése közben.",
+        "submitButtonText": "Üzenet küldése",
+        "submittingButtonText": "Küldés...",
+        "formLabels": {
+            "name": "Név",
+            "email": "Email",
+            "subject": "Tárgy",
+            "message": "Üzenet"
+        },
         "contactInfoItems": [
             {
                 "icon": "FaPhoneSquare",
                 "title": "Telefon",
-                "subtitle": "+36 30 854 4452"
+                "subtitle": "+36 20 123 4567"
             },
             {
                 "icon": "FaEnvelope",
                 "title": "Email",
-                "subtitle": "thomashorvathweb@gmail.hu"
+                "subtitle": "thomashorvathweb@gmail.com"
             },
             {
                 "icon": "FaLocationDot",
-                "title": "Cím",
-                "subtitle": "Pomáz - HU"
+                "title": "Hely",
+                "subtitle": "Magyarország"
             }
-        ],
-        "formLabels": {
-            "name": "név",
-            "email": "email",
-            "subject": "tárgy",
-            "message": "üzenet"
-        },
-        "statusMessage": "statusMessagePlaceholder",
-        "submitButtonText": "Küldés",
-        "successMessage": "Az üzenetet sikeresen elküldtük! ✅",
-        "failMessage": "Az üzenetet nem sikerült elküldeni! ❌",
-        "validationErrorMessage": "A mező kitöltése kötelező!",
-        "emailFormatErrorMessage": "Az email cím formátuma nem megfelelő!"
+        ]
     },
     "policy": {
         "main_title": "Adatkezelési Irányelvek",
