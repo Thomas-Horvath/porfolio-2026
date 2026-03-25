@@ -11,8 +11,28 @@ import {
   FaDocker,
   FaGitAlt,
   FaLinux,
+  FaCss3Alt,
 } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiPhp, SiLaravel, SiPython, SiDjango, SiMysql, SiMongodb } from "react-icons/si";
+
+import {
+  SiHtml5,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiBootstrap,
+  SiSass,
+  SiNodedotjs,
+  SiPhp,
+  SiPython,
+  SiMysql,
+  SiMongodb,
+  SiGithub,
+  SiFigma,
+  SiSqlite
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 import AboutInfoShowcase from "./AboutInfoShowcase";
 
 type AboutInfoItem = {
@@ -40,41 +60,48 @@ export default function AboutPageContent() {
     { title: aboutInfo.fifthInfoTitle, content: aboutInfo.fifthInfoContent },
   ];
 
-  const skillGroups: SkillGroup[] = [
-    {
-      title: "Frontend",
-      icon: <FaCode className="text-sky-600" />,
-      items: [
-        { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
-        { name: "React", icon: <SiReact className="text-cyan-500" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-slate-900" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500" /> },
-      ],
-    },
-    {
-      title: "Backend",
-      icon: <FaServer className="text-violet-600" />,
-      items: [
-        { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
-        { name: "PHP", icon: <SiPhp className="text-indigo-500" /> },
-        { name: "Laravel", icon: <SiLaravel className="text-red-500" /> },
-        { name: "Python", icon: <SiPython className="text-sky-600" /> },
-        { name: "Django", icon: <SiDjango className="text-emerald-700" /> },
-      ],
-    },
-    {
-      title: "Database & Tools",
-      icon: <FaDatabase className="text-emerald-600" />,
-      items: [
-        { name: "MySQL", icon: <SiMysql className="text-blue-700" /> },
-        { name: "MongoDB", icon: <SiMongodb className="text-emerald-600" /> },
-        { name: "Docker", icon: <FaDocker className="text-sky-500" /> },
-        { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-        { name: "Linux", icon: <FaLinux className="text-slate-700" /> },
-      ],
-    },
-  ];
+const skillGroups: SkillGroup[] = [
+  {
+    title: "Frontend",
+    icon: <FaCode className="text-sky-600" />,
+    items: [
+      { name: "HTML5", icon: <SiHtml5 className="text-orange-600" /> },
+      { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" /> },
+      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
+      { name: "React", icon: <SiReact className="text-cyan-400" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+      { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
+      { name: "SASS", icon: <SiSass className="text-pink-500" /> },
+    ],
+  },
+  {
+    title: "Backend & Database",
+    icon: <FaServer className="text-violet-600" />,
+    items: [
+      { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
+      { name: "PHP", icon: <SiPhp className="text-indigo-500" /> },
+      { name: "Python", icon: <SiPython className="text-yellow-500" /> },
+      { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
+      { name: "MsSQL", icon: <FaDatabase className="text-red-600" /> },
+      { name: "SQLite", icon: <SiSqlite className="text-sky-600" /> },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+    ],
+  },
+  {
+    title: "Tools",
+    icon: <FaDatabase className="text-emerald-600" />,
+    items: [
+      { name: "Docker", icon: <FaDocker className="text-sky-500" /> },
+      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+      { name: "GitHub", icon: <SiGithub className="text-black" /> },
+      { name: "Linux", icon: <FaLinux className="text-yellow-500" /> },
+      { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
+      { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
+    ],
+  },
+];
 
   return (
     <main>
@@ -89,12 +116,12 @@ export default function AboutPageContent() {
           />
 
           {/* HERO / INTRO */}
-          <section className=" mt-14 grid gap-12 xl:grid-cols-[420px_1fr] xl:items-start">
+          <section className=" mt-14 grid gap-12 xl:grid-cols-[380px_minmax(0,1fr)] xl:items-start">
             <div className="xl:sticky xl:top-28">
-              <div className="max-w-[420px] relative overflow-hidden border border-slate-200 bg-white">
-                <div className="absolute inset-x-0 top-0 h-[3px] bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
+              <div className="max-w-105 relative overflow-hidden border border-slate-200 bg-white">
+                <div className="absolute inset-x-0 top-0 h-0.75 bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
 
-                <div className="relative aspect-[4/5]  bg-slate-100">
+                <div className="relative aspect-4/5  bg-slate-100">
                   <Image
                     src="/Profil_pic_BG.webp"
                     alt="Horváth Tamás"
@@ -116,7 +143,7 @@ export default function AboutPageContent() {
             </div>
 
             <div>
-              <div className="max-w-4xl space-y-6 text-[17px] leading-8 text-slate-600">
+              <div className="max-w-4xl space-y-6 text-[15px] leading-8 text-slate-600">
                 <p dangerouslySetInnerHTML={{ __html: about.firstParagraph }} />
                 <p dangerouslySetInnerHTML={{ __html: about.secundParagraph }} />
                 <p dangerouslySetInnerHTML={{ __html: about.thirdParagraph }} />
@@ -139,7 +166,7 @@ export default function AboutPageContent() {
       <section className="bg-linear-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-6 py-24 own:px-0">
         <div className="mx-auto max-w-350">
           <div className="border border-white/15 bg-white/12 shadow-[0_20px_60px_rgba(15,23,42,0.12)] backdrop-blur-md">
-            <div className="h-[3px] w-full bg-linear-to-r from-white/80 via-cyan-200/80 to-white/70" />
+            <div className="h-0.75 w-full bg-linear-to-r from-white/80 via-cyan-200/80 to-white/70" />
 
             <div className="grid gap-8 px-6 py-8 sm:px-8 lg:grid-cols-[1fr_auto] lg:items-center lg:px-12 lg:py-10">
               <div className="max-w-2xl">
@@ -158,7 +185,7 @@ export default function AboutPageContent() {
               </div>
 
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-                <Link href="/contact" className="btn btn-blue">
+                <Link href="/contact" className="btn btn-blue ">
                   {about.contactButton}
                 </Link>
 

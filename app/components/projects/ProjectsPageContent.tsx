@@ -38,7 +38,7 @@ export default function ProjectsPageContent() {
     }, [activeFilter, projects]);
 
     return (
-        <main className="bg-slate-50 px-6 py-24 sm:py-28 own:px-0 lg:py-32">
+        <main className="bg-slate-50/80 px-6 py-24 sm:py-28 own:px-0 lg:py-32">
             <div className="mx-auto max-w-350">
                 <SectionHeader
                     eyebrow={t.projectsPage.eyebrow}
@@ -54,7 +54,7 @@ export default function ProjectsPageContent() {
                     labels={t.projectsPage.filters}
                 />
 
-                <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {filteredProjects.map((project) => (
                         <ProjectCardCompact
                             key={project.slug}

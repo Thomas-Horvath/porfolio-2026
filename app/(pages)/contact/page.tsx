@@ -140,7 +140,7 @@ export default function ContactPageContent() {
   };
 
   return (
-    <main className="bg-slate-50 px-6 py-24 sm:py-28 lg:px-0 lg:py-32">
+    <main className="bg-slate-50/80 px-6 py-24 sm:py-28 lg:px-0 lg:py-32">
       <div className="mx-auto max-w-350">
         <SectionHeader
           eyebrow={contact.headingTitle}
@@ -154,7 +154,7 @@ export default function ContactPageContent() {
           {/* LEFT SIDE */}
           <div className="space-y-8">
             <div className="border border-slate-200 bg-white">
-              <div className="h-[3px] w-full bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
+              <div className="h-0.75 w-full bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
 
               <div className="px-6 py-7 sm:px-8">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">
@@ -198,7 +198,7 @@ export default function ContactPageContent() {
 
           {/* RIGHT SIDE / FORM */}
           <div className="border border-slate-200 bg-white">
-            <div className="h-[3px] w-full bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
+            <div className="h-0.75 w-full bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
 
             <div className="px-6 py-7 sm:px-8">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">

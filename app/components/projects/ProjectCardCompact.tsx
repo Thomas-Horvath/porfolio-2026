@@ -61,7 +61,7 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover transition duration-700 group-hover:scale-[1.06]"
+                    className="object-cover object-top transition duration-700 group-hover:scale-[1.03] "
                 />
 
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />
@@ -98,6 +98,6 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                     <span className="transition duration-300 group-hover:translate-x-1">→</span>
                 </div>
             </div>
-        </Link>
+        </Link >
     );
 }

@@ -11,7 +11,7 @@ export default function HeroSection() {
     <section className="relative h-screen overflow-hidden bg-linear-to-b from-transparent from-80% to-white to-100%">
       <div className="  absolute inset-0 -z-10 bg-white/10" />
 
-      <div className="mt-10 mx-auto flex h-screen max-w-350 flex-col justify-center px-6 pb-10 pt-24 lg:px-10">
+      <div className="mt-10 mx-auto flex h-screen max-w-350 flex-col justify-center px-6 pb-10 pt-24  own:px-0">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div className="max-w-2xl">
             <div className="mb-5 inline-flex border border-sky-100 bg-white/80 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm backdrop-blur">

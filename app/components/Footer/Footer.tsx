@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="absolute right-0 bottom-0 h-52 w-52 rounded-full bg-blue-400/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-350 px-6 py-10 lg:px-10 lg:py-12">
+      <div className="relative mx-auto max-w-350 px-6 own:px-0 py-10  lg:py-12">
         {/* felső sor */}
         <div className="flex flex-col gap-8 border-b border-slate-200 pb-8 lg:flex-row lg:items-start lg:justify-between">
           {/* brand */}
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* nav + social */}
           <div className="flex flex-col gap-6 lg:items-end">
-            <nav className="flex flex-wrap gap-x-6 gap-y-3">
+            <nav className="flex flex-col md:flex-row gap-x-6 gap-y-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}

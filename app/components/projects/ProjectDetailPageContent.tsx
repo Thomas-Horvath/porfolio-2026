@@ -68,7 +68,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover"
+                            className="object-cover object-top"
                         />
                     </div>
 

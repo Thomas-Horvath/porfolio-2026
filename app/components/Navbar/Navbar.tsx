@@ -32,7 +32,7 @@ const Navbar = () => {
     <header className="fixed left-0 top-0 z-50
                        h-19 w-full
                        bg-slate-50/90 border-b border-zinc-900/10
-                       backdrop-blur-sm">
+                       backdrop-blur-xl">
 
 
       {/* navbar wrapper */}
@@ -46,7 +46,7 @@ const Navbar = () => {
           }}
         >
           <div className="flex items-center overflow-hidden relative
-                          h-11 rounded-xl w-11
+                          h-11 rounded-xs w-11
                           bg-white/80 ring-1 ring-sky-100 shadow-sm
                           backdrop-blur">
             <Image
@@ -66,6 +66,7 @@ const Navbar = () => {
             </p>
           </div>
         </Link>
+
 
         {/* Desktop Navigation */}
         <div className="flex h-full gap-2">
@@ -87,7 +88,7 @@ const Navbar = () => {
                               font-medium
                               hover:text-sky-600
                               transition
-                              ${isActive ? "text-sky-600 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.75 after:bg-sky-600" : "text-slate-800"}
+                              ${isActive ? "text-sky-600 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-0.5 after:bg-sky-500" : "text-slate-800"}
                               text-md`}>
                   {link.name}
                 </Link>);
@@ -100,7 +101,7 @@ const Navbar = () => {
               onClick={() =>
                 switchLanguage(language === "hu" ? "en" : "hu")
               }
-              className="relative overflow-hidden px-4 py-1 rounded-2xl
+              className="relative overflow-hidden px-4 py-1 
              font-medium text-sm w-16
              shadow-sm
              backdrop-blur
@@ -114,7 +115,7 @@ const Navbar = () => {
                   <FlagIcon lang={language === "hu" ? "en" : "hu"} />
                 </div>
               </div>
-              <span className="relative z-10 font-medium text-lg text-black">
+              <span className="relative z-10 font-medium text-lg text-slate-900">
                 {language === "hu" ? "EN" : "HU"}
               </span>
             </button>
@@ -123,6 +124,8 @@ const Navbar = () => {
 
 
         </div>
+
+
 
         {/* Mobile Menu */}
         {isMenuOpen && (
@@ -180,7 +183,6 @@ const Navbar = () => {
 
         )}
 
-
         {/* Mobile Menu Button */}
         <button className="flex items-center justify-end md:hidden h-full w-fill cursor-pointer" onClick={HandleHamburger}>
           {isMenuOpen ?
@@ -190,6 +192,8 @@ const Navbar = () => {
             <GiHamburgerMenu className="text-5xl text-sky-600" />
           }
         </button>
+
+
       </div>
     </header>
   );

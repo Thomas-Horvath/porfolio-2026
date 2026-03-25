@@ -159,7 +159,7 @@ export default function FeaturedProjectsSection() {
           ))}
         </div>
 
-        <div className="mt-14 flex justify-center">
+        <div className="mt-14 flex justify-start">
           <Link href="/projects" className="btn btn-white-blue">
             {t.projectsPage.buttons.allProjects}
           </Link>

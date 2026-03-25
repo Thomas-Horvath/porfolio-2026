@@ -195,6 +195,33 @@
                 "category": "frontend",
                 "githubUrl": "https://github.com/example/integrative-medicine",
                 "liveUrl": "https://example.com/integrative-medicine"
+            },
+            {
+                "slug": "integrative-medicine3",
+                "featured": false,
+                "title": "Integratív Medicina3",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
             }
         ]
     },
@@ -212,7 +239,7 @@
     },
     "aboutInfo": {
         "title": "A Few More Things About Me",
-        "intro" : " sdfgsfg",
+        "intro": " sdfgsfg",
         "firstInfoTitle": "1. The Guitarist",
         "firstInfoContent": "<p>Music has been an integral part of my life since childhood. I have been playing the guitar since I was thirteen, and it remains a lifelong passion.</p><p>I graduated from the Kőbánya Music Studio as a professional guitarist. It was an immense honor to play alongside renowned Hungarian music icons such as Egon Póka, Gyula Babos, and István Vörös.</p><p>On the following page, you can learn more about my musical career: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
         "secundInfoTitle": "2. The IT Professional",
@@ -224,7 +251,6 @@
         "fifthInfoTitle": "5. Personality",
         "fifthInfoContent": "<p>You can count on me to perform my tasks reliably and precisely in any situation.</p><p>I am determined to achieve my goals while adapting easily to new situations and working effectively with others.</p>"
     },
-    
     "projectPageContent": {
         "headingTitle": "Portfolio",
         "subHeading": "My Work So Far",
@@ -240,52 +266,46 @@
     "projectCard": {
         "buttonDetails": "Details"
     },
-    "backButton": "Back",
-    "mainProjectPage": {
-        "headingTitle": "Portfolio",
-        "subHeading": "Some of My Projects",
-        "buttonNext": "Next"
+    "contactPageContent": {
+        "headingTitle": "Contact",
+        "subHeading": "Let's Get in Touch",
+        "introText": "If you have any questions, want to write, or just want to get in touch, you can do so easily here.",
+        "infoEyebrow": "Contact Information",
+        "infoTitle": "Feel Free to Reach Out",
+        "infoDescription": "Whether it's a question or a future idea, I'm happy to answer.",
+        "formEyebrow": "Send a Message",
+        "formTitle": "Send a Message",
+        "formDescription": "Fill out the form below, and I'll get back to you as soon as possible.",
+        "validationErrorMessage": "This field is required.",
+        "emailFormatErrorMessage": "Please enter a valid email address.",
+        "successMessage": "Your message has been sent successfully.",
+        "failMessage": "An error occurred while sending your message.",
+        "submitButtonText": "Send Message",
+        "submittingButtonText": "Sending...",
+        "formLabels": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "contactInfoItems": [
+            {
+                "icon": "FaPhoneSquare",
+                "title": "Phone",
+                "subtitle": "+36 ..."
+            },
+            {
+                "icon": "FaEnvelope",
+                "title": "Email",
+                "subtitle": "..."
+            },
+            {
+                "icon": "FaLocationDot",
+                "title": "Location",
+                "subtitle": "Hungary"
+            }
+        ]
     },
-   "contactPageContent": {
-  "headingTitle": "Contact",
-  "subHeading": "Let's Get in Touch",
-  "introText": "If you have any questions, want to write, or just want to get in touch, you can do so easily here.",
-  "infoEyebrow": "Contact Information",
-  "infoTitle": "Feel Free to Reach Out",
-  "infoDescription": "Whether it's a question or a future idea, I'm happy to answer.",
-  "formEyebrow": "Send a Message",
-  "formTitle": "Send a Message",
-  "formDescription": "Fill out the form below, and I'll get back to you as soon as possible.",
-  "validationErrorMessage": "This field is required.",
-  "emailFormatErrorMessage": "Please enter a valid email address.",
-  "successMessage": "Your message has been sent successfully.",
-  "failMessage": "An error occurred while sending your message.",
-  "submitButtonText": "Send Message",
-  "submittingButtonText": "Sending...",
-  "formLabels": {
-    "name": "Name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message"
-  },
-  "contactInfoItems": [
-    {
-      "icon": "FaPhoneSquare",
-      "title": "Phone",
-      "subtitle": "+36 ..."
-    },
-    {
-      "icon": "FaEnvelope",
-      "title": "Email",
-      "subtitle": "..."
-    },
-    {
-      "icon": "FaLocationDot",
-      "title": "Location",
-      "subtitle": "Hungary"
-    }
-  ]
-},
     "policy": {
         "main_title": "Privacy Policy",
         "wrapper_content": [

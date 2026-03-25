@@ -195,6 +195,33 @@
                 "category": "frontend",
                 "githubUrl": "https://github.com/example/integrative-medicine",
                 "liveUrl": "https://example.com/integrative-medicine"
+            },
+            {
+                "slug": "integrative-medicine3",
+                "featured": false,
+                "title": "Integratív Medicina3",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
             }
         ]
     },
@@ -239,12 +266,7 @@
     "projectCard": {
         "buttonDetails": "Részletek"
     },
-    "backButton": " Vissza",
-    "mainProjectPage": {
-        "headingTitle": "Portfólió",
-        "subHeading": "Néhány Projektem",
-        "buttonNext": "Tovább"
-    },
+   
     "contactPageContent": {
         "headingTitle": "Kapcsolat",
         "subHeading": "Lépjünk kapcsolatba",
