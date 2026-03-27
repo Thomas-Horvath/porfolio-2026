@@ -126,11 +126,14 @@
                     "A fókusz a termékmegjelenítésen, a kategorizáláson és az átlátható vásárlói élményen volt.",
                     "A megoldás jól szemlélteti, hogyan lehet modern frontend struktúrával professzionális felületet építeni."
                 ],
-                "image": "/works/egs.webp",
+                "image": "/works/egs_frontend/project_2_card.webp",
                 "gallery": [
-                    "/works/egs.webp",
-                    "/works/wordy.png",
-                    "/works/im.png"
+                    "/works/egs_frontend/1.webp",
+                    "/works/egs_frontend/2.webp",
+                    "/works/egs_frontend/3.webp",
+                    "/works/egs_frontend/4.webp",
+                    "/works/egs_frontend/5.webp",
+                    "/works/egs_frontend/6.webp"
                 ],
                 "tags": [
                     "React",
@@ -170,20 +173,24 @@
                 "liveUrl": "https://example.com/integrative-medicine"
             },
             {
-                "slug": "integrative-medicine2",
+                "slug": "gitart",
                 "featured": false,
-                "title": "Integratív Medicina2",
+                "title": "GitArt Próbaterem és Stúdió szerver",
                 "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
                 "description": [
                     "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
                     "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
                     "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
                 ],
-                "image": "/works/im.png",
+                "image": "/works/gitart/project_1_card.webp",
                 "gallery": [
-                    "/works/im.png",
-                    "/works/wordy.png",
-                    "/works/egs.webp"
+                    "/works/gitart/1.webp",
+                    "/works/gitart/2.webp",
+                    "/works/gitart/3.webp",
+                    "/works/gitart/4.webp",
+                    "/works/gitart/5.webp",
+                    "/works/gitart/6.webp"
+                   
                 ],
                 "tags": [
                     "React",
