@@ -30,7 +30,8 @@ import {
   SiMongodb,
   SiGithub,
   SiFigma,
-  SiSqlite
+  SiSqlite,
+  SiExpress
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import AboutInfoShowcase from "./AboutInfoShowcase";
@@ -60,48 +61,49 @@ export default function AboutPageContent() {
     { title: aboutInfo.fifthInfoTitle, content: aboutInfo.fifthInfoContent },
   ];
 
-const skillGroups: SkillGroup[] = [
-  {
-    title: "Frontend",
-    icon: <FaCode className="text-sky-600" />,
-    items: [
-      { name: "HTML5", icon: <SiHtml5 className="text-orange-600" /> },
-      { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" /> },
-      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-      { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
-      { name: "React", icon: <SiReact className="text-cyan-400" /> },
-      { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
-      { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
-      { name: "SASS", icon: <SiSass className="text-pink-500" /> },
-    ],
-  },
-  {
-    title: "Backend & Database",
-    icon: <FaServer className="text-violet-600" />,
-    items: [
-      { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
-      { name: "PHP", icon: <SiPhp className="text-indigo-500" /> },
-      { name: "Python", icon: <SiPython className="text-yellow-500" /> },
-      { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
-      { name: "MsSQL", icon: <FaDatabase className="text-red-600" /> },
-      { name: "SQLite", icon: <SiSqlite className="text-sky-600" /> },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-    ],
-  },
-  {
-    title: "Tools",
-    icon: <FaDatabase className="text-emerald-600" />,
-    items: [
-      { name: "Docker", icon: <FaDocker className="text-sky-500" /> },
-      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-      { name: "GitHub", icon: <SiGithub className="text-black" /> },
-      { name: "Linux", icon: <FaLinux className="text-yellow-500" /> },
-      { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
-      { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
-    ],
-  },
-];
+  const skillGroups: SkillGroup[] = [
+    {
+      title: "Frontend",
+      icon: <FaCode className="text-sky-600" />,
+      items: [
+        { name: "HTML5", icon: <SiHtml5 className="text-orange-600" /> },
+        { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+        { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
+        { name: "React", icon: <SiReact className="text-cyan-400" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+        { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
+        { name: "SASS", icon: <SiSass className="text-pink-500" /> },
+      ],
+    },
+    {
+      title: "Backend & Database",
+      icon: <FaServer className="text-violet-600" />,
+      items: [
+        { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
+        { name: "Express", icon: <SiExpress className="text-slate-700" /> },
+        { name: "PHP", icon: <SiPhp className="text-indigo-500" /> },
+        { name: "Python", icon: <SiPython className="text-yellow-500" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
+        { name: "MsSQL", icon: <FaDatabase className="text-red-600" /> },
+        { name: "SQLite", icon: <SiSqlite className="text-sky-600" /> },
+        { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      ],
+    },
+    {
+      title: "Tools",
+      icon: <FaDatabase className="text-emerald-600" />,
+      items: [
+        { name: "Docker", icon: <FaDocker className="text-sky-500" /> },
+        { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+        { name: "GitHub", icon: <SiGithub className="text-black" /> },
+        { name: "Linux", icon: <FaLinux className="text-yellow-500" /> },
+        { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
+        { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
+      ],
+    },
+  ];
 
   return (
     <main>

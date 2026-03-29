@@ -55,13 +55,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   if (!isReady) {
     return (
       <Loading />
-    //  <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
-    //   <div className="h-10 w-10 animate-spin rounded-full border-2 border-sky-500 border-t-transparent"></div>
-
-    //   <p className="mt-4 text-sm text-slate-500">
-    //     Loading...
-    //   </p>
-    // </div>
     );
   }
 

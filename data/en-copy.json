@@ -1,0 +1,757 @@
+{
+    "meta": {
+        "home": {
+            "title": "Home | Thomas Horvath",
+            "description": "Portfolio of Thomas Horvath."
+        },
+        "about": {
+            "title": "About | Thomas Horvath",
+            "description": "Introduction and professional background."
+        },
+        "projects": {
+            "title": "Projects | Thomas Horvath",
+            "description": "My projects and selected work."
+        },
+        "contact": {
+            "title": "Contact | Thomas Horvath",
+            "description": "Contact details and ways to get in touch."
+        },
+        "imprint": {
+            "title": "Imprint | Thomas Horvath",
+            "description": "Imprint page."
+        },
+        "privacy": {
+            "title": "Privacy | Thomas Horvath",
+            "description": "Privacy policy."
+        }
+    },
+    "navLinks": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "navLogo": {
+        "alt": "Thomas Horvath logo",
+        "name": "Thomas Horvath",
+        "subTitle": "Frontend / Full Stack Developer"
+    },
+    "homePage": {
+        "name": "Thomas Horvath",
+        "profession": "Frontend / Full Stack Web Developer",
+        "subTitle": "Developing modern web interfaces and full stack projects with React, Next.js and modern web technologies.",
+        "earthLabel1": "Modern UI development",
+        "earthLabel2": "Fast and modern web apps",
+        "button1": "projects",
+        "button2": "contact me"
+    },
+    "footer": {
+        "policy": "Privacy Policy",
+        "impressum": "Imprint",
+        "cookies": "Cookie Management",
+        "additionalText": "All rights reserved!"
+    },
+    "aboutSection": {
+        "headeringTitle": "Introduction",
+        "headeringSubtitle": "Web development with modern technologies",
+        "headeringSpan": "Modern frontend and full stack solutions, with a well-thought-out structure and a clean visual approach.",
+        "p1": "As a frontend and full stack web developer, I create modern, fast, and user-friendly web applications with React, Next.js, and cutting-edge web technologies.",
+        "p2": "For me, a clean visual appearance, a good user experience, and maintainable code are essential.",
+        "button": "learn more about me"
+    },
+    "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
+    "projectsPage": {
+        "eyebrow": "Munkáim",
+        "title": "Összes projektem",
+        "featuredTitle": "Kiemelt projektjeim",
+        "featuredDescription": "Néhány projekt, amelyek jól megmutatják, hogyan gondolkodom a modern frontend és full stack fejlesztésről.",
+        "description": "Itt találod azokat a projekteket, amelyek jól mutatják a frontend, backend és adatbázis területeken szerzett tapasztalataimat.",
+        "emptyText": "Ebben a kategóriában még nincs megjeleníthető projektem.",
+        "notFoundTitle": "Ez a projekt nem található",
+        "notFoundDescription": "Lehet, hogy a projekt még nincs publikálva, vagy a hivatkozás hibás.",
+        "filters": {
+            "all": "Összes",
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Adatbázis",
+            "fullstack": "Full Stack"
+        },
+        "buttons": {
+            "details": "Details",
+            "allProjects": "All Projects",
+            "backToProjects": "Back to Projects",
+            "github": "GitHub",
+            "liveDemo": "Live Demo",
+            "viewProject": "View Project"
+        },
+        "detailSections": {
+            "overview": "Project Overview",
+            "technologies": "Technologies Used",
+            "gallery": "Gallery"
+        },
+        "items": [
+            {
+                "slug": "wordy",
+                "featured": true,
+                "title": "Wordy",
+                "cardDescription": "Angol–magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
+                "description": [
+                    "A Wordy egy nyelvtanulást támogató projekt, amelynek célja a gyors és kényelmes szótanulás modern felületen.",
+                    "A felület letisztult, mobilbarát és a tanulási élményre optimalizált.",
+                    "A projekt során külön figyelmet kapott a vizuális hierarchia, az áttekinthetőség és a gyors használhatóság."
+                ],
+                "image": "/works/wordy.png",
+                "gallery": [
+                    "/works/wordy.png",
+                    "/works/egs.webp",
+                    "/works/im.png"
+                ],
+                "tags": [
+                    "Next.js",
+                    "TypeScript",
+                    "SQLite",
+                    "Tailwind"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/example/wordy",
+                "liveUrl": "https://example.com/wordy"
+            },
+            {
+                "slug": "electric-guitar-shop",
+                "featured": true,
+                "title": "Electric Guitar Shop",
+                "cardDescription": "Full stack webshop koncepció strukturált tartalomkezeléssel és modern felhasználói élménnyel.",
+                "description": [
+                    "Ez a projekt egy modern hangszeres webshop vizuális és funkcionális koncepcióját mutatja be.",
+                    "A fókusz a termékmegjelenítésen, a kategorizáláson és az átlátható vásárlói élményen volt.",
+                    "A megoldás jól szemlélteti, hogyan lehet modern frontend struktúrával professzionális felületet építeni."
+                ],
+                "image": "/works/egs.webp",
+                "gallery": [
+                    "/works/egs.webp",
+                    "/works/wordy.png",
+                    "/works/im.png"
+                ],
+                "tags": [
+                    "React",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "category": "backend",
+                "githubUrl": "https://github.com/example/electric-guitar-shop",
+                "liveUrl": "https://example.com/electric-guitar-shop"
+            },
+            {
+                "slug": "integrative-medicine",
+                "featured": true,
+                "title": "Integratív Medicina",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "database",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            },
+            {
+                "slug": "integrative-medicine2",
+                "featured": false,
+                "title": "Integratív Medicina2",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            },
+            {
+                "slug": "integrative-medicine3",
+                "featured": false,
+                "title": "Integratív Medicina3",
+                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "description": [
+                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
+                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
+                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                ],
+                "image": "/works/im.png",
+                "gallery": [
+                    "/works/im.png",
+                    "/works/wordy.png",
+                    "/works/egs.webp"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind",
+                    "Prisma",
+                    "Electron",
+                    "SQLite"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/example/integrative-medicine",
+                "liveUrl": "https://example.com/integrative-medicine"
+            }
+        ]
+    },
+    "about": {
+        "headingTitle": "Some words",
+        "headingSpan": "About me",
+        "mainTitle": "Let me introduce myself in a few lines.",
+        "firstParagraph": "My name is <strong>Thomas Horváth</strong>, originally a musician, composer, creator. I started to deal more seriously with web development in 2022.",
+        "secundParagraph": "I like creating, learning is my hobby. I like logical systems. To solve tasks precisely, striving for perfection, but also creatively.",
+        "thirdParagraph": "<strong>In the spring of 2022</strong>, I was given the opportunity to gain insight into the world of IT as part of the \"Redesign\" program. During the <strong>system operator</strong> training, I mastered computer technology principles, the basics of network operation, and the construction, use, and operation of client (Windows, Linux) and server-side (Windows Server, Linux Server) operating systems, virtual machines (Hyper-V, Docker), and cloud platforms (Azure, AWS).",
+        "forthParagraph": "After that, I took part in <strong>database specialist</strong> training, where I learned the SQL language at an advanced level, as well as the use, configuration, and operation of various database software (MS SQL, MySQL, MongoDB). In addition, I also mastered the design and optimization of databases.",
+        "fifthParagraph": "Due to my commitment to continuous learning, and because I always like to see the big picture, I set my sights on a <strong>full-stack development</strong> career. In addition to mastering <strong>front-end development</strong> at an advanced level, my current goal is to learn about the back-end side, with which I will be able to implement complete systems on the web development platform.",
+        "contactButton": "Let's get in touch!",
+        "cvButton": "Download my CV!"
+    },
+    "aboutInfo": {
+        "title": "A Few More Things About Me",
+        "intro": " sdfgsfg",
+        "firstInfoTitle": "1. The Guitarist",
+        "firstInfoContent": "<p>Music has been an integral part of my life since childhood. I have been playing the guitar since I was thirteen, and it remains a lifelong passion.</p><p>I graduated from the Kőbánya Music Studio as a professional guitarist. It was an immense honor to play alongside renowned Hungarian music icons such as Egon Póka, Gyula Babos, and István Vörös.</p><p>On the following page, you can learn more about my musical career: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
+        "secundInfoTitle": "2. The IT Professional",
+        "secundInfoContent": "<p>The world of computers fascinated me from a young age, during the era of MS-DOS and the Commodore 64.</p><p>Although I initially pursued music, the advent of COVID-19 radically transformed my life. Music took a backseat, but seizing a great opportunity, I began studying IT. This field ignited the same enthusiasm in me as when I first started with music.</p>",
+        "thirdInfoTitle": "3. Hobbies",
+        "thirdInfoContent": "<p>In my free time, I enjoy creating things. I like DIY projects and solving problems around the house, whether it's painting, electrical work, or car repairs.</p><p>I'm eager to immerse myself in learning new things. I enjoy hiking, reading, listening to music, playing guitar, and continually learning.</p>",
+        "forthInfoTitle": "4. Sports",
+        "forthInfoContent": "<p>Fitness and bodybuilding have always amazed me. As a teenager, I eagerly went to the gym, though as I entered the professional world, I found it harder to make time for regular workouts. I plan to start exercising again soon.</p><p>My greatest inspiration is Arnold Schwarzenegger.</p>",
+        "fifthInfoTitle": "5. Personality",
+        "fifthInfoContent": "<p>You can count on me to perform my tasks reliably and precisely in any situation.</p><p>I am determined to achieve my goals while adapting easily to new situations and working effectively with others.</p>"
+    },
+    "projectPageContent": {
+        "headingTitle": "Portfolio",
+        "subHeading": "My Work So Far",
+        "buttonsAll": "All",
+        "buttonFront": "Front-end",
+        "buttonBack": "Back-end",
+        "buttonApps": "Databases",
+        "buttonsAllType": "All",
+        "buttonFrontType": "Website",
+        "buttonBackType": "Back-end",
+        "buttonAppsType": "Data"
+    },
+    "projectCard": {
+        "buttonDetails": "Details"
+    },
+    "contactPageContent": {
+        "headingTitle": "Contact",
+        "subHeading": "Let's Get in Touch",
+        "introText": "If you have any questions, want to write, or just want to get in touch, you can do so easily here.",
+        "infoEyebrow": "Contact Information",
+        "infoTitle": "Feel Free to Reach Out",
+        "infoDescription": "Whether it's a question or a future idea, I'm happy to answer.",
+        "formEyebrow": "Send a Message",
+        "formTitle": "Send a Message",
+        "formDescription": "Fill out the form below, and I'll get back to you as soon as possible.",
+        "validationErrorMessage": "This field is required.",
+        "emailFormatErrorMessage": "Please enter a valid email address.",
+        "successMessage": "Your message has been sent successfully.",
+        "failMessage": "An error occurred while sending your message.",
+        "submitButtonText": "Send Message",
+        "submittingButtonText": "Sending...",
+        "formLabels": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "contactInfoItems": [
+            {
+                "icon": "FaPhoneSquare",
+                "title": "Phone",
+                "subtitle": "+36 ..."
+            },
+            {
+                "icon": "FaEnvelope",
+                "title": "Email",
+                "subtitle": "..."
+            },
+            {
+                "icon": "FaLocationDot",
+                "title": "Location",
+                "subtitle": "Hungary"
+            }
+        ]
+    },
+    "policy": {
+        "main_title": "Privacy Policy",
+        "wrapper_content": [
+            {
+                "title": "1. Data Protection and Security",
+                "content": "We treat your customer data as strictly confidential and take all necessary measures to protect it. Only those employees who are explicitly authorized and need access to the data for their work can access it. We conduct regular data security audits to prevent unauthorized access and security incidents."
+            },
+            {
+                "title": "2. Data Collection and Use",
+                "content": "We collect and use customer data solely for fair and lawful purposes. The data is used exclusively to maintain relationships with customers and to improve and enhance our services. We do not sell or disclose customer data to third parties without permission."
+            },
+            {
+                "title": "3. User Rights",
+                "content": "Our customers have the right to access their personal data provided to us and may request its correction or deletion if necessary. If our customers wish to express their preferences regarding data management, please contact us using the details below."
+            },
+            {
+                "title": "4. Privacy Notice and Review",
+                "content": "We regularly update our privacy policy to comply with legal requirements and meet customer expectations. We notify our customers of any changes, and all new data protection measures are reviewed and approved in advance."
+            }
+        ]
+    },
+    "impressum": {
+        "main_title": "Imprint",
+        "page_owner": {
+            "title": "Website Operator Details",
+            "name": "Name:",
+            "address": "Address:",
+            "phone": "Phone number:",
+            "email": "Email address:"
+        },
+        "hosting_provider": {
+            "title": "Hosting Provider Details",
+            "company_name": "Company name:",
+            "company_address": "Company address:",
+            "branch_office": "Branch office:",
+            "website": "Website:",
+            "contact_page": "Contact page:"
+        }
+    },
+    "cookiesSection": {
+        "title": "Cookie Management",
+        "content": {
+            "introduction": {
+                "text": "When you access my portfolio website, the site may automatically save information from your computer or the device used for browsing (tablet, smartphone). For this purpose, so-called computer 'cookies' are used."
+            },
+            "whatIsCookie": {
+                "title": "What is a cookie?",
+                "text": "A cookie is a small piece of text that the visited website sends to your browser. It allows the site to remember information about your visit, such as the language you used and other settings. This makes your next visit smoother and easier to use. Cookies play an important role; without them, using the internet would be much more cumbersome."
+            },
+            "cookiesPurpose": {
+                "title": "What types of cookies do we use and for what purpose?",
+                "types": [
+                    {
+                        "type": "PERMANENT OR TEMPORARY COOKIES",
+                        "text": "Our website uses so-called 'temporary cookies' (session cookies) and 'permanent cookies'. Temporary cookies remain on your computer until you leave the website, while permanent cookies stay on your device for a longer period (depending on your browser settings), or until you manually delete them."
+                    },
+                    {
+                        "type": "SESSION COOKIES",
+                        "text": "These are temporary cookies that are only stored for the duration of your visit. They are automatically deleted from your computer at the end of your session or when you close your browser. Session cookies are essential for navigating our website and ensuring its proper functionality. They do not collect any information that could identify you personally."
+                    },
+                    {
+                        "type": "PERFORMANCE COOKIES (ANALYTICS)",
+                        "text": "We use Google Analytics cookies to gather information about the behavior and characteristics of our visitors. This helps us make our website clearer and easier to use. These cookies do not personally identify you, for instance, we do not store your name or email address; data is collected and stored anonymously and in aggregate. Even the IP address is only partially recorded.",
+                        "link_title": "More information:",
+                        "link": "On this page."
+                    },
+                    {
+                        "type": "FUNCTIONAL COOKIES",
+                        "text": "These cookies allow us to remember your choices on our website (e.g., the data entered on forms, etc.). These cookies track your activity solely on the visited website and not on others. They may store personal data you have provided, such as your email address."
+                    },
+                    {
+                        "type": "THIRD-PARTY COOKIES",
+                        "text": "We may use external web services on our website provided by third parties. In such cases, the storage of cookies is not controlled by us, and we have no influence over what information these external providers collect.",
+                        "link_title": "You can find out about the types of cookies used by Google",
+                        "link": "HERE",
+                        "link_end": "."
+                    }
+                ]
+            },
+            "cookieManagement": {
+                "title": "Cookie management, control, and disabling",
+                "consentWithdrawal": {
+                    "title": "How to withdraw consent?",
+                    "text": "Consent validity may expire occasionally. However, if you wish to withdraw your consent, you can do so at any time through your browser's cookie settings."
+                },
+                "browserSettings": {
+                    "title": "Browser Settings",
+                    "text": "These cookies do not store personal data, such as your name, address, or payment information. If you still wish to disable, block, or delete cookies from my site, you can do so using your browser. You can find the cookie settings for major browsers here:"
+                }
+            },
+            "googleAnalyticsDisable": {
+                "title": "DISABLING ANONYMOUS GOOGLE ANALYTICS COOKIES",
+                "text": "To prevent Google Analytics cookies from collecting information about you, you need to install a browser extension (Google Analytics plug-in).",
+                "additionalInfo": {
+                    "description": "Further information can be found at the following links:",
+                    "links": {
+                        "text1": "Cookies can also be disabled in Google services, on the Google Ads Opt-out page:",
+                        "text2": "Google information stored on your device can be managed at the following page:",
+                        "text3": "You can read more about 'Google Privacy and Security' here:"
+                    }
+                }
+            }
+        }
+    },
+    "projects": [
+        {
+            "id": 1,
+            "type": "Website",
+            "title": "GitArt Rehearsal Room and Studio Website",
+            "cardDescription": "GitArt",
+            "popupDescription": [
+                "This project implements the website for the GitArt Rehearsal Room and Studio.",
+                "The site functionally implements online booking for the rooms.",
+                "It allows users to register, authenticate, and manage room bookings as logged-in users.",
+                "Test user email: 'testuser@gmail.com', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
+            "imageAlt": "GitArt Practice Room and Studio Website",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-frontend",
+            "githubPagesLink": "https://thomas-horvath.github.io/GITART-frontend/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 2,
+            "type": "Website",
+            "title": "Electric Guitar Shop E-commerce Webshop",
+            "cardDescription": "EGS webshop",
+            "popupDescription": [
+                "This project implements the client-side frontend for the EGS musical instrument store and webshop.",
+                "The site enables product display, order placement, and cart management.",
+                "It includes user registration, authentication, and profile management for logged-in users.",
+                "Test user username: 'testuser', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_2/project_2_card.webp",
+            "gallery": [
+                "/project_img/project_2/1.webp",
+                "/project_img/project_2/2.webp",
+                "/project_img/project_2/3.webp",
+                "/project_img/project_2/4.webp",
+                "/project_img/project_2/5.webp",
+                "/project_img/project_2/6.webp"
+            ],
+            "imageAlt": "EGS Webshop Client Frontend",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 3,
+            "type": "Back-end",
+            "title": "Electric Guitar Shop - Webshop Server",
+            "cardDescription": "EGS - server",
+            "popupDescription": [
+                "The server-side implementation for the EGS musical instrument store client and admin interface.",
+                "The server handles incoming requests using a NodeJs Express server.",
+                "The database runs on a MongoDb server."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "NodeJs",
+                "Express",
+                "MongoDb"
+            ],
+            "imageSrc": "/project_img/project_3/project_3_card.webp",
+            "gallery": [
+                "/project_img/project_3/1.webp",
+                "/project_img/project_3/2.webp",
+                "/project_img/project_3/3.webp"
+            ],
+            "imageAlt": "Electric Guitar Shop - Webshop Server",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
+            "githubPagesLink": "https://egs.thomasapi.eu",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 4,
+            "type": "Website",
+            "title": "Electric Guitar Shop Webshop - Admin Interface",
+            "cardDescription": "EGS - admin panel",
+            "popupDescription": [
+                "The administration interface of the Electric Guitar Shop Webshop, where users with admin rights can manage the shop data after logging in.",
+                "Admins can view general sales data, manage product details, update them, create or delete products.",
+                "Admins can manage customer and admin data, as well as create new administrators.",
+                "They can monitor customer activity. Inactive users cannot log into the shop's profile.",
+                "Admins can view, modify, and delete orders.",
+                "Newsletter subscriptions are also managed via this interface.",
+                "Test administrator username: 'admin', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS - Sass",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_4/project_4_card.webp",
+            "gallery": [
+                "/project_img/project_4/1.webp",
+                "/project_img/project_4/2.webp",
+                "/project_img/project_4/3.webp",
+                "/project_img/project_4/4.webp",
+                "/project_img/project_4/5.webp",
+                "/project_img/project_4/6.webp"
+            ],
+            "imageAlt": "EGS Webshop Admin Interface",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 5,
+            "type": "Database",
+            "title": "MS SQL - EGS Webshop Database",
+            "cardDescription": "EGS - MsSql database",
+            "popupDescription": [
+                "Relational database designed up to the third normal form on a Microsoft SQL Server 2022.",
+                "The goal was to store data for users, products, and orders.",
+                "In addition to tables and dictionary tables, custom functions, views, and triggers were implemented.",
+                "A full project documentation is available and can be downloaded by clicking the button below."
+            ],
+            "technologies": [
+                "MS SQL Server",
+                "SQL"
+            ],
+            "imageSrc": "/project_img/project_5/project_5_card.webp",
+            "gallery": [
+                "/project_img/project_5/1.webp",
+                "/project_img/project_5/2.webp"
+            ],
+            "imageAlt": "MS SQL Server",
+            "downloadDocs_title": "Download Documentation",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 6,
+            "type": "Website",
+            "title": "Thomas Coffee Corner - Café Website",
+            "cardDescription": "Thomas Coffee Corner",
+            "popupDescription": [
+                "A front-end implementation of a fictional café using HTML, CSS, and JavaScript.",
+                "The project includes product display, filtering, and a product search function."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project_6/project_6_card.webp",
+            "gallery": [
+                "/project_img/project_6/1.webp",
+                "/project_img/project_6/2.webp",
+                "/project_img/project_6/3.webp",
+                "/project_img/project_6/4.webp",
+                "/project_img/project_6/5.webp",
+                "/project_img/project_6/6.webp"
+            ],
+            "imageAlt": "Thomas Coffee Corner Café Website",
+            "githubLink": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
+            "githubPagesLink": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 7,
+            "type": "Back-end",
+            "title": "GitArt Rehearsal Room and Studio Server",
+            "cardDescription": "GitArt - server",
+            "popupDescription": [
+                "This project is the back-end server part of the GitArt rehearsal room and studio website.",
+                "The project is implemented using a Node.js Express server.",
+                "It handles user registration, login, authentication, and the online booking management for the rehearsal rooms.",
+                "The database runs on a MongoDB server."
+            ],
+            "technologies": [
+                "Node.js",
+                "Express",
+                "JavaScript",
+                "MongoDB",
+                "JSON"
+            ],
+            "imageSrc": "/project_img/project_7/project_7_card.webp",
+            "gallery": [
+                "/project_img/project_7/1.webp",
+                "/project_img/project_7/2.webp",
+                "/project_img/project_7/3.webp"
+            ],
+            "imageAlt": "Node.js Express server",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-server",
+            "githubPagesLink": "https://gitart.thomasapi.eu/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 8,
+            "type": "Website",
+            "title": "Róbert Csibi - Leather Craftsman Portfolio",
+            "cardDescription": "Leather Craftsman Portfolio",
+            "popupDescription": [
+                "The portfolio website for Róbert Csibi, a leather craftsman. In addition to general information, a photo gallery has also been implemented.",
+                "The images can be viewed enlarged in a modal window."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_8/project_8_card.webp",
+            "gallery": [
+                "/project_img/project_8/1.webp",
+                "/project_img/project_8/2.webp",
+                "/project_img/project_8/3.webp",
+                "/project_img/project_8/4.webp",
+                "/project_img/project_8/5.webp",
+                "/project_img/project_8/6.webp"
+            ],
+            "imageAlt": "Róbert Csibi Leather Craftsman Portfolio",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 9,
+            "type": "Database",
+            "title": "MongoDB - EGS Webshop Database",
+            "cardDescription": "EGS - MongoDB database",
+            "popupDescription": [
+                "This database manages the products, orders, and users."
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_9/project_9_card.webp",
+            "gallery": [
+                "/project_img/project_9/1.webp",
+                "/project_img/project_9/2.webp"
+            ],
+            "imageAlt": "MongoDB database",
+            "downloadDocs_title": "Download the Documentation",
+            "docsHref": "/project_docs/ElectricGuitarShop_Database_Documentation.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 10,
+            "type": "Website",
+            "title": "Calculator Application",
+            "cardDescription": "Calculator",
+            "popupDescription": [
+                "A calculator application implemented using HTML, CSS, and JavaScript.",
+                "The project offers two different user interfaces: an old-fashioned and a modern design."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_10/project_10_card.webp",
+            "gallery": [
+                "/project_img/project_10/1.webp",
+                "/project_img/project_10/2.webp"
+            ],
+            "imageAlt": "Calculator",
+            "githubLink": "https://github.com/Thomas-Horvath/CalculatorApp",
+            "githubPagesLink": "https://thomas-horvath.github.io/CalculatorApp/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 11,
+            "type": "Database",
+            "title": "MongoDB - GitArt Rehearsal Room and Studio Database",
+            "cardDescription": "GitArt - MongoDb database",
+            "popupDescription": [
+                "This project is the back-end database for the GitArt rehearsal room and studio website.",
+                "It stores user data and rehearsal room bookings.",
+                "In addition to the online booking system, the data for individual rooms and the studio is stored in separate collections."
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_11/project_11_card.webp",
+            "gallery": [
+                "/project_img/project_11/1.webp",
+                "/project_img/project_11/2.webp"
+            ],
+            "imageAlt": "Example project 9 image",
+            "downloadDocs_title": "Download the Documentation",
+            "docsHref": "/project_docs/GitArt_Database_Documentation.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        }
+    ]
+}

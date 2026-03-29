@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn , FaFacebook} from "react-icons/fa";
 import { useLanguage } from "@/contexts/useLanguage";
 
 
@@ -9,8 +9,9 @@ import { useLanguage } from "@/contexts/useLanguage";
 
 
 const socialItems = [
-  { label: "GitHub", href: "#", icon: <FaGithub size={15} /> },
-  { label: "LinkedIn", href: "#", icon: <FaLinkedinIn size={15} /> },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61565723620011", icon: <FaFacebook size={15} /> },
+  { label: "GitHub", href: "https://github.com/Thomas-Horvath", icon: <FaGithub size={15} /> },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/thomashorvathweb/", icon: <FaLinkedinIn size={15} /> },
 ];
 
 export default function Footer() {
@@ -117,6 +118,7 @@ function SocialIcon({
     <Link
       href={href}
       aria-label={label}
+      target="_blank"
       className="inline-flex h-9 w-9 items-center justify-center border border-slate-200 bg-slate-50 text-slate-600 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-600"
     >
       {children}

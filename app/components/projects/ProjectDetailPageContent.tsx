@@ -14,6 +14,7 @@ type Project = {
     category: "frontend" | "backend" | "database" | "fullstack";
     githubUrl?: string;
     liveUrl?: string;
+    docsUrl?: string;
     gallery: string[];
     featured?: boolean;
 };
@@ -26,7 +27,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
 
     if (!project) {
         return (
-            <main className="bg-slate-50 px-6 py-24 lg:px-0">
+            <main className="bg-slate-50 px-4 py-24 own:px-0">
                 <div className="mx-auto max-w-350">
                     <div className="border border-dashed border-slate-200 bg-white px-8 py-16 text-center">
                         <p className="text-sm uppercase tracking-[0.2em] text-sky-600">
@@ -51,74 +52,96 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
     }
 
     return (
-        <main className="bg-slate-50 px-6 py-24 lg:px-0">
+        <main className="bg-slate-50 px-4 py-24 own:px-0">
             <div className="mx-auto max-w-350">
                 <div className="mb-8">
                     <Link
                         href="/projects"
-                        className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 transition hover:text-sky-600"
+                        className="btn btn-blue-border"
                     >
                         ← {t.projectsPage.buttons.backToProjects}
                     </Link>
                 </div>
 
-                <section className="overflow-hidden border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]">
-                    <div className="relative aspect-[16/8] w-full bg-slate-100">
-                        <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill
-                            className="object-cover object-top"
-                        />
-                    </div>
+               
 
-                    <div className="px-6 py-8 sm:px-10 sm:py-10">
-                        <div className="flex flex-wrap gap-2">
-                            {project.tags.map((tag) => (
-                                <span
-                                    key={tag}
-                                    className="border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-sky-700"
-                                >
-                                    {tag}
-                                </span>
-                            ))}
+                <section className="border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]">
+                    <div className="grid gap-8  sm:p-10 items-center lg:grid-cols-[1fr_1fr]">
+                         <div className="overflow-hidden border border-slate-200 bg-slate-100">
+                            <div className="relative aspect-[16/10]">
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    className="object-cover object-top"
+                                />
+                            </div>
+                        </div>
+                        <div className="py-6 px-6 lg:py-0 h-full">
+                            <div className="flex flex-wrap gap-2">
+                                {project.tags.map((tag) => (
+                                    <span
+                                        key={tag}
+                                        className="border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-sky-700"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+
+                            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-900">
+                                {project.title}
+                            </h1>
+
+                            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+                                {project.cardDescription}
+                            </p>
+
+                            <div className="mt-8 flex flex-wrap gap-4">
+                                {project.githubUrl && (
+                                    <a
+                                        href={project.githubUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="btn btn-blue"
+                                    >
+                                        {t.projectsPage.buttons.github}
+                                    </a>
+                                )}
+
+                                {project.liveUrl && (
+                                    <a
+                                        href={project.liveUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="btn btn-white-blue"
+                                    >
+                                        {t.projectsPage.buttons.liveDemo}
+                                    </a>
+                                )}
+                                {project.docsUrl && (
+                                    <a
+                                        href={project.docsUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="btn btn-blue"
+                                    >
+                                        {t.projectsPage.buttons.docsDownload}
+                                    </a>
+                                )}
+                            </div>
                         </div>
 
-                        <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-900">
-                            {project.title}
-                        </h1>
-
-                        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                            {project.cardDescription}
-                        </p>
-
-                        <div className="mt-8 flex flex-wrap gap-4">
-                            {project.githubUrl && (
-                                <a
-                                    href={project.githubUrl}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="btn btn-blue"
-                                >
-                                    {t.projectsPage.buttons.github}
-                                </a>
-                            )}
-
-                            {project.liveUrl && (
-                                <a
-                                    href={project.liveUrl}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="btn btn-white-blue"
-                                >
-                                    {t.projectsPage.buttons.liveDemo}
-                                </a>
-                            )}
-                        </div>
+                       
                     </div>
                 </section>
 
-                <section className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+
+
+
+
+
+                <section className="mt-14 grid gap-10 lg:grid-cols-[1.4fr_0.6fr]">
                     <div className="border border-slate-200 bg-white px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:px-8">
                         <h2 className="text-2xl font-semibold text-slate-900">
                             {t.projectsPage.detailSections.overview}
@@ -158,7 +181,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                         {project.gallery.map((image, index) => (
                             <div
                                 key={index}
-                                className="relative aspect-[16/10] overflow-hidden border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]"
+                                className="relative aspect-16/10 overflow-hidden border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]"
                             >
                                 <Image
                                     src={image}

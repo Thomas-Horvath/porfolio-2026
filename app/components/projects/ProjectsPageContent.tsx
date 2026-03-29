@@ -54,7 +54,7 @@ export default function ProjectsPageContent() {
                     labels={t.projectsPage.filters}
                 />
 
-                <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {filteredProjects.map((project) => (
                         <ProjectCardCompact
                             key={project.slug}

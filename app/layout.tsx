@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Inter, Space_Grotesk } from "next/font/google"
+import { Inter, Space_Grotesk } from "next/font/google"
 import "./globals.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -7,9 +7,7 @@ import PageUpBtn from "./components/PageUpBtn/PageUpBtn";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import SeoUpdater from "./components/SeoUpdater";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-})
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",

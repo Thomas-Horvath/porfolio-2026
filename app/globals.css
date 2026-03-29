@@ -33,6 +33,11 @@
   @apply  border-sky-600 bg-sky-600  text-white  hover:bg-sky-700  ;
 }
 
+
+.btn-blue-border {
+  @apply  border-sky-600 text-sky-600 hover:bg-sky-100 ;
+}
+
 .btn-white {
   @apply border-slate-200 bg-white text-sky-700 hover:bg-gray-100 ;
 } 

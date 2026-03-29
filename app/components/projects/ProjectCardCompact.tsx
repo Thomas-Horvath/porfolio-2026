@@ -48,56 +48,68 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
     const styles = categoryStyles[project.category];
 
     return (
+
         <Link
             href={`/projects/${project.slug}`}
-            className={`group relative block overflow-hidden border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 ${styles.hoverBorder} ${styles.hoverShadow}`}
+            className={`group relative block  overflow-hidden border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 ${styles.hoverBorder} ${styles.hoverShadow}`}
         >
-            <div
-                className={`h-[5px] w-full bg-linear-to-r ${styles.accent} opacity-80 transition duration-300 group-hover:opacity-100`}
-            />
-
-            <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover object-top transition duration-700 group-hover:scale-[1.03] "
+            <div className="flex h-full flex-col">
+                <div
+                    className={`h-2.5 w-full bg-linear-to-r ${styles.accent} opacity-80 transition duration-300 group-hover:opacity-100`}
                 />
 
-                <div className="absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />
-
-                <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/30 bg-white/15 text-white/90 opacity-0 shadow-sm backdrop-blur-md transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-                    <span className="text-base">↗</span>
-                </div>
-            </div>
-
-            <div className="px-5 py-5">
-                <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-lg font-semibold tracking-tight text-slate-900 transition duration-300 group-hover:text-sky-700">
-                        {project.title}
-                    </h3>
-
-                    <span
-                        className={`mt-1 h-2 w-2 shrink-0 transition duration-300 group-hover:scale-125 ${styles.dot}`}
+                <div className="relative shrink-0 aspect-[16/10] overflow-hidden bg-slate-100">
+                    <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover object-top transition duration-700 group-hover:scale-[1.03]"
                     />
+
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />
+
+                    <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/30 bg-white/15 text-white/90 opacity-0 shadow-sm backdrop-blur-md transition duration-300 group-hover:opacity-100">
+                        <span className="text-base">↗</span>
+                    </div>
                 </div>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                    {project.tags.slice(0, 3).map((tag) => (
-                        <span
-                            key={tag}
-                            className="border border-sky-100 bg-sky-50/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-700 transition duration-300 group-hover:border-sky-200 group-hover:bg-white"
-                        >
-                            {tag}
+                <div className="flex h-full flex-col px-5 py-5">
+                    <div className="mb-6">
+                        <div className="flex items-start justify-between gap-4">
+                            <h3 className="text-lg font-semibold tracking-tight text-slate-900 transition duration-300 group-hover:text-sky-700">
+                                {project.title}
+                            </h3>
+
+                            <span
+                                className={`mt-1 h-2 w-2 shrink-0 transition duration-300 group-hover:scale-125 ${styles.dot}`}
+                            />
+                        </div>
+
+                        <div className="mt-4 flex flex-wrap gap-2">
+                            {project.tags.slice(0, 3).map((tag) => (
+                                <span
+                                    key={tag}
+                                    className="border border-sky-100 bg-sky-50/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-700 transition duration-300 group-hover:border-sky-200 group-hover:bg-white"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* <div className="mt-auto flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-400 transition duration-300 group-hover:text-slate-700">
+                        <span>{detailsLabel}</span>
+                        <span className="transition duration-300 group-hover:translate-x-1">→</span>
+                    </div> */}
+                    <div className="mt-auto">
+                        <span className="w-full inline-flex items-center justify-between gap-2 border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-600 transition 
+                   group-hover:border-sky-200 group-hover:bg-sky-50 group-hover:text-sky-700">
+                            {detailsLabel}
+                            <span className="transition group-hover:translate-x-1">→</span>
                         </span>
-                    ))}
-                </div>
-
-                <div className="mt-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-400 transition duration-300 group-hover:text-slate-700">
-                    <span>{detailsLabel}</span>
-                    <span className="transition duration-300 group-hover:translate-x-1">→</span>
+                    </div>
                 </div>
             </div>
-        </Link >
+        </Link>
     );
 }
