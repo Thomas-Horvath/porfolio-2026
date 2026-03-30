@@ -137,7 +137,7 @@ export default function FeaturedProjectsSection() {
   const featuredProjects =  projects.filter((project) => project.featured);
 
   return (
-    <section className="bg-slate-50 px-6 py-24 sm:py-28 lg:px-0 lg:py-32">
+    <section className="bg-slate-50 px-6 py-24 sm:py-28 own:px-0 lg:py-32">
       <div className="mx-auto max-w-350">
         <SectionHeader
           eyebrow={t.projectsPage.eyebrow}
@@ -146,7 +146,7 @@ export default function FeaturedProjectsSection() {
             t.projectsPage.featuredDescription ?? t.projectsPage.description
           }
           align="left"
-          maxWidth="lg"
+          maxWidth="md"
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-3">

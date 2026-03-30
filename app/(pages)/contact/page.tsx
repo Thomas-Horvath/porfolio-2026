@@ -140,7 +140,7 @@ export default function ContactPageContent() {
   };
 
   return (
-    <main className="bg-slate-50/80 px-6 py-24 sm:py-28 lg:px-0 lg:py-32">
+    <main className="bg-slate-50/80 px-4 py-24 sm:py-28 lg:px-0 lg:py-32">
       <div className="mx-auto max-w-350">
         <SectionHeader
           eyebrow={contact.headingTitle}

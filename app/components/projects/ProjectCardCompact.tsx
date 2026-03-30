@@ -51,14 +51,14 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
 
         <Link
             href={`/projects/${project.slug}`}
-            className={`group relative block  overflow-hidden border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 ${styles.hoverBorder} ${styles.hoverShadow}`}
+            className={`group relative block shadow-lg  overflow-hidden border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 ${styles.hoverBorder} ${styles.hoverShadow}`}
         >
             <div className="flex h-full flex-col">
                 <div
                     className={`h-2.5 w-full bg-linear-to-r ${styles.accent} opacity-80 transition duration-300 group-hover:opacity-100`}
                 />
 
-                <div className="relative shrink-0 aspect-[16/10] overflow-hidden bg-slate-100">
+                <div className="relative shrink-0 aspect-16/10 overflow-hidden bg-slate-100">
                     <Image
                         src={project.image}
                         alt={project.title}

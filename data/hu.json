@@ -188,6 +188,82 @@
                 "liveUrl": "https://egs.thomasapi.eu"
             },
             {
+                "slug": "wordy",
+                "featured": false,
+                "title": "Wordy - Angol-magyar szókártyás alkalmazás",
+                "cardDescription": "Angol-magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
+                "description": [
+                    "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás.",
+                    "Az oldal egy Node.js Express szerverrel kezeli a bejövő kéréseket.",
+                    "Az adatbázis egy MongoDB szerveren fut."
+                ],
+                "image": "/works/wordy/1.png",
+                "gallery": [
+                    "/works/wordy/1.png"
+                ],
+                "tags": [
+                    "NextJs",
+                    "Tailwind CSS",
+                    "Sqlite",
+                    "Prisma"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+                "liveUrl": "https://egs.thomasapi.eu"
+            },
+            {
+                "slug": "integrativ-medicina",
+                "featured": false,
+                "title": "Integratív Medicina - gyógyító ásványok",
+                "cardDescription": "Integratív Medicina - gyógyító ásványok, egy modern, letisztult felületű webalkalmazás, amely külön kategóriákban rendezi a tanulási tartalmakat.",
+                "description": [
+                    "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás.",
+                    "Az oldal egy Node.js Express szerverrel kezeli a bejövő kéréseket.",
+                    "Az adatbázis egy MongoDB szerveren fut."
+                ],
+                "image": "/works/integrative/1.png",
+                "gallery": [
+                    "/works/integrative/1.png"
+                ],
+                "tags": [
+                    "Vite",
+                    "Tailwind CSS",
+                    "Sqlite",
+                    "Prisma",
+                    "Electron"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+                "liveUrl": "https://egs.thomasapi.eu"
+            },
+              {
+                "slug": "kostoljbele",
+                "featured": false,
+                "title": "Kóstolj Bele! – Receptgyüjtemény webalkalmazás",
+                "cardDescription": "A GitArt próbaterem és stúdió weboldalának MongoDB alapú adatbázisa, felhasználók és teremfoglalások kezelésére.",
+                "description": [
+                    "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali adatbázisa.",
+                    "Tároljuk a felhasználók adatait valamint a próbaterem foglalások adatait.",
+                    "Az online foglalási rendszer mellett az egyes próbatermek adatait és a stúdió adatait egy-egy kollekcióban tároljuk."
+                ],
+                "image": "/works/kostolj/1.png",
+                "gallery": [
+                    "/works/kostolj/1.png",
+                    "/works/kostolj/2.png"
+                ],
+                "tags": [
+                    "NextJs",
+                    "Next-auth",
+                    "React",
+                    "SaSS",
+                    "Sqlite",
+                    "Prisma"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/KostoljBele",
+                "liveUrl": "https://egs.thomasapi.eu"
+            },
+            {
                 "slug": "egs-admin-panel",
                 "featured": true,
                 "title": "Electric Guitar Shop Webshop – Admin felület",
@@ -396,31 +472,6 @@
                 "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
             },
             {
-                "slug": "kostoljbele",
-                "featured": false,
-                "title": "Kóstolj Bele! – Receptgyüjtemény webalkalmazás",
-                "cardDescription": "A GitArt próbaterem és stúdió weboldalának MongoDB alapú adatbázisa, felhasználók és teremfoglalások kezelésére.",
-                "description": [
-                    "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali adatbázisa.",
-                    "Tároljuk a felhasználók adatait valamint a próbaterem foglalások adatait.",
-                    "Az online foglalási rendszer mellett az egyes próbatermek adatait és a stúdió adatait egy-egy kollekcióban tároljuk."
-                ],
-                "image": "/works/project_11/project_11_card.webp",
-                "gallery": [
-                    "/works/project_11/1.webp",
-                    "/works/project_11/2.webp"
-                ],
-                "tags": [
-                    "MongoDb",
-                    "JSON",
-                    "BSON"
-                ],
-                "category": "fullstack",
-                "githubUrl": null,
-                "liveUrl": null,
-                "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
-            },
-            {
                 "slug": "webp-converter",
                 "featured": false,
                 "title": "WebP Konverter - Képformátum-átalakító eszköz",
@@ -456,8 +507,16 @@
         "thirdParagraph": "Az „Újratervezés” program keretében <strong>2022-ben </strong> részt vettem egy <strong>rendszerüzemeltetői</strong> képzésen, amely során elsajátítottam a számítástechnika és hálózatüzemeltetés alapjait, valamint a Windows és Linux rendszerek, a virtualizáció (Hyper-V, Docker) és a cloud platformok (Azure, Digital Ocean) kezelését.",
         "forthParagraph": "Ezt követően <strong>adatbázis specialista</strong> képzésen haladó szinten sajátítottam el az SQL nyelvet, valamint az MS SQL, MySQL és MongoDB adatbázisok tervezését, optimalizálását és üzemeltetését.",
         "fifthParagraph": "Folyamatos tanulás iránti elkötelezettségemnek köszönhetően, és mivel mindig a teljes képet szeretem látni, <strong>full-stack fejlesztő </strong>karrier felé vettem az irányt. A <strong>front-end fejlesztés</strong> haladó szintű elsajátítása mellett jelenlegi célom a back-end oldal megismerése, amellyel teljes rendszereket tudok majd megvalósítani a webfejlesztés platformján.",
+        "ctaLabel": "Kapcsolat",
+        "ctaTitle": "Ha szimpatikus, ahogyan gondolkodom és dolgozom",
+        "ctaDescription": "Nézd meg az önéletrajzomat, vagy vedd fel velem a kapcsolatot, ha szeretnél többet megtudni rólam, a tapasztalataimról és arról, hogyan dolgozom.",
         "contactButton": "Lépjünk kapcsolatba!",
-        "cvButton": "Töltsd le az önéletrajzom!"
+        "cvButton": "Töltsd le az önéletrajzom!",
+        "skillsHeader": "Készségek",
+        "skillsTitle": "Technológiák és területek, amelyekben otthonosan mozgok",
+        "skillsDescription": "A vizuális felületektől a szerveroldali logikán át az adatbázisokig olyan eszközökkel dolgozom, amelyekkel teljes webes megoldásokat lehet építeni.",
+        "skillsSubTitle": "Adatbázis",
+        "skillsSubtitle2" : "Egyéb eszközök"
     },
     "aboutInfo": {
         "title": "Még néhány infó rólam",

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/useLanguage";
+import WorkGalleryClient from "./WorkGalleryClient";
+
 
 type Project = {
     slug: string;
@@ -24,6 +26,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
 
     const projects = t.projectsPage.items as Project[];
     const project = projects.find((item) => item.slug === slug);
+ 
 
     if (!project) {
         return (
@@ -63,11 +66,11 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                     </Link>
                 </div>
 
-               
+
 
                 <section className="border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]">
                     <div className="grid gap-8  sm:p-10 items-center lg:grid-cols-[1fr_1fr]">
-                         <div className="overflow-hidden border border-slate-200 bg-slate-100">
+                        <div className="overflow-hidden border border-slate-200 bg-slate-100">
                             <div className="relative aspect-[16/10]">
                                 <Image
                                     src={project.image}
@@ -132,7 +135,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                             </div>
                         </div>
 
-                       
+
                     </div>
                 </section>
 
@@ -177,21 +180,32 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                         {t.projectsPage.detailSections.gallery}
                     </h2>
 
-                    <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {/* <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {project.gallery.map((image, index) => (
                             <div
                                 key={index}
-                                className="relative aspect-16/10 overflow-hidden border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]"
+                                className="overflow-hidden border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]"
                             >
                                 <Image
                                     src={image}
                                     alt={`${project.title} screenshot ${index + 1}`}
-                                    fill
-                                    className="object-cover"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    className="w-full h-auto object-cover object-top"
                                 />
                             </div>
                         ))}
-                    </div>
+                    </div> */}
+
+
+
+
+                    <WorkGalleryClient
+                        images={[...project.gallery]}
+                    />
+
+              
                 </section>
             </div>
         </main>

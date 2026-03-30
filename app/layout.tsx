@@ -49,7 +49,7 @@ export default function RootLayout({
             <Navbar />
 
             {/* PAGE CONTENT */}
-            <div className="relative z-10">
+            <div className="relative ">
               {children}
             </div>
 

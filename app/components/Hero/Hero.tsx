@@ -72,7 +72,7 @@ export default function HeroSection() {
           <TechStack />
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-b from-transparent to-white pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-b from-transparent to-white pointer-events-none z-1" />
 
     </section>
   );

@@ -7,7 +7,7 @@ export default function QuoteSection() {
   const { t } = useLanguage();
   return (
     <section>
-      <div className="w-full lg:px-0 bg-linear-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-10 py-14">
+      <div className="w-full own:px-0 bg-linear-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-6 py-14">
 
         <div className="relative max-w-350 mx-auto overflow-hidden border-l-4 border-white/20 pl-6 ">
 

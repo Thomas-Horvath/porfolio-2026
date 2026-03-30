@@ -108,13 +108,13 @@ export default function AboutInfoShowcase({
                             <button
                                 type="button"
                                 onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                                className="flex w-full items-center justify-between gap-4 py-5 text-left"
+                                className="flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left"
                             >
                                 <div className="grid gap-2">
                                     <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
                                         {String(index + 1).padStart(2, "0")}
                                     </span>
-                                    <h3 className="text-lg font-semibold tracking-tight text-slate-900">
+                                    <h3 className="text-lg font-semibold tracking-tight text-sky-600">
                                         {item.title}
                                     </h3>
                                 </div>

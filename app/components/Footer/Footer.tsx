@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
 
         {/* alsó sor */}
-        <div className="flex flex-col gap-4 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col-reverse gap-6 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} {t.homePage.name}. {t.footer.additionalText}</p>
 
           <div className="flex flex-wrap gap-4">
@@ -97,6 +97,12 @@ export default function Footer() {
               className="transition hover:text-slate-700"
             >
               {t.footer.policy}
+            </Link>
+            <Link
+              href="/cookies"
+              className="transition hover:text-slate-700"
+            >
+              {t.footer.cookies}
             </Link>
           </div>
         </div>

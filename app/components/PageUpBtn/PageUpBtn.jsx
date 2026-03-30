@@ -31,7 +31,7 @@ const PageUpBtn = () => {
 <button
   onClick={scrollToTop}
   title="Ugrás a lap tetejére"
-  className={`fixed bottom-6 right-6 z-50 shadow-lg hover:scale-110
+  className={`fixed bottom-6 right-6 z-30 shadow-lg hover:scale-110
   flex cursor-pointer rounded-full bg-sky-600/90 p-4
   transition-all duration-500 ease-out
   ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6 pointer-events-none"}

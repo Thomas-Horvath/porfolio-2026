@@ -3,13 +3,14 @@ type SectionHeaderProps = {
   title: string;
   description?: string;
   align?: "left" | "center";
-  maxWidth?: "sm" | "md" | "lg";
+  maxWidth?: "sm" | "md" | "lg" | "xl";
 };
 
 const maxWidthClasses = {
   sm: "max-w-2xl",
   md: "max-w-3xl",
   lg: "max-w-4xl",
+  xl: "max-w-5xl",
 };
 
 export default function SectionHeader({
@@ -23,7 +24,7 @@ export default function SectionHeader({
 
   return (
     <div
-      className={["max-w-200  mb-20 ",
+      className={["  mb-20 ",
         maxWidthClasses[maxWidth],
         isCenter ? "mx-auto text-center" : "text-left",
       ].join(" ")}

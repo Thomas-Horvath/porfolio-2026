@@ -29,7 +29,7 @@ const Navbar = () => {
 
 
   return (
-    <header className="fixed left-0 top-0 z-50
+    <header className="fixed left-0 top-0 z-20
                        h-19 w-full
                        bg-slate-50/90 border-b border-zinc-900/10
                        backdrop-blur-xl">
@@ -165,7 +165,11 @@ const Navbar = () => {
 
               <div className="border-t border-slate-200 px-4 py-4">
                 <button
-                  onClick={() => switchLanguage(language === "hu" ? "en" : "hu")}
+                  onClick={() => {
+                    switchLanguage(language === "hu" ? "en" : "hu"),
+                    setIsMenuOpen(false);
+                  }}
+
                   className="inline-flex cursor-pointer w-full items-center justify-center border border-slate-200 bg-slate-50 px-4 py-3 text-lg font-medium text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
                 >
                   {language === "hu" ? "EN" : "HU"}

@@ -78,7 +78,7 @@ export default function AboutPageContent() {
       ],
     },
     {
-      title: "Backend & Database",
+      title: `Backend & ${about.skillsSubTitle}`,
       icon: <FaServer className="text-violet-600" />,
       items: [
         { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
@@ -92,7 +92,7 @@ export default function AboutPageContent() {
       ],
     },
     {
-      title: "Tools",
+      title: about.skillsSubtitle2 ,
       icon: <FaDatabase className="text-emerald-600" />,
       items: [
         { name: "Docker", icon: <FaDocker className="text-sky-500" /> },
@@ -107,14 +107,14 @@ export default function AboutPageContent() {
 
   return (
     <main>
-      <article className="bg-slate-50  px-6 py-24 sm:py-28 own:px-0 lg:py-32">
+      <article className="bg-slate-50  px-4 py-24 sm:py-28 own:px-0 lg:py-32">
         <section className="mx-auto max-w-350">
           <SectionHeader
             eyebrow={about.headingTitle}
             title={about.headingSpan}
             description={about.mainTitle}
             align="left"
-            maxWidth="lg"
+            maxWidth="sm"
           />
 
           {/* HERO / INTRO */}
@@ -135,10 +135,10 @@ export default function AboutPageContent() {
 
                 <div className="border-t border-slate-200 px-6 py-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
-                    Frontend / Full Stack Developer
+                    {t.homePage.profession}
                   </p>
                   <p className="mt-2 text-xl font-semibold tracking-tight text-slate-900">
-                    Horváth Tamás
+                    {t.homePage.name}
                   </p>
                 </div>
               </div>
@@ -165,29 +165,28 @@ export default function AboutPageContent() {
 
 
       {/* contact / cv CTA */}
-      <section className="bg-linear-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-6 py-24 own:px-0">
+      <section className="bg-linear-to-r from-sky-600/80 via-sky-500/80 to-blue-500/80 px-4 py-24 own:px-0">
         <div className="mx-auto max-w-350">
           <div className="border border-white/15 bg-white/12 shadow-[0_20px_60px_rgba(15,23,42,0.12)] backdrop-blur-md">
             <div className="h-0.75 w-full bg-linear-to-r from-white/80 via-cyan-200/80 to-white/70" />
 
-            <div className="grid gap-8 px-6 py-8 sm:px-8 lg:grid-cols-[1fr_auto] lg:items-center lg:px-12 lg:py-10">
-              <div className="max-w-2xl">
+            <div className="grid gap-10 px-6 py-8 sm:px-8  lg:items-center lg:px-12 lg:py-10">
+              <div className="max-w-4xl">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/75">
-                  Kapcsolat
+                  {about.ctaLabel}
                 </p>
 
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                  Ha szimpatikus, ahogyan gondolkodom és dolgozom
+                  {about.ctaTitle}
                 </h2>
 
-                <p className="mt-4 max-w-xl text-sm leading-7 text-white/85 sm:text-base">
-                  Nézd meg az önéletrajzomat, vagy vedd fel velem a kapcsolatot, ha szeretnél
-                  többet megtudni rólam, a tapasztalataimról és arról, hogyan dolgozom.
+                <p className="mt-4 max-w-3xl text-sm leading-7 text-white/85 sm:text-base">
+                  {about.ctaDescription}
                 </p>
               </div>
 
-              <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-                <Link href="/contact" className="btn btn-blue ">
+              <div className="flex flex-col gap-6 sm:flex-row ">
+                <Link href="/contact" className="btn btn-blue-light">
                   {about.contactButton}
                 </Link>
 
@@ -209,18 +208,16 @@ export default function AboutPageContent() {
 
 
 
-      <article className="bg-slate-50  px-6 py-24 sm:py-28 own:px-0 lg:py-32">
+      <article className="bg-slate-50  px-4 py-24 sm:py-28 own:px-0 lg:py-32">
         {/* SKILLS */}
 
         <section className=" mx-auto max-w-350">
           <SectionHeader
-            eyebrow="Készségek"
-            title="Technológiák és területek, amelyekben otthonosan mozgok"
-            description="A vizuális felületektől a szerveroldali logikán át az adatbázisokig
-              olyan eszközökkel dolgozom, amelyekkel teljes webes megoldásokat
-              lehet építeni."
+            eyebrow={about.skillsHeader}
+            title={about.skillsTitle}
+            description={about.skillsDescription}
             align="left"
-            maxWidth="lg"
+            maxWidth="xl"
 
           />
 

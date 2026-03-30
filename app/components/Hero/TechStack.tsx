@@ -74,10 +74,10 @@ function MarqueeContent() {
 export default function TechStack() {
   return (
     <div
-      className="
+      className="relative
         relativeborder-20 w-full overflow-hidden
-        border-y border-sky-100/70
-        bg-white/45
+        border-y border-sky-200/70
+        bg-white/40 z-10
         shadow-[0_8px_30px_rgba(125,211,252,0.12)]
         backdrop-blur-md
         [-webkit-mask-image:linear-gradient(to_right,transparent,black_6rem,black_calc(100%-6rem),transparent)]
