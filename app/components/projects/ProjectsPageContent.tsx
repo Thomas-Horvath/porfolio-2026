@@ -9,19 +9,68 @@ import ProjectCardCompact from "./ProjectCardCompact";
 type FilterValue = "all" | "frontend" | "backend" | "database" | "fullstack";
 type ProjectCategory = "frontend" | "backend" | "database" | "fullstack";
 
+type ProjectDetailBlock =
+    | {
+        type: "paragraph";
+        content: string;
+    }
+    | {
+        type: "list";
+        title?: string;
+        items: string[];
+
+    }
+    | {
+        type: "sources";
+        title: string;
+        items: { label: string; value: string; url: string }[];
+    };
+
+
 type Project = {
     slug: string;
     title: string;
     cardDescription: string;
-    description: string[];
+    intro: string;
+    detailBlocks: ProjectDetailBlock[];
     image: string;
+    gallery: string[];
     tags: string[];
     category: ProjectCategory;
     githubUrl?: string;
     liveUrl?: string;
-    gallery: string[];
+    docsUrl?: string;
     featured?: boolean;
+
+
+    projectMeta?: {
+        type?: string;
+        role?: string;
+        year?: string;
+        status?: string;
+    };
+
+    credentials?: {
+        email: string;
+        password: string;
+    }
 };
+
+
+
+// type Project = {
+//     slug: string;
+//     title: string;
+//     cardDescription: string;
+//     description: string[];
+//     image: string;
+//     tags: string[];
+//     category: ProjectCategory;
+//     githubUrl?: string;
+//     liveUrl?: string;
+//     gallery: string[];
+//     featured?: boolean;
+// };
 
 export default function ProjectsPageContent() {
     const { t } = useLanguage();
