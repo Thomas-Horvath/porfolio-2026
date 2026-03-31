@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import SectionHeader from "@/app/components/SectionHeader";
 import { useLanguage } from "@/contexts/useLanguage";
 import { FaEnvelope, FaFacebookMessenger, FaClock, FaPaperPlane } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+
 import Link from "next/link";
 
 type ErrorMessages = {
