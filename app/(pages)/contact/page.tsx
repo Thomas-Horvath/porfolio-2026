@@ -4,8 +4,9 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SectionHeader from "@/app/components/SectionHeader";
 import { useLanguage } from "@/contexts/useLanguage";
-import { FaEnvelope, FaPaperPlane, FaPhoneSquare } from "react-icons/fa";
+import { FaEnvelope, FaFacebookMessenger, FaClock, FaPaperPlane } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import Link from "next/link";
 
 type ErrorMessages = {
   name: string;
@@ -15,9 +16,10 @@ type ErrorMessages = {
 };
 
 type ContactInfoItem = {
-  icon: "FaPhoneSquare" | "FaEnvelope" | "FaLocationDot";
+  icon: "FaFacebookMessenger" | "FaEnvelope" | "FaClock";
   title: string;
   subtitle: string;
+  link?: string;
 };
 
 
@@ -35,14 +37,14 @@ export default function ContactPageContent() {
     message: "",
   });
 
-  
+
   const contact = t.contactPageContent;
   const contactInfoItems = contact.contactInfoItems as ContactInfoItem[];
 
   const iconMap: Record<ContactInfoItem["icon"], React.ReactNode> = {
-    FaPhoneSquare: <FaPhoneSquare className="text-xl" />,
+    FaFacebookMessenger: <FaFacebookMessenger className="text-xl" />,
     FaEnvelope: <FaEnvelope className="text-xl" />,
-    FaLocationDot: <FaLocationDot className="text-xl" />,
+    FaClock: <FaClock className="text-xl" />,
   };
 
   const validateForm = (formData: FormData) => {
@@ -151,7 +153,7 @@ export default function ContactPageContent() {
         />
 
         <section className="mt-14 grid gap-10 xl:grid-cols-[0.9fr_1.1fr]">
-          {/* LEFT SIDE */}
+          {/* LEFT SIDE
           <div className="space-y-8">
             <div className="border border-slate-200 bg-white">
               <div className="h-0.75 w-full bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
@@ -187,12 +189,94 @@ export default function ContactPageContent() {
                         {item.title}
                       </p>
                       <p className="mt-1 text-sm leading-6 text-slate-600">
-                        {item.subtitle}
+                        {item.subtitle} <Link className="underline text-sky-600 hover:text-sky-700" href="https://www.facebook.com/profile.php?id=61565723620011" target="_blank" rel="noopener noreferrer">
+                          {item?.link}
+                        </Link>
                       </p>
                     </div>
                   </div>
                 )
               )}
+            </div>
+          </div> */}
+
+          {/* LEFT SIDE */}
+          <div className="space-y-8">
+            {/* Intro card */}
+            <div className="border border-slate-200 bg-white">
+              <div className="h-0.75 w-full bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
+
+              <div className="px-6 py-7 sm:px-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">
+                  {contact.infoEyebrow}
+                </p>
+
+                <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900">
+                  {contact.infoTitle}
+                </h2>
+
+                <p className="mt-4 text-base leading-7 text-slate-600">
+                  {contact.infoDescription}
+                </p>
+              </div>
+            </div>
+
+            {/* How I can help */}
+            <div className="border border-slate-200 bg-white">
+              <div className="px-6 py-7 sm:px-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">
+                  {contact.whenToContactTitle}
+                </p>
+
+                <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-600">
+                  {contact.whenToContactItems.map((item, index) => (
+                    <li key={index} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-sky-600" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+              
+                </ul>
+              </div>
+            </div>
+
+     
+
+            {/* Contact items */}
+            <div className="border border-slate-200 bg-white">
+              {contactInfoItems.map((item, index) => (
+                <div
+                  key={index}
+                  className="grid grid-cols-[56px_1fr] gap-4 border-b border-slate-200 px-6 py-5 last:border-b-0 sm:px-8"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-slate-50 text-sky-700">
+                    {iconMap[item.icon]}
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-semibold tracking-tight text-slate-900">
+                      {item.title}
+                    </p>
+
+                    <p className="mt-1 text-sm leading-6 text-slate-600">
+                      {item.subtitle}
+                      {item?.link && (
+                        <>
+                          {" "}
+                          <Link
+                            className="underline text-sky-600 hover:text-sky-700"
+                            href="https://www.facebook.com/profile.php?id=61565723620011"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.link}
+                          </Link>
+                        </>
+                      )}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -229,11 +313,10 @@ export default function ContactPageContent() {
                     type="text"
                     name="user-name"
                     id="name"
-                    className={`w-full border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${
-                      errorMessages.name
+                    className={`w-full border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${errorMessages.name
                         ? "border-red-300"
                         : "border-slate-200"
-                    }`}
+                      }`}
                     autoComplete="off"
                   />
                   {errorMessages.name && (
@@ -254,11 +337,10 @@ export default function ContactPageContent() {
                     type="text"
                     name="user-email"
                     id="email"
-                    className={`w-full border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${
-                      errorMessages.email
+                    className={`w-full border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${errorMessages.email
                         ? "border-red-300"
                         : "border-slate-200"
-                    }`}
+                      }`}
                     autoComplete="off"
                   />
                   {errorMessages.email && (
@@ -279,11 +361,10 @@ export default function ContactPageContent() {
                     type="text"
                     name="subject"
                     id="subject"
-                    className={`w-full border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${
-                      errorMessages.subject
+                    className={`w-full border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${errorMessages.subject
                         ? "border-red-300"
                         : "border-slate-200"
-                    }`}
+                      }`}
                     autoComplete="off"
                   />
                   {errorMessages.subject && (
@@ -304,11 +385,10 @@ export default function ContactPageContent() {
                     name="message"
                     id="message"
                     rows={7}
-                    className={`w-full resize-none border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${
-                      errorMessages.message
+                    className={`w-full resize-none border bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-300 focus:bg-white ${errorMessages.message
                         ? "border-red-300"
                         : "border-slate-200"
-                    }`}
+                      }`}
                     autoComplete="off"
                   />
                   {errorMessages.message && (

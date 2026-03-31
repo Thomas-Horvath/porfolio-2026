@@ -92,7 +92,7 @@ const page = () => {
     const { t } = useLanguage();
     return (
         <section className="flex min-h-screen max-w-350 m-auto flex-col items-center justify-center px-4 py-24 sm:py-28 own:px-0 lg:py-32">
-            <h1 className="text-4xl mb-6 font-bold text-slate-800">{t.cookiesSection.title}</h1>
+            <h1 className="text-4xl mb-6 font-bold text-slate-800 text-center">{t.cookiesSection.title}</h1>
 
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 w-full">
 

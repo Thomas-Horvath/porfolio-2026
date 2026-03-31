@@ -140,7 +140,7 @@ export default function FeaturedProjectsSection() {
     <section className="bg-slate-50 px-6 py-24 sm:py-28 own:px-0 lg:py-32">
       <div className="mx-auto max-w-350">
         <SectionHeader
-          eyebrow={t.projectsPage.eyebrow}
+          eyebrow={t.projectsPage.featuredEyebrow}
           title={t.projectsPage.featuredTitle ?? t.projectsPage.title}
           description={
             t.projectsPage.featuredDescription ?? t.projectsPage.description

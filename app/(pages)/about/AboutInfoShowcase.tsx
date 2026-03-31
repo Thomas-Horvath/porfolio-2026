@@ -10,12 +10,14 @@ type AboutInfoItem = {
 };
 
 type Props = {
+    eyebrow?: string;
     title: string;
     intro: string;
     items: AboutInfoItem[];
 };
 
 export default function AboutInfoShowcase({
+    eyebrow,
     title,
     intro,
     items,
@@ -29,7 +31,7 @@ export default function AboutInfoShowcase({
         <section className="mt-50 mb-30 mx-auto max-w-350">
 
             <SectionHeader
-                eyebrow="valami"
+                eyebrow={eyebrow}
                 title={title}
                 description={intro}
                 align="left"
@@ -48,8 +50,8 @@ export default function AboutInfoShowcase({
                                 type="button"
                                 onClick={() => setActiveIndex(index)}
                                 className={`group cursor-pointer  grid w-full grid-cols-[64px_1fr_auto] items-center gap-4 border-b border-slate-200 px-5 py-7 text-left transition last:border-b-0 ${isActive
-                                        ? "bg-sky-600 text-white"
-                                        : "bg-white text-slate-900 hover:bg-slate-50"
+                                    ? "bg-sky-600 text-white"
+                                    : "bg-white text-slate-900 hover:bg-slate-50"
                                     }`}
                             >
                                 <span
@@ -65,8 +67,8 @@ export default function AboutInfoShowcase({
 
                                 <span
                                     className={`h-2.5 w-2.5 shrink-0 transition duration-300 ${isActive
-                                            ? "bg-sky-400 scale-125"
-                                            : "bg-slate-300 group-hover:bg-sky-400"
+                                        ? "bg-sky-400 scale-125"
+                                        : "bg-slate-300 group-hover:bg-sky-400"
                                         }`}
                                 />
                             </button>
@@ -127,8 +129,8 @@ export default function AboutInfoShowcase({
 
                             <div
                                 className={`grid transition-all duration-300 ease-in-out ${isOpen
-                                        ? "grid-rows-[1fr] opacity-100 pb-6"
-                                        : "grid-rows-[0fr] opacity-0"
+                                    ? "grid-rows-[1fr] opacity-100 pb-6"
+                                    : "grid-rows-[0fr] opacity-0"
                                     }`}
                             >
                                 <div className="overflow-hidden">

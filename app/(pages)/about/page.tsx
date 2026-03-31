@@ -118,7 +118,7 @@ export default function AboutPageContent() {
           />
 
           {/* HERO / INTRO */}
-          <section className=" mt-14 grid gap-12 xl:grid-cols-[380px_minmax(0,1fr)] xl:items-start">
+          <section className=" mt-14 grid gap-12 xl:grid-cols-[420px_minmax(0,1fr)] xl:items-start">
             <div className="xl:sticky xl:top-28">
               <div className="max-w-105 relative overflow-hidden border border-slate-200 bg-white">
                 <div className="absolute inset-x-0 top-0 h-0.75 bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
@@ -256,7 +256,7 @@ export default function AboutPageContent() {
 
 
         {/* ABOUT INFO / EDITORIAL FLOW */}
-        <AboutInfoShowcase title={aboutInfo.title} intro={aboutInfo.intro} items={infoItems} />
+        <AboutInfoShowcase eyebrow={aboutInfo.eyebrow} title={aboutInfo.title} intro={aboutInfo.intro} items={infoItems} />
 
       </article>
     </main>

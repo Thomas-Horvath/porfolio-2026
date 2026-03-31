@@ -1,0 +1,747 @@
+{
+    "items": [
+        {
+            "slug": "egs-shop-client",
+            "featured": true,
+            "title": "Electric Guitar Shop e-commerce webshop",
+            "cardDescription": "Frontend fejlesztés egy hangszer-webshophoz termékböngészéssel, kosárkezeléssel, regisztrációval és felhasználói fiókkezeléssel.",
+            "intro": "Az Electric Guitar Shop egy fiktív hangszer-webshop kliensoldali frontend alkalmazása, amely egy valós e-commerce folyamat fő elemeit modellezi a terméklistázástól a rendelés leadásáig.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan webshop frontend felépítése volt, amely egyszerre biztosít átlátható termékböngészést, jól használható kosárkezelést és stabil felhasználói élményt különböző nézetekben."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az alkalmazásban a felhasználók böngészhetik a termékeket, kezelhetik a kosarukat, rendelést adhatnak le, valamint saját fiókjukban hozzáférhetnek a profiljukhoz és korábbi adataikhoz."
+                },
+                {
+                    "type": "list",
+                    "title": "A frontend főbb funkciói",
+                    "items": [
+                        "Terméklista és termékadatok megjelenítése",
+                        "Kosárkezelés és rendelési folyamat",
+                        "Felhasználói regisztráció és bejelentkezés",
+                        "Profiloldal és fiókkezelés",
+                        "Reszponzív felület webshop környezethez"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során fontos szempont volt az e-commerce flow logikus felépítése, az állapotkezelés átláthatósága, valamint az, hogy a vásárlási folyamat végig egyértelmű és kényelmes maradjon."
+                }
+            ],
+            "image": "/works/egs_frontend/project_2_card.webp",
+            "gallery": [
+                "/works/egs_frontend/1.webp",
+                "/works/egs_frontend/2.webp",
+                "/works/egs_frontend/3.webp",
+                "/works/egs_frontend/4.webp",
+                "/works/egs_frontend/5.webp",
+                "/works/egs_frontend/6.webp"
+            ],
+            "technologies": [
+                "React",
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "projectMeta": {
+                "type": "Frontend projekt",
+                "role": "Frontend fejlesztés és kliensoldali állapotkezelés",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "credentials": {
+                "username": "testuser",
+                "password": "Password"
+            },
+            "category": "frontend",
+            "githubUrl": "https://github.com/Thomas-Horvath/EGS_shop_client",
+            "liveUrl": "https://thomas-horvath.github.io/EGS_shop_client/"
+        },
+        {
+            "slug": "egs-backend",
+            "featured": false,
+            "title": "Electric Guitar Shop – webshop szerver",
+            "cardDescription": "Node.js, Express és MongoDB alapú backend egy webshop kliens- és adminfelületének kiszolgálására.",
+            "intro": "Az EGS backend a webshop kliensoldali és adminisztrációs felületéhez készült szerveroldali alkalmazás, amely az adatok kezelését és az üzleti logikát biztosítja.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan backend réteg kialakítása volt, amely megbízhatóan kezeli a webshop működéséhez szükséges adatokat, végpontokat és jogosultsági logikát."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A szerver a bejövő HTTP kérések kezelését Express alapokon valósítja meg, míg az adatok MongoDB adatbázisban tárolódnak. A backend a kliensoldali alkalmazás és az adminfelület kiszolgálását is támogatja."
+                },
+                {
+                    "type": "list",
+                    "title": "A backend főbb feladatai",
+                    "items": [
+                        "Felhasználói regisztráció és autentikáció",
+                        "Termékadatok kiszolgálása és kezelése",
+                        "Rendelések feldolgozása",
+                        "Adminisztrációs funkciók támogatása",
+                        "Adatkapcsolat MongoDB alapokon"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a fókusz a jól szervezett szerveroldali struktúrán, az adatok következetes kezelésén és a kliensoldali alkalmazások számára kiszámítható API-viselkedés biztosításán volt."
+                }
+            ],
+            "image": "/works/egs_api/project_3_card.webp",
+            "gallery": [
+                "/works/egs_api/1.webp",
+                "/works/egs_api/2.webp",
+                "/works/egs_api/3.webp"
+            ],
+            "technologies": [
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "JavaScript"
+            ],
+            "projectMeta": {
+                "type": "Backend projekt",
+                "role": "API fejlesztés és szerveroldali logika",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "category": "backend",
+            "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+            "liveUrl": "https://egs.thomasapi.eu"
+        },
+        {
+            "slug": "wordy",
+            "featured": false,
+            "title": "Wordy – angol–magyar szókártyás alkalmazás",
+            "cardDescription": "Full-stack szókártyás alkalmazás kategóriákba rendezett tanulási tartalommal, letisztult felülettel és adatbázis-alapú működéssel.",
+            "intro": "A Wordy egy angol–magyar szókártyás alkalmazás, amelynek célja a szókincs fejlesztése egyszerű, áttekinthető és modern felületen.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt egy olyan tanulóalkalmazás megvalósítására épült, ahol a tartalom kategóriákba rendezve jelenik meg, és a felhasználó strukturált módon haladhat végig a szóanyagokon."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az alkalmazás full-stack megközelítéssel készült, így a felhasználói felület mellett az adatkezelés és az adatok tárolása is a projekt részét képezi."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb funkciói",
+                    "items": [
+                        "Szókártyák kategóriákba rendezett megjelenítése",
+                        "Letisztult és gyors felhasználói felület",
+                        "Adatbázis-alapú tartalomkezelés",
+                        "Modern full-stack felépítés",
+                        "Tanulási tartalmak strukturált kezelése"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során fontos volt a tartalom jól átlátható strukturálása, a gyors felület és az egyszerű használhatóság megőrzése."
+                }
+            ],
+            "image": "/works/wordy/1.png",
+            "gallery": [
+                "/works/wordy/1.png"
+            ],
+            "technologies": [
+                "Next.js",
+                "Tailwind CSS",
+                "SQLite",
+                "Prisma"
+            ],
+            "projectMeta": {
+                "type": "Full-stack projekt",
+                "role": "Full-stack fejlesztés és adatmodell kialakítás",
+                "status": "Fejlesztett projekt",
+                "year": "2025"
+            },
+            "category": "fullstack",
+            "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+            "liveUrl": "https://egs.thomasapi.eu"
+        },
+        {
+            "slug": "integrativ-medicina",
+            "featured": false,
+            "title": "Integratív Medicina – gyógyító ásványok",
+            "cardDescription": "Asztali alkalmazás tanulási tartalmak kategorizált megjelenítésére, modern felülettel és helyi adatkezeléssel.",
+            "intro": "Az Integratív Medicina projekt egy olyan alkalmazás, amely ásványokhoz kapcsolódó tanulási tartalmak rendszerezésére és megjelenítésére készült.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy jól áttekinthető, modern felületű alkalmazás létrehozása volt, ahol a tartalmak logikus csoportosításban jelennek meg, és könnyen kezelhetők."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az alkalmazás a felhasználói felület és a helyi adatkezelés összehangolására épül, így nemcsak megjeleníti, hanem rendszerezi is a tanulási anyagokat."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb jellemzői",
+                    "items": [
+                        "Kategóriákba rendezett tanulási tartalmak",
+                        "Modern, letisztult felhasználói felület",
+                        "Helyi adatbázis használata",
+                        "Asztali alkalmazás jellegű működés",
+                        "Adatkezelés és tartalomrendszerezés egy projektben"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a hangsúly az áttekinthető struktúrán, a jó használhatóságon és a helyi környezetben stabilan működő alkalmazás felépítésén volt."
+                }
+            ],
+            "image": "/works/integrative/1.png",
+            "gallery": [
+                "/works/integrative/1.png"
+            ],
+            "technologies": [
+                "Electron",
+                "Vite",
+                "Tailwind CSS",
+                "SQLite",
+                "Prisma"
+            ],
+            "projectMeta": {
+                "type": "Full-stack / desktop projekt",
+                "role": "Asztali alkalmazás fejlesztése és helyi adatkezelés",
+                "status": "Fejlesztett projekt",
+                "year": "2025"
+            },
+            "category": "fullstack",
+            "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+            "liveUrl": "https://egs.thomasapi.eu"
+        },
+        {
+            "slug": "kostoljbele",
+            "featured": false,
+            "title": "Kóstolj Bele! – receptgyűjtemény webalkalmazás",
+            "cardDescription": "Full-stack receptalkalmazás felhasználói autentikációval, saját receptek kezelésével és kategóriaalapú böngészéssel.",
+            "intro": "A Kóstolj Bele! egy receptgyűjtemény webalkalmazás, amelyben a felhasználók böngészhetnek a receptek között, illetve saját tartalmakat is kezelhetnek.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan full-stack alkalmazás létrehozása volt, amely ötvözi a nyilvános receptek böngészését a bejelentkezett felhasználók saját tartalomkezelési lehetőségeivel."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az alkalmazásban a felhasználók regisztrálhatnak, bejelentkezhetnek, létrehozhatnak új recepteket, módosíthatják azokat, és kezelhetik saját tartalmaikat."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb funkciói",
+                    "items": [
+                        "Receptek böngészése és kategorizálása",
+                        "Felhasználói regisztráció és bejelentkezés",
+                        "Saját receptek létrehozása és szerkesztése",
+                        "Autentikációval védett funkciók",
+                        "Adatbázis-alapú tartalomkezelés"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során fontos szerepet kapott az autentikáció és a feltételes megjelenítés összehangolása, valamint a tartalomkezelési folyamat átlátható felépítése."
+                }
+            ],
+            "image": "/works/kostolj/1.png",
+            "gallery": [
+                "/works/kostolj/1.png",
+                "/works/kostolj/2.png"
+            ],
+            "technologies": [
+                "Next.js",
+                "NextAuth",
+                "React",
+                "Sass",
+                "SQLite",
+                "Prisma"
+            ],
+            "projectMeta": {
+                "type": "Full-stack projekt",
+                "role": "Full-stack fejlesztés és autentikációs logika",
+                "status": "Fejlesztett projekt",
+                "year": "2025"
+            },
+            "category": "fullstack",
+            "githubUrl": "https://github.com/Thomas-Horvath/KostoljBele",
+            "liveUrl": "https://egs.thomasapi.eu"
+        },
+        {
+            "slug": "egs-admin-panel",
+            "featured": true,
+            "title": "Electric Guitar Shop webshop – admin felület",
+            "cardDescription": "Adminisztrációs panel termékek, rendelések, felhasználók és adminjogosultságok kezelésére webshop környezetben.",
+            "intro": "Az EGS admin felület egy különálló frontend alkalmazás, amely a webshop háttérfolyamatainak kezelésére készült admin jogosultságú felhasználók számára.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan adminisztrációs felület létrehozása volt, ahol az adminisztrátorok egyetlen rendszerben kezelhetik a webshop működéséhez szükséges fő adatokat és folyamatokat."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az admin panel lehetőséget biztosít termékek létrehozására, módosítására és törlésére, rendelések kezelésére, valamint a felhasználói és adminfiókok adminisztrációjára."
+                },
+                {
+                    "type": "list",
+                    "title": "Az admin felület főbb funkciói",
+                    "items": [
+                        "Termékek létrehozása, szerkesztése és törlése",
+                        "Rendelések megtekintése és kezelése",
+                        "Felhasználói és adminfiókok adminisztrációja",
+                        "Általános forgalmi adatok megjelenítése",
+                        "Webshop-működéshez kapcsolódó háttérfeladatok kezelése"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során fontos szempont volt az összetettebb adatkezelési műveletek jól használható felületre történő szervezése, valamint az admin oldali műveletek átlátható kezelése."
+                }
+            ],
+            "image": "/works/egs_admin/project_4_card.webp",
+            "gallery": [
+                "/works/egs_admin/1.webp",
+                "/works/egs_admin/2.webp",
+                "/works/egs_admin/3.webp",
+                "/works/egs_admin/4.webp",
+                "/works/egs_admin/5.webp",
+                "/works/egs_admin/6.webp"
+            ],
+            "technologies": [
+                "React",
+                "SCSS",
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "projectMeta": {
+                "type": "Frontend projekt",
+                "role": "Admin felület fejlesztése és kliensoldali logika",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "category": "frontend",
+            "githubUrl": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+            "liveUrl": "https://thomas-horvath.github.io/EGS_Admin_Panel/"
+        },
+        {
+            "slug": "egs-mssql-database",
+            "featured": false,
+            "title": "MS SQL – EGS webshop adatbázisa",
+            "cardDescription": "Relációs adatbázis-tervezési projekt MS SQL Server alapokon, felhasználók, termékek és rendelések kezelésére.",
+            "intro": "Ez a projekt az Electric Guitar Shop webshop relációs adatbázisának tervezésére és megvalósítására készült MS SQL Server környezetben.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan relációs adatbázis kialakítása volt, amely képes egy webshop működéséhez szükséges fő entitások és kapcsolatok kezelésére jól strukturált formában."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az adatmodell a felhasználók, termékek, rendelések és kapcsolódó szótártáblák tárolását valósítja meg, a tervezés során pedig kiemelt szempont volt az átláthatóság és a normalizált felépítés."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb elemei",
+                    "items": [
+                        "Relációs adatmodell tervezése",
+                        "Harmadik normálformáig normalizált struktúra",
+                        "Felhasználók, termékek és rendelések kezelése",
+                        "Saját függvények, nézetek és triggerek létrehozása",
+                        "Dokumentált adatbázisprojekt"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során az egyik fő cél az volt, hogy az adatbázis ne csak technikailag működjön jól, hanem a későbbi alkalmazásfejlesztés számára is stabil és logikus alapot adjon."
+                }
+            ],
+            "image": "/works/project_5/project_5_card.webp",
+            "gallery": [
+                "/works/project_5/1.webp",
+                "/works/project_5/2.webp"
+            ],
+            "technologies": [
+                "MS SQL Server",
+                "SQL"
+            ],
+            "projectMeta": {
+                "type": "Adatbázis projekt",
+                "role": "Adatbázistervezés és SQL logika",
+                "status": "Dokumentált projekt",
+                "year": "2024"
+            },
+            "category": "database",
+            "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
+        },
+        {
+            "slug": "thomas-coffee-corner",
+            "featured": false,
+            "title": "Thomas Coffee Corner",
+            "cardDescription": "Frontend projekt termékszűréssel és keresési funkcióval egy fiktív kávézó weboldalához.",
+            "intro": "A Thomas Coffee Corner egy fiktív kávézó weboldala, amely a termékmegjelenítés, szűrés és keresés funkcióira épül.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan kisebb frontend alkalmazás létrehozása volt, amely jól használható módon mutatja be a termékeket, miközben lehetőséget ad a szűrésre és a keresésre is."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A felület elsősorban a termékek áttekinthető megjelenítésére koncentrál, de emellett a felhasználó különböző szempontok alapján szűrheti is a kínálatot."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb funkciói",
+                    "items": [
+                        "Termékek megjelenítése frontend felületen",
+                        "Kategóriaalapú szűrés",
+                        "Keresési funkció",
+                        "Egyszerű és áttekinthető kezelőfelület",
+                        "React alapú komponensstruktúra"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a hangsúly a szűrési logika és a keresés jól összehangolt működésén, valamint a könnyen átlátható felhasználói felület kialakításán volt."
+                }
+            ],
+            "image": "/works/coffee_shop/project_6_card.webp",
+            "gallery": [
+                "/works/coffee_shop/1.webp",
+                "/works/coffee_shop/2.webp",
+                "/works/coffee_shop/3.webp",
+                "/works/coffee_shop/4.webp",
+                "/works/coffee_shop/5.webp",
+                "/works/coffee_shop/6.webp"
+            ],
+            "technologies": [
+                "React",
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "projectMeta": {
+                "type": "Frontend projekt",
+                "role": "Frontend fejlesztés és szűrési logika",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "category": "frontend",
+            "githubUrl": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
+            "liveUrl": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/"
+        },
+        {
+            "slug": "gitart-backend",
+            "featured": false,
+            "title": "GitArt Próbaterem és Stúdió szerver",
+            "cardDescription": "Backend alkalmazás online teremfoglalási logikával, felhasználói autentikációval és MongoDB-alapú adatkezeléssel.",
+            "intro": "A GitArt backend a próbaterem és stúdió weboldal szerveroldali része, amely az adatok kezelését és a foglalási folyamatok kiszolgálását végzi.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan backend rendszer kialakítása volt, amely támogatja a próbatermek adatainak kezelését, a felhasználói fiókok működését és az online foglalási folyamatokat."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A szerver kezeli a regisztrációt, a bejelentkezést, az autentikációt, valamint a foglalások létrehozását és kezelését. Az adatok MongoDB adatbázisban tárolódnak."
+                },
+                {
+                    "type": "list",
+                    "title": "A backend főbb feladatai",
+                    "items": [
+                        "Felhasználói regisztráció és bejelentkezés",
+                        "Autentikáció és hozzáférés-kezelés",
+                        "Próbatermek adatainak kiszolgálása",
+                        "Online foglalási logika kezelése",
+                        "MongoDB-alapú adattárolás"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a fő kihívást a foglalási logika és a szerveroldali adatkezelés összehangolása jelentette, különösen a többféle erőforrás és felhasználói folyamat kezelésénél."
+                }
+            ],
+            "image": "/works/gitart_api/project_7_card.webp",
+            "gallery": [
+                "/works/gitart_api/1.webp",
+                "/works/gitart_api/2.webp",
+                "/works/gitart_api/3.webp"
+            ],
+            "technologies": [
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "JavaScript",
+                "JSON"
+            ],
+            "projectMeta": {
+                "type": "Backend projekt",
+                "role": "API fejlesztés és foglalási logika",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "category": "backend",
+            "githubUrl": "https://github.com/Thomas-Horvath/GITART-server",
+            "liveUrl": "https://gitart.thomasapi.eu/"
+        },
+        {
+            "slug": "leather-portfolio",
+            "featured": false,
+            "title": "Csibi Róbert bőrdíszműves weboldala",
+            "cardDescription": "Bemutatkozó weboldal képgalériával és modális nézettel egy kézműves portfóliójához.",
+            "intro": "Ez a projekt egy kézműves bőrdíszműves bemutatkozó weboldala, ahol a hangsúly az esztétikus megjelenítésen és a munkák vizuális bemutatásán van.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan letisztult portfólióoldal készítése volt, amely méltó módon mutatja be a kézműves munkákat és az alkotó tevékenységét."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az oldalon az általános információk mellett képgaléria is helyet kapott, ahol a látogatók nagyobb méretben is megtekinthetik az elkészült munkákat."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb elemei",
+                    "items": [
+                        "Bemutatkozó tartalom és alapinformációk",
+                        "Képgaléria a munkák megjelenítéséhez",
+                        "Modális nézet a képek nagyításához",
+                        "Letisztult, vizuálisan fókuszált felépítés",
+                        "Egyszerű, gyors navigáció"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a legfontosabb szempont az volt, hogy a vizuális tartalom kapja a főszerepet, miközben az oldal továbbra is könnyen használható és áttekinthető marad."
+                }
+            ],
+            "image": "/works/project_8/project_8_card.webp",
+            "gallery": [
+                "/works/project_8/1.webp",
+                "/works/project_8/2.webp",
+                "/works/project_8/3.webp",
+                "/works/project_8/4.webp",
+                "/works/project_8/5.webp",
+                "/works/project_8/6.webp"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "projectMeta": {
+                "type": "Frontend projekt",
+                "role": "Portfólióoldal fejlesztése és galériafunkciók",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "category": "frontend",
+            "githubUrl": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "liveUrl": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html"
+        },
+        {
+            "slug": "egs-mongodb-database",
+            "featured": false,
+            "title": "MongoDB – EGS webshop adatbázisa",
+            "cardDescription": "Dokumentumalapú adatbázisprojekt webshop adatok kezelésére MongoDB környezetben.",
+            "intro": "Ez a projekt az Electric Guitar Shop webshop MongoDB-alapú adatbázisának kialakítására készült, a termékek, rendelések és felhasználói adatok kezelésére.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan dokumentumalapú adatmodell kialakítása volt, amely jól használható webshop környezetben, és megfelelően kezeli a fő üzleti entitásokat."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az adatbázis a termékek, rendelések és felhasználók tárolását valósítja meg, dokumentumorientált szerkezetben."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb elemei",
+                    "items": [
+                        "MongoDB-alapú adattárolás",
+                        "Termékek, rendelések és felhasználók kezelése",
+                        "Dokumentumorientált adatmodell",
+                        "Webshop környezethez illeszkedő struktúra",
+                        "NoSQL szemléletű adatkezelés"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a hangsúly azon volt, hogy a különböző webshop-adatok jól leképezhetők legyenek dokumentumalapú környezetben is, áttekinthető szerkezet mellett."
+                }
+            ],
+            "image": "/works/project_9/project_9_card.webp",
+            "gallery": [
+                "/works/project_9/1.webp",
+                "/works/project_9/2.webp"
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "projectMeta": {
+                "type": "Adatbázis projekt",
+                "role": "NoSQL adatmodell kialakítás",
+                "status": "Dokumentált projekt",
+                "year": "2024"
+            },
+            "category": "database",
+            "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
+        },
+        {
+            "slug": "calculator-app",
+            "featured": false,
+            "title": "Számológép applikáció",
+            "cardDescription": "Számológép alkalmazás két különböző felhasználói felülettel, klasszikus és modern megjelenésben.",
+            "intro": "Ez a projekt egy funkcionális számológép alkalmazás, amely két különböző vizuális felületen is használható.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan számológép létrehozása volt, amely nemcsak működésében, hanem megjelenésében is többféle felhasználói élményt kínál."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az alkalmazás egy klasszikusabb és egy modernebb megjelenésű kezelőfelületen keresztül is használható, miközben a mögöttes logika változatlan marad."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb jellemzői",
+                    "items": [
+                        "Alapvető számológép-funkciók",
+                        "Két különböző vizuális kezelőfelület",
+                        "Azonos logika eltérő UI-n",
+                        "Egyszerű és gyors használhatóság",
+                        "Frontend fókuszú gyakorlóprojekt"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a legérdekesebb feladat az volt, hogy ugyanaz a funkcionalitás két eltérő megjelenésben is jól működjön."
+                }
+            ],
+            "image": "/works/project_10/project_10_card.webp",
+            "gallery": [
+                "/works/project_10/1.webp",
+                "/works/project_10/2.webp"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "projectMeta": {
+                "type": "Frontend projekt",
+                "role": "UI megvalósítás és kliensoldali logika",
+                "status": "Publikus demó",
+                "year": "2024"
+            },
+            "category": "frontend",
+            "githubUrl": "https://github.com/Thomas-Horvath/CalculatorApp",
+            "liveUrl": "https://thomas-horvath.github.io/CalculatorApp/"
+        },
+        {
+            "slug": "gitart-mongodb-database",
+            "featured": false,
+            "title": "MongoDB – GitArt Próbaterem és Stúdió adatbázisa",
+            "cardDescription": "Dokumentumalapú adatbázis próbatermek, felhasználók és foglalások kezelésére a GitArt projekthez.",
+            "intro": "Ez a projekt a GitArt próbaterem és stúdió weboldal MongoDB-alapú adatbázisát valósítja meg, a foglalási rendszerhez szükséges fő adatstruktúrákkal.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt célja egy olyan NoSQL adatbázis kialakítása volt, amely jól kezeli a foglalásokhoz, felhasználókhoz és próbatermekhez kapcsolódó adatokat."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az adatbázis a felhasználók, foglalások, próbatermek és stúdióhoz kapcsolódó további adatok kezelését végzi dokumentumalapú struktúrában."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb elemei",
+                    "items": [
+                        "Felhasználók adatainak tárolása",
+                        "Foglalási adatok kezelése",
+                        "Próbatermekhez kapcsolódó adatok rendszerezése",
+                        "MongoDB alapú dokumentumstruktúra",
+                        "Foglalási rendszerhez illeszkedő adatmodell"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A fejlesztés során a fókusz azon volt, hogy a foglalási rendszerhez szükséges adatok jól szervezett, bővíthető formában legyenek tárolhatók."
+                }
+            ],
+            "image": "/works/project_11/project_11_card.webp",
+            "gallery": [
+                "/works/project_11/1.webp",
+                "/works/project_11/2.webp"
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "projectMeta": {
+                "type": "Adatbázis projekt",
+                "role": "NoSQL adatmodell kialakítás",
+                "status": "Dokumentált projekt",
+                "year": "2024"
+            },
+            "category": "database",
+            "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
+        },
+        {
+            "slug": "webp-converter",
+            "featured": false,
+            "title": "WebP Konverter – képformátum-átalakító eszköz",
+            "cardDescription": "Asztali vagy helyi futtatású eszköz képek WebP formátumba történő tömeges átalakítására.",
+            "intro": "A WebP Konverter egy képoptimalizálást segítő eszköz, amelynek célja a képek gyors és kényelmes átalakítása WebP formátumba.",
+            "detailBlocks": [
+                {
+                    "type": "paragraph",
+                    "content": "A projekt gyakorlati problémára készült: nagyobb mennyiségű kép webes felhasználás előtti optimalizálására és tömeges átalakítására."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Az alkalmazás lehetővé teszi, hogy a felhasználó több képet dolgozzon fel egységes módon, és a webes használathoz kedvezőbb formátumba mentse őket."
+                },
+                {
+                    "type": "list",
+                    "title": "A projekt főbb funkciói",
+                    "items": [
+                        "Képek WebP formátumba történő konvertálása",
+                        "Tömeges feldolgozás támogatása",
+                        "Egyszerű, célorientált kezelőfelület",
+                        "Webes optimalizálást támogató workflow",
+                        "Gyakorlati fejlesztői segédeszköz jelleg"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": "A projekt fejlesztése során a hangsúly a képfeldolgozási folyamat egyszerűsítésén, az átlátható használaton és a gyakorlati hasznosságon volt."
+                }
+            ],
+            "image": "/works/webp/1.png",
+            "gallery": [
+                "/works/webp/1.png",
+                "/works/webp/2.png"
+            ],
+            "technologies": [
+                "JavaScript",
+                "Node.js",
+                "WebP",
+                "Desktop tooling"
+            ],
+            "projectMeta": {
+                "type": "Eszköz / utility projekt",
+                "role": "Saját fejlesztésű képoptimalizáló eszköz",
+                "status": "Fejlesztett projekt",
+                "year": "2025"
+            },
+            "category": "fullstack",
+            "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
+        }
+    ]
+}

@@ -60,20 +60,28 @@
         "button": "learn more about me"
     },
     "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
+    "contactBanner": {
+        "heading": "Let's create something really good together!",
+        "subHeading": "If you're looking for a modern, fast, and clean web solution, I'm happy to help bring your ideas to life.",
+        "buttonLabel": "Get in Touch",
+        "buttonSubLabel": "Let's discuss your next project.",
+        "button": "Get in Touch"
+    },
     "projectsPage": {
-        "eyebrow": "Munkáim",
-        "title": "Összes projektem",
-        "featuredTitle": "Kiemelt projektjeim",
-        "featuredDescription": "Néhány projekt, amelyek jól megmutatják, hogyan gondolkodom a modern frontend és full stack fejlesztésről.",
-        "description": "Itt találod azokat a projekteket, amelyek jól mutatják a frontend, backend és adatbázis területeken szerzett tapasztalataimat.",
-        "emptyText": "Ebben a kategóriában még nincs megjeleníthető projektem.",
-        "notFoundTitle": "Ez a projekt nem található",
-        "notFoundDescription": "Lehet, hogy a projekt még nincs publikálva, vagy a hivatkozás hibás.",
+        "eyebrow": "My works",
+        "title": "All Projects",
+        "featuredEyebrow": "Featured Projects",
+        "featuredTitle": "Projects I'm Proud Of",
+        "featuredDescription": "Some projects that showcase how I think about modern frontend and full stack development.",
+        "description": "Here you can find the projects that best represent my experience in frontend, backend, and database development.",
+        "emptyText": "There are no projects to display in this category.",
+        "notFoundTitle": "Project Not Found",
+        "notFoundDescription": "The project you are looking for may not be published yet, or the link might be incorrect.",
         "filters": {
-            "all": "Összes",
+            "all": "All",
             "frontend": "Frontend",
             "backend": "Backend",
-            "database": "Adatbázis",
+            "database": "Database",
             "fullstack": "Full Stack"
         },
         "buttons": {
@@ -82,6 +90,7 @@
             "backToProjects": "Back to Projects",
             "github": "GitHub",
             "liveDemo": "Live Demo",
+            "docsDownload": "Documentation",
             "viewProject": "View Project"
         },
         "detailSections": {
@@ -91,137 +100,402 @@
         },
         "items": [
             {
-                "slug": "wordy",
+                "slug": "gitart-frontend",
                 "featured": true,
-                "title": "Wordy",
-                "cardDescription": "Angol–magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
+                "title": "GitArt Próbaterem és Stúdió weboldala",
+                "cardDescription": "A GitArt próbaterem és stúdió weboldalának frontend megvalósítása online teremfoglalással, felhasználói regisztrációval és autentikációval.",
                 "description": [
-                    "A Wordy egy nyelvtanulást támogató projekt, amelynek célja a gyors és kényelmes szótanulás modern felületen.",
-                    "A felület letisztult, mobilbarát és a tanulási élményre optimalizált.",
-                    "A projekt során külön figyelmet kapott a vizuális hierarchia, az áttekinthetőség és a gyors használhatóság."
+                    "A projekt a GitArt próbaterem és stúdió weboldalát valósítja meg.",
+                    "Az oldal funkcionálisan megvalósítja a termékek online foglalását.",
+                    "Az oldalon megvalósul a felhasználók regisztrációja, autentikációja és a belépett felhasználó teremfoglalás kezelése.",
+                    "Teszt felhasználó email címe: 'testuser@gmail.com' , jelszava: 'Password' "
                 ],
-                "image": "/works/wordy.png",
+                "image": "/works/gitart/project_1_card.webp",
                 "gallery": [
-                    "/works/wordy.png",
-                    "/works/egs.webp",
-                    "/works/im.png"
+                    "/works/gitart/1.webp",
+                    "/works/gitart/2.webp",
+                    "/works/gitart/3.webp",
+                    "/works/gitart/4.webp",
+                    "/works/gitart/5.webp",
+                    "/works/gitart/6.webp"
                 ],
                 "tags": [
-                    "Next.js",
-                    "TypeScript",
-                    "SQLite",
-                    "Tailwind"
+                    "HTML",
+                    "CSS",
+                    "SCSS",
+                    "React",
+                    "JavaScript"
                 ],
-                "category": "fullstack",
-                "githubUrl": "https://github.com/example/wordy",
-                "liveUrl": "https://example.com/wordy"
+                "category": "frontend",
+                "githubUrl": "https://github.com/Thomas-Horvath/GITART-frontend",
+                "liveUrl": "https://thomas-horvath.github.io/GITART-frontend/"
             },
             {
-                "slug": "electric-guitar-shop",
+                "slug": "egs-shop-client",
                 "featured": true,
-                "title": "Electric Guitar Shop",
-                "cardDescription": "Full stack webshop koncepció strukturált tartalomkezeléssel és modern felhasználói élménnyel.",
+                "title": "Electric Guitar Shop E-commerce Webshop",
+                "cardDescription": "Az EGS hangszerbolt webshopjának kliens oldali frontend megvalósítása termékböngészéssel, kosárkezeléssel és felhasználói profillal.",
                 "description": [
-                    "Ez a projekt egy modern hangszeres webshop vizuális és funkcionális koncepcióját mutatja be.",
-                    "A fókusz a termékmegjelenítésen, a kategorizáláson és az átlátható vásárlói élményen volt.",
-                    "A megoldás jól szemlélteti, hogyan lehet modern frontend struktúrával professzionális felületet építeni."
+                    "A projekt az EGS hangszerbolt és webshop kliens oldali front-end megvalósítása.",
+                    "Az oldal megvalósítja a termékek megjelenítését, rendelések leadását valamint a kosár kezelését.",
+                    "Az oldalon megvalósul a felhasználók regisztrációja, autentikációja és a belépett felhasználók profiljának kezelése.",
+                    "Teszt felhasználó felhasználóneve: 'testuser' , jelszava: 'Password' "
                 ],
-                "image": "/works/egs.webp",
+                "image": "/works/egs_frontend/project_2_card.webp",
                 "gallery": [
-                    "/works/egs.webp",
-                    "/works/wordy.png",
-                    "/works/im.png"
+                    "/works/egs_frontend/1.webp",
+                    "/works/egs_frontend/2.webp",
+                    "/works/egs_frontend/3.webp",
+                    "/works/egs_frontend/4.webp",
+                    "/works/egs_frontend/5.webp",
+                    "/works/egs_frontend/6.webp"
                 ],
                 "tags": [
+                    "HTML",
+                    "CSS",
                     "React",
+                    "JavaScript"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS_shop_client",
+                "liveUrl": "https://thomas-horvath.github.io/EGS_shop_client/"
+            },
+            {
+                "slug": "egs-backend",
+                "featured": false,
+                "title": "Electric Guitar Shop – Webshop szerver",
+                "cardDescription": "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás Node.js, Express és MongoDB alapokon.",
+                "description": [
+                    "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás.",
+                    "Az oldal egy Node.js Express szerverrel kezeli a bejövő kéréseket.",
+                    "Az adatbázis egy MongoDB szerveren fut."
+                ],
+                "image": "/works/egs_api/project_3_card.webp",
+                "gallery": [
+                    "/works/egs_api/1.webp",
+                    "/works/egs_api/2.webp",
+                    "/works/egs_api/3.webp"
+                ],
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "NodeJs",
                     "Express",
-                    "MongoDB",
-                    "Sass"
+                    "MongoDb"
                 ],
                 "category": "backend",
-                "githubUrl": "https://github.com/example/electric-guitar-shop",
-                "liveUrl": "https://example.com/electric-guitar-shop"
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+                "liveUrl": "https://egs.thomasapi.eu"
             },
             {
-                "slug": "integrative-medicine",
-                "featured": true,
-                "title": "Integratív Medicina",
-                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "slug": "wordy",
+                "featured": false,
+                "title": "Wordy - Angol-magyar szókártyás alkalmazás",
+                "cardDescription": "Angol-magyar szókártyás alkalmazás modern, letisztult felülettel és több kategóriába rendezett tanulási tartalommal.",
                 "description": [
-                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
-                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
-                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                    "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás.",
+                    "Az oldal egy Node.js Express szerverrel kezeli a bejövő kéréseket.",
+                    "Az adatbázis egy MongoDB szerveren fut."
                 ],
-                "image": "/works/im.png",
+                "image": "/works/wordy/1.png",
                 "gallery": [
-                    "/works/im.png",
-                    "/works/wordy.png",
-                    "/works/egs.webp"
+                    "/works/wordy/1.png"
                 ],
                 "tags": [
-                    "React",
-                    "Tailwind",
+                    "NextJs",
+                    "Tailwind CSS",
+                    "Sqlite",
+                    "Prisma"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+                "liveUrl": "https://egs.thomasapi.eu"
+            },
+            {
+                "slug": "integrativ-medicina",
+                "featured": false,
+                "title": "Integratív Medicina - gyógyító ásványok",
+                "cardDescription": "Integratív Medicina - gyógyító ásványok, egy modern, letisztult felületű webalkalmazás, amely külön kategóriákban rendezi a tanulási tartalmakat.",
+                "description": [
+                    "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás.",
+                    "Az oldal egy Node.js Express szerverrel kezeli a bejövő kéréseket.",
+                    "Az adatbázis egy MongoDB szerveren fut."
+                ],
+                "image": "/works/integrative/1.png",
+                "gallery": [
+                    "/works/integrative/1.png"
+                ],
+                "tags": [
+                    "Vite",
+                    "Tailwind CSS",
+                    "Sqlite",
                     "Prisma",
-                    "Electron",
-                    "SQLite"
+                    "Electron"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
+                "liveUrl": "https://egs.thomasapi.eu"
+            },
+              {
+                "slug": "kostoljbele",
+                "featured": false,
+                "title": "Kóstolj Bele! – Receptgyüjtemény webalkalmazás",
+                "cardDescription": "A GitArt próbaterem és stúdió weboldalának MongoDB alapú adatbázisa, felhasználók és teremfoglalások kezelésére.",
+                "description": [
+                    "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali adatbázisa.",
+                    "Tároljuk a felhasználók adatait valamint a próbaterem foglalások adatait.",
+                    "Az online foglalási rendszer mellett az egyes próbatermek adatait és a stúdió adatait egy-egy kollekcióban tároljuk."
+                ],
+                "image": "/works/kostolj/1.png",
+                "gallery": [
+                    "/works/kostolj/1.png",
+                    "/works/kostolj/2.png"
+                ],
+                "tags": [
+                    "NextJs",
+                    "Next-auth",
+                    "React",
+                    "SaSS",
+                    "Sqlite",
+                    "Prisma"
+                ],
+                "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/KostoljBele",
+                "liveUrl": "https://egs.thomasapi.eu"
+            },
+            {
+                "slug": "egs-admin-panel",
+                "featured": true,
+                "title": "Electric Guitar Shop Webshop – Admin felület",
+                "cardDescription": "Az EGS webshop adminisztrációs panelje termék-, rendelés-, felhasználó- és hírlevél-kezeléssel admin jogosultságú felhasználók számára.",
+                "description": [
+                    "Az Electric Guitar Shop webshop adminisztrációs felülete, ahol az admin jogokkal rendelkező felhasználók belépés után kezelhetik a hangszerbolt adatait.",
+                    "Az általános forgalmi adatok megjelenítése mellett az adminok kezelhetik a termékek részletes adatait, frissíthetik azokat, valamint létrehozhatnak és törölhetnek termékeket.",
+                    "Kezelhetik a vásárlók és adminok adatait, új adminisztrátorokat hozhatnak létre, illetve megtekinthetik, módosíthatják és törölhetik a rendeléseket."
+                ],
+                "image": "/works/egs_admin/project_4_card.webp",
+                "gallery": [
+                    "/works/egs_admin/1.webp",
+                    "/works/egs_admin/2.webp",
+                    "/works/egs_admin/3.webp",
+                    "/works/egs_admin/4.webp",
+                    "/works/egs_admin/5.webp",
+                    "/works/egs_admin/6.webp"
+                ],
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "SCSS",
+                    "React",
+                    "JavaScript"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+                "liveUrl": "https://thomas-horvath.github.io/EGS_Admin_Panel/"
+            },
+            {
+                "slug": "egs-mssql-database",
+                "featured": false,
+                "title": "MS SQL – EGS webshop adatbázisa",
+                "cardDescription": "Microsoft SQL Server 2022 alapú, harmadik normálformáig tervezett relációs adatbázis felhasználók, termékek és rendelések kezelésére.",
+                "description": [
+                    "Microsoft SQL Server 2022 adatbázis szerveren, a harmadik normál formáig tervezett relációs adatbázis.",
+                    "Funkcionalitásban a felhasználók, termékek és rendelések adatainak tárolása volt a cél.",
+                    "A projektben a táblákon és szótár táblákon túl saját függvények, nézetek és triggerek is megvalósításra kerültek, valamint teljes projektdokumentáció is készült."
+                ],
+                "image": "/works/project_5/project_5_card.webp",
+                "gallery": [
+                    "/works/project_5/1.webp",
+                    "/works/project_5/2.webp"
+                ],
+                "tags": [
+                    "MS SQL Server",
+                    "SQL"
                 ],
                 "category": "database",
-                "githubUrl": "https://github.com/example/integrative-medicine",
-                "liveUrl": "https://example.com/integrative-medicine"
+                "githubUrl": null,
+                "liveUrl": null,
+                "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
             },
             {
-                "slug": "integrative-medicine2",
+                "slug": "thomas-coffee-corner",
                 "featured": false,
-                "title": "Integratív Medicina2",
-                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "title": "Thomas Coffee Corner",
+                "cardDescription": "Egy fiktív kávézó frontend megvalósítása termékszűréssel és keresési funkcióval, HTML, CSS, JavaScript és React technológiákkal.",
                 "description": [
-                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
-                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
-                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                    "Egy fiktív kávézó frontend megvalósítása HTML, CSS és JavaScript segítségével.",
+                    "A projektben megvalósult a termékek megjelenítése és szűrése, valamint egy termék keresési funkció is."
                 ],
-                "image": "/works/im.png",
+                "image": "/works/coffee_shop/project_6_card.webp",
                 "gallery": [
-                    "/works/im.png",
-                    "/works/wordy.png",
-                    "/works/egs.webp"
+                    "/works/coffee_shop/1.webp",
+                    "/works/coffee_shop/2.webp",
+                    "/works/coffee_shop/3.webp",
+                    "/works/coffee_shop/4.webp",
+                    "/works/coffee_shop/5.webp",
+                    "/works/coffee_shop/6.webp"
                 ],
                 "tags": [
-                    "React",
-                    "Tailwind",
-                    "Prisma",
-                    "Electron",
-                    "SQLite"
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React"
                 ],
                 "category": "frontend",
-                "githubUrl": "https://github.com/example/integrative-medicine",
-                "liveUrl": "https://example.com/integrative-medicine"
+                "githubUrl": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
+                "liveUrl": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/"
             },
             {
-                "slug": "integrative-medicine3",
+                "slug": "gitart-backend",
                 "featured": false,
-                "title": "Integratív Medicina3",
-                "cardDescription": "Komplex adatközpontú projekt modern struktúrával és több nézetből felépített tartalomkezeléssel.",
+                "title": "GitArt Próbaterem és Stúdió szerver",
+                "cardDescription": "A GitArt próbaterem és stúdió weboldal szerver oldali megvalósítása Node.js, Express és MongoDB alapokon, online teremfoglalással.",
                 "description": [
-                    "Az Integratív Medicina projekt célja egy összetett, tartalomközpontú rendszer kialakítása volt.",
-                    "A projekt több adatszinttel, részletes leírásokkal és vizuálisan rendezett tartalmi blokkokkal dolgozik.",
-                    "A hangsúly az átláthatóságon, az adatkezelésen és a bővíthető felépítésen volt."
+                    "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali része.",
+                    "A projekt egy Node.js Express szerverrel valósul meg.",
+                    "A felhasználók regisztrációját, bejelentkezését és autentikációját, valamint a próbatermek online foglalásának kezelését valósítja meg.",
+                    "Az adatbázis egy MongoDB szerveren fut."
                 ],
-                "image": "/works/im.png",
+                "image": "/works/gitart_api/project_7_card.webp",
                 "gallery": [
-                    "/works/im.png",
-                    "/works/wordy.png",
-                    "/works/egs.webp"
+                    "/works/gitart_api/1.webp",
+                    "/works/gitart_api/2.webp",
+                    "/works/gitart_api/3.webp"
                 ],
                 "tags": [
-                    "React",
-                    "Tailwind",
-                    "Prisma",
-                    "Electron",
-                    "SQLite"
+                    "NodeJs",
+                    "Express",
+                    "JavaScript",
+                    "MongoDb",
+                    "JSON"
+                ],
+                "category": "backend",
+                "githubUrl": "https://github.com/Thomas-Horvath/GITART-server",
+                "liveUrl": "https://gitart.thomasapi.eu/"
+            },
+            {
+                "slug": "leather-portfolio",
+                "featured": false,
+                "title": "Csibi Róbert Bőrdíszműves weboldala",
+                "cardDescription": "Csibi Róbert bőrdíszműves bemutatkozó weboldala képgalériával, ahol a képek modális ablakban is megtekinthetők.",
+                "description": [
+                    "Csibi Róbert bőrdíszműves weboldala. Az általános információk mellett képgaléria is megvalósításra került.",
+                    "A képek egy modális ablakban nagyítva is megtekinthetők."
+                ],
+                "image": "/works/project_8/project_8_card.webp",
+                "gallery": [
+                    "/works/project_8/1.webp",
+                    "/works/project_8/2.webp",
+                    "/works/project_8/3.webp",
+                    "/works/project_8/4.webp",
+                    "/works/project_8/5.webp",
+                    "/works/project_8/6.webp"
+                ],
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
                 ],
                 "category": "frontend",
-                "githubUrl": "https://github.com/example/integrative-medicine",
-                "liveUrl": "https://example.com/integrative-medicine"
+                "githubUrl": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+                "liveUrl": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html"
+            },
+            {
+                "slug": "egs-mongodb-database",
+                "featured": false,
+                "title": "MongoDB – EGS webshop adatbázisa",
+                "cardDescription": "Az EGS webshop MongoDB alapú adatbázisa, amely a termékek, rendelések és felhasználók adatait kezeli.",
+                "description": [
+                    "Ebben az adatbázisban a termékek, rendelések valamint a felhasználók kezelését valósítottam meg."
+                ],
+                "image": "/works/project_9/project_9_card.webp",
+                "gallery": [
+                    "/works/project_9/1.webp",
+                    "/works/project_9/2.webp"
+                ],
+                "tags": [
+                    "MongoDb",
+                    "JSON",
+                    "BSON"
+                ],
+                "category": "database",
+                "githubUrl": null,
+                "liveUrl": null,
+                "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
+            },
+            {
+                "slug": "calculator-app",
+                "featured": false,
+                "title": "Számológép applikáció",
+                "cardDescription": "Számológép applikáció két különböző – klasszikus és modern – felhasználói felülettel, HTML, CSS és JavaScript alapokon.",
+                "description": [
+                    "Számológép applikáció HTML, CSS és JavaScript megvalósítása.",
+                    "A projektben egy régi és egy modern stílusú user interface-en is használható a szolgáltatás."
+                ],
+                "image": "/works/project_10/project_10_card.webp",
+                "gallery": [
+                    "/works/project_10/1.webp",
+                    "/works/project_10/2.webp"
+                ],
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "category": "frontend",
+                "githubUrl": "https://github.com/Thomas-Horvath/CalculatorApp",
+                "liveUrl": "https://thomas-horvath.github.io/CalculatorApp/"
+            },
+            {
+                "slug": "gitart-mongodb-database",
+                "featured": false,
+                "title": "MongoDB – GitArt Próbaterem és Stúdió adatbázisa",
+                "cardDescription": "A GitArt próbaterem és stúdió weboldalának MongoDB alapú adatbázisa, felhasználók és teremfoglalások kezelésére.",
+                "description": [
+                    "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali adatbázisa.",
+                    "Tároljuk a felhasználók adatait valamint a próbaterem foglalások adatait.",
+                    "Az online foglalási rendszer mellett az egyes próbatermek adatait és a stúdió adatait egy-egy kollekcióban tároljuk."
+                ],
+                "image": "/works/project_11/project_11_card.webp",
+                "gallery": [
+                    "/works/project_11/1.webp",
+                    "/works/project_11/2.webp"
+                ],
+                "tags": [
+                    "MongoDb",
+                    "JSON",
+                    "BSON"
+                ],
+                "category": "database",
+                "githubUrl": null,
+                "liveUrl": null,
+                "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
+            },
+            {
+                "slug": "webp-converter",
+                "featured": false,
+                "title": "WebP Konverter - Képformátum-átalakító eszköz",
+                "cardDescription": "A GitArt próbaterem és stúdió weboldalának MongoDB alapú adatbázisa, felhasználók és teremfoglalások kezelésére.",
+                "description": [
+                    "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali adatbázisa.",
+                    "Tároljuk a felhasználók adatait valamint a próbaterem foglalások adatait.",
+                    "Az online foglalási rendszer mellett az egyes próbatermek adatait és a stúdió adatait egy-egy kollekcióban tároljuk."
+                ],
+                "image": "/works/webp/1.png",
+                "gallery": [
+                    "/works/webp/1.png",
+                    "/works/webp/2.png"
+                ],
+                "tags": [
+                    "MongoDb",
+                    "JSON",
+                    "BSON"
+                ],
+                "category": "fullstack",
+                "githubUrl": null,
+                "liveUrl": null,
+                "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf"
             }
         ]
     },
@@ -234,10 +508,19 @@
         "thirdParagraph": "<strong>In the spring of 2022</strong>, I was given the opportunity to gain insight into the world of IT as part of the \"Redesign\" program. During the <strong>system operator</strong> training, I mastered computer technology principles, the basics of network operation, and the construction, use, and operation of client (Windows, Linux) and server-side (Windows Server, Linux Server) operating systems, virtual machines (Hyper-V, Docker), and cloud platforms (Azure, AWS).",
         "forthParagraph": "After that, I took part in <strong>database specialist</strong> training, where I learned the SQL language at an advanced level, as well as the use, configuration, and operation of various database software (MS SQL, MySQL, MongoDB). In addition, I also mastered the design and optimization of databases.",
         "fifthParagraph": "Due to my commitment to continuous learning, and because I always like to see the big picture, I set my sights on a <strong>full-stack development</strong> career. In addition to mastering <strong>front-end development</strong> at an advanced level, my current goal is to learn about the back-end side, with which I will be able to implement complete systems on the web development platform.",
+        "ctaLabel": "Contact",
+        "ctaTitle": "If you find my approach appealing",
+        "ctaDescription": "Check out my resume or get in touch if you'd like to learn more about me, my experience, and how I work.",
         "contactButton": "Let's get in touch!",
-        "cvButton": "Download my CV!"
+        "cvButton": "Download my CV!",
+        "skillsHeader": "Skills",
+        "skillsTitle": "Technologies and Areas Where I Feel Comfortable",
+        "skillsDescription": "I work with tools that allow me to build complete web solutions, from visual interfaces to server-side logic and databases.",
+        "skillsSubTitle": "Database",
+        "skillsSubtitle2": "Other Tools"
     },
     "aboutInfo": {
+        "eyebrow": "Rólam",
         "title": "A Few More Things About Me",
         "intro": " sdfgsfg",
         "firstInfoTitle": "1. The Guitarist",
@@ -250,21 +533,6 @@
         "forthInfoContent": "<p>Fitness and bodybuilding have always amazed me. As a teenager, I eagerly went to the gym, though as I entered the professional world, I found it harder to make time for regular workouts. I plan to start exercising again soon.</p><p>My greatest inspiration is Arnold Schwarzenegger.</p>",
         "fifthInfoTitle": "5. Personality",
         "fifthInfoContent": "<p>You can count on me to perform my tasks reliably and precisely in any situation.</p><p>I am determined to achieve my goals while adapting easily to new situations and working effectively with others.</p>"
-    },
-    "projectPageContent": {
-        "headingTitle": "Portfolio",
-        "subHeading": "My Work So Far",
-        "buttonsAll": "All",
-        "buttonFront": "Front-end",
-        "buttonBack": "Back-end",
-        "buttonApps": "Databases",
-        "buttonsAllType": "All",
-        "buttonFrontType": "Website",
-        "buttonBackType": "Back-end",
-        "buttonAppsType": "Data"
-    },
-    "projectCard": {
-        "buttonDetails": "Details"
     },
     "contactPageContent": {
         "headingTitle": "Contact",
@@ -410,348 +678,12 @@
             }
         }
     },
-    "projects": [
-        {
-            "id": 1,
-            "type": "Website",
-            "title": "GitArt Rehearsal Room and Studio Website",
-            "cardDescription": "GitArt",
-            "popupDescription": [
-                "This project implements the website for the GitArt Rehearsal Room and Studio.",
-                "The site functionally implements online booking for the rooms.",
-                "It allows users to register, authenticate, and manage room bookings as logged-in users.",
-                "Test user email: 'testuser@gmail.com', password: 'Password'."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "SCSS",
-                "React",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "GitArt Practice Room and Studio Website",
-            "githubLink": "https://github.com/Thomas-Horvath/GITART-frontend",
-            "githubPagesLink": "https://thomas-horvath.github.io/GITART-frontend/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 2,
-            "type": "Website",
-            "title": "Electric Guitar Shop E-commerce Webshop",
-            "cardDescription": "EGS webshop",
-            "popupDescription": [
-                "This project implements the client-side frontend for the EGS musical instrument store and webshop.",
-                "The site enables product display, order placement, and cart management.",
-                "It includes user registration, authentication, and profile management for logged-in users.",
-                "Test user username: 'testuser', password: 'Password'."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "React",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/project_2/project_2_card.webp",
-            "gallery": [
-                "/project_img/project_2/1.webp",
-                "/project_img/project_2/2.webp",
-                "/project_img/project_2/3.webp",
-                "/project_img/project_2/4.webp",
-                "/project_img/project_2/5.webp",
-                "/project_img/project_2/6.webp"
-            ],
-            "imageAlt": "EGS Webshop Client Frontend",
-            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
-            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 3,
-            "type": "Back-end",
-            "title": "Electric Guitar Shop - Webshop Server",
-            "cardDescription": "EGS - server",
-            "popupDescription": [
-                "The server-side implementation for the EGS musical instrument store client and admin interface.",
-                "The server handles incoming requests using a NodeJs Express server.",
-                "The database runs on a MongoDb server."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "NodeJs",
-                "Express",
-                "MongoDb"
-            ],
-            "imageSrc": "/project_img/project_3/project_3_card.webp",
-            "gallery": [
-                "/project_img/project_3/1.webp",
-                "/project_img/project_3/2.webp",
-                "/project_img/project_3/3.webp"
-            ],
-            "imageAlt": "Electric Guitar Shop - Webshop Server",
-            "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
-            "githubPagesLink": "https://egs.thomasapi.eu",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 4,
-            "type": "Website",
-            "title": "Electric Guitar Shop Webshop - Admin Interface",
-            "cardDescription": "EGS - admin panel",
-            "popupDescription": [
-                "The administration interface of the Electric Guitar Shop Webshop, where users with admin rights can manage the shop data after logging in.",
-                "Admins can view general sales data, manage product details, update them, create or delete products.",
-                "Admins can manage customer and admin data, as well as create new administrators.",
-                "They can monitor customer activity. Inactive users cannot log into the shop's profile.",
-                "Admins can view, modify, and delete orders.",
-                "Newsletter subscriptions are also managed via this interface.",
-                "Test administrator username: 'admin', password: 'Password'."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "SCSS - Sass",
-                "React",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/project_4/project_4_card.webp",
-            "gallery": [
-                "/project_img/project_4/1.webp",
-                "/project_img/project_4/2.webp",
-                "/project_img/project_4/3.webp",
-                "/project_img/project_4/4.webp",
-                "/project_img/project_4/5.webp",
-                "/project_img/project_4/6.webp"
-            ],
-            "imageAlt": "EGS Webshop Admin Interface",
-            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
-            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 5,
-            "type": "Database",
-            "title": "MS SQL - EGS Webshop Database",
-            "cardDescription": "EGS - MsSql database",
-            "popupDescription": [
-                "Relational database designed up to the third normal form on a Microsoft SQL Server 2022.",
-                "The goal was to store data for users, products, and orders.",
-                "In addition to tables and dictionary tables, custom functions, views, and triggers were implemented.",
-                "A full project documentation is available and can be downloaded by clicking the button below."
-            ],
-            "technologies": [
-                "MS SQL Server",
-                "SQL"
-            ],
-            "imageSrc": "/project_img/project_5/project_5_card.webp",
-            "gallery": [
-                "/project_img/project_5/1.webp",
-                "/project_img/project_5/2.webp"
-            ],
-            "imageAlt": "MS SQL Server",
-            "downloadDocs_title": "Download Documentation",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 6,
-            "type": "Website",
-            "title": "Thomas Coffee Corner - Café Website",
-            "cardDescription": "Thomas Coffee Corner",
-            "popupDescription": [
-                "A front-end implementation of a fictional café using HTML, CSS, and JavaScript.",
-                "The project includes product display, filtering, and a product search function."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project_6/project_6_card.webp",
-            "gallery": [
-                "/project_img/project_6/1.webp",
-                "/project_img/project_6/2.webp",
-                "/project_img/project_6/3.webp",
-                "/project_img/project_6/4.webp",
-                "/project_img/project_6/5.webp",
-                "/project_img/project_6/6.webp"
-            ],
-            "imageAlt": "Thomas Coffee Corner Café Website",
-            "githubLink": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
-            "githubPagesLink": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 7,
-            "type": "Back-end",
-            "title": "GitArt Rehearsal Room and Studio Server",
-            "cardDescription": "GitArt - server",
-            "popupDescription": [
-                "This project is the back-end server part of the GitArt rehearsal room and studio website.",
-                "The project is implemented using a Node.js Express server.",
-                "It handles user registration, login, authentication, and the online booking management for the rehearsal rooms.",
-                "The database runs on a MongoDB server."
-            ],
-            "technologies": [
-                "Node.js",
-                "Express",
-                "JavaScript",
-                "MongoDB",
-                "JSON"
-            ],
-            "imageSrc": "/project_img/project_7/project_7_card.webp",
-            "gallery": [
-                "/project_img/project_7/1.webp",
-                "/project_img/project_7/2.webp",
-                "/project_img/project_7/3.webp"
-            ],
-            "imageAlt": "Node.js Express server",
-            "githubLink": "https://github.com/Thomas-Horvath/GITART-server",
-            "githubPagesLink": "https://gitart.thomasapi.eu/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 8,
-            "type": "Website",
-            "title": "Róbert Csibi - Leather Craftsman Portfolio",
-            "cardDescription": "Leather Craftsman Portfolio",
-            "popupDescription": [
-                "The portfolio website for Róbert Csibi, a leather craftsman. In addition to general information, a photo gallery has also been implemented.",
-                "The images can be viewed enlarged in a modal window."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/project_8/project_8_card.webp",
-            "gallery": [
-                "/project_img/project_8/1.webp",
-                "/project_img/project_8/2.webp",
-                "/project_img/project_8/3.webp",
-                "/project_img/project_8/4.webp",
-                "/project_img/project_8/5.webp",
-                "/project_img/project_8/6.webp"
-            ],
-            "imageAlt": "Róbert Csibi Leather Craftsman Portfolio",
-            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
-            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 9,
-            "type": "Database",
-            "title": "MongoDB - EGS Webshop Database",
-            "cardDescription": "EGS - MongoDB database",
-            "popupDescription": [
-                "This database manages the products, orders, and users."
-            ],
-            "technologies": [
-                "MongoDB",
-                "JSON",
-                "BSON"
-            ],
-            "imageSrc": "/project_img/project_9/project_9_card.webp",
-            "gallery": [
-                "/project_img/project_9/1.webp",
-                "/project_img/project_9/2.webp"
-            ],
-            "imageAlt": "MongoDB database",
-            "downloadDocs_title": "Download the Documentation",
-            "docsHref": "/project_docs/ElectricGuitarShop_Database_Documentation.pdf",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 10,
-            "type": "Website",
-            "title": "Calculator Application",
-            "cardDescription": "Calculator",
-            "popupDescription": [
-                "A calculator application implemented using HTML, CSS, and JavaScript.",
-                "The project offers two different user interfaces: an old-fashioned and a modern design."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/project_10/project_10_card.webp",
-            "gallery": [
-                "/project_img/project_10/1.webp",
-                "/project_img/project_10/2.webp"
-            ],
-            "imageAlt": "Calculator",
-            "githubLink": "https://github.com/Thomas-Horvath/CalculatorApp",
-            "githubPagesLink": "https://thomas-horvath.github.io/CalculatorApp/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 11,
-            "type": "Database",
-            "title": "MongoDB - GitArt Rehearsal Room and Studio Database",
-            "cardDescription": "GitArt - MongoDb database",
-            "popupDescription": [
-                "This project is the back-end database for the GitArt rehearsal room and studio website.",
-                "It stores user data and rehearsal room bookings.",
-                "In addition to the online booking system, the data for individual rooms and the studio is stored in separate collections."
-            ],
-            "technologies": [
-                "MongoDB",
-                "JSON",
-                "BSON"
-            ],
-            "imageSrc": "/project_img/project_11/project_11_card.webp",
-            "gallery": [
-                "/project_img/project_11/1.webp",
-                "/project_img/project_11/2.webp"
-            ],
-            "imageAlt": "Example project 9 image",
-            "downloadDocs_title": "Download the Documentation",
-            "docsHref": "/project_docs/GitArt_Database_Documentation.pdf",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTechnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        }
-    ]
+    "notfound": {
+        "title": " This page could not be found",
+        "description": "The page you are looking for may have been moved, renamed, or it never existed in the first place.",
+        "btnBack": " Back to home",
+        "btnBackHref": "/",
+        "btnProjects": "View projects",
+        "btnProjectsHref": "/projects"
+    }
 }

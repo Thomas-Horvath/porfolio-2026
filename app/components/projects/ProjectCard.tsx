@@ -29,14 +29,14 @@ export default function ProjectCard({ project, detailsLabel }: Props) {
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                        className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
                     />
                 </div>
             </Link>
 
             <div className="flex flex-1 flex-col px-6 py-6">
                 <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
+                    {project.tags.slice(0, 3).map((tag) => (
                         <span
                             key={tag}
                             className="px-3 py-1

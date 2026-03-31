@@ -7,7 +7,7 @@ import { useLanguage } from "@/contexts/useLanguage";
 export default function AboutSection() {
     const { t } = useLanguage();
   return (
-    <section className=" bg-white py-24 px-6 lg:px-0 sm:py-28 lg:py-32">
+    <section className=" bg-white py-24 px-6 own:px-0 sm:py-28 lg:py-32">
       <div className="max-w-350 mx-auto">
         <SectionHeader
           eyebrow={t.aboutSection.headeringTitle}

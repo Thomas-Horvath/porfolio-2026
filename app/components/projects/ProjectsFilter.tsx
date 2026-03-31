@@ -39,7 +39,7 @@ export default function ProjectsFilter({
 
         const color = colorMap[activeFilter] ?? "bg-sky-600 border-sky-600 text-white";
 
-        console.log(filter);
+
         return (
           <button
             key={filter}

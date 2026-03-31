@@ -1,304 +1,314 @@
 "use client";
-// ✅ Ez jelzi a Next.js-nek, hogy ez KLIENS komponens.
-// Miért kell? Mert useState/useEffect csak kliensen fut (böngészőben).
+// ↑ Ez kötelező, mert ez a komponens useState-et, useEffect-et és event handlereket használ.
+// Az App Routerben a fájlok alapból szerver komponensek.
+// Ha böngészős interakció kell (state, kattintás, modal, billentyűzetfigyelés),
+// akkor kliens komponenssé kell tenni.
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { FiZoomIn } from "react-icons/fi";
 
+// -----------------------------
+// Props típus
+// -----------------------------
+//* A komponens kívülről egy images tömböt vár. (a href értékek lesznek ezek!!!!!)
+//* pl: [ "/works/gitart/1.webp", "/works/gitart/2.webp", "/works/gitart/3.webp", "/works/gitart/4.webp", "/works/gitart/5.webp", "/works/gitart/6.webp" ]
+// Ez a tömb a galériában megjelenő képek útvonalait tartalmazza.
 type Props = {
-    // A mű címe (alt szövegekhez + aria labelhez)
-    images: string[]; // A galériában megjelenő képek URL-jei
-    // Opcionális: a mű fő képe, ha külön szeretnénk kezelni
+    images: string[];
 };
 
-
 export default function WorkGalleryClient({ images }: Props) {
-    // ✅ open: vezérli, hogy a modal megjelenjen-e
-    // false = nincs modal, true = modal látható
+    // -----------------------------
+    // 1. MODAL NYITOTTSÁG STATE
+    // -----------------------------
+    // open = false → a nagy képes modal nincs nyitva
+    // open = true  → a modal látható
     const [open, setOpen] = useState(false);
 
-
-    // ✅ activeIndex: azt tárolja, hogy a képtömb melyik indexű elemét mutassuk a modalban
-    // 0 = images[0], 1 = images[1], stb.
+    // -----------------------------
+    // 2. AKTUÁLIS KÉP INDEXE
+    // -----------------------------
+    // Ez mondja meg, hogy a képtömbből melyik elemet mutassuk nagyban.
+    // Példa:
+    // activeIndex = 0 → images[0]
+    // activeIndex = 1 → images[1]
     const [activeIndex, setActiveIndex] = useState(0);
 
-    // ✅ openAt(index): thumbnail kattintáskor hívjuk
-    // 1) beállítjuk, hogy melyik képet akarjuk megnyitni
-    // 2) megnyitjuk a modalt
+    // -----------------------------
+    // 3. DRAG / SWIPE KEZDŐPOZÍCIÓ TÁROLÁSA
+    // -----------------------------
+    // useRef-et akkor használunk, ha egy értéket szeretnénk tárolni
+    // úgy, hogy az NE okozzon újrarenderelést.
+    //
+    // Itt arra kell, hogy eltároljuk, honnan indult a pointer (egér / érintés).
+    // Például pointerdown-nál eltesszük az X koordinátát.
+    const startXRef = useRef<number | null>(null);
+
+    // -----------------------------
+    // 4. HÚZÁS FOLYAMATBAN VAN-E?
+    // -----------------------------
+    // Ez is ref, mert csak technikai flag.
+    // Nem UI állapot, tehát nem kell belőle render.
+    const draggingRef = useRef(false);
+
+    // -----------------------------
+    // 5. KÉP MEGNYITÁSA
+    // -----------------------------
+    // Ha egy thumbnail-re kattintunk:
+    // - beállítjuk, melyik képet akarjuk megnyitni
+    // - majd megnyitjuk a modalt
     const openAt = (index: number) => {
         setActiveIndex(index);
         setOpen(true);
     };
 
-
-    // ✅ close(): modal bezárása több helyről (ESC, háttér katt, X gomb)
+    // -----------------------------
+    // 6. MODAL BEZÁRÁSA
+    // -----------------------------
+    // Egyszerű helper függvény, hogy ne kelljen mindenhol setOpen(false)-t írni.
     const close = () => setOpen(false);
 
-    // ---------------------------
-    // 1) BILLENTYŰZET KEZELÉS: ESC + nyilak
-    // ---------------------------
+    // ---------------------------------------------------
+    // 7. BILLENTYŰZET KEZELÉS
+    // ---------------------------------------------------
+    // Cél:
+    // - ESC bezárja a modalt
+    // - Jobb nyíl → következő kép
+    // - Bal nyíl  → előző kép
     useEffect(() => {
-        // ✅ Ha a modal nincs nyitva, nem akarunk billentyű eseményeket figyelni.
-        // Így nem fogsz "véletlenül" képeket léptetni a háttérben.
+        // Ha a modal nincs nyitva, nincs értelme globálisan billentyűzetet figyelni.
         if (!open) return;
 
-        // ✅ onKeyDown: globális billentyű eseménykezelő
+        // keydown eseménykezelő
         const onKeyDown = (e: KeyboardEvent) => {
-            // ESC = zárjuk be a modalt
+            // ESC → zárás
             if (e.key === "Escape") close();
 
-            // JOBB nyíl: következő kép
-            // setActiveIndex((i) => ...) = "functional update" -> mindig a legfrissebb i-vel számol
-            // (i + 1) % images.length -> körbeforgatás:
-            //   ha a végén vagy, visszaugrik 0-ra.
-            if (e.key === "ArrowRight")
+            // Jobb nyíl → következő kép
+            if (e.key === "ArrowRight") {
+                // Functional update:
+                // Mindig a legfrissebb i értékkel dolgozik.
                 setActiveIndex((i) => (i + 1) % images.length);
+                // Miért működik ez?
+                // Ha például 5 kép van:
+                // 0 -> 1
+                // 1 -> 2
+                // 2 -> 3
+                // 3 -> 4
+                // 4 -> (4 + 1) % 5 = 0
+                // Tehát a végéről visszaugrik az elejére.
+            }
 
-            // BAL nyíl: előző kép
-            // (i - 1 + images.length) % images.length -> körbeforgatás negatív index nélkül:
-            //   i=0 esetén: (0 - 1 + len) % len = (len-1) -> utolsó kép
-            if (e.key === "ArrowLeft")
+            // Bal nyíl → előző kép
+            if (e.key === "ArrowLeft") {
                 setActiveIndex((i) => (i - 1 + images.length) % images.length);
+                // Miért kell hozzáadni images.length-et?
+                // Mert ha i = 0, akkor i - 1 = -1 lenne.
+                // Például 5 képnél:
+                // (0 - 1 + 5) % 5 = 4
+                // Vagyis az első képről visszamegy az utolsóra.
+            }
         };
 
-        // ✅ Feliratkozunk a keydown eseményre
+        // Feliratkozás a window keydown eseményre
         window.addEventListener("keydown", onKeyDown);
 
-        // ✅ Cleanup: amikor a modal bezár / komponens unmount, levesszük a listenert
-        // Miért fontos? Különben halmozódnának a listenerek és duplán/triplán reagálna.
+        // Cleanup:
+        // Amikor a modal bezáródik vagy a komponens megszűnik,
+        // levesszük a listenert, hogy ne maradjon "ott ragadva".
         return () => window.removeEventListener("keydown", onKeyDown);
     }, [open, images.length]);
-    // dependencies:
-    // open: csak nyitott modal esetén aktív
-    // images.length: ha a képszám változik, a logika is frissüljön
 
-    // ---------------------------
-    // 2) SCROLL LOCK: modal nyitásakor ne lehessen a háttérben scrollozni
-    // ---------------------------
+    // ---------------------------------------------------
+    // 8. HÁTTÉR GÖRGETÉS LETILTÁSA MODAL NYITÁSKOR
+    // ---------------------------------------------------
+    // Ha modal nyitva van, nem akarjuk, hogy a háttérben lévő oldal görögjön.
     useEffect(() => {
-        // ✅ Csak nyitott modal esetén kell tiltani a scrollt
         if (!open) return;
 
-        // ✅ Elmentjük az eredeti overflow értéket (nehogy felülírjunk egy korábbi beállítást)
+        // Elmentjük az eredeti overflow értéket
         const prev = document.body.style.overflow;
 
-        // ✅ Tiltjuk a scrollt
+        // Letiltjuk a scrollt
         document.body.style.overflow = "hidden";
 
-        // ✅ Cleanup: bezáráskor visszaállítjuk az eredetit
+        // Bezáráskor visszaállítjuk az eredeti állapotot
         return () => {
             document.body.style.overflow = prev;
         };
     }, [open]);
 
+    // ---------------------------------------------------
+    // 9. POINTER DOWN
+    // ---------------------------------------------------
+    // Ez indul el, amikor:
+    // - egérrel lenyomunk a modal tartalmán
+    // - vagy ujjal megérintjük (pointer events ezt is kezeli)
+    const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+        // Eltesszük, honnan indult a húzás vízszintesen
+        startXRef.current = e.clientX;
 
-    useEffect(() => {
-        if (!open) return;
+        // Bejelöljük, hogy húzás folyamatban van
+        draggingRef.current = true;
+    };
 
-        let startX = 0;
-        let isDragging = false;
+    // ---------------------------------------------------
+    // 10. POINTER UP
+    // ---------------------------------------------------
+    // Ez akkor fut, amikor:
+    // - elengedjük az egeret
+    // - vagy felengedjük az ujjunkat
+    const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+        // Ha valamiért nincs aktív drag, nincs mit számolni
+        if (!draggingRef.current || startXRef.current === null) return;
 
-        const onMouseDown = (e: MouseEvent) => {
-            startX = e.clientX;
-            isDragging = true;
-        };
+        // Kiszámoljuk, mennyit mozdult a pointer vízszintesen
+        const diff = startXRef.current - e.clientX;
 
-        const onMouseUp = (e: MouseEvent) => {
-            if (!isDragging) return;
-            isDragging = false;
+        // Lezárjuk a drag állapotot
+        draggingRef.current = false;
+        startXRef.current = null;
 
-            const diff = startX - e.clientX;
+        // Ha túl kicsi volt a mozgás, azt kattintásnak tekintjük, nem swipe-nak
+        // 50 px egy egyszerű küszöbérték.
+        if (Math.abs(diff) < 50) return;
 
-            if (Math.abs(diff) < 50) {
-                // ez sima kattintás volt, nem drag → hagyjuk a többi handler dolgozni
-                return;
-            }
+        // Ha pozitív a diff:
+        // startX nagyobb volt, mint a végső X
+        // vagyis balra húztunk → következő kép
+        if (diff > 0) {
+            setActiveIndex((i) => (i + 1) % images.length);
+        } else {
+            // Ha negatív a diff:
+            // jobbra húztunk → előző kép
+            setActiveIndex((i) => (i - 1 + images.length) % images.length);
+        }
+    };
 
-            // drag volt → megállítjuk hogy más handler ne fusson
-            e.stopPropagation();
-
-            if (diff > 0) {
-                setActiveIndex((i) => (i + 1) % images.length);
-            } else {
-                setActiveIndex((i) => (i - 1 + images.length) % images.length);
-            }
-        };
-
-        window.addEventListener("mousedown", onMouseDown);
-        window.addEventListener("mouseup", onMouseUp);
-
-        return () => {
-            window.removeEventListener("mousedown", onMouseDown);
-            window.removeEventListener("mouseup", onMouseUp);
-        };
-    }, [open, images.length]);
-
-    useEffect(() => {
-        if (!open) return;
-
-        let startX = 0;
-
-        const onTouchStart = (e: TouchEvent) => {
-            startX = e.touches[0].clientX;
-        };
-
-        const onTouchEnd = (e: TouchEvent) => {
-            const diff = startX - e.changedTouches[0].clientX;
-
-            if (Math.abs(diff) < 50) return; // túl rövid swipe, figyelmen kívül hagyjuk
-
-            if (diff > 0) {
-                // balra húzás → következő kép
-                setActiveIndex((i) => (i + 1) % images.length);
-            } else {
-                // jobbra húzás → előző kép
-                setActiveIndex((i) => (i - 1 + images.length) % images.length);
-            }
-        };
-
-        window.addEventListener("touchstart", onTouchStart);
-        window.addEventListener("touchend", onTouchEnd);
-
-        return () => {
-            window.removeEventListener("touchstart", onTouchStart);
-            window.removeEventListener("touchend", onTouchEnd);
-        };
-    }, [open, images.length]);
+    // ---------------------------------------------------
+    // 11. POINTER CANCEL
+    // ---------------------------------------------------
+    // Vannak helyzetek, amikor a pointer megszakad:
+    // például a böngésző vagy az eszköz másképp kezeli az inputot.
+    // Ilyenkor takarítjuk a drag állapotot.
+    const handlePointerCancel = () => {
+        draggingRef.current = false;
+        startXRef.current = null;
+    };
 
     return (
-        <section>
-            <h2 className="mb-6 text-2xl text-stone-800">Képek</h2>
-
-            {/* ---------------------------
+        <section className="mt-6">
+            {/* -----------------------------------------
           THUMBNAIL GRID
-          - images tömbön végigmegyünk és gombokat készítünk
-          - gomb = accessibility: fókuszolható, Enter-rel is aktiválható
-         --------------------------- */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          -----------------------------------------
+          Itt jelenítjük meg a kis előnézeti képeket.
+          A felhasználó ezekre kattintva nyitja meg a modalt.
+      */}
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {images.map((src, i) => (
                     <button
-                        key={src + i} // ✅ egyedi key (src lehet ismétlődő, ezért i is kell)
+                        key={src + i}
                         type="button"
-                        onClick={() => openAt(i)} // ✅ kattintásra megnyitjuk a modalt a megfelelő index-szel
-                        className="overflow-hidden bg-stone-200 focus:outline-none group cursor-pointer"
-
+                        onClick={() => openAt(i)}
+                        className="group  overflow-hidden bg-stone-200 cursor-zoom-in"
                     >
-                        {/* ✅ Next/Image fill: a szülő div "relative", így a kép kitölti a dobozt
-                object-cover: szépen kivágja
-                object-top: felülről igazítja a vágást
-                hover: finom zoom */}
-                        <Image
-                            src={src}
-                            alt={`${src} – kép ${i + 1}`}
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            className="w-full h-auto object-cover object-top"
-                        />
+                        <div className="relative w-full aspect-video">
+                            <Image
+                                src={src}
+                                alt={`kép ${i + 1}`}
+                                fill
+                                className="object-cover object-top transition duration-300 group-hover:scale-105 group-hover:brightness-75"
+                            />
+                            {/* Hover overlay */}
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                                <FiZoomIn className="text-white w-10 h-10" />
+                            </div>
+                        </div>
+
                     </button>
                 ))}
             </div>
 
-            {/* ---------------------------
-          MODAL (csak akkor renderelődik, ha open === true)
-          - overlay: full screen sötét háttér
-          - kattintás a háttérre: zárás
-          - a belső dobozon stopPropagation, hogy a belső kattintás ne zárjon
-         --------------------------- */}
+            {/* -----------------------------------------
+          MODAL
+          -----------------------------------------
+          Csak akkor rendereljük ki, ha open === true
+      */}
             {open && (
-
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/90"
-                    onMouseUp={(e) => { if (e.target === e.currentTarget) close(); }}
-                // ✅ katt a háttérre zárás:
-                // mivel ez az overlay, itt zárunk.
-                // role="dialog"
-                // aria-modal="true"
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-6"
+                    onMouseUp={(e) => {
+                        // Ha közvetlenül az overlay-re kattintottunk,
+                        // akkor bezárjuk a modalt.
+                        // e.currentTarget = maga az overlay div
+                        // e.target = amire ténylegesen kattintottunk
+                        if (e.target === e.currentTarget) close();
+                    }}
                 >
                     <div
-                        className="relative w-full max-w-350 h-[80vh] flex items-center justify-center"
-
-                    onMouseDown={(e) => e.stopPropagation()}
-                    // ✅ stopPropagation:
-                    // Ha a belső dobozra kattintasz, az esemény "buborékolna" az overlayre,
-                    // és az overlay close()-t hívna -> bezárná a modalt.
-                    // stopPropagation megállítja ezt, így a belső kattintások nem zárnak.
+                        className="relative flex h-[80vh] w-full max-w-350 items-center justify-center"
+                        onPointerDown={handlePointerDown}
+                        onPointerUp={handlePointerUp}
+                        onPointerCancel={handlePointerCancel}
+                        style={{ touchAction: "pan-y" }}
+                    // touchAction: "pan-y"
+                    // Ezzel azt mondjuk a böngészőnek:
+                    // a függőleges pan kezelését hagyjuk meg,
+                    // de a vízszintes mozdulatokat mi szeretnénk kezelni.
+                    // Ez főleg touch/swipe UX szempontból hasznos.
                     >
-                        {/* X gomb */}
-
+                        {/* Bezáró gomb */}
                         <button
-                            onMouseDown={(e) => e.stopPropagation()}
                             onClick={close}
-                            className="absolute text-4xl right-0 text-white/90 hover:text-white transition -top-12 cursor-pointer"
+                            className="absolute -top-12 right-0 cursor-pointer text-4xl text-white/90 transition hover:text-white"
                             aria-label="Bezárás"
                             type="button"
                         >
                             ✕
                         </button>
 
-                        {/* ✅ A nagy kép: images[activeIndex] alapján jelenik meg
-                object-contain: teljes kép látszik (nem vágja), arányt tartva */}
+                        {/* A nagy kép */}
                         <Image
                             src={images[activeIndex]}
-                            alt={`${images[activeIndex]} – nagy nézet`}
+                            alt={`Kép ${activeIndex + 1}`}
                             width={1200}
                             height={1200}
-                            className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
+                            className="max-h-[80vh] h-auto w-auto border border-sky-100 max-w-full select-none object-contain"
                             priority
-                        // onMouseDown={(e) => e.stopPropagation()}
+                            draggable={false}
+                        // select-none: ne lehessen kijelölgetni húzás közben
+                        // object-contain: a teljes kép látszódjon, ne vágódjon le
                         />
 
-                        {/* ---------------------------
-                NAVIGÁCIÓ GOMBOK
-                - bal: előző kép (körbeforgással)
-                - jobb: következő kép (körbeforgással)
-               --------------------------- */}
-
-                        {/* Előző */}
-
-                        {images.length > 1 &&
+                        {/* Navigációs nyilak csak akkor, ha több mint 1 kép van */}
+                        {images.length > 1 && (
                             <>
+                                {/* Előző */}
                                 <button
-                                    onMouseDown={(e) => e.stopPropagation()}
                                     type="button"
                                     onClick={() =>
                                         setActiveIndex((i) => (i - 1 + images.length) % images.length)
                                     }
-                                    // (i - 1 + len) % len:
-                                    // - ha i=0, akkor (0-1+len)=len-1 -> utolsó kép
-                                    className="absolute left-0 top-1/2 hidden lg:block
-                         pb-4 pt-2 px-6 rounded-full
-                         text-4xl
-                         bg-white/80 hover:text-black text-black/80
-                         cursor-pointer transition
-                         -translate-y-1/2"
+                                    className="absolute left-0 top-1/2 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white/80 px-6 pb-4 pt-2 text-4xl text-black/80 transition hover:text-black lg:block"
                                     aria-label="Előző kép"
                                 >
                                     ‹
                                 </button>
 
-
+                                {/* Következő */}
                                 <button
-                                    onMouseDown={(e) => e.stopPropagation()}
                                     type="button"
                                     onClick={() =>
                                         setActiveIndex((i) => (i + 1) % images.length)
                                     }
-                                    // (i + 1) % len:
-                                    // - ha a végén vagy (i=len-1), akkor (len) % len = 0 -> vissza az elejére
-                                    className="absolute right-0 top-1/2
-                         pb-4 pt-2 px-6 rounded-full hidden lg:block
-                         text-4xl
-                         bg-white/80 hover:text-black text-black/80
-                         cursor-pointer
-                         transition
-                         -translate-y-1/2"
+                                    className="absolute right-0 top-1/2 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white/80 px-6 pb-4 pt-2 text-4xl text-black/80 transition hover:text-black lg:block"
                                     aria-label="Következő kép"
                                 >
                                     ›
                                 </button>
                             </>
-                        }
+                        )}
                     </div>
                 </div>
             )}

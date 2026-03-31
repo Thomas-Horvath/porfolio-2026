@@ -70,7 +70,8 @@
     "projectsPage": {
         "eyebrow": "My works",
         "title": "All Projects",
-        "featuredTitle": "Featured Projects",
+        "featuredEyebrow": "Featured Projects",
+        "featuredTitle": "Projects I'm Proud Of",
         "featuredDescription": "Some projects that showcase how I think about modern frontend and full stack development.",
         "description": "Here you can find the projects that best represent my experience in frontend, backend, and database development.",
         "emptyText": "There are no projects to display in this category.",
@@ -519,6 +520,7 @@
         "skillsSubtitle2": "Other Tools"
     },
     "aboutInfo": {
+        "eyebrow": "Rólam",
         "title": "A Few More Things About Me",
         "intro": " sdfgsfg",
         "firstInfoTitle": "1. The Guitarist",

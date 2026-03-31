@@ -18,7 +18,7 @@ export default function HeroSection() {
              {t.homePage.profession}
             </div>
 
-            <h1 className="heading-font text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+            <h1 className="heading-font text-[40px]  font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
               {t.homePage.name}
             </h1>
 
