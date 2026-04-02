@@ -3,7 +3,6 @@
 import { createContext, useEffect, useState, type ReactNode } from "react";
 import hu from "@/data/hu.json";
 import en from "@/data/en.json";
-import Loading from "@/app/loading"
 
 type Language = "hu" | "en";
 type Translations = typeof hu | typeof en;
@@ -17,46 +16,26 @@ type LanguageContextType = {
 export const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("hu");
-  const [translations, setTranslations] = useState<Translations>(hu);
-  const [isReady, setIsReady] = useState(false);
-
-  useEffect(() => {
-    const stored = sessionStorage.getItem("language");
-
-    if (stored === "hu" || stored === "en") {
-      setLanguage(stored);
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window === "undefined") {
+      return "hu";
     }
-    setTimeout(() => {
 
-      setIsReady(true);
-    }, 500);
-  }, []);
+    const stored = window.sessionStorage.getItem("language");
+
+    return stored === "hu" || stored === "en" ? stored : "hu";
+  });
 
   useEffect(() => {
-    if (!isReady) return;
     document.documentElement.lang = language;
-
-    if (language === "en") {
-      setTranslations(en);
-    } else {
-      setTranslations(hu);
-    }
-
     sessionStorage.setItem("language", language);
-  }, [language, isReady]);
+  }, [language]);
 
   const switchLanguage = (lang: Language) => {
     setLanguage(lang);
   };
 
-
-  //TODO: add loading state while translations are being set (for better UX on initial load)
-  if (!isReady) {
-    return (
-      <Loading />
-    );
-  }
+  const translations: Translations = language === "en" ? en : hu;
 
   return (
     <LanguageContext.Provider
