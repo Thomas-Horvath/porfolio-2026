@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionHeader from "../SectionHeader";
 import { useLanguage } from "@/contexts/useLanguage";
+import RevealOnScroll from "../RevealOnScroll";
 
 export default function AboutSection() {
     const { t } = useLanguage();
@@ -19,7 +20,7 @@ export default function AboutSection() {
 
         <div className="mx-auto grid  gap-14 lg:grid-cols-[1.15fr_0.85fr]  ">
           {/* Bal oldal - kép */}
-          <div className="order-1 flex justify-center lg:justify-start">
+          <RevealOnScroll className="order-1 flex justify-center lg:justify-start" delay={40}>
             <div className="relative w-full">
               <div className="absolute inset-x-8 top-0 h-px" />
 
@@ -32,14 +33,10 @@ export default function AboutSection() {
                 priority={false}
               />
             </div>
-          </div>
+          </RevealOnScroll>
 
           {/* Jobb oldal - szöveg */}
-          <div className="order-2 max-w-2xl">
-
-
-
-
+          <RevealOnScroll className="order-2 max-w-2xl" delay={120}>
             <div className=" leading-8 text-slate-600 sm:text-lg">
               <p>
              {t.aboutSection.p1}
@@ -60,7 +57,7 @@ export default function AboutSection() {
                { t.aboutSection.button}
               </Link>
             </div>
-          </div>
+          </RevealOnScroll>
         </div>
       </div>
     </section>

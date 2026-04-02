@@ -1,5 +1,8 @@
+ "use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 type ProjectCategory = "frontend" | "backend" | "database" | "fullstack";
 
@@ -46,6 +49,8 @@ const categoryStyles = {
 
 export default function ProjectCardCompact({ project, detailsLabel }: Props) {
     const styles = categoryStyles[project.category];
+    const [loadedImageSrc, setLoadedImageSrc] = useState<string | null>(null);
+    const imageLoaded = loadedImageSrc === project.image;
 
     return (
 
@@ -59,11 +64,20 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                 />
 
                 <div className="relative shrink-0 aspect-16/10 overflow-hidden bg-slate-100">
+                    {!imageLoaded && (
+                        <>
+                            <div className="absolute inset-0 animate-pulse bg-linear-to-br from-slate-200 via-slate-100 to-slate-200" />
+                            <div className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-slate-300/35 to-transparent" />
+                            <div className="absolute right-4 top-4 h-10 w-10 border border-white/50 bg-white/70" />
+                        </>
+                    )}
+
                     <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                        className={`object-cover object-top transition duration-700 group-hover:scale-[1.03] ${imageLoaded ? "opacity-100" : "opacity-0"}`}
+                        onLoad={() => setLoadedImageSrc(project.image)}
                     />
 
                     <div className="absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />

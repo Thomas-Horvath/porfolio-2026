@@ -31,13 +31,13 @@ const PageUpBtn = () => {
 <button
   onClick={scrollToTop}
   title="Ugrás a lap tetejére"
-  className={`fixed bottom-6 right-6 z-30 shadow-lg hover:scale-110
-  flex cursor-pointer rounded-full bg-sky-600/90 p-4
+  className={`fixed bottom-6 right-6 z-30 shadow-lg hover:scale-110 border border-sky-100/80
+  flex cursor-pointer rounded-full bg-linear-to-r from-sky-500 via-sky-600 to-cyan-500 p-4
   transition-all duration-500 ease-out
   ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6 pointer-events-none"}
   `}
 >
-  <FaArrowUp className="text-3xl text-white/80" />
+  <FaArrowUp className="text-3xl text-white/80 transition-all duration-500 ease-out translate-0 hover:-translate-y-1" />
 </button>
   );
 };

@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@keyframes loader-slide {
+  0% {
+    transform: translateX(-110%);
+  }
+
+  50% {
+    transform: translateX(90%);
+  }
+
+  100% {
+    transform: translateX(210%);
+  }
+}
+
 @theme {
   --breakpoint-own: 1400px;
 }
@@ -14,6 +28,8 @@
   }
 }
 
+
+
 .animate-tech-marquee {
   display: inline-block;
   min-width: max-content;
@@ -21,9 +37,12 @@
   will-change: transform;
 }
 
+
+
 .animate-tech-marquee:hover {
   animation-play-state: paused;
 }
+
 
 .btn {
   @apply inline-flex justify-between cursor-pointer items-center  border font-semibold uppercase tracking-[0.12em] text-xs md:text-sm transition shadow-sm backdrop-blur px-6 py-3 md:px-8 active:scale-[0.98]  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2;

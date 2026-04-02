@@ -8,6 +8,7 @@ type Language = "hu" | "en";
 type Translations = typeof hu | typeof en;
 
 type LanguageContextType = {
+  isHydrated: boolean;
   language: Language;
   switchLanguage: (lang: Language) => void;
   t: Translations;
@@ -16,20 +17,31 @@ type LanguageContextType = {
 export const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>(() => {
-    if (typeof window === "undefined") {
-      return "hu";
-    }
-
-    const stored = window.sessionStorage.getItem("language");
-
-    return stored === "hu" || stored === "en" ? stored : "hu";
-  });
+  const [language, setLanguage] = useState<Language>("hu");
+  const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
+    const frameId = window.requestAnimationFrame(() => {
+      const stored = window.sessionStorage.getItem("language");
+
+      if (stored === "hu" || stored === "en") {
+        setLanguage(stored);
+      }
+
+      setIsHydrated(true);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, []);
+
+  useEffect(() => {
+    if (!isHydrated) {
+      return;
+    }
+
     document.documentElement.lang = language;
     sessionStorage.setItem("language", language);
-  }, [language]);
+  }, [language, isHydrated]);
 
   const switchLanguage = (lang: Language) => {
     setLanguage(lang);
@@ -40,6 +52,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   return (
     <LanguageContext.Provider
       value={{
+        isHydrated,
         language,
         switchLanguage,
         t: translations,

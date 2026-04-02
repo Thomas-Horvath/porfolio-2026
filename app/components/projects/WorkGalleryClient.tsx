@@ -34,6 +34,7 @@ export default function WorkGalleryClient({ images }: Props) {
     // activeIndex = 0 → images[0]
     // activeIndex = 1 → images[1]
     const [activeIndex, setActiveIndex] = useState(0);
+    const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
     // -----------------------------
     // 3. DRAG / SWIPE KEZDŐPOZÍCIÓ TÁROLÁSA
@@ -197,6 +198,12 @@ export default function WorkGalleryClient({ images }: Props) {
         startXRef.current = null;
     };
 
+    const markImageLoaded = (src: string) => {
+        setLoadedImages((current) => (
+            current.includes(src) ? current : [...current, src]
+        ));
+    };
+
     return (
         <section className="mt-6">
             {/* -----------------------------------------
@@ -214,11 +221,18 @@ export default function WorkGalleryClient({ images }: Props) {
                         className="group  overflow-hidden bg-stone-200 cursor-zoom-in"
                     >
                         <div className="relative w-full aspect-video">
+                            {!loadedImages.includes(src) && (
+                                <>
+                                    <div className="absolute inset-0 animate-pulse bg-linear-to-br from-slate-200 via-slate-100 to-slate-200" />
+                                    <div className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-slate-300/35 to-transparent" />
+                                </>
+                            )}
                             <Image
                                 src={src}
                                 alt={`kép ${i + 1}`}
                                 fill
-                                className="object-cover object-top transition duration-300 group-hover:scale-105 group-hover:brightness-75"
+                                className={`object-cover object-top transition duration-300 group-hover:scale-105 group-hover:brightness-75 ${loadedImages.includes(src) ? "opacity-100" : "opacity-0"}`}
+                                onLoad={() => markImageLoaded(src)}
                             />
                             {/* Hover overlay */}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">

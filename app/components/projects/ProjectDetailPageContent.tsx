@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { useLanguage } from "@/contexts/useLanguage";
 import WorkGalleryClient from "./WorkGalleryClient";
 
@@ -55,6 +56,7 @@ type Project = {
 
 export default function ProjectDetailPageContent({ slug }: { slug: string }) {
     const { t } = useLanguage();
+    const [loadedImageSrc, setLoadedImageSrc] = useState<string | null>(null);
 
     const projects = t.projectsPage.items as Project[];
     const project = projects.find((item) => item.slug === slug);
@@ -64,28 +66,24 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
     }
 
     return (
-        <main className="bg-slate-50 px-4 py-24 own:px-0">
+        <main className="bg-slate-50 px-4 py-24 pb-38 own:px-0">
             <div className="mx-auto max-w-350">
-                <div className="mb-8">
-                    <Link
-                        href="/projects"
-                        className="btn btn-blue-border"
-                    >
-                        ← {t.projectsPage.buttons.backToProjects}
-                    </Link>
-                </div>
-
-
-
                 <section className="border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.05)]">
                     <div className="grid gap-8  sm:p-10 items-center lg:grid-cols-[1fr_1fr]">
                         <div className="overflow-hidden border border-slate-200 bg-slate-100">
                             <div className="relative aspect-[16/10]">
+                                {loadedImageSrc !== project.image && (
+                                    <>
+                                        <div className="absolute inset-0 animate-pulse bg-linear-to-br from-slate-200 via-slate-100 to-slate-200" />
+                                        <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-slate-300/35 to-transparent" />
+                                    </>
+                                )}
                                 <Image
                                     src={project.image}
                                     alt={project.title}
                                     fill
-                                    className="object-cover object-top"
+                                    className={loadedImageSrc === project.image ? "object-cover object-top opacity-100 transition-opacity duration-300" : "object-cover object-top opacity-0"}
+                                    onLoad={() => setLoadedImageSrc(project.image)}
                                 />
                             </div>
                         </div>
@@ -292,6 +290,15 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                     />
                 </section>
             </div >
+
+            <div className="pointer-events-none fixed inset-x-0 bottom-6 z-40 flex justify-center px-4">
+                <Link
+                    href="/projects"
+                    className="pointer-events-auto inline-flex min-w-[15rem] items-center justify-center  border border-sky-500 bg-linear-to-r from-sky-500 via-sky-600 to-cyan-500 px-6 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_22px_55px_rgba(14,165,233,0.34)] ring-1 ring-sky-300/70 transition hover:-translate-y-0.5 hover:from-sky-600 hover:via-sky-700 hover:to-cyan-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2"
+                >
+                    ← {t.projectsPage.buttons.backToProjects}
+                </Link>
+            </div>
         </main >
     );
 }

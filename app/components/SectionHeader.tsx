@@ -1,3 +1,5 @@
+import RevealOnScroll from "./RevealOnScroll";
+
 type SectionHeaderProps = {
   eyebrow?: string;
   title: string;
@@ -30,19 +32,25 @@ export default function SectionHeader({
       ].join(" ")}
     >
       {eyebrow && (
-        <p className="mb-4 text-lg font-semibold uppercase tracking-[0.22em] text-sky-600 sm:text-sm">
-          {eyebrow}
-        </p>
+        <RevealOnScroll delay={0}>
+          <p className="mb-4 text-lg font-semibold uppercase tracking-[0.22em] text-sky-600 sm:text-sm">
+            {eyebrow}
+          </p>
+        </RevealOnScroll>
       )}
 
-      <h2 className="heading-font text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-        {title}
-      </h2>
+      <RevealOnScroll delay={80}>
+        <h2 className="heading-font text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          {title}
+        </h2>
+      </RevealOnScroll>
 
       {description && (
-        <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
-          {description}
-        </p>
+        <RevealOnScroll delay={160}>
+          <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
+            {description}
+          </p>
+        </RevealOnScroll>
       )}
     </div>
   );

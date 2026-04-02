@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TechStack from "./TechStack";
 import { useLanguage } from "@/contexts/useLanguage";
+import RevealOnScroll from "../RevealOnScroll";
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -14,36 +15,44 @@ export default function HeroSection() {
       <div className="mt-10 mx-auto flex h-screen max-w-350 flex-col justify-center px-6 pb-10 pt-24  own:px-0">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div className="max-w-2xl">
-            <div className="mb-5 inline-flex border border-sky-100 bg-white/80 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm backdrop-blur">
-             {t.homePage.profession}
-            </div>
+            <RevealOnScroll delay={0}>
+              <div className="mb-5 inline-flex border border-sky-100 bg-white/80 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm backdrop-blur">
+                {t.homePage.profession}
+              </div>
+            </RevealOnScroll>
 
-            <h1 className="heading-font text-[40px]  font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
-              {t.homePage.name}
-            </h1>
+            <RevealOnScroll delay={70}>
+              <h1 className="heading-font text-[40px]  font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+                {t.homePage.name}
+              </h1>
+            </RevealOnScroll>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700 sm:text-xl">
-             {t.homePage.subTitle}
-            </p>
+            <RevealOnScroll delay={140}>
+              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700 sm:text-xl">
+                {t.homePage.subTitle}
+              </p>
+            </RevealOnScroll>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/projects"
-                className="btn btn-blue"
-              >
-                {t.homePage.button1}
-              </Link>
+            <RevealOnScroll delay={210}>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/projects"
+                  className="btn btn-blue"
+                >
+                  {t.homePage.button1}
+                </Link>
 
-              <Link
-                href="/contact"
-                className="btn btn-white"
-              >
-                {t.homePage.button2}
-              </Link>
-            </div>
+                <Link
+                  href="/contact"
+                  className="btn btn-white"
+                >
+                  {t.homePage.button2}
+                </Link>
+              </div>
+            </RevealOnScroll>
           </div>
 
-          <div className="relative hidden lg:flex lg:justify-center">
+          <RevealOnScroll className="relative hidden lg:flex lg:justify-center" delay={180} distance={18}>
             <div className="relative h-125 w-125">
               <Image
                 src="/earth.png"
@@ -65,12 +74,12 @@ export default function HeroSection() {
               </div>
 
             </div>
-          </div>
+          </RevealOnScroll>
         </div>
 
-        <div className="mb-20 mt-12 lg:mt-4" >
+        <RevealOnScroll className="mb-20 mt-12 lg:mt-4" delay={260} distance={16}>
           <TechStack />
-        </div>
+        </RevealOnScroll>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-b from-transparent to-white pointer-events-none z-1" />
 

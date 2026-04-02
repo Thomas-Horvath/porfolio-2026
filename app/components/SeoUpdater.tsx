@@ -17,17 +17,27 @@ function getPageKey(pathname: string): PageKey {
   return "home";
 }
 
+function getProjectSlug(pathname: string) {
+  const match = pathname.match(/^\/projects\/([^/]+)$/);
+  return match?.[1] ?? null;
+}
+
 export default function SeoUpdater() {
   const pathname = usePathname();
   const { t } = useLanguage();
 
   useEffect(() => {
+    const projectSlug = getProjectSlug(pathname);
+    const project = t.projectsPage.items.find(
+      (item) => item.slug === projectSlug
+    );
+
     const pageKey = getPageKey(pathname);
     const meta = t.meta[pageKey];
 
     if (!meta) return;
 
-    document.title = meta.title;
+    document.title = project ? `${project.title} | Thomas Horvath` : meta.title;
 
     let descriptionTag = document.querySelector(
       'meta[name="description"]'
@@ -39,7 +49,7 @@ export default function SeoUpdater() {
       document.head.appendChild(descriptionTag);
     }
 
-    descriptionTag.content = meta.description;
+    descriptionTag.content = project ? project.cardDescription : meta.description;
   }, [pathname, t]);
 
   return null;

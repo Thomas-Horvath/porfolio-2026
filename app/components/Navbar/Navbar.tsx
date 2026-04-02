@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header className="fixed left-0 top-0 z-20
                        h-19 w-full
-                       bg-slate-50/90 border-b border-zinc-900/10
+                       bg-slate-50/90 shadow-sm 
                        backdrop-blur-xl">
 
 
