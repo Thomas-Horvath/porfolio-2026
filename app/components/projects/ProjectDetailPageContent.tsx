@@ -49,7 +49,7 @@ type Project = {
     };
 
     credentials?: {
-        email: string;
+        username: string;
         password: string;
     }
 };
@@ -92,7 +92,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                                 {project.tags.slice(0, 3).map((tag) => (
                                     <span
                                         key={tag}
-                                        className="border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-sky-700"
+                                         className="border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] uppercase text-slate-700"
                                     >
                                         {tag}
                                     </span>
@@ -104,7 +104,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                             </h1>
 
                             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                                {project.cardDescription}
+                                {project.intro}
                             </p>
 
                             <div className="mt-8 flex flex-wrap gap-4">
@@ -215,11 +215,12 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                                 {t.projectsPage.detailSections.technologies}
                             </h2>
 
-                            <div className="flex flex-wrap gap-2 mt-4">
+                            <div className="flex flex-wrap gap-4 mt-4">
                                 {project.tags.map((tech) => (
                                     <span
                                         key={tech}
-                                        className="border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700"
+                                      
+                                         className="border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-semibold  tracking-[0.12em] text-sky-700"
                                     >
                                         {tech}
                                     </span>
@@ -268,7 +269,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                             <div className="border border-sky-500 bg-sky-100 px-6 py-6 sm:px-8">
                                 <p className="text-sm font-semibold text-slate-900">Teszt hozzáférés</p>
                                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                                    Felhasználó: <strong>{project.credentials.email}</strong>
+                                    Felhasználó: <strong>{project.credentials.username}</strong>
                                 </p>
                                 <p className="mt-2 text-sm leading-6 text-slate-600">
                                     Jelszó: <strong>{project.credentials.password}</strong>
@@ -284,6 +285,11 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                     <h2 className="text-2xl font-semibold text-slate-900">
                         {t.projectsPage.detailSections.gallery}
                     </h2>
+                    <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+                        Asztali nézetben a navigációs nyilak vagy a billentyűzet segítségével is lapozhatsz a képek
+                        között. Mobilon érintéssel navigálhatsz, a képre koppintva pedig nagyobb nézetben is
+                        megnézheted a részleteket.
+                    </p>
 
                     <WorkGalleryClient
                         images={[...project.gallery]}

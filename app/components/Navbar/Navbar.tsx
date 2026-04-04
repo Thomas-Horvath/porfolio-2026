@@ -15,6 +15,29 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const normalizePath = (path: string) => {
+    if (path === "/") {
+      return "/";
+    }
+
+    return path.replace(/\/+$/, "");
+  };
+
+  const currentPath = normalizePath(pathname);
+
+  const isPathActive = (href: string) => {
+    const normalizedHref = normalizePath(href);
+
+    if (normalizedHref === "/") {
+      return currentPath === "/";
+    }
+
+    return (
+      currentPath === normalizedHref ||
+      currentPath.startsWith(`${normalizedHref}/`)
+    );
+  };
+
   const navLinks = [
     { name: t.navLinks.home, href: "/" },
     { name: t.navLinks.about, href: "/about" },
@@ -41,7 +64,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3"
           onClick={(e) => {
-            if (pathname === "/") e.preventDefault();
+            if (currentPath === "/") e.preventDefault();
             setIsMenuOpen(false);
           }}
         >
@@ -74,14 +97,16 @@ const Navbar = () => {
           {/* Navigation Links */}
           <nav className="hidden items-center md:flex h-full gap-2">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive = isPathActive(link.href);
+              const isCurrentPage = pathname === (link.href + "/");
+
               return (
                 <Link
                   key={link.name}
                   href={link.href}
                   aria-current={isActive ? "page" : undefined}
                   onClick={(e) => {
-                    if (isActive) e.preventDefault();
+                    if (isCurrentPage) e.preventDefault();
                   }}
                   className={`flex items-center relative
                               h-full px-4
@@ -133,15 +158,16 @@ const Navbar = () => {
             <div className="shadow-[0_20px_60px_rgba(15,23,42,0.10)] backdrop-blur-md">
               <nav className="flex flex-col p-2">
                 {navLinks.map((link) => {
-                  const isActive = pathname === link.href;
-
+                  const isActive = isPathActive(link.href);
+                  const isCurrentPage = pathname === link.href;
+                  
                   return (
                     <Link
                       key={link.name}
                       href={link.href}
                       aria-current={isActive ? "page" : undefined}
                       onClick={(e) => {
-                        if (isActive) e.preventDefault();
+                        if (isCurrentPage) e.preventDefault();
                         setIsMenuOpen(false);
                       }}
                       className={`group flex items-center justify-between px-4 py-4 font-medium tracking-tight transition border-b-2 border-slate-100 
@@ -166,7 +192,7 @@ const Navbar = () => {
               <div className="border-t border-slate-200 px-4 py-4">
                 <button
                   onClick={() => {
-                    switchLanguage(language === "hu" ? "en" : "hu"),
+                    switchLanguage(language === "hu" ? "en" : "hu");
                     setIsMenuOpen(false);
                   }}
 

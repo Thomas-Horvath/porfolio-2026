@@ -5,20 +5,38 @@ import { usePathname } from "next/navigation";
 import { useLanguage } from "@/contexts/useLanguage";
 
 type PageKey = "home" | "about" | "projects" | "contact" | "imprint" | "privacy";
+type ProjectSeoItem = {
+  slug: string;
+  title: string;
+  cardDescription: string;
+  seoTitle?: string;
+  seoDescription?: string;
+};
+
+function normalizePath(pathname: string) {
+  if (pathname === "/") {
+    return "/";
+  }
+
+  return pathname.replace(/\/+$/, "");
+}
 
 function getPageKey(pathname: string): PageKey {
-  if (pathname === "/") return "home";
-  if (pathname.startsWith("/about")) return "about";
-  if (pathname.startsWith("/projects")) return "projects";
-  if (pathname.startsWith("/contact")) return "contact";
-  if (pathname.startsWith("/imprint")) return "imprint";
-  if (pathname.startsWith("/privacy")) return "privacy";
+  const normalizedPath = normalizePath(pathname);
+
+  if (normalizedPath === "/") return "home";
+  if (normalizedPath.startsWith("/about")) return "about";
+  if (normalizedPath.startsWith("/projects")) return "projects";
+  if (normalizedPath.startsWith("/contact")) return "contact";
+  if (normalizedPath.startsWith("/imprint")) return "imprint";
+  if (normalizedPath.startsWith("/privacy")) return "privacy";
 
   return "home";
 }
 
 function getProjectSlug(pathname: string) {
-  const match = pathname.match(/^\/projects\/([^/]+)$/);
+  const normalizedPath = normalizePath(pathname);
+  const match = normalizedPath.match(/^\/projects\/([^/]+)$/);
   return match?.[1] ?? null;
 }
 
@@ -28,7 +46,7 @@ export default function SeoUpdater() {
 
   useEffect(() => {
     const projectSlug = getProjectSlug(pathname);
-    const project = t.projectsPage.items.find(
+    const project = (t.projectsPage.items as ProjectSeoItem[]).find(
       (item) => item.slug === projectSlug
     );
 
@@ -37,7 +55,7 @@ export default function SeoUpdater() {
 
     if (!meta) return;
 
-    document.title = project ? `${project.title} | Thomas Horvath` : meta.title;
+    document.title = project?.seoTitle ?? (project ? `${project.title} | Thomas Horvath` : meta.title);
 
     let descriptionTag = document.querySelector(
       'meta[name="description"]'
@@ -49,7 +67,7 @@ export default function SeoUpdater() {
       document.head.appendChild(descriptionTag);
     }
 
-    descriptionTag.content = project ? project.cardDescription : meta.description;
+    descriptionTag.content = project?.seoDescription ?? (project ? project.cardDescription : meta.description);
   }, [pathname, t]);
 
   return null;

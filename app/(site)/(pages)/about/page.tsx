@@ -53,7 +53,7 @@ export default function AboutPageContent() {
   const [loadedImageSrc, setLoadedImageSrc] = useState<string | null>(null);
   const about = t.about;
   const aboutInfo = t.aboutInfo;
-  const profileImageSrc = "/Profil_pic_BG.webp";
+  const profileImageSrc = "/about.png";
   const profileImageLoaded = loadedImageSrc === profileImageSrc;
 
   const infoItems: AboutInfoItem[] = [
@@ -118,7 +118,7 @@ export default function AboutPageContent() {
             <div className="xl:sticky xl:top-28">
               <div className="max-w-105 relative overflow-hidden border border-slate-200 bg-white">
                 <div className="absolute inset-x-0 top-0 h-0.75 bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400" />
-                <div className="relative aspect-4/5  bg-slate-100">
+                <div className="relative aspect-4/4  bg-slate-100">
                   {!profileImageLoaded && (
                     <>
                       <div className="absolute inset-0 animate-pulse bg-linear-to-br from-slate-200 via-slate-100 to-slate-200" />
