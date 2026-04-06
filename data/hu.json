@@ -39,7 +39,7 @@
     "homePage": {
         "name": "Horváth Tamás",
         "profession": "Frontend / Full Stack Fejlesztő",
-        "subTitle": "Modern, gyors és skálázható webalkalmazásokat építek – frontendtől a backendig, React, Next.js és egyéb korszerű webes technológiákkal.",
+        "subTitle": "Modern, gyors és skálázható webalkalmazásokat építek - frontendtől a backendig, React, Next.js és egyéb korszerű webes technológiákkal.",
         "earthLabel1": "Letisztult UI",
         "earthLabel2": "Nagy teljesítmény",
         "button1": "Projektjeim",
@@ -98,7 +98,7 @@
             "technologies": "Felhasznált technológiák",
             "gallery": "Galéria"
         },
-        "modalTexts":{
+        "modalTexts": {
             "close": "Bezárás",
             "previous": "Előző",
             "next": "Következő"
@@ -437,7 +437,7 @@
             {
                 "slug": "egs-mssql-database",
                 "featured": false,
-                "title": "MS SQL – EGS webshop adatbázisa",
+                "title": "MS SQL - EGS webshop adatbázisa",
                 "cardDescription": "Relációs adatbázis-tervezési projekt MS SQL Server alapokon, felhasználók, termékek és rendelések kezelésére.",
                 "intro": "Ez a projekt az Electric Guitar Shop webshop relációs adatbázisának tervezésére és megvalósítására készült MS SQL Server környezetben.",
                 "detailBlocks": [
@@ -524,7 +524,7 @@
             {
                 "slug": "egs-backend",
                 "featured": false,
-                "title": "Electric Guitar Shop – webshop szerver",
+                "title": "Electric Guitar Shop - webshop szerver",
                 "cardDescription": "Node.js, Express és MongoDB alapú backend szolgáltatás egy hangszer-webshop kliens- és adminfelületének kiszolgálására, JWT-alapú autentikációval és szerepkör alapú jogosultságkezeléssel.",
                 "intro": "Az EGS backend a webshop kliensoldali és adminisztrációs felületéhez készült szerveroldali alkalmazás, amely a termékek, rendelések, felhasználók és hírlevél-feliratkozások kezelését, valamint az üzleti logikát biztosítja REST API-n keresztül.",
                 "detailBlocks": [
@@ -664,9 +664,9 @@
             {
                 "slug": "wordy",
                 "featured": false,
-                "title": "Wordy – angol–magyar szókártyás alkalmazás",
+                "title": "Wordy - angol-magyar szókártyás alkalmazás",
                 "cardDescription": "Full-stack szókártyás alkalmazás kategóriákba rendezett tanulási tartalommal, letisztult felülettel és adatbázis-alapú működéssel.",
-                "intro": "A Wordy egy angol–magyar szókártyás alkalmazás, amelynek célja a szókincs fejlesztése egyszerű, áttekinthető és modern felületen.",
+                "intro": "A Wordy egy angol-magyar szókártyás alkalmazás, amelynek célja a szókincs fejlesztése egyszerű, áttekinthető és modern felületen.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
@@ -717,7 +717,7 @@
             {
                 "slug": "integrativ-medicina",
                 "featured": false,
-                "title": "Integratív Medicina – gyógyító ásványok",
+                "title": "Integratív Medicina - gyógyító ásványok",
                 "cardDescription": "Asztali alkalmazás tanulási tartalmak kategorizált megjelenítésére, modern felülettel és helyi adatkezeléssel.",
                 "intro": "Az Integratív Medicina projekt egy olyan alkalmazás, amely ásványokhoz kapcsolódó tanulási tartalmak rendszerezésére és megjelenítésére készült.",
                 "detailBlocks": [
@@ -771,7 +771,7 @@
             {
                 "slug": "kostoljbele",
                 "featured": false,
-                "title": "Kóstolj Bele! – receptgyűjtemény webalkalmazás",
+                "title": "Kóstolj Bele! - receptgyűjtemény webalkalmazás",
                 "cardDescription": "Full-stack receptalkalmazás felhasználói autentikációval, saját receptek kezelésével és kategóriaalapú böngészéssel.",
                 "intro": "A Kóstolj Bele! egy receptgyűjtemény webalkalmazás, amelyben a felhasználók böngészhetnek a receptek között, illetve saját tartalmakat is kezelhetnek.",
                 "detailBlocks": [
@@ -827,7 +827,7 @@
             {
                 "slug": "egs-admin-panel",
                 "featured": false,
-                "title": "Electric Guitar Shop webshop – admin felület",
+                "title": "Electric Guitar Shop webshop - admin felület",
                 "cardDescription": "React-alapú adminisztrációs panel termékek, rendelések, felhasználók, adminfiókok és hírlevél-feliratkozások kezelésére webshop környezetben.",
                 "intro": "Az EGS Admin Panel egy különálló frontend alkalmazás, amely az Electric Guitar Shop webshop háttérfolyamatainak kezelésére készült admin jogosultságú felhasználók számára. A projekt célja egy átlátható, jól használható adminisztrációs felület kialakítása volt, amely ugyanarra a backend rendszerre épül, mint a kliensoldali webshop.",
                 "detailBlocks": [
@@ -939,59 +939,66 @@
                 "slug": "thomas-coffee-corner",
                 "featured": false,
                 "title": "Thomas Coffee Corner",
-                "cardDescription": "Frontend projekt termékszűréssel és keresési funkcióval egy fiktív kávézó weboldalához.",
-                "intro": "A Thomas Coffee Corner egy fiktív kávézó weboldala, amely a termékmegjelenítés, szűrés és keresés funkcióira épül.",
+                "cardDescription": "Reszponzív, adatvezérelt frontend weboldal Webpack build folyamattal egy fiktív kávézó számára.",
+                "intro": "A Thomas Coffee Corner egy fiktív kávézó számára készült többoldalas frontend weboldal, amely a termékmegjelenítésre, keresésre és szűrésre épül, saját Webpack konfigurációval kiegészítve.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan kisebb frontend alkalmazás létrehozása volt, amely jól használható módon mutatja be a termékeket, miközben lehetőséget ad a szűrésre és a keresésre is."
+                        "content": "A projekt célja egy modern, felhasználóbarát kávézó weboldal létrehozása volt, amely reszponzív kialakítással és átlátható struktúrával jeleníti meg a kínálatot és a szolgáltatásokat."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A felület elsősorban a termékek áttekinthető megjelenítésére koncentrál, de emellett a felhasználó különböző szempontok alapján szűrheti is a kínálatot."
+                        "content": "A felület adatvezérelt megközelítést alkalmaz: a termékek és egyéb tartalmak JSON alapú adatforrásokból kerülnek betöltésre, így a megjelenítés és az adatok kezelése jól elkülönül egymástól."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt egyik kiemelt része a saját kezűleg konfigurált Webpack build folyamat, amely a statikus assetek kezelését, a CSS és JavaScript bundlingot, valamint a projekt optimalizálását biztosítja."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb funkciói",
+                        "title": "Főbb funkciók",
                         "items": [
-                            "Termékek megjelenítése frontend felületen",
-                            "Kategóriaalapú szűrés",
-                            "Keresési funkció",
-                            "Egyszerű és áttekinthető kezelőfelület",
-                            "React alapú komponensstruktúra"
+                            "Reszponzív, mobile-first felhasználói felület",
+                            "Hamburger menü és mobil navigáció",
+                            "Termékek megjelenítése JSON adatforrásból",
+                            "Kategória alapú szűrés és keresési funkció",
+                            "Globális kereső a fejlécből",
+                            "Vélemények megjelenítése karusszel formában",
+                            "Űrlapok kezelése validációval (foglalás, kapcsolat, hírlevél)",
+                            "Cookie kezelés és session storage használata",
+                            "Flatpickr alapú dátumválasztó integráció"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a hangsúly a szűrési logika és a keresés jól összehangolt működésén, valamint a könnyen átlátható felhasználói felület kialakításán volt."
+                        "content": "A fejlesztés során nagy hangsúlyt kapott a tiszta kódszerkezet, a szemantikus HTML használata, valamint az akadálymentességi és validációs szempontok figyelembevétele."
                     }
                 ],
-                "image": "/works/coffee_shop/project_6_card.webp",
+                "image": "/works/coffee_shop/thumbnail_coffee.webp",
                 "gallery": [
                     "/works/coffee_shop/1.webp",
                     "/works/coffee_shop/2.webp",
                     "/works/coffee_shop/3.webp",
                     "/works/coffee_shop/4.webp",
-                    "/works/coffee_shop/5.webp",
-                    "/works/coffee_shop/6.webp"
+                    "/works/coffee_shop/5.webp"
                 ],
                 "tags": [
-                    "React",
-                    "JavaScript",
+                    "HTML",
                     "CSS",
-                    "HTML"
+                    "JavaScript",
+                    "Webpack"
                 ],
                 "projectMeta": {
                     "type": "Frontend projekt",
-                    "role": "Frontend fejlesztés és szűrési logika",
+                    "role": "Teljes frontend fejlesztés és build konfiguráció",
                     "status": "Publikus demó",
                     "year": "2024"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
                 "liveUrl": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "seoTitle": "Thomas Coffee Corner projekt | Horváth Tamás",
+                "seoDescription": "Reszponzív frontend kávézó weboldal HTML, CSS és JavaScript használatával, egyedi Webpack build konfigurációval és adatvezérelt működéssel."
             },
             {
                 "slug": "gitart-backend",
@@ -1098,32 +1105,61 @@
             {
                 "slug": "leather-portfolio",
                 "featured": false,
-                "title": "Csibi Róbert bőrdíszműves weboldala",
-                "cardDescription": "Bemutatkozó weboldal képgalériával és modális nézettel egy kézműves portfóliójához.",
-                "intro": "Ez a projekt egy kézműves bőrdíszműves bemutatkozó weboldala, ahol a hangsúly az esztétikus megjelenítésen és a munkák vizuális bemutatásán van.",
+                "title": "Csibi Róbert bőrdíszműves portfólió oldala",
+                "cardDescription": "Többoldalas, reszponzív bemutatkozó és portfólió weboldal egy fiktív bőrdíszműves számára, HTML, CSS és JavaScript alapokon.",
+                "intro": "A projekt egy fiktív bőrdíszműves számára készült többoldalas portfólió weboldal, amely a kézzel készített termékek bemutatására, a galéria megjelenítésére és a kapcsolatfelvétel támogatására épül.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan letisztult portfólióoldal készítése volt, amely méltó módon mutatja be a kézműves munkákat és az alkotó tevékenységét."
+                        "content": "A weboldal célja egy hagyományos kézműves profilhoz illeszkedő, letisztult és jól áttekinthető online bemutatkozó felület létrehozása volt. A projekt külön hangsúlyt helyezett arra, hogy a termékek és kategóriák vizuálisan jól elkülönüljenek, miközben az oldal egyszerűen bejárható maradjon."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az oldalon az általános információk mellett képgaléria is helyet kapott, ahol a látogatók nagyobb méretben is megtekinthetik az elkészült munkákat."
+                        "content": "Ez volt az első teljes, többoldalas weboldal-projektem, ezért a fejlesztés során különösen fontos szerepet kapott az alapvető frontend struktúrák, az oldalak közötti navigáció, a reszponzív töréspontok és a JavaScript alapú interaktív elemek gyakorlati megvalósítása."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A galéria és az aloldali képek megjelenítése JavaScript segítségével történik, így a felület részben dinamikusan épül fel. A projekt emellett egy lightboxos képnagyítási megoldást, hamburger menüt, görgetéshez kötött vissza a tetejére gombot, valamint EmailJS alapú kapcsolatfelvételi űrlapot is tartalmaz."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb elemei",
+                        "title": "Főbb funkciók",
                         "items": [
-                            "Bemutatkozó tartalom és alapinformációk",
-                            "Képgaléria a munkák megjelenítéséhez",
-                            "Modális nézet a képek nagyításához",
-                            "Letisztult, vizuálisan fókuszált felépítés",
-                            "Egyszerű, gyors navigáció"
+                            "Többoldalas, statikus portfólió weboldal",
+                            "Reszponzív kialakítás mobilbarát töréspontokkal",
+                            "Nyitóoldal bemutatkozó és tartalmi blokkokkal",
+                            "Dinamikusan felépített galéria a főoldalon",
+                            "Lightboxos képnagyítás",
+                            "Külön aloldalak a főbb termékkategóriák számára",
+                            "Hamburger menü mobil nézetben",
+                            "EmailJS alapú kapcsolatfelvételi űrlap",
+                            "Vissza a tetejére gomb görgetés után"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a legfontosabb szempont az volt, hogy a vizuális tartalom kapja a főszerepet, miközben az oldal továbbra is könnyen használható és áttekinthető marad."
+                        "content": "A projekt elsősorban alapozó frontend munkaként fontos számomra, mert ezen keresztül gyakoroltam először egy teljes, önállóan felépített weboldal szerkezetének és működésének megtervezését. Bár egyszerűbb, mint a későbbi munkáim, jól mutatja a fejlődési folyamat kiindulópontját."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Email szolgáltatás",
+                                "value": "EmailJS",
+                                "url": "https://www.emailjs.com/"
+                            },
+                            {
+                                "label": "Ikonok",
+                                "value": "Remix Icon",
+                                "url": "https://remixicon.com/"
+                            },
+                            {
+                                "label": "Ikonok",
+                                "value": "Font Awesome",
+                                "url": "https://fontawesome.com/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/leather/project_8_card.webp",
@@ -1133,24 +1169,26 @@
                     "/works/leather/3.webp",
                     "/works/leather/4.webp",
                     "/works/leather/5.webp",
-                    "/works/leather/6.webp"
+                    "/works/leather/6.webp",
+                    "/works/leather/7.webp"
                 ],
                 "tags": [
                     "HTML",
                     "CSS",
-                    "JavaScript"
+                    "JavaScript",
+                    "EmailJS"
                 ],
                 "projectMeta": {
                     "type": "Frontend projekt",
-                    "role": "Portfólióoldal fejlesztése és galériafunkciók",
-                    "status": "Publikus demó",
-                    "year": "2024"
+                    "role": "Teljes frontend fejlesztés",
+                    "status": "Portfólió projekt",
+                    "year": "2023"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
                 "liveUrl": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "seoTitle": "Csibi Róbert bőrdíszműves portfólió | Horváth Tamás",
+                "seoDescription": "Többoldalas, reszponzív portfólió weboldal egy fiktív bőrdíszműves számára, HTML, CSS, JavaScript és EmailJS használatával."
             },
             {
                 "slug": "egs-mongodb-database",
@@ -1187,10 +1225,10 @@
                         "type": "list",
                         "title": "A főbb kollekciók szerepe",
                         "items": [
-                            "users – vásárlói és admin felhasználói adatok, jogosultságok és címadatok",
-                            "products – termékek alapadatai, technikai jellemzői, ára és képelérési útja",
-                            "orders – rendelésfej és beágyazott rendelési tételek",
-                            "newsletter – hírlevél-feliratkozók email címei és aktív státusza"
+                            "users - vásárlói és admin felhasználói adatok, jogosultságok és címadatok",
+                            "products - termékek alapadatai, technikai jellemzői, ára és képelérési útja",
+                            "orders - rendelésfej és beágyazott rendelési tételek",
+                            "newsletter - hírlevél-feliratkozók email címei és aktív státusza"
                         ]
                     },
                     {
@@ -1260,7 +1298,7 @@
             {
                 "slug": "optident-dentist-landing",
                 "featured": true,
-                "title": "Optident – Fogászati rendelő weboldala",
+                "title": "Optident - Fogászati rendelő weboldala",
                 "cardDescription": "Modern, reszponzív fogászati landing oldal Next.js és Tailwind CSS alapokon, szolgáltatásokkal, árakkal és kapcsolatfelvételi lehetőségekkel.",
                 "intro": "Az Optident egy modern fogászati rendelő számára készült reszponzív weboldal, amely a szolgáltatások bemutatását és a bizalomépítést helyezi középpontba.",
                 "detailBlocks": [
@@ -1363,7 +1401,7 @@
             {
                 "slug": "emberline-tattoo-studio",
                 "featured": false,
-                "title": "Emberline Tattoo Studio – Tetoválóstúdió weboldal",
+                "title": "Emberline Tattoo Studio - Tetoválóstúdió weboldal",
                 "cardDescription": "Vizuálisan erős, sötét hangulatú tetoválóstúdió weboldal Next.js és Tailwind CSS alapokon, galériával, árlistával és kapcsolatfelvételi lehetőségekkel.",
                 "intro": "Az Emberline Tattoo Studio egy prémium megjelenésű, sötét hangulatú bemutatkozó weboldal, amely egy tetoválóstúdió stílusát, munkáit és szolgáltatásait helyezi fókuszba.",
                 "detailBlocks": [
@@ -1409,7 +1447,7 @@
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt egyik fontos célja egy olyan struktúra kialakítása volt, amely könnyen integrálható backend szolgáltatásokkal a jövőben – például online időpontfoglalás vagy kapcsolatfelvételi űrlap feldolgozás."
+                        "content": "A projekt egyik fontos célja egy olyan struktúra kialakítása volt, amely könnyen integrálható backend szolgáltatásokkal a jövőben - például online időpontfoglalás vagy kapcsolatfelvételi űrlap feldolgozás."
                     },
                     {
                         "type": "paragraph",
@@ -1468,7 +1506,7 @@
             {
                 "slug": "gitart-mongodb-database",
                 "featured": false,
-                "title": "MongoDB – GitArt Próbaterem és Stúdió adatbázisa",
+                "title": "MongoDB - GitArt Próbaterem és Stúdió adatbázisa",
                 "cardDescription": "Dokumentumalapú adatbázis a GitArt rendszerhez, felhasználók, próbatermek, stúdióadatok és órára bontott foglalások kezelésére.",
                 "intro": "Ez a projekt a GitArt próbaterem és stúdió rendszer MongoDB-alapú adatbázisát valósítja meg. Az adatmodell a bemutatkozó tartalmak, a felhasználói működés és az online foglalási folyamat kiszolgálására készült.",
                 "detailBlocks": [
@@ -1500,10 +1538,10 @@
                         "type": "list",
                         "title": "A főbb kollekciók szerepe",
                         "items": [
-                            "bookings – foglalások dátummal, teremmel és órasávokkal",
-                            "rooms – próbatermek alapadatai és részletes felszereltsége",
-                            "studio – stúdióadatok, technikai eszközök és hangszerek",
-                            "users – felhasználói adatok, foglalási név és hitelesítéshez szükséges információk"
+                            "bookings - foglalások dátummal, teremmel és órasávokkal",
+                            "rooms - próbatermek alapadatai és részletes felszereltsége",
+                            "studio - stúdióadatok, technikai eszközök és hangszerek",
+                            "users - felhasználói adatok, foglalási név és hitelesítéshez szükséges információk"
                         ]
                     },
                     {
@@ -1524,7 +1562,7 @@
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt jól mutatja, hogyan lehet egy valós üzleti folyamatot – jelen esetben egy próbaterem online foglalási rendszerét – NoSQL adatmodellel támogatni úgy, hogy közben a tartalmi és a tranzakciós adatok is áttekinthető, fejleszthető szerkezetben maradjanak."
+                        "content": "A projekt jól mutatja, hogyan lehet egy valós üzleti folyamatot - jelen esetben egy próbaterem online foglalási rendszerét - NoSQL adatmodellel támogatni úgy, hogy közben a tartalmi és a tranzakciós adatok is áttekinthető, fejleszthető szerkezetben maradjanak."
                     }
                 ],
                 "image": "/works/gitart_mongo/thumbnail_mongo_gitart.webp",
@@ -1553,7 +1591,7 @@
             {
                 "slug": "webp-converter",
                 "featured": false,
-                "title": "WebP Konverter – képformátum-átalakító eszköz",
+                "title": "WebP Konverter - képformátum-átalakító eszköz",
                 "cardDescription": "Asztali vagy helyi futtatású eszköz képek WebP formátumba történő tömeges átalakítására.",
                 "intro": "A WebP Konverter egy képoptimalizálást segítő eszköz, amelynek célja a képek gyors és kényelmes átalakítása WebP formátumba.",
                 "detailBlocks": [
@@ -1630,9 +1668,9 @@
         "title": "Néhány személyes gondolat rólam",
         "intro": "Nem csak fejlesztő vagyok - ezek azok a dolgok, amelyek formálják a gondolkodásomat és a munkámhoz való hozzáállásomat.",
         "firstInfoTitle": "1. A gitáros",
-        "firstInfoContent": "<p>A zene gyerekkorom óta meghatározó része az életemnek. Tizenhárom éves korom óta gitározom, ami azóta is egyfajta örök szerelem.</p><p>Hivatásos gitárosként a Kőbányai Zenei Stúdióban végeztem, ahol fantasztikus élmény volt olyan ikonikus zenészekkel együtt játszani, mint Póka Egon, Babos Gyula és Vörös István. Az ő tapasztalatuk és szenvedélyük hatalmas motivációt adott, és rengeteget tanultam tőlük – nemcsak a zenéről, hanem az elhivatottságról és a folyamatos fejlődés fontosságáról is.</p><p>A következő oldalon többet is megtudhatsz zenei karrieremről: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
+        "firstInfoContent": "<p>A zene gyerekkorom óta meghatározó része az életemnek. Tizenhárom éves korom óta gitározom, ami azóta is egyfajta örök szerelem.</p><p>Hivatásos gitárosként a Kőbányai Zenei Stúdióban végeztem, ahol fantasztikus élmény volt olyan ikonikus zenészekkel együtt játszani, mint Póka Egon, Babos Gyula és Vörös István. Az ő tapasztalatuk és szenvedélyük hatalmas motivációt adott, és rengeteget tanultam tőlük - nemcsak a zenéről, hanem az elhivatottságról és a folyamatos fejlődés fontosságáról is.</p><p>A következő oldalon többet is megtudhatsz zenei karrieremről: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
         "secundInfoTitle": "2. Az informatikus",
-        "secundInfoContent": "<p>A számítógépek világa már gyermekkoromban lenyűgözött: először a játékok és az internet varázsa ragadott magával, később pedig a kreatív alkotás – képszerkesztés, weboldalkészítés és zeneszerkesztés – révén egyre mélyebben megismertem a működésüket.<p>Az alkotás és a problémamegoldás mindig is fontos része volt az életemnek – először a zene világában, majd az informatika területén találtam meg ezt az izgalmat.</p><p>Amikor mélyebben belemerültem a programozásba és az adatbázisok világába, rájöttem, hogy ebben a szakmában ugyanazt a kreatív szabadságot élhetem meg, amit a zenében is kerestem. Az informatika nemcsak egy új irányt adott, hanem eszközt is arra, hogy folyamatosan fejlődjek, új dolgokat hozzak létre és maradandó értéket teremtsek.</p>",
+        "secundInfoContent": "<p>A számítógépek világa már gyermekkoromban lenyűgözött: először a játékok és az internet varázsa ragadott magával, később pedig a kreatív alkotás - képszerkesztés, weboldalkészítés és zeneszerkesztés - révén egyre mélyebben megismertem a működésüket.<p>Az alkotás és a problémamegoldás mindig is fontos része volt az életemnek - először a zene világában, majd az informatika területén találtam meg ezt az izgalmat.</p><p>Amikor mélyebben belemerültem a programozásba és az adatbázisok világába, rájöttem, hogy ebben a szakmában ugyanazt a kreatív szabadságot élhetem meg, amit a zenében is kerestem. Az informatika nemcsak egy új irányt adott, hanem eszközt is arra, hogy folyamatosan fejlődjek, új dolgokat hozzak létre és maradandó értéket teremtsek.</p>",
         "thirdInfoTitle": "3. A problémamegoldó",
         "thirdInfoContent": "<p>Szabadidőmben is keresem a kihívásokat. Legyen szó barkácsolásról, ház körüli problémák megoldásáról vagy autószerelésről, mindig örömmel állok neki a feladatoknak, és hatékony megoldásokat keresek.</p><p>Hobbim, mint az olvasás, a zenehallgatás,  sportolás és a kirándulás nemcsak személyes kikapcsolódást jelentenek, hanem segítenek abban is, hogy új perspektívákat találjak a problémák kezelésére.</p>",
         "forthInfoTitle": "4. Sport",

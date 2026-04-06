@@ -161,6 +161,11 @@ export default function WorkGalleryClient({ images }: Props) {
   // Nem engedi, hogy a kinagyított képet a felhasználó "kihúzza" teljesen
   // a viewportból. A maximális eltolást a kép skálázott méretéből és
   // a látható doboz méretéből számoljuk.
+  //
+  // Vízszintesen középről indulunk, ezért ott kétirányú eltolást engedünk.
+  // Függőlegesen viszont top-aligned zoomot használunk:
+  // a kép teteje maradjon a viewport tetején, és onnan csak lefelé lehessen
+  // "beúsztatni" a nagyított tartalmat.
   const clampPanOffset = (nextX: number, nextY: number) => {
     const viewport = zoomViewportRef.current;
     const image = zoomImageRef.current;
@@ -173,11 +178,11 @@ export default function WorkGalleryClient({ images }: Props) {
     const scaledHeight = image.clientHeight * ZOOM_SCALE;
 
     const maxX = Math.max((scaledWidth - viewport.clientWidth) / 2, 0);
-    const maxY = Math.max((scaledHeight - viewport.clientHeight) / 2, 0);
+    const minY = Math.min(viewport.clientHeight - scaledHeight, 0);
 
     return {
       x: Math.min(maxX, Math.max(-maxX, nextX)),
-      y: Math.min(maxY, Math.max(-maxY, nextY)),
+      y: Math.min(0, Math.max(minY, nextY)),
     };
   };
 
@@ -554,6 +559,8 @@ export default function WorkGalleryClient({ images }: Props) {
                       - onClick: zoom be / ki
                       - onPointer*: grab alapú mozgatás zoomolt állapotban
                       - transform: translate + scale kombináció a 2x-es zoomhoz
+                      - transformOrigin: top center, hogy nagyításkor a kép teteje
+                        ne csússzon ki felfelé a modalból
                   */}
                   <img
                     ref={zoomImageRef}
@@ -575,7 +582,7 @@ export default function WorkGalleryClient({ images }: Props) {
                       transform: isZoomed
                         ? `translate(${panOffset.x}px, ${panOffset.y}px) scale(${ZOOM_SCALE})`
                         : "translate(0px, 0px) scale(1)",
-                      transformOrigin: "center center",
+                      transformOrigin: "top center",
                     }}
                     draggable={false}
                   />
