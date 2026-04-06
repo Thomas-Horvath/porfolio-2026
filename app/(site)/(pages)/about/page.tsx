@@ -53,7 +53,7 @@ export default function AboutPageContent() {
   const [loadedImageSrc, setLoadedImageSrc] = useState<string | null>(null);
   const about = t.about;
   const aboutInfo = t.aboutInfo;
-  const profileImageSrc = "/about.png";
+  const profileImageSrc = "/about3.png";
   const profileImageLoaded = loadedImageSrc === profileImageSrc;
 
   const infoItems: AboutInfoItem[] = [
