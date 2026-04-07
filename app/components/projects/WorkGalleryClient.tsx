@@ -197,6 +197,11 @@ export default function WorkGalleryClient({ images }: Props) {
       return;
     }
 
+    zoomViewportRef.current?.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
     setIsZoomed(true);
     setPanOffset({ x: 0, y: 0 });
   };

@@ -663,56 +663,110 @@
             },
             {
                 "slug": "wordy",
-                "featured": false,
-                "title": "Wordy - angol-magyar szókártyás alkalmazás",
-                "cardDescription": "Full-stack szókártyás alkalmazás kategóriákba rendezett tanulási tartalommal, letisztult felülettel és adatbázis-alapú működéssel.",
-                "intro": "A Wordy egy angol-magyar szókártyás alkalmazás, amelynek célja a szókincs fejlesztése egyszerű, áttekinthető és modern felületen.",
+                "featured": true,
+                "title": "Wordy – angol–magyar szókártyás alkalmazás",
+                "cardDescription": "Full-stack nyelvtanuló alkalmazás saját authentikációval, SQLite adatbázissal és DigitalOcean dropleten futó éles környezettel.",
+                "intro": "A Wordy egy full-stack angol–magyar szókártyás alkalmazás, amely lehetővé teszi saját szócsomagok létrehozását, kezelését és gyakorlását egy modern, adatbázis-alapú rendszerben.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt egy olyan tanulóalkalmazás megvalósítására épült, ahol a tartalom kategóriákba rendezve jelenik meg, és a felhasználó strukturált módon haladhat végig a szóanyagokon."
+                        "content": "A projekt célja egy teljes tanulási folyamatot lefedő webalkalmazás megvalósítása volt, amely a regisztrációtól kezdve a szócsomagok kezelésén át egészen az interaktív gyakorlásig biztosít felhasználói élményt."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás full-stack megközelítéssel készült, így a felhasználói felület mellett az adatkezelés és az adatok tárolása is a projekt részét képezi."
+                        "content": "Az alkalmazás full-stack megközelítéssel készült Next.js App Router használatával. A backend logika Route Handlerekben valósul meg, az adatkezelést Prisma ORM és SQLite adatbázis biztosítja, míg a hitelesítés egy saját, session-alapú megoldással történik HTTP-only cookie-k használatával."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A rendszer lehetővé teszi, hogy a felhasználók saját szócsomagokat hozzanak létre, azokat szerkesszék, majd egy interaktív kártyanézetben gyakorolják a szavakat. A kártyák minden gyakorlásnál újrakeverésre kerülnek, valamint támogatott a tanulás fordított nyelvi irányban is."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Az alkalmazás éles környezetben egy DigitalOcean Ubuntu dropleten fut, ahol a Node.js alapú szerver és az SQLite adatbázis együtt biztosítja a működést. A deployment során reverse proxy és process manager használatával stabil, folyamatosan elérhető szolgáltatás került kialakításra."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Az alkalmazás kipróbálásához elérhető egy demo felhasználói fiók is, amely lehetővé teszi a funkciók gyors tesztelését regisztráció nélkül."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb funkciói",
+                        "title": "Főbb funkciók",
                         "items": [
-                            "Szókártyák kategóriákba rendezett megjelenítése",
-                            "Letisztult és gyors felhasználói felület",
-                            "Adatbázis-alapú tartalomkezelés",
-                            "Modern full-stack felépítés",
-                            "Tanulási tartalmak strukturált kezelése"
+                            "Felhasználói regisztráció és bejelentkezés",
+                            "Saját session-alapú authentikáció HTTP-only cookie-val",
+                            "Szócsomagok létrehozása, szerkesztése és törlése",
+                            "Angol–magyar szókapcsolatok kezelése",
+                            "Interaktív kártyanézetes gyakorlás",
+                            "Szavak véletlenszerű keverése minden gyakorlásnál",
+                            "Tanulás normál és fordított nyelvi irányban",
+                            "Szövegfelolvasás a Web Speech API használatával",
+                            "Profiloldal és jelszó módosítás",
+                            "SQLite adatbázis backup letöltése"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során fontos volt a tartalom jól átlátható strukturálása, a gyors felület és az egyszerű használhatóság megőrzése."
+                        "content": "A fejlesztés során kiemelt figyelmet kapott az alkalmazás architektúrája, a tiszta adatmodell kialakítása, valamint az autentikáció és a kliens–szerver kommunikáció összehangolt működése."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált technológiák és eszközök",
+                        "items": [
+                            {
+                                "label": "Frontend / Full-stack framework",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/"
+                            },
+                            {
+                                "label": "ORM",
+                                "value": "Prisma",
+                                "url": "https://www.prisma.io/"
+                            },
+                            {
+                                "label": "Adatbázis",
+                                "value": "SQLite",
+                                "url": "https://www.sqlite.org/"
+                            },
+                            {
+                                "label": "Hosztolás",
+                                "value": "DigitalOcean",
+                                "url": "https://www.digitalocean.com/"
+                            }
+                        ]
                     }
                 ],
-                "image": "/works/wordy/1.png",
+                "image": "/works/wordy/thumbnail_wordy.webp",
                 "gallery": [
-                    "/works/wordy/1.png"
+                    "/works/wordy/1.webp",
+                    "/works/wordy/2.webp",
+                    "/works/wordy/3.webp",
+                    "/works/wordy/4.webp",
+                    "/works/wordy/5.webp"
                 ],
                 "tags": [
                     "Next.js",
+                    "TypeScript",
                     "Tailwind CSS",
+                    "Prisma",
                     "SQLite",
-                    "Prisma"
+                    "Authentication",
+                    "DigitalOcean"
                 ],
                 "projectMeta": {
                     "type": "Full-stack projekt",
-                    "role": "Full-stack fejlesztés és adatmodell kialakítás",
-                    "status": "Fejlesztett projekt",
+                    "role": "Teljes rendszer tervezés és fejlesztés (frontend, backend, auth, adatbázis, deploy)",
+                    "status": "Éles rendszer",
                     "year": "2025"
+                },
+                   "credentials": {
+                    "username": "test@gmail.com",
+                    "password": "password"
                 },
                 "category": "fullstack",
                 "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
                 "liveUrl": "https://egs.thomasapi.eu",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "seoTitle": "Wordy szókártyás alkalmazás | Horváth Tamás",
+                "seoDescription": "Full-stack nyelvtanuló alkalmazás Next.js, Prisma és SQLite használatával, saját authentikációval és DigitalOcean szerveren futó éles környezettel."
             },
             {
                 "slug": "integrativ-medicina",
