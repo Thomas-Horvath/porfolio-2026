@@ -406,6 +406,27 @@
                     {
                         "type": "paragraph",
                         "content": "A fejlesztés során több továbbfejleszthető terület is azonosításra került, például a portfólió szűrés, a kapcsolat űrlap backend integrációja és a SEO optimalizálás."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Frontend keretrendszer",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "UI könyvtár",
+                                "value": "React",
+                                "url": "https://react.dev/"
+                            },
+                            {
+                                "label": "Stíluskezelés",
+                                "value": "Tailwind CSS",
+                                "url": "https://tailwindcss.com/docs"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/csk/thumbnail_csk.webp",
@@ -498,6 +519,27 @@
                     {
                         "type": "paragraph",
                         "content": "A dokumentáció tartalmazza az adatbázis teljes struktúráját, az egyes táblák leírását, valamint a kapcsolatok és üzleti logika részletes bemutatását."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Adatbázis-kezelő",
+                                "value": "Microsoft SQL Server",
+                                "url": "https://learn.microsoft.com/sql/sql-server/"
+                            },
+                            {
+                                "label": "Lekérdezési nyelv",
+                                "value": "Transact-SQL",
+                                "url": "https://learn.microsoft.com/sql/t-sql/language-reference"
+                            },
+                            {
+                                "label": "Adminisztrációs eszköz",
+                                "value": "SQL Server Management Studio",
+                                "url": "https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/egs_mssql/thumbnail_mssql.webp",
@@ -741,7 +783,9 @@
                     "/works/wordy/2.webp",
                     "/works/wordy/3.webp",
                     "/works/wordy/4.webp",
-                    "/works/wordy/5.webp"
+                    "/works/wordy/5.webp",
+                    "/works/wordy/6.webp",
+                    "/works/wordy/7.webp"
                 ],
                 "tags": [
                     "Next.js",
@@ -772,31 +816,70 @@
                 "slug": "integrativ-medicina",
                 "featured": false,
                 "title": "Integratív Medicina - gyógyító ásványok",
-                "cardDescription": "Asztali alkalmazás tanulási tartalmak kategorizált megjelenítésére, modern felülettel és helyi adatkezeléssel.",
-                "intro": "Az Integratív Medicina projekt egy olyan alkalmazás, amely ásványokhoz kapcsolódó tanulási tartalmak rendszerezésére és megjelenítésére készült.",
+                "cardDescription": "Desktop alkalmazás természetgyógyászati munkához, ásványok, problémák, csakrák és horoszkópjegyek összefüggéseinek kezelésére.",
+                "intro": "Az Integratív Medicina egy kifejezetten desktop használatra készült alkalmazás, amely egy természetgyógyász munkáját támogatja az energiagyógyászat szemléletében. Az app egy helyen rendszerezi az ásványokat, a testi-lelki problémákat, a horoszkópjegyek adatait és a csakrákhoz tartozó információkat.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy jól áttekinthető, modern felületű alkalmazás létrehozása volt, ahol a tartalmak logikus csoportosításban jelennek meg, és könnyen kezelhetők."
+                        "content": "A projekt célja az volt, hogy egyetlen rendszerben kezelhető legyen minden olyan összefüggés, amely a kristályok, a betegségek, a csakrák és a zodiákus jegyek között fontos lehet a mindennapi terápiás munkában. A felület és az adatszerkezet úgy készült el, hogy a felhasználó gyorsan át tudja tekinteni az egyes kapcsolódó elemeket."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás a felhasználói felület és a helyi adatkezelés összehangolására épül, így nemcsak megjeleníti, hanem rendszerezi is a tanulási anyagokat."
+                        "content": "Az alkalmazás központi témája az energiagyógyászat. A természetgyógyász gyorsan át tudja nézni, mely ásványok kapcsolódnak egy adott problémához, melyek ajánlhatók egy csakrához vagy horoszkópjegyhez, és milyen leírások, megfigyelések vagy saját szakmai jegyzetek tartoznak az egyes elemekhez."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb jellemzői",
+                        "title": "A projekt főbb funkciói",
                         "items": [
-                            "Kategóriákba rendezett tanulási tartalmak",
-                            "Modern, letisztult felhasználói felület",
-                            "Helyi adatbázis használata",
-                            "Asztali alkalmazás jellegű működés",
-                            "Adatkezelés és tartalomrendszerezés egy projektben"
+                            "Ásványok nyilvántartása és szerkesztése",
+                            "Testi-lelki zavarok és betegségek kezelése",
+                            "Csakrák adatainak kezelése",
+                            "Horoszkópjegyekhez tartozó egészségi, lelki és ajánlási adatok kezelése",
+                            "Kapcsolatok rögzítése az ásványok, betegségek, csakrák és csillagjegyek között",
+                            "Külön szerkeszthető jegyzet az ásványokhoz",
+                            "Külön szerkeszthető jegyzet a betegségekhez",
+                            "Külön jegyzetmező a csakrákhoz",
+                            "Helyi adatbázis mentése és visszatöltése",
+                            "Automatikus alkalmazás-újraindítás visszatöltés után",
+                            "Védelem mentetlen jegyzetek bezárása vagy navigáció közben"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a hangsúly az áttekinthető struktúrán, a jó használhatóságon és a helyi környezetben stabilan működő alkalmazás felépítésén volt."
+                        "content": "Kiemelt kérés volt a projektben, hogy a kristályoknál és a betegségeknél külön, kényelmesen szerkeszthető jegyzetfelület álljon rendelkezésre. Ez az alkalmazásban külön menthető rich text jegyzetként valósult meg, ami sokkal kényelmesebb szakmai használatot tesz lehetővé."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Technológiai oldalon a projekt Electron desktop alkalmazásként készült, React + Vite frontenddel, TypeScript alapon. Az adatkezelést Prisma ORM és helyi SQLite adatbázis biztosítja, a kezelőfelület Tailwind CSS-t használ, a jegyzetelési funkciókat pedig React Quill szerkesztő támogatja."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Az adatmodell négy fő entitás köré szerveződik: Mineral, Problem, Chakra és Zodiac. Egy ásvány több problémához, több csakrához és több horoszkópjegyhez is kapcsolható, így az alkalmazás többirányú összefüggések áttekintésére is alkalmas."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt fontos gyakorlati része a lokális adatbázis mentési és visszatöltési lehetőség, amely archiválást és visszaállítást is támogat. Visszatöltés után az alkalmazás automatikusan újraindul, ami egyszerűbbé és biztonságosabbá teszi a használatot."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Desktop keretrendszer",
+                                "value": "Electron",
+                                "url": "https://www.electronjs.org/docs/latest/"
+                            },
+                            {
+                                "label": "Adatkezelés",
+                                "value": "Prisma ORM",
+                                "url": "https://www.prisma.io/docs"
+                            },
+                            {
+                                "label": "Jegyzetszerkesztő",
+                                "value": "React Quill",
+                                "url": "https://github.com/zenoamaro/react-quill"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/integrative/1.png",
@@ -805,78 +888,120 @@
                 ],
                 "tags": [
                     "Electron",
+                    "React",
                     "Vite",
+                    "TypeScript",
                     "Tailwind CSS",
                     "SQLite",
-                    "Prisma"
+                    "Prisma",
+                    "React Quill"
                 ],
                 "projectMeta": {
-                    "type": "Full-stack / desktop projekt",
-                    "role": "Asztali alkalmazás fejlesztése és helyi adatkezelés",
-                    "status": "Fejlesztett projekt",
+                    "type": "Desktop alkalmazás",
+                    "role": "Full-stack desktop fejlesztés, adatmodell-tervezés és helyi adatkezelés",
+                    "status": "Dokumentált projekt",
                     "year": "2025"
                 },
                 "category": "fullstack",
-                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
-                "liveUrl": "https://egs.thomasapi.eu",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "githubUrl": "https://github.com/Thomas-Horvath/mineral-app",
+                "seoTitle": "Integratív Medicina | Horváth Tamás",
+                "seoDescription": "Az Integratív Medicina egy Electron, React, TypeScript, Prisma és SQLite alapú desktop alkalmazás, amely a természetgyógyászati munkához kapcsolódó ásványok, problémák, csakrák és horoszkópjegyek kezelését támogatja."
             },
             {
                 "slug": "kostoljbele",
                 "featured": false,
                 "title": "Kóstolj Bele! - receptgyűjtemény webalkalmazás",
-                "cardDescription": "Full-stack receptalkalmazás felhasználói autentikációval, saját receptek kezelésével és kategóriaalapú böngészéssel.",
-                "intro": "A Kóstolj Bele! egy receptgyűjtemény webalkalmazás, amelyben a felhasználók böngészhetnek a receptek között, illetve saját tartalmakat is kezelhetnek.",
+                "cardDescription": "Modern receptplatform Next.js, Prisma és NextAuth alapokon, saját receptekkel, kereséssel, kedvencekkel és admin alapú felhasználókezeléssel.",
+                "intro": "A Kóstolj Bele! egy rendezett, kereshető és vizuálisan igényes receptgyűjtő alkalmazás, ahol a felhasználók saját recepteket hozhatnak létre, szerkeszthetnek, kedvenceket menthetnek és értékelhetnek.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan full-stack alkalmazás létrehozása volt, amely ötvözi a nyilvános receptek böngészését a bejelentkezett felhasználók saját tartalomkezelési lehetőségeivel."
+                        "content": "A projekt célja egy átlátható, jól használható receptplatform létrehozása volt, amely egyszerre támogatja a receptek vizuális böngészését és a bejelentkezett felhasználók saját tartalmainak kezelését. A rendszer a mindennapi használhatóságra és a könnyű kereshetőségre épül."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazásban a felhasználók regisztrálhatnak, bejelentkezhetnek, létrehozhatnak új recepteket, módosíthatják azokat, és kezelhetik saját tartalmaikat."
+                        "content": "Az alkalmazásban a felhasználók recepteket hozhatnak létre, szerkeszthetnek és törölhetnek, kategóriák alapján böngészhetnek, név vagy kategória szerint kereshetnek, valamint kedvenceket menthetnek és értékeléseket adhatnak. A publikus regisztráció ki van vezetve, új felhasználót csak admin jogosultságú felhasználó hozhat létre a profiloldalról."
                     },
                     {
                         "type": "list",
                         "title": "A projekt főbb funkciói",
                         "items": [
-                            "Receptek böngészése és kategorizálása",
-                            "Felhasználói regisztráció és bejelentkezés",
-                            "Saját receptek létrehozása és szerkesztése",
-                            "Autentikációval védett funkciók",
-                            "Adatbázis-alapú tartalomkezelés"
+                            "Receptek létrehozása, szerkesztése és törlése",
+                            "Kategória alapú böngészés",
+                            "Keresés név és kategória alapján",
+                            "Kedvencek kezelése",
+                            "Receptértékelés",
+                            "Admin alapú felhasználókezelés",
+                            "NextAuth alapú hitelesítés",
+                            "Prisma ORM-re épülő adatkezelés SQLite fejlesztői adatbázissal"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során fontos szerepet kapott az autentikáció és a feltételes megjelenítés összehangolása, valamint a tartalomkezelési folyamat átlátható felépítése."
+                        "content": "A jogosultsági működés tudatosan zárt rendszerre épül: az alap admin felhasználó Tamás, a seed pedig három felhasználót hoz létre Tamás, Károly és Test néven. Tamás ADMIN szerepkört kap, a többi fiók normál USER jogosultsággal működik."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Technológiai szempontból a projekt Next.js 16.2, React 19, Prisma ORM 7 és NextAuth alapokra épül, moduláris Sass stílusokkal. A Prisma 7-hez illeszkedve a projekt már prisma.config.ts konfigurációt használ, a generált kliens a generated/prisma mappába kerül, SQLite esetén pedig az alkalmazás @prisma/adapter-better-sqlite3 adapterrel csatlakozik."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt WSL és Linux környezetre is elő van készítve, ami különösen hasznos self-hosting vagy DigitalOcean alapú futtatásnál. A next.config.mjs standalone outputja megkönnyíti a buildelt alkalmazás önálló futtatását szerveres környezetben."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Frontend keretrendszer",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "Autentikáció",
+                                "value": "NextAuth.js",
+                                "url": "https://next-auth.js.org/"
+                            },
+                            {
+                                "label": "Adatkezelés",
+                                "value": "Prisma ORM",
+                                "url": "https://www.prisma.io/docs"
+                            }
+                        ]
                     }
                 ],
-                "image": "/works/kostolj/1.png",
+                "image": "/works/kostolj/thambnail.webp",
                 "gallery": [
-                    "/works/kostolj/1.png",
-                    "/works/kostolj/2.png"
+                    "/works/kostolj/1.webp",
+                    "/works/kostolj/2.webp",
+                    "/works/kostolj/3.webp",
+                    "/works/kostolj/4.webp",
+                    "/works/kostolj/5.webp"
                 ],
                 "tags": [
-                    "Next.js",
+                    "Next.js 16",
+                    "React 19",
                     "NextAuth",
-                    "React",
                     "Sass",
                     "SQLite",
-                    "Prisma"
+                    "Prisma ORM 7",
+                    "TypeScript"
                 ],
                 "projectMeta": {
                     "type": "Full-stack projekt",
-                    "role": "Full-stack fejlesztés és autentikációs logika",
-                    "status": "Fejlesztett projekt",
+                    "role": "Full-stack fejlesztés, autentikáció, jogosultságkezelés és Prisma alapú adatmodell",
+                    "status": "Dokumentált projekt",
                     "year": "2025"
                 },
+                "credentials": {
+                    "username": "Test",
+                    "password": "Password"
+                },
                 "category": "fullstack",
-                "githubUrl": "https://github.com/Thomas-Horvath/KostoljBele",
-                "liveUrl": "https://egs.thomasapi.eu",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "githubUrl": "https://github.com/Thomas-Horvath/kostolj-bele",
+                "liveUrl": "https://kostoljbele.thomasapi.eu",
+                "seoTitle": "Kóstolj Bele! | Horváth Tamás",
+                "seoDescription": "A Kóstolj Bele! egy Next.js 16, Prisma ORM 7 és NextAuth alapú receptgyűjtő alkalmazás saját receptek kezelésével, kereséssel, kedvencekkel, értékeléssel és admin alapú felhasználókezeléssel."
             },
             {
                 "slug": "egs-admin-panel",
@@ -1026,6 +1151,27 @@
                     {
                         "type": "paragraph",
                         "content": "A fejlesztés során nagy hangsúlyt kapott a tiszta kódszerkezet, a szemantikus HTML használata, valamint az akadálymentességi és validációs szempontok figyelembevétele."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Build eszköz",
+                                "value": "Webpack",
+                                "url": "https://webpack.js.org/"
+                            },
+                            {
+                                "label": "Dátumválasztó",
+                                "value": "Flatpickr",
+                                "url": "https://flatpickr.js.org/"
+                            },
+                            {
+                                "label": "Fejlesztési alapok",
+                                "value": "MDN Web Docs",
+                                "url": "https://developer.mozilla.org/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/coffee_shop/thumbnail_coffee.webp",
@@ -1058,49 +1204,47 @@
                 "slug": "gitart-backend",
                 "featured": false,
                 "title": "GitArt Próbaterem és Stúdió szerver",
-                "cardDescription": "Backend alkalmazás egy próbaterem-foglalási rendszerhez, JWT-alapú autentikációval, MongoDB-adatkezeléssel, email értesítésekkel és dokumentált API-végpontokkal.",
-                "intro": "A GitArt backend a próbaterem és stúdió webalkalmazás szerveroldali része, amely a felhasználókezelést, a foglalási logikát, a próbatermekhez és a stúdióhoz kapcsolódó adatok kiszolgálását, valamint az emailes értesítések működését biztosítja.",
+                "cardDescription": "Express alapú Node.js backend próbaterem-foglalási rendszerhez, JWT autentikációval, MongoDB adatkezeléssel, foglalási logikával és e-mail küldéssel.",
+                "intro": "A GITART Server a GITART próbaterem és stúdió webalkalmazás backend oldala. Egy Express alapú Node.js szerver, amely a felhasználókezelést, a foglalási funkciókat, a terem- és stúdióadatok kiszolgálását, valamint az e-mail küldéshez kapcsolódó logikát kezeli.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan backend rendszer kialakítása volt, amely képes kiszolgálni egy valós működésű próbaterem weboldal fő üzleti folyamatait. A szerver kezeli a regisztrációt, a bejelentkezést, az autentikációt, a profilhoz tartozó adatok lekérdezését, valamint az online teremfoglalások létrehozását, listázását és törlését."
+                        "content": "A projekt célja egy olyan backend rendszer kialakítása volt, amely egy próbaterem és stúdió webalkalmazás teljes szerveroldali működését képes kiszolgálni. A szerver kezeli a felhasználó regisztrációt és bejelentkezést, a JWT alapú autentikációt, a foglalások létrehozását, listázását és törlését, valamint a saját profilhoz és saját foglalásokhoz kapcsolódó lekérdezéseket."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A backend Express alapokon épül fel, az adatok pedig MongoDB adatbázisban tárolódnak Mongoose modelleken keresztül. A rendszer külön végpontokon szolgálja ki a próbatermek, a stúdió és a foglalások adatait, így a frontend dinamikusan, API-kapcsolaton keresztül tudja megjeleníteni a szükséges tartalmakat."
+                        "content": "A backend Node.js és Express alapokra épül, az adatok tárolását MongoDB és Mongoose modellek biztosítják. A rendszer külön API végpontokon keresztül szolgálja ki a próbatermek, a stúdió és a foglalások adatait, így a frontend valós adatkapcsolaton keresztül tudja megjeleníteni a szükséges tartalmakat."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A felhasználói azonosítás JWT-alapon történik. A nyilvános és a védett végpontok szétválasztása middleware-en keresztül valósul meg, így a rendszer képes kezelni azokat a műveleteket is, amelyek csak bejelentkezett felhasználók számára érhetők el, például a saját profil vagy a saját foglalások lekérdezését."
+                        "content": "A működés fontos része a nyilvános és a tokennel védett végpontok szétválasztása. Az autentikáció Bearer tokennel történik az Authorization headerben, a védett route-okat pedig az authenticate middleware ellenőrzi JWT token alapján."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt egyik érdekes része az emailküldési logika megvalósítása. A foglalásokhoz kapcsolódó visszaigazoló és emlékeztető emailek nem kizárólag Node.js környezetben készülnek, hanem a szerver egy Python SMTP scriptet is meghív a háttérben. Az időzített emlékeztetők küldését a node-schedule kezeli, így a rendszer a foglalás előtt automatikusan is tud értesítést küldeni."
+                        "content": "Az e-mail küldési logika Node.js és Python együttműködésével valósul meg. A HTTP kérés a controllers/sendMail/sendMail.js controllerbe érkezik, a sablon HTML-t a utils/emailUtiles.js generálja, majd a Node folyamat elindítja a mailer/mail.py scriptet, amely a Brevo Transactional Email API-n keresztül küldi el az üzenetet."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A backendhez egy grafikusan megjelenített API-dokumentációs felület is tartozik, ahol a végpontok áttekinthetők, kipróbálhatók, és az egyes kérésekhez másolható fetch példák is rendelkezésre állnak. Ez különösen hasznos a frontend integráció és a fejlesztői tesztelés során."
+                        "content": "Az időzített emlékeztető e-maileket a controllers/sendMail/scheduleEmail.js indítja el szerverindítás után. Az ütemezés jelenleg minden óra 5. percében ellenőrzi a még ki nem küldött emlékeztetőket, így a rendszer automatikus figyelmeztetéseket is tud küldeni."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt Ubuntu alapú DigitalOcean dropleten fut, ami lehetőséget adott arra is, hogy a szerveroldali működés ne csak lokális fejlesztői környezetben, hanem valós hosztolt környezetben is kipróbálható legyen."
+                        "content": "A projektben automatizált route tesztek is vannak Jest és Supertest alapon. Ezek a tesztek adatbázis helyett mockolt modellekkel ellenőrzik a főbb végpontok működését, így gyorsak és nem igényelnek külön tesztadatbázist."
                     },
                     {
                         "type": "list",
                         "title": "A backend főbb feladatai",
                         "items": [
-                            "Felhasználói regisztráció és bejelentkezés kezelése",
+                            "Felhasználó regisztráció és bejelentkezés",
                             "JWT-alapú autentikáció védett végpontokhoz",
+                            "Próbaterem- és stúdióadatok lekérdezése",
+                            "Időpontfoglalás létrehozása, listázása és törlése",
                             "Saját profil és saját foglalások lekérdezése",
-                            "Új foglalások létrehozása és meglévő foglalások törlése",
-                            "Próbatermek és stúdióadatok API-n keresztüli kiszolgálása",
-                            "Nyilvános és tokennel védett végpontok szétválasztása",
-                            "MongoDB-alapú adattárolás Mongoose modellekkel",
-                            "Joi-alapú validáció a bejövő adatok ellenőrzéséhez",
-                            "Bcrypt-alapú jelszóhashelés",
-                            "Emailküldés Python SMTP script segítségével",
-                            "Időzített emlékeztető emailek kezelése node-schedule használatával",
-                            "Grafikus API dokumentáció másolható fetch példákkal"
+                            "E-mail küldés és időzített emlékeztető küldés",
+                            "MongoDB + Mongoose alapú adatkezelés",
+                            "Joi alapú validáció",
+                            "Bcrypt alapú jelszóhashelés",
+                            "Nyilvános és védett végpontok elkülönítése middleware segítségével"
                         ]
                     },
                     {
@@ -1122,7 +1266,42 @@
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a fő kihívást az autentikáció, a foglalási logika, az időzített emailes folyamatok és a moduláris szerverstruktúra összehangolása jelentette. A projektben külön figyelmet kapott a route-ok, kontrollerek, modellek, middleware-ek és segédfüggvények tiszta szétválasztása."
+                        "content": "Az Express alkalmazás összeállítása az app.js fájlban történik, míg a server.js feladata a környezeti változók betöltése, az adatbázis-kapcsolat létrehozása és a szerver elindítása. Ez a szétválasztás azért fontos, mert a tesztek közvetlenül az app.js példányt használják, így nincs szükség valódi HTTP szerverindításra a route-ok ellenőrzéséhez."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt jelenlegi ismert kockázatai közé tartozik, hogy a GET /bookings végpont nyilvános, ezért a teljes foglaláslista hitelesítés nélkül is olvasható, illetve a POST /send-email végpont is nyilvános, ezért később érdemes lehet rate limitet vagy további korlátozást tenni elé. A .env fájl valódi kulcsokkal és jelszavakkal nem kerülhet verziókezelésbe."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Backend keretrendszer",
+                                "value": "Express",
+                                "url": "https://expressjs.com/"
+                            },
+                            {
+                                "label": "Adatbázis és ODM",
+                                "value": "MongoDB, Mongoose",
+                                "url": "https://mongoosejs.com/"
+                            },
+                            {
+                                "label": "Autentikáció",
+                                "value": "jsonwebtoken",
+                                "url": "https://www.npmjs.com/package/jsonwebtoken"
+                            },
+                            {
+                                "label": "E-mail szolgáltatás",
+                                "value": "Brevo Transactional Email API",
+                                "url": "https://developers.brevo.com/docs/send-a-transactional-email"
+                            },
+                            {
+                                "label": "Tesztelés",
+                                "value": "Jest, Supertest",
+                                "url": "https://jestjs.io/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/gitart_api/project_7_card.webp",
@@ -1140,21 +1319,22 @@
                     "Bcrypt",
                     "Joi",
                     "Node Schedule",
-                    "Python",
-                    "dotenv",
-                    "CORS"
+                    "Python 3",
+                    "Brevo API",
+                    "Jest",
+                    "Supertest"
                 ],
                 "projectMeta": {
                     "type": "Backend projekt",
-                    "role": "API fejlesztés, autentikáció, foglalási logika és emailes értesítési folyamatok",
-                    "status": "Publikus demó",
+                    "role": "Backend fejlesztés, autentikáció, foglalási logika, tesztelés és e-mail workflow kialakítás",
+                    "status": "Dokumentált projekt",
                     "year": "2025"
                 },
                 "category": "backend",
-                "githubUrl": "",
-                "liveUrl": "",
-                "seoTitle": "Gitart - backend| Horváth Tamás",
-                "seoDescription": "Backend alkalmazás egy próbaterem-foglalási rendszerhez, JWT-alapú autentikációval, MongoDB-adatkezeléssel, email értesítésekkel és dokumentált API-végpontokkal."
+                "githubUrl": "https://github.com/Thomas-Horvath/GITART-server",
+                "liveUrl": "https://gitart.thomasapi.eu/",
+                "seoTitle": "GitArt Server | Horváth Tamás",
+                "seoDescription": "Express alapú Node.js backend a GITART próbaterem és stúdió rendszerhez, JWT autentikációval, MongoDB adatkezeléssel, foglalási logikával, e-mail küldéssel és automatizált route tesztekkel."
             },
             {
                 "slug": "leather-portfolio",
@@ -1351,7 +1531,7 @@
             },
             {
                 "slug": "optident-dentist-landing",
-                "featured": true,
+                "featured": false,
                 "title": "Optident - Fogászati rendelő weboldala",
                 "cardDescription": "Modern, reszponzív fogászati landing oldal Next.js és Tailwind CSS alapokon, szolgáltatásokkal, árakkal és kapcsolatfelvételi lehetőségekkel.",
                 "intro": "Az Optident egy modern fogászati rendelő számára készült reszponzív weboldal, amely a szolgáltatások bemutatását és a bizalomépítést helyezi középpontba.",
@@ -1617,6 +1797,27 @@
                     {
                         "type": "paragraph",
                         "content": "A projekt jól mutatja, hogyan lehet egy valós üzleti folyamatot - jelen esetben egy próbaterem online foglalási rendszerét - NoSQL adatmodellel támogatni úgy, hogy közben a tartalmi és a tranzakciós adatok is áttekinthető, fejleszthető szerkezetben maradjanak."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "NoSQL adatbázis",
+                                "value": "MongoDB",
+                                "url": "https://www.mongodb.com/docs/"
+                            },
+                            {
+                                "label": "ODM réteg",
+                                "value": "Mongoose",
+                                "url": "https://mongoosejs.com/"
+                            },
+                            {
+                                "label": "Adatformátum",
+                                "value": "BSON",
+                                "url": "https://www.mongodb.com/resources/basics/json-and-bson"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/gitart_mongo/thumbnail_mongo_gitart.webp",
@@ -1646,31 +1847,72 @@
                 "slug": "webp-converter",
                 "featured": false,
                 "title": "WebP Konverter - képformátum-átalakító eszköz",
-                "cardDescription": "Asztali vagy helyi futtatású eszköz képek WebP formátumba történő tömeges átalakítására.",
-                "intro": "A WebP Konverter egy képoptimalizálást segítő eszköz, amelynek célja a képek gyors és kényelmes átalakítása WebP formátumba.",
+                "cardDescription": "Electron alapú asztali alkalmazás több képfájl gyors WebP formátumba konvertálásához, modern React + Vite felülettel és Sharp alapú képfeldolgozással.",
+                "intro": "A WebP Converter egy desktop alkalmazás több képfájl gyors WebP formátumba konvertálásához. A projekt Electron, React, Vite, Tailwind CSS és Sharp stackre épül, így egyszerre ad natív desktop élményt és modern frontend fejlesztői környezetet.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt gyakorlati problémára készült: nagyobb mennyiségű kép webes felhasználás előtti optimalizálására és tömeges átalakítására."
+                        "content": "A projekt célja egy gyors és könnyen használható asztali eszköz létrehozása volt, amely egyszerűvé teszi több kép webes felhasználás előtti optimalizálását és WebP formátumba konvertálását. Az alkalmazás kifejezetten gyakorlati workflow-ra készült, ahol a felhasználó egyszerre több fájlt szeretne feldolgozni egy közös célmappába."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás lehetővé teszi, hogy a felhasználó több képet dolgozzon fel egységes módon, és a webes használathoz kedvezőbb formátumba mentse őket."
+                        "content": "A felhasználó egyszerre több képfájlt választhat ki, további fájlokat adhat hozzá a korábbi listához, külön célmappát adhat meg a konvertált képeknek, valamint opcionálisan szélességet és/vagy magasságot állíthat be pixelben. Ha csak az egyik méret van megadva, a másik oldalt az alkalmazás arányosan számolja, ha pedig mindkettő ki van töltve, a kép torzítás nélkül illeszkedik a megadott keretbe."
                     },
                     {
                         "type": "list",
                         "title": "A projekt főbb funkciói",
                         "items": [
-                            "Képek WebP formátumba történő konvertálása",
-                            "Tömeges feldolgozás támogatása",
-                            "Egyszerű, célorientált kezelőfelület",
-                            "Webes optimalizálást támogató workflow",
-                            "Gyakorlati fejlesztői segédeszköz jelleg"
+                            "Több képfájl kiválasztása egyszerre",
+                            "További fájlok hozzáadása a korábban kiválasztott listához",
+                            "Külön célmappa megadása a konvertált fájlokhoz",
+                            "Opcionális szélesség és magasság megadása pixelben",
+                            "Aránytartó méretezés Sharp segítségével",
+                            "WebP export fix alapbeállításokkal: quality 80, effort 4",
+                            "Egyszerű visszajelzés a konvertálás állapotáról a felületen",
+                            "Natív desktop működés Electron környezetben"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt fejlesztése során a hangsúly a képfeldolgozási folyamat egyszerűsítésén, az átlátható használaton és a gyakorlati hasznosságon volt."
+                        "content": "Az alkalmazás jelenleg jpg, jpeg, png, bmp, tif, tiff, gif, webp, avif, heic és heif kiterjesztésű fájlokat fogad bemenetként, és minden kimeneti fájlt .webp formátumban ment el. A HEIC és HEIF támogatás platformfüggő lehet, mivel részben a sharp/libvips képességeitől függ."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Technikai oldalon az Electron főfolyamata az electron/main.js fájlban található, a renderer és a main process közötti kommunikációt pedig a preload.js biztosítja biztonságos IPC hídon keresztül. A képfeldolgozást a sharp végzi, az alkalmazás induláskor splash screen nézetet jelenít meg, a desktop ablakban pedig a menüsor el van rejtve."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt fejlesztői módban a npm run dev paranccsal indítható, ami egyszerre indítja el a Vite fejlesztői szervert és az Electron alkalmazást. A production build a npm run build paranccsal készül el, amely előbb a Vite buildet futtatja, majd az electron-builder segítségével csomagolja az alkalmazást a dist mappába."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Jelenlegi korlát, hogy az alkalmazás csak fájlokat kezel, teljes mappák tömeges beolvasását még nem támogatja. Ha két különböző forrásfájl neve azonos, ugyanabba a célmappába mentve felülírhatják egymást, és bár a felület állapot-visszajelzést ad, részletes progress bar még nincs benne."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Desktop keretrendszer",
+                                "value": "Electron",
+                                "url": "https://www.electronjs.org/docs/latest/"
+                            },
+                            {
+                                "label": "Képfeldolgozás",
+                                "value": "Sharp",
+                                "url": "https://sharp.pixelplumbing.com/"
+                            },
+                            {
+                                "label": "Frontend build eszköz",
+                                "value": "Vite",
+                                "url": "https://vite.dev/guide/"
+                            },
+                            {
+                                "label": "Desktop csomagolás",
+                                "value": "electron-builder",
+                                "url": "https://www.electron.build/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/webp/1.png",
@@ -1679,21 +1921,23 @@
                     "/works/webp/2.png"
                 ],
                 "tags": [
-                    "JavaScript",
-                    "Node.js",
+                    "Electron",
+                    "React",
+                    "Vite",
+                    "Tailwind CSS",
+                    "Sharp",
                     "WebP",
                     "Desktop tooling"
                 ],
                 "projectMeta": {
-                    "type": "Eszköz / utility projekt",
-                    "role": "Saját fejlesztésű képoptimalizáló eszköz",
-                    "status": "Fejlesztett projekt",
+                    "type": "Desktop alkalmazás / utility projekt",
+                    "role": "Asztali alkalmazás fejlesztése, képfeldolgozási workflow és Electron integráció",
+                    "status": "Dokumentált projekt",
                     "year": "2025"
                 },
                 "category": "fullstack",
-                "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
-                "seoTitle": "Gitart - MongoDb | Horváth Tamás",
-                "seoDescription": "Ez a projekt a Gitart webshop MongoDB adatbázisának tervezésére és megvalósítására készült."
+                "seoTitle": "WebP Converter | Horváth Tamás",
+                "seoDescription": "A WebP Converter egy Electron, React, Vite, Tailwind CSS és Sharp alapú desktop alkalmazás több képfájl gyors WebP formátumba konvertálásához."
             }
         ]
     },

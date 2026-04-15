@@ -741,7 +741,9 @@
                     "/works/wordy/2.webp",
                     "/works/wordy/3.webp",
                     "/works/wordy/4.webp",
-                    "/works/wordy/5.webp"
+                    "/works/wordy/5.webp",
+                    "/works/wordy/6.webp",
+                    "/works/wordy/7.webp"
                 ],
                 "tags": [
                     "Next.js",
@@ -853,10 +855,13 @@
                         "content": "A fejlesztés során fontos szerepet kapott az autentikáció és a feltételes megjelenítés összehangolása, valamint a tartalomkezelési folyamat átlátható felépítése."
                     }
                 ],
-                "image": "/works/kostolj/1.png",
+                  "image": "/works/kostolj/thambnail.webp",
                 "gallery": [
-                    "/works/kostolj/1.png",
-                    "/works/kostolj/2.png"
+                    "/works/kostolj/1.webp",
+                    "/works/kostolj/2.webp",
+                    "/works/kostolj/3.webp",
+                    "/works/kostolj/4.webp",
+                    "/works/kostolj/5.webp"
                 ],
                 "tags": [
                     "Next.js",
@@ -873,8 +878,8 @@
                     "year": "2025"
                 },
                 "category": "fullstack",
-                "githubUrl": "https://github.com/Thomas-Horvath/KostoljBele",
-                "liveUrl": "https://egs.thomasapi.eu",
+                "githubUrl": "https://github.com/Thomas-Horvath/kostolj-bele",
+                "liveUrl": "https://kostoljbele.thomasapi.eu",
                 "seoTitle": "| Horváth Tamás",
                 "seoDescription": ""
             },
@@ -1351,7 +1356,7 @@
             },
             {
                 "slug": "optident-dentist-landing",
-                "featured": true,
+                "featured": false,
                 "title": "Optident - Dental Clinic Website",
                 "cardDescription": "Modern, reszponzív fogászati landing oldal Next.js és Tailwind CSS alapokon, szolgáltatásokkal, árakkal és kapcsolatfelvételi lehetőségekkel.",
                 "intro": "Az Optident egy modern fogászati rendelő számára készült reszponzív weboldal, amely a szolgáltatások bemutatását és a bizalomépítést helyezi középpontba.",
