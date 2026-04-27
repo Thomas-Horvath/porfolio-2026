@@ -108,75 +108,75 @@
                 "slug": "gitart-frontend",
                 "featured": true,
                 "title": "GitArt Rehearsal Room and Studio Website",
-                "cardDescription": "Komplex frontend alkalmazás egy fiktív budapesti próbateremhez, dinamikus adatkezeléssel és órára bontott online foglalási rendszerrel.",
-                "intro": "A GitArt egy fiktív budapesti próbaterem és stúdió weboldala, amely egy valós üzleti működés frontend oldalát modellezi. A projekt célja egy olyan alkalmazás felépítése volt, amely egyszerre szolgál információs felületként és egy szabályokkal vezérelt, interaktív foglalási rendszerként.",
+                "cardDescription": "A complex frontend app for a fictional rehearsal room and studio in Budapest, with dynamic data loading and an hourly online booking system.",
+                "intro": "GitArt is a fictional rehearsal room and studio website that models the frontend side of a real business. The goal was to build an app that works both as an information website and as an interactive booking system with clear rules.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás bemutatja a próbaterem szolgáltatásait, történetét, a három külön bérelhető próbatermet, valamint a stúdió felszereltségét. Az adatok egy külön backend API-ból érkeznek, így a frontend nem statikus tartalommal dolgozik, hanem valós alkalmazáshoz hasonló adatkezelést valósít meg."
+                        "content": "The app shows the rehearsal room services, its story, the three rentable rooms, and the studio equipment. The data comes from a separate backend API, so the frontend works with real dynamic data instead of static content."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt központi eleme az online teremfoglalási rendszer, amely nem csupán egy egyszerű űrlap, hanem több szabályt kezelő, állapotvezérelt folyamat. A felhasználók regisztrálhatnak, bejelentkezhetnek, majd saját profiljukon belül kezelhetik foglalásaikat."
+                        "content": "The main part of the project is the online room booking system. It is not just a simple form, but a state-based flow with several rules. Users can register, log in, and manage their own bookings in their profile."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A foglalási logika során a rendszer figyelembe veszi az elérhető időpontokat, a már meglévő foglalásokat, valamint azt, hogy egy foglalás csak egymást követő időintervallumokra adható le. A felhasználó egyszerre csak egy terembe foglalhat, és csak aktuális vagy jövőbeli időpontokra."
+                        "content": "The booking logic checks available time slots, existing bookings, and the rule that a booking can only use connected time periods. A user can book only one room at a time, and only for current or future dates."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az oldal emellett külön felületen jeleníti meg a rendezvényeket is, így a projekt egy teljes értékű bemutatkozó és szolgáltatási weboldalként működik, nem csupán egy technikai demóként."
+                        "content": "The site also has a separate events section, so the project works as a full presentation and service website, not only as a technical demo."
                     },
                     {
                         "type": "list",
-                        "title": "A frontend főbb funkciói",
+                        "title": "Main frontend features",
                         "items": [
-                            "Dinamikus adatmegjelenítés backend API-ból",
-                            "Három próbaterem és egy stúdió részletes bemutatása",
-                            "Események megjelenítése külön oldalon",
-                            "Felhasználói regisztráció és bejelentkezés",
-                            "JWT-alapú session kezelés kliensoldalon",
-                            "Felhasználói profil és saját foglalások kezelése",
-                            "Órára bontott, interaktív foglalási rendszer",
-                            "Foglalási szabályok kezelése (időintervallumok, elérhetőség)",
-                            "Naptár alapú foglalási megjelenítés",
-                            "Reszponzív, többoldalas SPA navigáció"
+                            "Dynamic data display from a backend API",
+                            "Detailed pages for three rehearsal rooms and one studio",
+                            "Events page",
+                            "User registration and login",
+                            "JWT-based session handling on the client side",
+                            "User profile and personal booking management",
+                            "Hourly interactive booking system",
+                            "Booking rules for time slots and availability",
+                            "Calendar-based booking view",
+                            "Responsive multi-page SPA navigation"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során kiemelt szempont volt az állapotkezelés átláthatósága, a komplex foglalási logika kezelése, valamint az, hogy a felhasználó minden lépésnél egyértelmű és azonnali visszajelzést kapjon."
+                        "content": "During development, an important goal was clear state handling, good control of the booking logic, and fast feedback for the user at every step."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt során külön figyelmet kapott a komponens-alapú felépítés, az újrafelhasználhatóság, valamint a routing és a felhasználói állapot kezelésének tiszta szétválasztása."
+                        "content": "Special attention was given to component-based structure, reusability, and the clean separation of routing and user state handling."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Unsplash",
                                 "url": ""
                             },
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Pixabay",
                                 "url": ""
                             },
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Freepik",
                                 "url": ""
                             },
                             {
-                                "label": "Szövegezés támogatása",
+                                "label": "Text support",
                                 "value": "ChatGPT",
                                 "url": ""
                             },
                             {
-                                "label": "Ikonok",
+                                "label": "Icons",
                                 "value": "React-icons",
                                 "url": ""
                             }
@@ -204,9 +204,9 @@
                     "Session Storage"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "Frontend fejlesztés, UI kialakítás és kliensoldali logika",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "Frontend development, UI design, and client-side logic",
+                    "status": "Public demo",
                     "year": "2025"
                 },
                 "credentials": {
@@ -214,72 +214,72 @@
                     "password": "Password"
                 },
                 "category": "frontend",
-                "githubUrl": "",
-                "liveUrl": "",
-                "seoTitle": "Gitart - frontend | Horváth Tamás",
-                "seoDescription": "Ez a projekt egy fiktív budapesti próbaterem és stúdió weboldalának frontend részét valósítja meg, React és JavaScript használatával."
+                "githubUrl": "https://github.com/Thomas-Horvath/GITART-frontend",
+                "liveUrl": "https://thomas-horvath.github.io/GITART-frontend/",
+                "seoTitle": "GitArt Frontend | Thomas Horvath",
+                "seoDescription": "The frontend of a fictional rehearsal room and studio website built with React and JavaScript, with booking logic and dynamic API data."
             },
             {
                 "slug": "egs-shop-client",
                 "featured": true,
                 "title": "Electric Guitar Shop Webshop Frontend",
-                "cardDescription": "Komplex frontend alkalmazás egy hangszer-webshophoz, termékböngészéssel, kereséssel, kosárkezeléssel, autentikációval és teljes vásárlási folyamattal.",
-                "intro": "Az Electric Guitar Shop egy fiktív hangszerbolt és online áruház kliensoldali frontend alkalmazása. A projekt célja egy olyan modern, reszponzív e-commerce felület felépítése volt, amely valós API-kapcsolaton keresztül támogatja a teljes vásárlási folyamatot a termékböngészéstől a rendelés leadásáig.",
+                "cardDescription": "A complex frontend app for a music webshop with product browsing, search, cart handling, authentication, and a full checkout flow.",
+                "intro": "Electric Guitar Shop is the client-side frontend of a fictional music store and online webshop. The goal was to build a modern and responsive e-commerce interface that supports the full shopping flow through a real API connection.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt egy összetett webshop frontend megvalósítása, amely egyszerre szolgál termékbemutató felületként és interaktív vásárlási rendszerként. A felhasználók böngészhetik a különböző termékkategóriákat, megtekinthetik az egyes termékek részletes adatlapját, majd keresés, szűrés és rendezés segítségével gyorsabban megtalálhatják a számukra megfelelő termékeket."
+                        "content": "This project is a full webshop frontend that works both as a product showcase and as an interactive shopping interface. Users can browse categories, open product pages, and find products faster with search, filtering, and sorting."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A kliensoldali alkalmazás valós backend API-val kommunikál, így a termékadatok, a felhasználói profilhoz tartozó információk, a rendelési adatok és a hitelesítési folyamatok is dinamikusan működnek. A projekt egyik fontos célja az volt, hogy a frontend ne csak statikus felületeket jelenítsen meg, hanem valós e-commerce működést modellezzen."
+                        "content": "The client app talks to a real backend API, so product data, user profile data, order data, and authentication all work dynamically. One important goal was to make the frontend feel like a real e-commerce system, not only a static demo."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A vásárlási folyamat a kosárkezeléstől a pénztárig felépített logikát követ. A kosár tartalma localStorage-ba mentődik, így oldalfrissítés után is megmarad, míg a bejelentkezett állapot sessionStorage segítségével kezelhető. A rendelés leadásakor a rendszer a felhasználó profiljából előtölti a szállítási adatokat, ami kényelmesebb és valósághűbb checkout élményt ad."
+                        "content": "The shopping flow goes from cart handling to checkout. The cart is saved in localStorage, so it stays after refresh, while the login state is handled with sessionStorage. During checkout, shipping data is prefilled from the user profile."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projektben külön figyelmet kapott a felhasználói hitelesítés és a profilkezelés is. A regisztrált vásárlók bejelentkezhetnek, kezelhetik profiladataikat, módosíthatják szállítási címeiket, megtekinthetik korábbi rendeléseiket, valamint jelszót is módosíthatnak. Ez a rész már nemcsak egyszerű webshop-felületként, hanem teljes felhasználói fiókkezelő rendszerként is működik."
+                        "content": "Authentication and profile handling were also important parts of the project. Registered users can log in, edit profile data, manage shipping addresses, check old orders, and change their password."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A frontend architektúra három külön Context köré szerveződik: az AuthContext kezeli a hitelesítési állapotot, a CartContext a kosárhoz és checkouthoz kapcsolódó logikát, míg a SearchContext a keresőkifejezés globális megosztását biztosítja. Ez a felépítés segített abban, hogy az alkalmazás állapotkezelése átláthatóbb és jobban karbantartható maradjon."
+                        "content": "The frontend architecture is built around three Contexts. AuthContext handles login state, CartContext handles cart and checkout logic, and SearchContext shares the search text globally. This structure helps keep state handling clear and maintainable."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A kliensoldali routingot a projektben HashRouter kezeli, ami tudatos döntés volt a GitHub Pages környezethez való igazodás miatt. Ez jól mutatja, hogy a fejlesztés során nemcsak a funkciók megvalósítása, hanem a hosztolási környezethez illeszkedő technikai döntések is szerepet kaptak."
+                        "content": "Client-side routing uses HashRouter, which was a conscious choice because of the GitHub Pages hosting setup. This shows that technical decisions were also shaped by the target environment."
                     },
                     {
                         "type": "list",
-                        "title": "A frontend főbb funkciói",
+                        "title": "Main frontend features",
                         "items": [
-                            "Termékek listázása kategóriák és alkategóriák szerint",
-                            "Akciós termékek külön megjelenítése",
-                            "Termékek keresése név, márka, kategória és alkategória alapján",
-                            "Szűrés márka, szín és modell szerint",
-                            "Rendezés ár és név alapján",
-                            "Lapozás nagyobb terméklisták esetén",
-                            "Termékek kosárba helyezése egyedi darabszámmal",
-                            "Kosár tartalmának módosítása és törlése",
-                            "Kosár állapotának mentése localStorage-ba",
-                            "Felhasználói regisztráció és bejelentkezés",
-                            "JWT-alapú kliensoldali munkamenet-kezelés",
-                            "Profiladatok megjelenítése és szerkesztése",
-                            "Szállítási címek kezelése",
-                            "Rendelési előzmények és rendelésrészletek megjelenítése",
-                            "Pénztárfolyamat előtöltött profiladatokkal",
-                            "Statikus információs oldalak és kapcsolat oldal",
-                            "Cookie-kezelő komponens"
+                            "Product listing by category and subcategory",
+                            "Separate view for discounted products",
+                            "Search by name, brand, category, and subcategory",
+                            "Filtering by brand, color, and model",
+                            "Sorting by price and name",
+                            "Pagination for longer product lists",
+                            "Add products to cart with custom quantity",
+                            "Edit and remove cart items",
+                            "Cart state saved in localStorage",
+                            "User registration and login",
+                            "JWT-based client-side session handling",
+                            "View and edit profile data",
+                            "Shipping address handling",
+                            "Order history and order details",
+                            "Checkout with prefilled profile data",
+                            "Static info pages and contact page",
+                            "Cookie notice component"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a fő kihívást az jelentette, hogy a termékböngészés, a keresés, a szűrés, a kosárlogika, a hitelesítés és a profilkezelés egységes felhasználói élménnyé álljon össze. A projekt ezért nemcsak vizuális frontend munka volt, hanem több egymásra épülő üzleti folyamat kliensoldali modellezése is."
+                        "content": "The main challenge was to make product browsing, search, filtering, cart logic, authentication, and profile handling work together as one clear user experience."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
                                 "label": "Slider / Carousel",
@@ -287,22 +287,22 @@
                                 "url": "https://swiperjs.com/react"
                             },
                             {
-                                "label": "Ikonok",
+                                "label": "Icons",
                                 "value": "React Icons",
                                 "url": "https://react-icons.github.io/react-icons/"
                             },
                             {
-                                "label": "Lapozás",
+                                "label": "Pagination",
                                 "value": "React Paginate",
                                 "url": "https://www.npmjs.com/package/react-paginate"
                             },
                             {
-                                "label": "JWT feldolgozás",
+                                "label": "JWT parsing",
                                 "value": "jwt-decode",
                                 "url": "https://www.npmjs.com/package/jwt-decode"
                             },
                             {
-                                "label": "Telefonszám kezelés",
+                                "label": "Phone number handling",
                                 "value": "libphonenumber-js",
                                 "url": "https://www.npmjs.com/package/libphonenumber-js"
                             }
@@ -331,9 +331,9 @@
                     "Libphonenumber-js"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "Frontend fejlesztés, kliensoldali állapotkezelés és e-commerce flow kialakítás",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "Frontend development, client-side state handling, and e-commerce flow design",
+                    "status": "Public demo",
                     "year": "2024"
                 },
                 "credentials": {
@@ -343,69 +343,69 @@
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/EGS_shop_client",
                 "liveUrl": "https://thomas-horvath.github.io/EGS_shop_client/",
-                "seoTitle": "EGS - frontend | Horváth Tamás",
-                "seoDescription": "Ez a projekt a Electric Guitar Shop webshop frontend részének kialakítására készült, React és JavaScript használatával."
+                "seoTitle": "EGS Frontend | Thomas Horvath",
+                "seoDescription": "The frontend of the Electric Guitar Shop webshop built with React and JavaScript, with search, cart logic, authentication, and checkout flow."
             },
             {
                 "slug": "sculptor-portfolio-website",
                 "featured": false,
                 "title": "Sculptor Portfolio Website",
-                "cardDescription": "Modern, tartalomvezérelt portfólió weboldal Next.js és Tailwind CSS alapokon, dinamikus műoldalakkal és galéria megjelenítéssel.",
-                "intro": "Ez a projekt Csányi Katalin szobrászművész számára készült portfólió weboldal, amely letisztult vizuális nyelven mutatja be a művész munkáit és szakmai hátterét.",
+                "cardDescription": "A modern content-driven portfolio website built with Next.js and Tailwind CSS, with dynamic artwork pages and gallery view.",
+                "intro": "This project is a portfolio website for sculptor Katalin Csanyi. It presents the artist's works and professional background with a clean and simple visual style.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan vizuálisan erős, mégis visszafogott weboldal létrehozása volt, amely a műalkotásokat helyezi a középpontba, miközben jól strukturált formában jeleníti meg a kapcsolódó szakmai információkat."
+                        "content": "The goal was to create a visually strong but still calm website that puts the artworks in the center and shows the related professional information in a clear structure."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A weboldal tartalomvezérelt megközelítéssel készült, ahol a művek, kiállítások és egyéb adatok JSON alapú struktúrából kerülnek betöltésre, így a rendszer könnyen karbantartható és bővíthető."
+                        "content": "The website uses a content-driven approach. Works, exhibitions, and other data are loaded from a JSON-based structure, so the system is easy to maintain and extend."
                     },
                     {
                         "type": "list",
-                        "title": "Főbb funkciók",
+                        "title": "Main features",
                         "items": [
-                            "Landing oldal hero szekcióval és kiemelt munkákkal",
-                            "Portfólió oldal rácsos elrendezéssel",
-                            "Dinamikus műoldalak egyedi route-okkal",
-                            "Képgaléria modal megjelenítéssel",
-                            "Részletes 'Rólam' oldal szakmai háttérrel",
-                            "Kapcsolat oldal űrlappal és elérhetőségekkel",
-                            "Reszponzív design minden eszközre"
+                            "Landing page with hero section and featured works",
+                            "Portfolio page with grid layout",
+                            "Dynamic artwork pages with unique routes",
+                            "Image gallery with modal view",
+                            "Detailed About page",
+                            "Contact page with form and contact details",
+                            "Responsive design for all devices"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt egyik kulcseleme a dinamikus routing használata, amely lehetővé teszi, hogy minden mű saját URL-en jelenjen meg, egyedi adatokkal és galériával."
+                        "content": "One key part of the project is dynamic routing, which lets every artwork have its own URL, data, and gallery."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A képek és tartalmak megjelenítése során kiemelt figyelmet kapott a felhasználói élmény, különösen a galéria és a modal nézet kialakításánál."
+                        "content": "User experience was especially important in the way images and content are shown, mainly in the gallery and modal view."
                     },
                     {
                         "type": "list",
-                        "title": "Technikai megoldások",
+                        "title": "Technical solutions",
                         "items": [
-                            "Next.js App Router használata dinamikus route-okkal",
-                            "Komponens alapú architektúra (React)",
-                            "TypeScript a típusbiztos fejlesztéshez",
-                            "Tailwind CSS a gyors és konzisztens stylinghoz",
-                            "JSON alapú adatkezelés (content-driven megközelítés)",
-                            "Képgaléria modal navigációval",
-                            "Reszponzív layout mobile-first szemlélettel"
+                            "Next.js App Router with dynamic routes",
+                            "Component-based React architecture",
+                            "TypeScript for type-safe development",
+                            "Tailwind CSS for fast and consistent styling",
+                            "JSON-based data handling",
+                            "Gallery modal with navigation",
+                            "Responsive mobile-first layout"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt során fontos szempont volt a tiszta, minimalista design kialakítása, amely nem vonja el a figyelmet a művekről, hanem azok bemutatását támogatja."
+                        "content": "A clean and minimal design was important, because it supports the artworks instead of taking attention away from them."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A jelenlegi implementáció statikus tartalommal működik, de a struktúra lehetővé teszi egy későbbi CMS vagy backend integráció bevezetését."
+                        "content": "The current version works with static content, but the structure allows a future CMS or backend integration."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során több továbbfejleszthető terület is azonosításra került, például a portfólió szűrés, a kapcsolat űrlap backend integrációja és a SEO optimalizálás."
+                        "content": "Possible next steps include portfolio filtering, backend support for the contact form, and stronger SEO work."
                     }
                 ],
                 "image": "/works/csk/thumbnail_csk.webp",
@@ -423,81 +423,81 @@
                     "Tailwind CSS"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "UI/UX tervezés és frontend fejlesztés",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "UI/UX design and frontend development",
+                    "status": "Public demo",
                     "year": "2025"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/csk-portfolio",
                 "liveUrl": "https://csk-portfolio1.vercel.app/",
-                "seoTitle": "Szobrászművész portfólió weboldal | Horváth Tamás",
-                "seoDescription": "Modern, dinamikus portfólió weboldal Next.js és Tailwind CSS használatával, egyedi műoldalakkal és galéria megjelenítéssel."
+                "seoTitle": "Sculptor Portfolio Website | Thomas Horvath",
+                "seoDescription": "A modern portfolio website built with Next.js and Tailwind CSS, with dynamic artwork pages, a gallery, and a clean visual style."
             },
             {
                 "slug": "egs-mssql-database",
                 "featured": false,
                 "title": "MS SQL Database for the EGS Webshop",
-                "cardDescription": "Relációs adatbázis-tervezési projekt MS SQL Server alapokon, felhasználók, termékek és rendelések kezelésére.",
-                "intro": "Ez a projekt az Electric Guitar Shop webshop relációs adatbázisának tervezésére és megvalósítására készült MS SQL Server környezetben.",
+                "cardDescription": "A relational database design project built with MS SQL Server for handling users, products, and orders.",
+                "intro": "This project was made to design and build the relational database of the Electric Guitar Shop webshop in an MS SQL Server environment.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan relációs adatbázis kialakítása volt, amely képes egy webshop működéséhez szükséges fő entitások és kapcsolatok kezelésére jól strukturált, skálázható formában."
+                        "content": "The goal was to create a relational database that can manage the main entities and relationships of a webshop in a clear and scalable structure."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt az adatbázis specialista képzésem vizsgaremekeként készült, ahol a cél egy valós üzleti problémát modellező, teljeskörűen dokumentált adatbázisrendszer megalkotása volt."
+                        "content": "The project was created as the final work of my database specialist training. The goal was to model a real business case with a fully documented database system."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az adatmodell a felhasználók, termékek, rendelések és kapcsolódó szótártáblák kezelését valósítja meg. A tervezés során kiemelt szempont volt az átláthatóság, az adatok konzisztenciája és a normalizált felépítés, amely csökkenti a redundanciát és támogatja a hatékony lekérdezéseket."
+                        "content": "The data model handles users, products, orders, and related lookup tables. Important goals were clear structure, consistent data, and a normalized design that reduces redundancy and supports efficient queries."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb elemei",
+                        "title": "Main project parts",
                         "items": [
-                            "Relációs adatmodell megtervezése ER diagram alapján",
-                            "Harmadik normálformáig (3NF) normalizált struktúra",
-                            "Felhasználók, partnerek és rendelési adatok kezelése",
-                            "Termék- és kategóriarendszer kialakítása",
-                            "Dinamikus terméktulajdonság modell (Property rendszer)",
-                            "Saját függvények, nézetek és triggerek létrehozása",
-                            "Dokumentált adatbázisprojekt"
+                            "Relational data model based on an ER diagram",
+                            "Structure normalized up to third normal form (3NF)",
+                            "Handling users, partners, and order data",
+                            "Product and category system",
+                            "Dynamic product property model",
+                            "Custom functions, views, and triggers",
+                            "Fully documented database project"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az adatbázis több logikai egységre bontva kezeli az adatokat. A felhasználói és partner adatok külön táblákban kerülnek tárolásra, míg a rendelési rendszer egy fejléc és tétel alapú struktúrát követ. A termékek kategóriákhoz és márkákhoz kapcsolódnak, így a rendszer jól skálázható különböző terméktípusokra."
+                        "content": "The database stores data in several logical parts. User and partner data are kept in separate tables, while the ordering system uses a header-and-item structure. Products are linked to categories and brands, which makes the system easier to scale."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Kiemelt szerepet kap a dinamikus terméktulajdonságok kezelése, amely egy kapcsolótáblás megoldással lehetővé teszi, hogy különböző gitártípusok eltérő tulajdonságokkal rendelkezzenek anélkül, hogy az adatbázis szerkezetét módosítani kellene."
+                        "content": "An important part is the dynamic product property system. It uses a junction-table solution, so different guitar types can have different properties without changing the database structure."
                     },
                     {
                         "type": "list",
-                        "title": "Technikai megoldások",
+                        "title": "Technical solutions",
                         "items": [
-                            "Primary és foreign key kapcsolatok a referenciális integritás biztosítására",
-                            "Indexek alkalmazása a gyakori lekérdezések optimalizálására",
-                            "Kapcsolótáblák használata sok-sok kapcsolat kezelésére (pl. ProductProperty)",
-                            "Check és egyéb constraint-ek az adatok érvényességének biztosítására",
-                            "Nézetek (VIEW) létrehozása komplex lekérdezések egyszerűsítésére",
-                            "Felhasználói függvények üzleti logika támogatására",
-                            "Triggerek alkalmazása az automatikus adatkezelési folyamatokhoz"
+                            "Primary and foreign keys for referential integrity",
+                            "Indexes for faster common queries",
+                            "Junction tables for many-to-many relationships",
+                            "Check constraints and other rules for valid data",
+                            "Views for simpler complex queries",
+                            "User-defined functions for business logic",
+                            "Triggers for automatic data handling processes"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rendszer támogatja az üzleti logika egy részének adatbázis szinten történő megvalósítását is, például triggerek és számított mezők segítségével, így biztosítva az adatok integritását és konzisztens működését."
+                        "content": "The system also supports part of the business logic on the database level with tools like triggers and calculated fields, which helps keep data integrity and consistent behavior."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt során külön figyelmet fordítottam arra, hogy az adatbázis ne csak technikailag működjön jól, hanem egy valós webshop backend számára is stabil és logikus alapot biztosítson."
+                        "content": "A key goal was to make the database not only technically correct, but also a stable and logical base for a real webshop backend."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A dokumentáció tartalmazza az adatbázis teljes struktúráját, az egyes táblák leírását, valamint a kapcsolatok és üzleti logika részletes bemutatását."
+                        "content": "The documentation includes the full database structure, the table descriptions, and a detailed explanation of the relationships and business logic."
                     }
                 ],
                 "image": "/works/egs_mssql/thumbnail_mssql.webp",
@@ -511,63 +511,63 @@
                     "SQL"
                 ],
                 "projectMeta": {
-                    "type": "Adatbázis projekt",
-                    "role": "Adatbázistervezés és SQL logika",
-                    "status": "Vizsgaremek (adatbázis specialista képzés)",
+                    "type": "Database project",
+                    "role": "Database design and SQL logic",
+                    "status": "Final training project",
                     "year": "2024"
                 },
                 "category": "database",
                 "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
-                "seoTitle": "EGS - MsSql | Horváth Tamás ",
-                "seoDescription": "Ez a projekt az Electric Guitar Shop webshop relációs adatbázisának tervezésére és megvalósítására készült MS SQL Server környezetben."
+                "seoTitle": "EGS MS SQL Database | Thomas Horvath",
+                "seoDescription": "A relational webshop database project built with MS SQL Server for products, users, orders, and documented SQL logic."
             },
             {
                 "slug": "egs-backend",
                 "featured": false,
                 "title": "Electric Guitar Shop Webshop Backend",
-                "cardDescription": "Node.js, Express és MongoDB alapú backend szolgáltatás egy hangszer-webshop kliens- és adminfelületének kiszolgálására, JWT-alapú autentikációval és szerepkör alapú jogosultságkezeléssel.",
-                "intro": "Az EGS backend a webshop kliensoldali és adminisztrációs felületéhez készült szerveroldali alkalmazás, amely a termékek, rendelések, felhasználók és hírlevél-feliratkozások kezelését, valamint az üzleti logikát biztosítja REST API-n keresztül.",
+                "cardDescription": "A Node.js, Express, and MongoDB backend service for a music webshop client and admin panel, with JWT authentication and role-based access control.",
+                "intro": "The EGS backend is the server-side app for the webshop client and admin interface. It handles products, orders, users, newsletter subscriptions, and the main business logic through a REST API.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan backend réteg kialakítása volt, amely egy modern webshop működéséhez szükséges fő folyamatokat megbízhatóan kiszolgálja. A szerver kezeli a termékek lekérdezését, a vásárlói regisztrációt és bejelentkezést, a profilhoz kapcsolódó műveleteket, a rendeléskezelést, valamint az adminisztrációs feladatokhoz szükséges végpontokat."
+                        "content": "The goal was to build a backend layer that can reliably serve the main flows of a modern webshop. The server handles product queries, customer registration and login, profile actions, order handling, and admin endpoints."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rendszer Express alapokon épül fel, az adatok pedig MongoDB adatbázisban tárolódnak Mongoose modellek segítségével. A backend külön kezeli a publikus, a bejelentkezett felhasználók számára elérhető, valamint az admin jogosultsághoz kötött végpontokat, így jól elkülönülnek a különböző szerepkörök műveletei."
+                        "content": "The system is built with Express, and the data is stored in MongoDB through Mongoose models. The backend separates public endpoints, logged-in user endpoints, and admin-only endpoints, so each role has its own clear set of actions."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A hitelesítés JWT tokennel történik, a jelszavak pedig bcrypt segítségével hash-elve kerülnek tárolásra. Az admin és vásárlói hozzáférések külön middleware-eken keresztül ellenőrizhetők, így a rendszer nemcsak bejelentkezést, hanem szerepkör alapú jogosultságkezelést is megvalósít."
+                        "content": "Authentication uses JWT tokens, and passwords are stored as hashes with bcrypt. Admin and customer access are checked through separate middleware, so the system supports both login and role-based permissions."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A backend a termékkezeléshez kapcsolódóan fájlfeltöltést is támogat, így új termék létrehozásakor a képek feltöltése is a szerveroldali folyamat része. Emellett a szerver statikus tartalmat is kiszolgál: külön HTML-alapú API-dokumentációs oldalt biztosít, valamint a termékképek elérését is kezeli."
+                        "content": "The backend also supports file upload for product handling, so product images are part of the server-side flow. It also serves static content, including an HTML API documentation page and product image files."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt fontos része volt az is, hogy a kliensoldali webshop és az admin panel ugyanarra a backend alapra tudjon épülni. Emiatt a szerver egyszerre szolgál ki nyilvános terméklekérdezéseket, vásárlói műveleteket és adminisztratív funkciókat."
+                        "content": "An important part of the project was that both the webshop client and the admin panel could use the same backend base. Because of this, the server supports public product data, customer actions, and admin functions at the same time."
                     },
                     {
                         "type": "list",
-                        "title": "A backend főbb feladatai",
+                        "title": "Main backend tasks",
                         "items": [
-                            "Felhasználói regisztráció és bejelentkezés kezelése",
-                            "Admin bejelentkezési folyamat támogatása",
-                            "JWT-alapú autentikáció és jogosultságkezelés",
-                            "Publikus terméklista és egyedi termékadatok kiszolgálása",
-                            "Rendelések létrehozása és rendelési adatok kezelése",
-                            "Saját profil és saját rendelések lekérdezése",
-                            "Admin oldali felhasználókezelés",
-                            "Admin oldali termékkezelés",
-                            "Hírlevél-feliratkozások kezelése",
-                            "Termékfotók feltöltése multer middleware használatával",
-                            "Statikus API-dokumentációs oldal kiszolgálása"
+                            "User registration and login",
+                            "Admin login flow",
+                            "JWT-based authentication and access control",
+                            "Public product list and product details",
+                            "Order creation and order data handling",
+                            "Own profile and own orders",
+                            "Admin user management",
+                            "Admin product management",
+                            "Newsletter subscription handling",
+                            "Product image upload with multer",
+                            "Static API documentation page"
                         ]
                     },
                     {
                         "type": "list",
-                        "title": "Főbb API-végpontok",
+                        "title": "Main API endpoints",
                         "items": [
                             "POST /api/login",
                             "POST /api/adminlogin",
@@ -594,39 +594,39 @@
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a fókusz a jól szervezett szerveroldali struktúrán, az adatok következetes kezelésén, a hitelesítés biztonságos megvalósításán és azon volt, hogy a kliens- és adminfelület számára egyaránt jól használható, kiszámítható API jöjjön létre."
+                        "content": "During development, the main focus was a clean server structure, consistent data handling, safe authentication, and a predictable API that works well for both the client and the admin side."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Backend keretrendszer",
+                                "label": "Backend framework",
                                 "value": "Express",
                                 "url": "https://expressjs.com/"
                             },
                             {
-                                "label": "Adatbázis és ODM",
+                                "label": "Database and ODM",
                                 "value": "MongoDB, Mongoose",
                                 "url": "https://mongoosejs.com/"
                             },
                             {
-                                "label": "Autentikáció",
+                                "label": "Authentication",
                                 "value": "jsonwebtoken",
                                 "url": "https://www.npmjs.com/package/jsonwebtoken"
                             },
                             {
-                                "label": "Jelszóhashelés",
+                                "label": "Password hashing",
                                 "value": "bcrypt",
                                 "url": "https://www.npmjs.com/package/bcrypt"
                             },
                             {
-                                "label": "Validáció",
+                                "label": "Validation",
                                 "value": "Joi",
                                 "url": "https://joi.dev/"
                             },
                             {
-                                "label": "Fájlfeltöltés",
+                                "label": "File upload",
                                 "value": "multer",
                                 "url": "https://www.npmjs.com/package/multer"
                             }
@@ -650,67 +650,67 @@
                     "multer"
                 ],
                 "projectMeta": {
-                    "type": "Backend projekt",
-                    "role": "API fejlesztés, autentikáció, jogosultságkezelés és szerveroldali üzleti logika",
-                    "status": "Publikus demó",
+                    "type": "Backend project",
+                    "role": "API development, authentication, access control, and server-side business logic",
+                    "status": "Public demo",
                     "year": "2024"
                 },
                 "category": "backend",
                 "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
                 "liveUrl": "https://egs.thomasapi.eu",
-                "seoTitle": "EGS - backend | Horváth Tamás",
-                "seoDescription": "Node.js, Express és MongoDB alapú backend szolgáltatás egy hangszer-webshop kliens- és adminfelületének kiszolgálására."
+                "seoTitle": "EGS Backend | Thomas Horvath",
+                "seoDescription": "A Node.js, Express, and MongoDB backend for the Electric Guitar Shop webshop, with authentication, role-based access, and REST API endpoints."
             },
             {
                 "slug": "wordy",
                 "featured": true,
-                "title": "Wordy – angol–magyar szókártyás alkalmazás",
-                "cardDescription": "Full-stack nyelvtanuló alkalmazás saját authentikációval, SQLite adatbázissal és DigitalOcean dropleten futó éles környezettel.",
-                "intro": "A Wordy egy full-stack angol–magyar szókártyás alkalmazás, amely lehetővé teszi saját szócsomagok létrehozását, kezelését és gyakorlását egy modern, adatbázis-alapú rendszerben.",
+                "title": "Wordy - English-Hungarian Flashcard App",
+                "cardDescription": "A full-stack language learning app with custom authentication, SQLite database, and a live DigitalOcean deployment.",
+                "intro": "Wordy is a full-stack English-Hungarian flashcard app that lets users create, manage, and practice their own word packs in a modern database-based system.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy teljes tanulási folyamatot lefedő webalkalmazás megvalósítása volt, amely a regisztrációtól kezdve a szócsomagok kezelésén át egészen az interaktív gyakorlásig biztosít felhasználói élményt."
+                        "content": "The goal was to build a web app that covers the full learning flow, from registration and word pack management to interactive practice."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás full-stack megközelítéssel készült Next.js App Router használatával. A backend logika Route Handlerekben valósul meg, az adatkezelést Prisma ORM és SQLite adatbázis biztosítja, míg a hitelesítés egy saját, session-alapú megoldással történik HTTP-only cookie-k használatával."
+                        "content": "The app was built with a full-stack approach using the Next.js App Router. Backend logic runs in Route Handlers, data is managed with Prisma ORM and SQLite, and authentication uses a custom session-based solution with HTTP-only cookies."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rendszer lehetővé teszi, hogy a felhasználók saját szócsomagokat hozzanak létre, azokat szerkesszék, majd egy interaktív kártyanézetben gyakorolják a szavakat. A kártyák minden gyakorlásnál újrakeverésre kerülnek, valamint támogatott a tanulás fordított nyelvi irányban is."
+                        "content": "Users can create their own word packs, edit them, and practice with an interactive flashcard view. The cards are shuffled for every session, and the app also supports reverse language direction."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás éles környezetben egy DigitalOcean Ubuntu dropleten fut, ahol a Node.js alapú szerver és az SQLite adatbázis együtt biztosítja a működést. A deployment során reverse proxy és process manager használatával stabil, folyamatosan elérhető szolgáltatás került kialakításra."
+                        "content": "The live version runs on a DigitalOcean Ubuntu droplet, where the Node.js server and the SQLite database work together. The deployment uses a reverse proxy and a process manager for stable availability."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás kipróbálásához elérhető egy demo felhasználói fiók is, amely lehetővé teszi a funkciók gyors tesztelését regisztráció nélkül."
+                        "content": "There is also a demo user account, so the main features can be tested quickly without a new registration."
                     },
                     {
                         "type": "list",
-                        "title": "Főbb funkciók",
+                        "title": "Main features",
                         "items": [
-                            "Felhasználói regisztráció és bejelentkezés",
-                            "Saját session-alapú authentikáció HTTP-only cookie-val",
-                            "Szócsomagok létrehozása, szerkesztése és törlése",
-                            "Angol–magyar szókapcsolatok kezelése",
-                            "Interaktív kártyanézetes gyakorlás",
-                            "Szavak véletlenszerű keverése minden gyakorlásnál",
-                            "Tanulás normál és fordított nyelvi irányban",
-                            "Szövegfelolvasás a Web Speech API használatával",
-                            "Profiloldal és jelszó módosítás",
-                            "SQLite adatbázis backup letöltése"
+                            "User registration and login",
+                            "Custom session-based authentication with HTTP-only cookies",
+                            "Create, edit, and delete word packs",
+                            "Manage English-Hungarian word pairs",
+                            "Interactive flashcard practice",
+                            "Random card order for each practice session",
+                            "Normal and reverse learning direction",
+                            "Text-to-speech with the Web Speech API",
+                            "Profile page and password change",
+                            "SQLite database backup download"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során kiemelt figyelmet kapott az alkalmazás architektúrája, a tiszta adatmodell kialakítása, valamint az autentikáció és a kliens–szerver kommunikáció összehangolt működése."
+                        "content": "Special attention was given to the app architecture, the clean data model, and the good connection between authentication and client-server communication."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált technológiák és eszközök",
+                        "title": "Sources and technologies",
                         "items": [
                             {
                                 "label": "Frontend / Full-stack framework",
@@ -723,12 +723,12 @@
                                 "url": "https://www.prisma.io/"
                             },
                             {
-                                "label": "Adatbázis",
+                                "label": "Database",
                                 "value": "SQLite",
                                 "url": "https://www.sqlite.org/"
                             },
                             {
-                                "label": "Hosztolás",
+                                "label": "Hosting",
                                 "value": "DigitalOcean",
                                 "url": "https://www.digitalocean.com/"
                             }
@@ -755,9 +755,9 @@
                     "DigitalOcean"
                 ],
                 "projectMeta": {
-                    "type": "Full-stack projekt",
-                    "role": "Teljes rendszer tervezés és fejlesztés (frontend, backend, auth, adatbázis, deploy)",
-                    "status": "Éles rendszer",
+                    "type": "Full-stack project",
+                    "role": "Full system design and development: frontend, backend, auth, database, and deployment",
+                    "status": "Live system",
                     "year": "2025"
                 },
                 "credentials": {
@@ -765,40 +765,40 @@
                     "password": "password"
                 },
                 "category": "fullstack",
-                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
-                "liveUrl": "https://egs.thomasapi.eu",
-                "seoTitle": "Wordy szókártyás alkalmazás | Horváth Tamás",
-                "seoDescription": "Full-stack nyelvtanuló alkalmazás Next.js, Prisma és SQLite használatával, saját authentikációval és DigitalOcean szerveren futó éles környezettel."
+                "githubUrl": "https://github.com/Thomas-Horvath/wordy_english_flashcards_app",
+                "liveUrl": "https://wordy.thomasapi.eu",
+                "seoTitle": "Wordy Flashcard App | Thomas Horvath",
+                "seoDescription": "A full-stack flashcard app built with Next.js, Prisma, and SQLite, with custom authentication and live deployment on DigitalOcean."
             },
             {
                 "slug": "integrativ-medicina",
                 "featured": false,
                 "title": "Integrative Medicine - Healing Minerals",
-                "cardDescription": "Asztali alkalmazás tanulási tartalmak kategorizált megjelenítésére, modern felülettel és helyi adatkezeléssel.",
-                "intro": "Az Integratív Medicina projekt egy olyan alkalmazás, amely ásványokhoz kapcsolódó tanulási tartalmak rendszerezésére és megjelenítésére készült.",
+                "cardDescription": "A desktop app for showing and organizing learning content about healing minerals, with a modern interface and local data handling.",
+                "intro": "The Integrative Medicine project is an app made to organize and display learning content related to minerals in a clear and structured way.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy jól áttekinthető, modern felületű alkalmazás létrehozása volt, ahol a tartalmak logikus csoportosításban jelennek meg, és könnyen kezelhetők."
+                        "content": "The goal was to create a modern app with a clear interface, where the content appears in logical groups and is easy to use."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás a felhasználói felület és a helyi adatkezelés összehangolására épül, így nemcsak megjeleníti, hanem rendszerezi is a tanulási anyagokat."
+                        "content": "The app connects the user interface with local data handling, so it not only shows the learning materials but also keeps them organized."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb jellemzői",
+                        "title": "Main features",
                         "items": [
-                            "Kategóriákba rendezett tanulási tartalmak",
-                            "Modern, letisztult felhasználói felület",
-                            "Helyi adatbázis használata",
-                            "Asztali alkalmazás jellegű működés",
-                            "Adatkezelés és tartalomrendszerezés egy projektben"
+                            "Learning content grouped into categories",
+                            "Modern and clean user interface",
+                            "Local database usage",
+                            "Desktop-style app behavior",
+                            "Content organization and data handling in one project"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a hangsúly az áttekinthető struktúrán, a jó használhatóságon és a helyi környezetben stabilan működő alkalmazás felépítésén volt."
+                        "content": "During development, the main focus was a clear structure, easy use, and stable work in a local desktop environment."
                     }
                 ],
                 "image": "/works/integrative/1.png",
@@ -813,46 +813,46 @@
                     "Prisma"
                 ],
                 "projectMeta": {
-                    "type": "Full-stack / desktop projekt",
-                    "role": "Asztali alkalmazás fejlesztése és helyi adatkezelés",
-                    "status": "Fejlesztett projekt",
+                    "type": "Full-stack desktop project",
+                    "role": "Desktop app development and local data handling",
+                    "status": "Developed project",
                     "year": "2025"
                 },
                 "category": "fullstack",
-                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
-                "liveUrl": "https://egs.thomasapi.eu",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "githubUrl": "https://github.com/Thomas-Horvath/mineral-app",
+                "liveUrl": "",
+                "seoTitle": "Integrative Medicine | Thomas Horvath",
+                "seoDescription": "A desktop app for organizing and displaying learning content about healing minerals with local data handling."
             },
             {
                 "slug": "kostoljbele",
                 "featured": false,
                 "title": "Taste It! - Recipe Collection Web Application",
-                "cardDescription": "Full-stack receptalkalmazás felhasználói autentikációval, saját receptek kezelésével és kategóriaalapú böngészéssel.",
-                "intro": "A Kóstolj Bele! egy receptgyűjtemény webalkalmazás, amelyben a felhasználók böngészhetnek a receptek között, illetve saját tartalmakat is kezelhetnek.",
+                "cardDescription": "A full-stack recipe app with user authentication, personal recipe management, and browsing by category.",
+                "intro": "Taste It! is a recipe collection web app where users can browse recipes and also manage their own content.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan full-stack alkalmazás létrehozása volt, amely ötvözi a nyilvános receptek böngészését a bejelentkezett felhasználók saját tartalomkezelési lehetőségeivel."
+                        "content": "The goal was to build a full-stack app that combines public recipe browsing with personal content management for logged-in users."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazásban a felhasználók regisztrálhatnak, bejelentkezhetnek, létrehozhatnak új recepteket, módosíthatják azokat, és kezelhetik saját tartalmaikat."
+                        "content": "In the app, users can register, log in, create new recipes, edit them, and manage their own content."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb funkciói",
+                        "title": "Main features",
                         "items": [
-                            "Receptek böngészése és kategorizálása",
-                            "Felhasználói regisztráció és bejelentkezés",
-                            "Saját receptek létrehozása és szerkesztése",
-                            "Autentikációval védett funkciók",
-                            "Adatbázis-alapú tartalomkezelés"
+                            "Browse and organize recipes by category",
+                            "User registration and login",
+                            "Create and edit personal recipes",
+                            "Protected features behind authentication",
+                            "Database-based content handling"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során fontos szerepet kapott az autentikáció és a feltételes megjelenítés összehangolása, valamint a tartalomkezelési folyamat átlátható felépítése."
+                        "content": "During development, an important part was the connection between authentication, conditional rendering, and a clear content management flow."
                     }
                 ],
                   "image": "/works/kostolj/thambnail.webp",
@@ -872,88 +872,88 @@
                     "Prisma"
                 ],
                 "projectMeta": {
-                    "type": "Full-stack projekt",
-                    "role": "Full-stack fejlesztés és autentikációs logika",
-                    "status": "Fejlesztett projekt",
+                    "type": "Full-stack project",
+                    "role": "Full-stack development and authentication logic",
+                    "status": "Developed project",
                     "year": "2025"
                 },
                 "category": "fullstack",
                 "githubUrl": "https://github.com/Thomas-Horvath/kostolj-bele",
                 "liveUrl": "https://kostoljbele.thomasapi.eu",
-                "seoTitle": "| Horváth Tamás",
-                "seoDescription": ""
+                "seoTitle": "Taste It! | Thomas Horvath",
+                "seoDescription": "A full-stack recipe web app with authentication, personal recipe management, and category-based browsing."
             },
             {
                 "slug": "egs-admin-panel",
                 "featured": false,
                 "title": "Electric Guitar Shop Webshop Admin Panel",
-                "cardDescription": "React-alapú adminisztrációs panel termékek, rendelések, felhasználók, adminfiókok és hírlevél-feliratkozások kezelésére webshop környezetben.",
-                "intro": "Az EGS Admin Panel egy különálló frontend alkalmazás, amely az Electric Guitar Shop webshop háttérfolyamatainak kezelésére készült admin jogosultságú felhasználók számára. A projekt célja egy átlátható, jól használható adminisztrációs felület kialakítása volt, amely ugyanarra a backend rendszerre épül, mint a kliensoldali webshop.",
+                "cardDescription": "A React-based admin panel for managing products, orders, users, admin accounts, and newsletter subscriptions in a webshop environment.",
+                "intro": "The EGS Admin Panel is a separate frontend app made for admin users of the Electric Guitar Shop webshop. The goal was to build a clear and usable admin interface on top of the same backend as the client webshop.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "Az admin felület egy önálló React alkalmazás, amely lehetővé teszi a webshop működéséhez szükséges legfontosabb háttérfolyamatok kezelését. Belépés után az adminisztrátorok egy központi dashboardon keresztül érhetik el a termékekhez, rendelésekhez, felhasználókhoz, adminfiókokhoz és hírlevél-feliratkozásokhoz kapcsolódó műveleteket."
+                        "content": "The admin interface is a standalone React app that supports the most important background tasks of the webshop. After login, admins can use a central dashboard to reach products, orders, users, admin accounts, and newsletter actions."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rendszer tokenalapú admin hitelesítést használ. A sikeres bejelentkezés után a jogosultsághoz kötött route-ok és műveletek csak hitelesített admin felhasználók számára válnak elérhetővé. Az autentikáció kliensoldali állapotát Context API kezeli, a token pedig sessionStorage-ban tárolódik."
+                        "content": "The system uses token-based admin authentication. After a successful login, protected routes and actions are available only for authenticated admins. The auth state is handled by Context API, and the token is stored in sessionStorage."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A dashboard több végpont adatát tölti be és összesített mutatókat jelenít meg, például a vásárlók, rendelések és termékek számát, valamint a teljes bevételt. Ez nemcsak adminisztrációs felületként, hanem egyszerű monitoring nézetként is használhatóvá teszi az alkalmazást."
+                        "content": "The dashboard loads data from several endpoints and shows summary numbers like customer count, order count, product count, and total revenue. This makes the app useful not only as an admin tool, but also as a simple monitoring view."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A termékkezelési modul támogatja a lista-, részletező-, létrehozó- és szerkesztő nézeteket, valamint kategóriaalapú szűrést és lapozást. A szűrési állapot localStorage-ban is megőrződik, így az admin munkafolyamat kényelmesebben folytatható oldalfrissítés után is."
+                        "content": "The product module supports list, detail, create, and edit views, with category filtering and pagination. Filter state is also saved in localStorage, so the admin workflow can continue more comfortably after refresh."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rendeléskezelési felület lehetőséget ad a rendelések listázására, részletes megtekintésére, szerkesztésére és törlésére. A vásárlók és adminok kezelése két külön nézetben jelenik meg, ugyanarra a felhasználói adatforrásra építve, az IsAdmin mező alapján szétválasztva."
+                        "content": "The order management screen supports listing, detailed viewing, editing, and deleting orders. Customers and admins are shown in two separate views based on the same user data source and the IsAdmin field."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt része a saját admin profil kezelése, valamint a hírlevél-feliratkozások adminisztrációja is. A profilfrissítés kliensoldali validációval történik, a telefonszám ellenőrzését pedig a libphonenumber-js segíti."
+                        "content": "The project also includes personal admin profile handling and newsletter subscription management. Profile updates use client-side validation, and phone numbers are checked with libphonenumber-js."
                     },
                     {
                         "type": "list",
-                        "title": "Az admin felület főbb funkciói",
+                        "title": "Main admin features",
                         "items": [
-                            "Admin bejelentkezés és tokenalapú hozzáférés-kezelés",
-                            "Dashboard összesített mutatókkal és rövid statisztikákkal",
-                            "Termékek listázása, szűrése, lapozása, létrehozása, szerkesztése és törlése",
-                            "Rendelések listázása, részletezése, szerkesztése és törlése",
-                            "Vásárlók adatainak kezelése",
-                            "Adminfiókok létrehozása, szerkesztése és törlése",
-                            "Saját profil megtekintése és frissítése",
-                            "Hírlevél-feliratkozások állapotkezelése és törlése",
-                            "Reszponzív admin felület nyitható és zárható oldalsávval"
+                            "Admin login and token-based access control",
+                            "Dashboard with summary numbers and short statistics",
+                            "List, filter, paginate, create, edit, and delete products",
+                            "List, view, edit, and delete orders",
+                            "Customer data management",
+                            "Create, edit, and delete admin accounts",
+                            "View and update own profile",
+                            "Manage and delete newsletter subscriptions",
+                            "Responsive admin interface with collapsible sidebar"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során fontos szempont volt az összetettebb adminisztrációs műveletek jól tagolt felületre szervezése, valamint az, hogy a különböző entitásokhoz tartozó CRUD folyamatok egységes felhasználói élményt adjanak. A projekt nemcsak egyszerű admin nézet, hanem több, egymással összefüggő háttérfolyamat frontend oldali megvalósítása."
+                        "content": "During development, it was important to organize the more complex admin tasks into a clear interface and to make the CRUD flows feel consistent across different entities."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Ikonok",
+                                "label": "Icons",
                                 "value": "React Icons",
                                 "url": "https://react-icons.github.io/react-icons/"
                             },
                             {
-                                "label": "Lapozás",
+                                "label": "Pagination",
                                 "value": "React Paginate",
                                 "url": "https://www.npmjs.com/package/react-paginate"
                             },
                             {
-                                "label": "Telefonszám-validáció",
+                                "label": "Phone number validation",
                                 "value": "libphonenumber-js",
                                 "url": "https://www.npmjs.com/package/libphonenumber-js"
                             },
                             {
-                                "label": "Stíluskezelés",
+                                "label": "Styling",
                                 "value": "Sass",
                                 "url": "https://sass-lang.com/"
                             }
@@ -979,9 +979,9 @@
                     "libphonenumber-js"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "Admin felület fejlesztése, autentikációs állapotkezelés és CRUD folyamatok kliensoldali megvalósítása",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "Admin interface development, auth state handling, and client-side CRUD flows",
+                    "status": "Public demo",
                     "year": "2024"
                 },
                 "credentials": {
@@ -991,46 +991,46 @@
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
                 "liveUrl": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
-                "seoTitle": "EGS Admin Panel | Horváth Tamás",
-                "seoDescription": "React-alapú adminisztrációs panel termékek, rendelések, felhasználók, adminfiókok és hírlevél-feliratkozások kezelésére az Electric Guitar Shop webshophoz."
+                "seoTitle": "EGS Admin Panel | Thomas Horvath",
+                "seoDescription": "A React-based admin panel for the Electric Guitar Shop webshop, with product, order, user, and newsletter management."
             },
             {
                 "slug": "thomas-coffee-corner",
                 "featured": false,
                 "title": "Thomas Coffee Corner",
-                "cardDescription": "Reszponzív, adatvezérelt frontend weboldal Webpack build folyamattal egy fiktív kávézó számára.",
-                "intro": "A Thomas Coffee Corner egy fiktív kávézó számára készült többoldalas frontend weboldal, amely a termékmegjelenítésre, keresésre és szűrésre épül, saját Webpack konfigurációval kiegészítve.",
+                "cardDescription": "A responsive data-driven frontend website for a fictional coffee shop, with a custom Webpack build process.",
+                "intro": "Thomas Coffee Corner is a multi-page frontend website for a fictional coffee shop. It focuses on product display, search, and filtering, and it also includes a custom Webpack setup.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy modern, felhasználóbarát kávézó weboldal létrehozása volt, amely reszponzív kialakítással és átlátható struktúrával jeleníti meg a kínálatot és a szolgáltatásokat."
+                        "content": "The goal was to build a modern and user-friendly coffee shop website that shows products and services with a responsive layout and a clear structure."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A felület adatvezérelt megközelítést alkalmaz: a termékek és egyéb tartalmak JSON alapú adatforrásokból kerülnek betöltésre, így a megjelenítés és az adatok kezelése jól elkülönül egymástól."
+                        "content": "The interface uses a data-driven approach. Products and other content are loaded from JSON-based data sources, so presentation and data stay clearly separated."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt egyik kiemelt része a saját kezűleg konfigurált Webpack build folyamat, amely a statikus assetek kezelését, a CSS és JavaScript bundlingot, valamint a projekt optimalizálását biztosítja."
+                        "content": "One important part of the project is the custom Webpack build process, which handles static assets, CSS and JavaScript bundling, and project optimization."
                     },
                     {
                         "type": "list",
-                        "title": "Főbb funkciók",
+                        "title": "Main features",
                         "items": [
-                            "Reszponzív, mobile-first felhasználói felület",
-                            "Hamburger menü és mobil navigáció",
-                            "Termékek megjelenítése JSON adatforrásból",
-                            "Kategória alapú szűrés és keresési funkció",
-                            "Globális kereső a fejlécből",
-                            "Vélemények megjelenítése karusszel formában",
-                            "Űrlapok kezelése validációval (foglalás, kapcsolat, hírlevél)",
-                            "Cookie kezelés és session storage használata",
-                            "Flatpickr alapú dátumválasztó integráció"
+                            "Responsive mobile-first interface",
+                            "Hamburger menu and mobile navigation",
+                            "Product display from JSON data",
+                            "Category filtering and search",
+                            "Global search in the header",
+                            "Reviews shown in a carousel",
+                            "Forms with validation for booking, contact, and newsletter",
+                            "Cookie handling and sessionStorage usage",
+                            "Flatpickr date picker integration"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során nagy hangsúlyt kapott a tiszta kódszerkezet, a szemantikus HTML használata, valamint az akadálymentességi és validációs szempontok figyelembevétele."
+                        "content": "During development, there was a strong focus on clean code structure, semantic HTML, accessibility, and validation."
                     }
                 ],
                 "image": "/works/coffee_shop/thumbnail_coffee.webp",
@@ -1048,69 +1048,69 @@
                     "Webpack"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "Teljes frontend fejlesztés és build konfiguráció",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "Full frontend development and build configuration",
+                    "status": "Public demo",
                     "year": "2024"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
                 "liveUrl": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
-                "seoTitle": "Thomas Coffee Corner projekt | Horváth Tamás",
-                "seoDescription": "Reszponzív frontend kávézó weboldal HTML, CSS és JavaScript használatával, egyedi Webpack build konfigurációval és adatvezérelt működéssel."
+                "seoTitle": "Thomas Coffee Corner | Thomas Horvath",
+                "seoDescription": "A responsive frontend coffee shop website built with HTML, CSS, and JavaScript, with a custom Webpack setup and data-driven content."
             },
             {
                 "slug": "gitart-backend",
                 "featured": false,
                 "title": "GitArt Rehearsal Room and Studio Backend",
-                "cardDescription": "Backend alkalmazás egy próbaterem-foglalási rendszerhez, JWT-alapú autentikációval, MongoDB-adatkezeléssel, email értesítésekkel és dokumentált API-végpontokkal.",
-                "intro": "A GitArt backend a próbaterem és stúdió webalkalmazás szerveroldali része, amely a felhasználókezelést, a foglalási logikát, a próbatermekhez és a stúdióhoz kapcsolódó adatok kiszolgálását, valamint az emailes értesítések működését biztosítja.",
+                "cardDescription": "A backend app for a rehearsal room booking system, with JWT authentication, MongoDB data handling, email notifications, and documented API endpoints.",
+                "intro": "The GitArt backend is the server-side part of the rehearsal room and studio web app. It supports user handling, booking logic, room and studio data, and email notifications.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan backend rendszer kialakítása volt, amely képes kiszolgálni egy valós működésű próbaterem weboldal fő üzleti folyamatait. A szerver kezeli a regisztrációt, a bejelentkezést, az autentikációt, a profilhoz tartozó adatok lekérdezését, valamint az online teremfoglalások létrehozását, listázását és törlését."
+                        "content": "The goal was to build a backend system that can support the main business flows of a real rehearsal room website. The server handles registration, login, authentication, profile data, and the creation, listing, and deletion of bookings."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A backend Express alapokon épül fel, az adatok pedig MongoDB adatbázisban tárolódnak Mongoose modelleken keresztül. A rendszer külön végpontokon szolgálja ki a próbatermek, a stúdió és a foglalások adatait, így a frontend dinamikusan, API-kapcsolaton keresztül tudja megjeleníteni a szükséges tartalmakat."
+                        "content": "The backend is built with Express, and data is stored in MongoDB through Mongoose models. It provides separate endpoints for rooms, studio data, and bookings, so the frontend can load everything dynamically through the API."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A felhasználói azonosítás JWT-alapon történik. A nyilvános és a védett végpontok szétválasztása middleware-en keresztül valósul meg, így a rendszer képes kezelni azokat a műveleteket is, amelyek csak bejelentkezett felhasználók számára érhetők el, például a saját profil vagy a saját foglalások lekérdezését."
+                        "content": "User identification is based on JWT. Public and protected endpoints are separated with middleware, so the system can handle actions that are available only for logged-in users, such as profile and personal booking queries."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt egyik érdekes része az emailküldési logika megvalósítása. A foglalásokhoz kapcsolódó visszaigazoló és emlékeztető emailek nem kizárólag Node.js környezetben készülnek, hanem a szerver egy Python SMTP scriptet is meghív a háttérben. Az időzített emlékeztetők küldését a node-schedule kezeli, így a rendszer a foglalás előtt automatikusan is tud értesítést küldeni."
+                        "content": "One interesting part of the project is the email logic. Booking confirmation and reminder emails are not handled only in Node.js, because the server also calls a Python SMTP script in the background. Timed reminders are handled with node-schedule."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A backendhez egy grafikusan megjelenített API-dokumentációs felület is tartozik, ahol a végpontok áttekinthetők, kipróbálhatók, és az egyes kérésekhez másolható fetch példák is rendelkezésre állnak. Ez különösen hasznos a frontend integráció és a fejlesztői tesztelés során."
+                        "content": "The backend also includes a visual API documentation page where endpoints can be reviewed and tested, and each request has copyable fetch examples. This is useful for frontend integration and developer testing."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt Ubuntu alapú DigitalOcean dropleten fut, ami lehetőséget adott arra is, hogy a szerveroldali működés ne csak lokális fejlesztői környezetben, hanem valós hosztolt környezetben is kipróbálható legyen."
+                        "content": "The project runs on an Ubuntu-based DigitalOcean droplet, so the server-side behavior can be tested not only locally but also in a real hosted environment."
                     },
                     {
                         "type": "list",
-                        "title": "A backend főbb feladatai",
+                        "title": "Main backend tasks",
                         "items": [
-                            "Felhasználói regisztráció és bejelentkezés kezelése",
-                            "JWT-alapú autentikáció védett végpontokhoz",
-                            "Saját profil és saját foglalások lekérdezése",
-                            "Új foglalások létrehozása és meglévő foglalások törlése",
-                            "Próbatermek és stúdióadatok API-n keresztüli kiszolgálása",
-                            "Nyilvános és tokennel védett végpontok szétválasztása",
-                            "MongoDB-alapú adattárolás Mongoose modellekkel",
-                            "Joi-alapú validáció a bejövő adatok ellenőrzéséhez",
-                            "Bcrypt-alapú jelszóhashelés",
-                            "Emailküldés Python SMTP script segítségével",
-                            "Időzített emlékeztető emailek kezelése node-schedule használatával",
-                            "Grafikus API dokumentáció másolható fetch példákkal"
+                            "User registration and login",
+                            "JWT-based authentication for protected endpoints",
+                            "Profile and own booking queries",
+                            "Create new bookings and delete old ones",
+                            "Serve room and studio data through the API",
+                            "Separate public and token-protected endpoints",
+                            "MongoDB data handling with Mongoose models",
+                            "Joi validation for incoming data",
+                            "Password hashing with bcrypt",
+                            "Email sending through a Python SMTP script",
+                            "Timed reminder emails with node-schedule",
+                            "Visual API documentation with copyable fetch examples"
                         ]
                     },
                     {
                         "type": "list",
-                        "title": "Főbb API-végpontok",
+                        "title": "Main API endpoints",
                         "items": [
                             "POST /register",
                             "POST /login",
@@ -1127,7 +1127,7 @@
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során a fő kihívást az autentikáció, a foglalási logika, az időzített emailes folyamatok és a moduláris szerverstruktúra összehangolása jelentette. A projektben külön figyelmet kapott a route-ok, kontrollerek, modellek, middleware-ek és segédfüggvények tiszta szétválasztása."
+                        "content": "The main challenge was to make authentication, booking logic, timed email flows, and a modular server structure work together well. A lot of attention was given to the separation of routes, controllers, models, middleware, and helper functions."
                     }
                 ],
                 "image": "/works/gitart_api/project_7_card.webp",
@@ -1150,71 +1150,71 @@
                     "CORS"
                 ],
                 "projectMeta": {
-                    "type": "Backend projekt",
-                    "role": "API fejlesztés, autentikáció, foglalási logika és emailes értesítési folyamatok",
-                    "status": "Publikus demó",
+                    "type": "Backend project",
+                    "role": "API development, authentication, booking logic, and email notification flows",
+                    "status": "Public demo",
                     "year": "2025"
                 },
                 "category": "backend",
-                "githubUrl": "",
-                "liveUrl": "",
-                "seoTitle": "Gitart - backend| Horváth Tamás",
-                "seoDescription": "Backend alkalmazás egy próbaterem-foglalási rendszerhez, JWT-alapú autentikációval, MongoDB-adatkezeléssel, email értesítésekkel és dokumentált API-végpontokkal."
+                "githubUrl": "https://github.com/Thomas-Horvath/GITART-server",
+                "liveUrl": "https://gitart.thomasapi.eu/",
+                "seoTitle": "GitArt Backend | Thomas Horvath",
+                "seoDescription": "A backend for a rehearsal room and studio booking system, with JWT authentication, MongoDB, email reminders, and documented API endpoints."
             },
             {
                 "slug": "leather-portfolio",
                 "featured": false,
-                "title": "Csibi Róbert bőrdíszműves portfólió oldala",
-                "cardDescription": "Többoldalas, reszponzív bemutatkozó és portfólió weboldal egy fiktív bőrdíszműves számára, HTML, CSS és JavaScript alapokon.",
-                "intro": "A projekt egy fiktív bőrdíszműves számára készült többoldalas portfólió weboldal, amely a kézzel készített termékek bemutatására, a galéria megjelenítésére és a kapcsolatfelvétel támogatására épül.",
+                "title": "Leather Craftsman Portfolio Website",
+                "cardDescription": "A multi-page responsive portfolio and presentation website for a fictional leather craftsman, built with HTML, CSS, and JavaScript.",
+                "intro": "This project is a multi-page portfolio website for a fictional leather craftsman. It focuses on showing handmade products, a gallery, and contact options.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A weboldal célja egy hagyományos kézműves profilhoz illeszkedő, letisztult és jól áttekinthető online bemutatkozó felület létrehozása volt. A projekt külön hangsúlyt helyezett arra, hogy a termékek és kategóriák vizuálisan jól elkülönüljenek, miközben az oldal egyszerűen bejárható maradjon."
+                        "content": "The goal was to build a clean and easy-to-read online presentation that fits a traditional handmade craft profile. A special focus was put on making products and categories easy to separate visually while keeping the site simple to explore."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Ez volt az első teljes, többoldalas weboldal-projektem, ezért a fejlesztés során különösen fontos szerepet kapott az alapvető frontend struktúrák, az oldalak közötti navigáció, a reszponzív töréspontok és a JavaScript alapú interaktív elemek gyakorlati megvalósítása."
+                        "content": "This was my first full multi-page website project, so it was important for learning the basics of frontend structure, page-to-page navigation, responsive breakpoints, and JavaScript-based interactions."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A galéria és az aloldali képek megjelenítése JavaScript segítségével történik, így a felület részben dinamikusan épül fel. A projekt emellett egy lightboxos képnagyítási megoldást, hamburger menüt, görgetéshez kötött vissza a tetejére gombot, valamint EmailJS alapú kapcsolatfelvételi űrlapot is tartalmaz."
+                        "content": "The gallery and subpage images are shown with JavaScript, so part of the interface is built dynamically. The project also includes a lightbox image viewer, hamburger menu, back-to-top button, and an EmailJS contact form."
                     },
                     {
                         "type": "list",
-                        "title": "Főbb funkciók",
+                        "title": "Main features",
                         "items": [
-                            "Többoldalas, statikus portfólió weboldal",
-                            "Reszponzív kialakítás mobilbarát töréspontokkal",
-                            "Nyitóoldal bemutatkozó és tartalmi blokkokkal",
-                            "Dinamikusan felépített galéria a főoldalon",
-                            "Lightboxos képnagyítás",
-                            "Külön aloldalak a főbb termékkategóriák számára",
-                            "Hamburger menü mobil nézetben",
-                            "EmailJS alapú kapcsolatfelvételi űrlap",
-                            "Vissza a tetejére gomb görgetés után"
+                            "Multi-page static portfolio website",
+                            "Responsive layout with mobile-friendly breakpoints",
+                            "Landing page with intro and content sections",
+                            "Dynamically built gallery on the home page",
+                            "Lightbox image zoom",
+                            "Separate subpages for product categories",
+                            "Hamburger menu on mobile",
+                            "EmailJS-based contact form",
+                            "Back-to-top button after scrolling"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt elsősorban alapozó frontend munkaként fontos számomra, mert ezen keresztül gyakoroltam először egy teljes, önállóan felépített weboldal szerkezetének és működésének megtervezését. Bár egyszerűbb, mint a későbbi munkáim, jól mutatja a fejlődési folyamat kiindulópontját."
+                        "content": "This project is important to me as a foundation frontend work, because it was my first chance to design and build a complete website on my own. It is simpler than my later work, but it clearly shows the starting point of my growth."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Email szolgáltatás",
+                                "label": "Email service",
                                 "value": "EmailJS",
                                 "url": "https://www.emailjs.com/"
                             },
                             {
-                                "label": "Ikonok",
+                                "label": "Icons",
                                 "value": "Remix Icon",
                                 "url": "https://remixicon.com/"
                             },
                             {
-                                "label": "Ikonok",
+                                "label": "Icons",
                                 "value": "Font Awesome",
                                 "url": "https://fontawesome.com/"
                             }
@@ -1238,86 +1238,86 @@
                     "EmailJS"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "Teljes frontend fejlesztés",
-                    "status": "Portfólió projekt",
+                    "type": "Frontend project",
+                    "role": "Full frontend development",
+                    "status": "Portfolio project",
                     "year": "2023"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
                 "liveUrl": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
-                "seoTitle": "Csibi Róbert bőrdíszműves portfólió | Horváth Tamás",
-                "seoDescription": "Többoldalas, reszponzív portfólió weboldal egy fiktív bőrdíszműves számára, HTML, CSS, JavaScript és EmailJS használatával."
+                "seoTitle": "Leather Craftsman Portfolio | Thomas Horvath",
+                "seoDescription": "A multi-page responsive portfolio website for a fictional leather craftsman, built with HTML, CSS, JavaScript, and EmailJS."
             },
             {
                 "slug": "egs-mongodb-database",
                 "featured": false,
                 "title": "MongoDB Database for the Electric Guitar Shop Webshop",
-                "cardDescription": "MongoDB-alapú adatbázis webshop működéshez, felhasználók, termékek, rendelések és hírlevél-feliratkozások kezelésére.",
-                "intro": "Ez a projekt az Electric Guitar Shop webshop MongoDB-alapú adatbázisát valósítja meg. Az adatmodell a webshop kliens- és adminfelületének kiszolgálására készült, és a felhasználók, termékek, rendelések, valamint a hírlevél-feliratkozások kezelését támogatja.",
+                "cardDescription": "A MongoDB database for webshop use, handling users, products, orders, and newsletter subscriptions.",
+                "intro": "This project is the MongoDB-based database of the Electric Guitar Shop webshop. The data model supports the client side and the admin panel, and it handles users, products, orders, and newsletter subscriptions.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy olyan NoSQL adatbázis kialakítása volt, amely jól illeszthető egy valós webshop backend működéséhez, és rugalmasan kezeli a különböző szerkezetű adatokat. A MongoDB-alapú megközelítés végül gyakorlati döntés volt: a rendszer tényleges hosztolása és használata szempontjából ez a megoldás egyszerűbben bevezethetőnek bizonyult, mint a külön elkészített MS SQL adatbázisváltozat. Az adatbázis egy Ubuntu alapú DigitalOcean szerveren fut, ahol a webshop backend rendszerrel együtt szolgálja ki az alkalmazást."
+                        "content": "The goal was to create a NoSQL database that fits a real webshop backend and can handle different data shapes in a flexible way. In practice, the MongoDB approach was easier to use for hosting and real operation than the separate MS SQL version. The database runs on an Ubuntu-based DigitalOcean server together with the webshop backend."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az adatbázis négy fő kollekcióra épül: users, products, orders és newsletter. Ezek együtt fedik le a webshop működéséhez szükséges legfontosabb adatokat, a felhasználói fiókoktól kezdve a termékkatalóguson át egészen a rendelések és a hírlevél-feliratkozások kezeléséig."
+                        "content": "The database is built around four main collections: users, products, orders, and newsletter. Together they cover the main data needed for the webshop."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A users kollekció tárolja a vásárlói és admin felhasználók adatait. A dokumentumokban megtalálható az egyedi felhasználói azonosító, a felhasználónév, a hash-elt jelszó, az admin jogosultságot jelző mezők, a személyes és elérhetőségi adatok, valamint a szállítási és számlázási címekhez kapcsolódó mezők. Ez a struktúra lehetővé teszi, hogy ugyanazon modellen belül kezelhető legyen a vásárlói és az admin szerepkör is."
+                        "content": "The users collection stores both customer and admin data. The documents include user ID, username, hashed password, admin flags, personal data, contact data, and fields for shipping and billing addresses."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A products kollekció kezeli a webshop termékkatalógusát. A dokumentumok tartalmazzák a termék azonosítóját, nevét, kategóriáját, alkategóriáját, márkáját, műszaki és formai jellemzőit, árát, leírását, valamint a termékfotó elérési útját. Mivel a különböző hangszer- és kiegészítőtípusok eltérő tulajdonságokkal rendelkeznek, a dokumentumalapú modell jól használható az ilyen részben változó mezőszerkezetek kezelésére."
+                        "content": "The products collection stores the webshop catalog. Each document includes product ID, name, category, subcategory, brand, technical and visual details, price, description, and image path. The document model works well here because different product types can have different fields."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az orders kollekció a rendelések fejadatait és a beágyazott rendelési tételeket egyetlen dokumentumban tárolja. Egy rendeléshez tartozik rendelésazonosító, vevőazonosító, státusz, dátum, szállítási adatok, pénzügyi összesítők, valamint egy OrderItems tömb, amely a megrendelt termékek mennyiségét, egységárát és sorösszegét tartalmazza. Ez a szerkezet jól illeszkedik a rendelési folyamat olvasási és adminisztrációs igényeihez."
+                        "content": "The orders collection stores order header data and embedded order items in one document. This includes order ID, customer ID, status, date, shipping data, totals, and an OrderItems array. This structure fits the reading and admin needs of the order flow well."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A newsletter kollekció egy egyszerűbb, célzott adatstruktúrát használ: az email cím és az aktív státusz tárolásával kezeli a hírlevél-feliratkozásokat. Ez külön entitásként jól elkülöníti a marketing célú adatkezelést a felhasználói fiókoktól."
+                        "content": "The newsletter collection is simpler. It stores email addresses and active status for newsletter subscriptions, which keeps marketing data separate from user accounts."
                     },
                     {
                         "type": "list",
-                        "title": "A főbb kollekciók szerepe",
+                        "title": "Main collection roles",
                         "items": [
-                            "users - vásárlói és admin felhasználói adatok, jogosultságok és címadatok",
-                            "products - termékek alapadatai, technikai jellemzői, ára és képelérési útja",
-                            "orders - rendelésfej és beágyazott rendelési tételek",
-                            "newsletter - hírlevél-feliratkozók email címei és aktív státusza"
+                            "users - customer and admin data, permissions, and addresses",
+                            "products - product data, technical details, price, and image path",
+                            "orders - order header data and embedded order items",
+                            "newsletter - subscriber email addresses and active status"
                         ]
                     },
                     {
                         "type": "list",
-                        "title": "Az adatmodell fontosabb jellemzői",
+                        "title": "Important model features",
                         "items": [
-                            "MongoDB-alapú dokumentumalapú adattárolás",
-                            "Mongoose modelleken keresztüli sémahasználat",
-                            "Hash-elt jelszavak tárolása a felhasználói kollekcióban",
-                            "Vásárlói és admin szerepkör kezelése egy közös felhasználói modellen belül",
-                            "Változó szerkezetű termékadatok kezelése dokumentumalapú formában",
-                            "Rendelési tételek beágyazása az orders dokumentumokba",
-                            "Külön kollekció a hírlevél-feliratkozások kezelésére",
-                            "A webshop kliens- és adminfelületéhez illeszkedő adatmodell"
+                            "Document-based storage with MongoDB",
+                            "Schema usage through Mongoose models",
+                            "Hashed passwords in the users collection",
+                            "Customer and admin roles in one user model",
+                            "Flexible product data structure",
+                            "Embedded order items inside order documents",
+                            "Separate collection for newsletter data",
+                            "A model that fits both the client and admin panel"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A tervezés során fontos szempont volt, hogy az adatbázis jól kiszolgálja a REST API végpontjait, és egyszerűen kezelhető maradjon a backend logika számára. A rendeléseknél a beágyazott tételek használata csökkenti a lekérdezések összetettségét, míg a termékek és felhasználók esetében a külön kollekciók jól támogatják a lista- és részletező nézeteket."
+                        "content": "An important design goal was that the database should support the REST API well and stay easy to use for the backend logic. Embedded order items reduce query complexity, while separate collections work well for product and user list/detail views."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Ez a projekt jól mutatja, hogyan lehet egy webshop alapvető üzleti folyamatait NoSQL adatmodellel támogatni úgy, hogy a rendszer egyszerre maradjon rugalmas, jól bővíthető és a backend API számára könnyen kezelhető."
+                        "content": "This project shows how the main business flows of a webshop can be supported with a NoSQL model while keeping the system flexible, scalable, and easy to handle for the backend API."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Adatbázis",
+                                "label": "Database",
                                 "value": "MongoDB",
                                 "url": "https://www.mongodb.com/"
                             },
@@ -1342,88 +1342,88 @@
                     "JSON"
                 ],
                 "projectMeta": {
-                    "type": "Adatbázis projekt",
-                    "role": "NoSQL adatmodell kialakítás webshop működéshez",
-                    "status": "Dokumentált projekt",
+                    "type": "Database project",
+                    "role": "NoSQL data model design for webshop logic",
+                    "status": "Documented project",
                     "year": "2024"
                 },
                 "category": "database",
                 "githubUrl": "",
                 "liveUrl": "",
                 "docsUrl": "",
-                "seoTitle": "EGS - MongoDB | Horváth Tamás",
-                "seoDescription": "MongoDB-alapú webshop adatbázis felhasználók, termékek, rendelések és hírlevél-feliratkozások kezelésére az Electric Guitar Shop projekthez."
+                "seoTitle": "EGS MongoDB Database | Thomas Horvath",
+                "seoDescription": "A MongoDB webshop database for the Electric Guitar Shop project, handling users, products, orders, and newsletter subscriptions."
             },
             {
                 "slug": "optident-dentist-landing",
                 "featured": false,
                 "title": "Optident - Dental Clinic Website",
-                "cardDescription": "Modern, reszponzív fogászati landing oldal Next.js és Tailwind CSS alapokon, szolgáltatásokkal, árakkal és kapcsolatfelvételi lehetőségekkel.",
-                "intro": "Az Optident egy modern fogászati rendelő számára készült reszponzív weboldal, amely a szolgáltatások bemutatását és a bizalomépítést helyezi középpontba.",
+                "cardDescription": "A modern responsive dental website built with Next.js and Tailwind CSS, with services, prices, and contact options.",
+                "intro": "Optident is a responsive website made for a modern dental clinic. It focuses on presenting services and building trust.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy professzionális megjelenésű, jól strukturált weboldal létrehozása volt, amely egy fogászati rendelő online jelenlétét támogatja. A hangsúly a tiszta designon, az átlátható tartalmi struktúrán és a felhasználói élményen volt."
+                        "content": "The goal was to build a professional and well-structured website that supports the online presence of a dental clinic. The main focus was clean design, clear content structure, and good user experience."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az oldal több különálló aloldalból épül fel, amelyek lefedik egy szolgáltató jellegű weboldal legfontosabb elemeit: bemutatkozás, szolgáltatások, árak, galéria és kapcsolatfelvétel."
+                        "content": "The site has several separate pages that cover the most important parts of a service website: introduction, services, prices, gallery, and contact."
                     },
                     {
                         "type": "list",
-                        "title": "Főbb funkciók",
+                        "title": "Main features",
                         "items": [
-                            "Landing oldal hero szekcióval és CTA gombokkal",
-                            "Rólunk oldal szakmai bemutatkozással",
-                            "Szolgáltatások oldal kategorizált tartalommal",
-                            "Árak oldal átlátható struktúrával",
-                            "Galéria modal nézettel",
-                            "Kapcsolat oldal Google Maps integrációval",
-                            "Impresszum és adatvédelmi oldalak",
-                            "Teljesen reszponzív design (mobil, tablet, desktop)"
+                            "Landing page with hero section and CTA buttons",
+                            "About page with professional introduction",
+                            "Services page with grouped content",
+                            "Prices page with clear structure",
+                            "Gallery with modal view",
+                            "Contact page with Google Maps",
+                            "Imprint and privacy pages",
+                            "Fully responsive design"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során kiemelt szempont volt a komponens alapú felépítés és az újrahasznosítható UI elemek kialakítása, mint például a navigáció, footer és különböző tartalmi blokkok."
+                        "content": "During development, special attention was given to component-based structure and reusable UI parts like navigation, footer, and content blocks."
                     },
                     {
                         "type": "list",
-                        "title": "Technikai megoldások",
+                        "title": "Technical solutions",
                         "items": [
-                            "Next.js App Router alapú projektstruktúra",
-                            "Komponens alapú architektúra (React)",
-                            "Tailwind CSS használata gyors és konzisztens stylinghoz",
-                            "Reszponzív design mobile-first megközelítéssel",
-                            "Képgaléria modal megjelenítéssel",
-                            "Külső könyvtárak integrálása (React Icons)",
-                            "SEO-barát oldalstruktúra"
+                            "Next.js App Router project structure",
+                            "Component-based React architecture",
+                            "Tailwind CSS for fast and consistent styling",
+                            "Responsive mobile-first design",
+                            "Gallery modal view",
+                            "External libraries like React Icons",
+                            "SEO-friendly page structure"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt során a cél nem csupán egy vizuálisan igényes oldal elkészítése volt, hanem egy olyan struktúra kialakítása is, amely könnyen bővíthető és később akár backend funkcionalitással is kiegészíthető."
+                        "content": "The goal was not only to build a visually strong page, but also to create a structure that is easy to extend and can later support backend features too."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A weboldal statikus tartalommal működik, így gyors betöltési időt és egyszerű deploy lehetőséget biztosít."
+                        "content": "The website currently uses static content, which gives fast loading and simple deployment."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Pixabay",
                                 "url": "https://pixabay.com/"
                             },
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Freepik",
                                 "url": "https://www.freepik.com/"
                             },
                             {
-                                "label": "Szöveg és logó",
+                                "label": "Text and logo",
                                 "value": "ChatGPT",
                                 "url": "https://chat.openai.com/"
                             }
@@ -1446,88 +1446,88 @@
                     "Responsive Design"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "UI/UX tervezés és frontend fejlesztés",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "UI/UX design and frontend development",
+                    "status": "Public demo",
                     "year": "2025"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/OptiDent_Dentist_Landing_Page",
                 "liveUrl": "https://opti-dent.vercel.app/",
-                "seoTitle": "Optident | Horváth Tamás",
-                "seoDescription": "Modern, reszponzív fogászati weboldal Next.js és Tailwind CSS használatával, szolgáltatásokkal, árakkal és kapcsolatfelvételi lehetőségekkel."
+                "seoTitle": "Optident | Thomas Horvath",
+                "seoDescription": "A modern responsive dental clinic website built with Next.js and Tailwind CSS, with services, prices, and contact options."
             },
             {
                 "slug": "emberline-tattoo-studio",
                 "featured": false,
                 "title": "Emberline Tattoo Studio Website",
-                "cardDescription": "Vizuálisan erős, sötét hangulatú tetoválóstúdió weboldal Next.js és Tailwind CSS alapokon, galériával, árlistával és kapcsolatfelvételi lehetőségekkel.",
-                "intro": "Az Emberline Tattoo Studio egy prémium megjelenésű, sötét hangulatú bemutatkozó weboldal, amely egy tetoválóstúdió stílusát, munkáit és szolgáltatásait helyezi fókuszba.",
+                "cardDescription": "A visually strong tattoo studio website with a dark style, built with Next.js and Tailwind CSS, with gallery, price list, and contact options.",
+                "intro": "Emberline Tattoo Studio is a premium dark-style presentation website that puts the studio's mood, works, and services in the center.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt célja egy erős vizuális identitással rendelkező, modern weboldal létrehozása volt, amely hitelesen tükrözi a tetoválóstúdió hangulatát és szakmai színvonalát. A design központi eleme a sötét, kontrasztos megjelenés narancs akcentusokkal, amely kiemeli a tartalmat és erősíti a márka karakterét."
+                        "content": "The goal was to create a modern website with a strong visual identity that reflects the mood and professional level of a tattoo studio. The key design element is the dark and high-contrast style with orange accents."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az oldal több statikus aloldalból épül fel, amelyek lefedik egy szolgáltató jellegű weboldal fő elemeit: bemutatkozás, munkák, árak, információk és kapcsolatfelvétel. A tartalom egy központi adatfájlból érkezik, így könnyen bővíthető és karbantartható."
+                        "content": "The site is built from several static pages that cover the main parts of a service website: introduction, works, prices, information, and contact. Content comes from one central data file, so it is easy to maintain and extend."
                     },
                     {
                         "type": "list",
-                        "title": "Főbb funkciók",
+                        "title": "Main features",
                         "items": [
-                            "Hero szekció hangsúlyos vizuális megjelenéssel és CTA gombokkal",
-                            "Stílusok és szolgáltatások bemutatása külön szekciókban",
-                            "Galéria mozaikos elrendezéssel és vizuális fókuszpontokkal",
-                            "Árlista oldal strukturált tartalommal",
-                            "Vendégvélemény slider automatikus váltással",
-                            "Kapcsolat oldal térképpel és kapcsolatfelvételi űrlappal",
-                            "Reszponzív navigáció hamburger menüvel mobil nézetben",
-                            "Adatkezelési és ÁSZF oldalak"
+                            "Hero section with strong visuals and CTA buttons",
+                            "Separate sections for styles and services",
+                            "Gallery with mosaic layout and visual focus points",
+                            "Price list page with structured content",
+                            "Guest review slider with automatic change",
+                            "Contact page with map and contact form",
+                            "Responsive navigation with hamburger menu on mobile",
+                            "Privacy and terms pages"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A fejlesztés során kiemelt szerepet kapott a komponens alapú felépítés és az újrahasznosítható UI elemek kialakítása. A navigáció, a hero, a galéria és a különböző tartalmi blokkok modulárisan épülnek fel, így az oldal könnyen bővíthető és testreszabható."
+                        "content": "A lot of attention was given to component-based structure and reusable UI parts. The navigation, hero, gallery, and other content blocks are modular, so the site is easy to extend and customize."
                     },
                     {
                         "type": "list",
-                        "title": "Technikai megoldások",
+                        "title": "Technical solutions",
                         "items": [
-                            "Next.js App Router alapú architektúra",
-                            "React 19 és TypeScript használata",
-                            "Tailwind CSS v4 egyedi design rendszerrel",
-                            "Központi adatkezelés (data.js) a tartalomhoz",
-                            "Kliensoldali interakciók (hamburger menü, slider)",
-                            "Reszponzív design mobile-first megközelítéssel",
-                            "Statikus SEO metaadatok aloldalanként",
-                            "Képgaléria optimalizált assetekkel"
+                            "Next.js App Router architecture",
+                            "React 19 and TypeScript",
+                            "Tailwind CSS v4 with custom design system",
+                            "Central content data file",
+                            "Client-side interactions like hamburger menu and slider",
+                            "Responsive mobile-first design",
+                            "Static SEO metadata for subpages",
+                            "Optimized gallery assets"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt egyik fontos célja egy olyan struktúra kialakítása volt, amely könnyen integrálható backend szolgáltatásokkal a jövőben - például online időpontfoglalás vagy kapcsolatfelvételi űrlap feldolgozás."
+                        "content": "One important goal was to create a structure that can later be connected to backend services, for example online booking or contact form processing."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A weboldal jelenleg statikus tartalommal működik, amely gyors betöltést és egyszerű deploy lehetőséget biztosít, miközben vizuálisan erős és professzionális megjelenést nyújt."
+                        "content": "The website currently uses static content, which gives fast loading and simple deployment while still keeping a strong visual style."
                     },
                     {
                         "type": "sources",
-                        "title": "Felhasznált források",
+                        "title": "Sources",
                         "items": [
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Pixabay",
                                 "url": "https://pixabay.com/"
                             },
                             {
-                                "label": "Képek",
+                                "label": "Images",
                                 "value": "Freepik",
                                 "url": "https://www.freepik.com/"
                             },
                             {
-                                "label": "Szöveg és logó",
+                                "label": "Text and logo",
                                 "value": "ChatGPT",
                                 "url": "https://chat.openai.com/"
                             }
@@ -1551,77 +1551,77 @@
                     "Responsive Design"
                 ],
                 "projectMeta": {
-                    "type": "Frontend projekt",
-                    "role": "UI/UX tervezés és frontend fejlesztés",
-                    "status": "Publikus demó",
+                    "type": "Frontend project",
+                    "role": "UI/UX design and frontend development",
+                    "status": "Public demo",
                     "year": "2025"
                 },
                 "category": "frontend",
                 "githubUrl": "https://github.com/Thomas-Horvath/emberline-tattoo-studio",
                 "liveUrl": "https://emberline-tattoo-studio.vercel.app/",
-                "seoTitle": "Emberline Tattoo Studio | Horváth Tamás",
-                "seoDescription": "Prémium megjelenésű, sötét hangulatú tetoválóstúdió weboldal Next.js és Tailwind CSS használatával, galériával, árlistával és kapcsolatfelvételi lehetőségekkel."
+                "seoTitle": "Emberline Tattoo Studio | Thomas Horvath",
+                "seoDescription": "A dark-style tattoo studio website built with Next.js and Tailwind CSS, with gallery, price list, and contact options."
             },
             {
                 "slug": "gitart-mongodb-database",
                 "featured": false,
                 "title": "MongoDB Database for the GitArt Rehearsal Room and Studio",
-                "cardDescription": "Dokumentumalapú adatbázis a GitArt rendszerhez, felhasználók, próbatermek, stúdióadatok és órára bontott foglalások kezelésére.",
-                "intro": "Ez a projekt a GitArt próbaterem és stúdió rendszer MongoDB-alapú adatbázisát valósítja meg. Az adatmodell a bemutatkozó tartalmak, a felhasználói működés és az online foglalási folyamat kiszolgálására készült.",
+                "cardDescription": "A document-based database for the GitArt system, handling users, rehearsal rooms, studio data, and hourly bookings.",
+                "intro": "This project is the MongoDB-based database of the GitArt rehearsal room and studio system. The model was made to support presentation content, user activity, and the online booking flow.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "Az adatbázis célja egy olyan dokumentumalapú struktúra kialakítása volt, amely jól támogatja egy próbaterem weboldal és online foglalási rendszer működését. A modell egyszerre kezeli a bemutatkozó jellegű tartalmakat, a felhasználói adatokat és a foglalásokhoz kapcsolódó dinamikus információkat."
+                        "content": "The goal was to build a document-based structure that supports both a rehearsal room website and an online booking system. The model handles presentation content, user data, and dynamic booking information at the same time."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rendszer négy fő kollekcióra épül: bookings, rooms, studio és users. Ezek együtt fedik le a foglalási logikához, a próbatermek és a stúdió adatainak megjelenítéséhez, valamint a felhasználói működéshez szükséges teljes adattartományt."
+                        "content": "The system uses four main collections: bookings, rooms, studio, and users. Together they cover the full data range needed for booking logic, room and studio display, and user activity."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A bookings kollekció a foglalásokhoz kapcsolódó adatokat tárolja. Egy dokumentum tartalmazza a foglaló felhasználó azonosítóját, a foglalás dátumát, a kiválasztott termet, az órák listáját, valamint a foglaláshoz tartozó nevet és zenekarnevet. Ez a struktúra jól illeszkedik az órára bontott foglalási rendszerhez, mivel egyetlen dokumentumban kezelhető a teljes időintervallum és a foglaló személyhez kapcsolódó információ."
+                        "content": "The bookings collection stores booking data. One document includes the user ID, booking date, selected room, list of hours, booking name, and band name. This structure fits an hourly booking system well."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A rooms kollekció a próbatermek adatait tartalmazza. Itt nemcsak az alapinformációk, például a terem neve, mérete és óradíja szerepelnek, hanem a részletes felszereltség is beágyazott objektumokban. Ez lehetővé teszi, hogy a frontend egyetlen lekérdezésből összetett és részletes teremadatokat jelenítsen meg."
+                        "content": "The rooms collection stores room data. It includes not only basic information like room name, size, and hourly price, but also detailed equipment in embedded objects. This allows the frontend to load rich room data from a single query."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A studio kollekció a stúdióval kapcsolatos összetettebb adatokat tárolja. A dokumentumban szerepelnek a stúdió alapadatai, a részletes technikai felszereltség, valamint a rendelkezésre álló hangszerek. Mivel ezek az adatok természetüknél fogva hierarchikusak és mélyen strukturáltak, a MongoDB dokumentumalapú modellje különösen jól illeszkedik ehhez a feladathoz."
+                        "content": "The studio collection stores more complex studio data, including the basic information, detailed technical equipment, and available instruments. Because this data is hierarchical, the document model of MongoDB fits it very well."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A users kollekció a felhasználói adatokat kezeli. A dokumentumok tartalmazzák az egyedi felhasználói azonosítót, a hash-elt jelszót, a foglalási nevet, a személyes adatokat, az email címet, a telefonszámot, valamint az adatkezelési szabályzat elfogadását jelző mezőt. A jelszó nem nyers formában, hanem titkosított hash-ként kerül tárolásra, ami fontos biztonsági szempont."
+                        "content": "The users collection handles user data. The documents include user ID, hashed password, booking name, personal data, email, phone number, and acceptance of the privacy rules. Passwords are stored as secure hashes."
                     },
                     {
                         "type": "list",
-                        "title": "A főbb kollekciók szerepe",
+                        "title": "Main collection roles",
                         "items": [
-                            "bookings - foglalások dátummal, teremmel és órasávokkal",
-                            "rooms - próbatermek alapadatai és részletes felszereltsége",
-                            "studio - stúdióadatok, technikai eszközök és hangszerek",
-                            "users - felhasználói adatok, foglalási név és hitelesítéshez szükséges információk"
+                            "bookings - bookings with date, room, and time slots",
+                            "rooms - room basics and detailed equipment",
+                            "studio - studio data, technical tools, and instruments",
+                            "users - user data, booking name, and login information"
                         ]
                     },
                     {
                         "type": "list",
-                        "title": "Az adatmodell fontosabb jellemzői",
+                        "title": "Important model features",
                         "items": [
-                            "Dokumentumalapú felépítés MongoDB környezetben",
-                            "Beágyazott objektumok használata az összetett felszereltségi adatokhoz",
-                            "Órára bontott foglalások tárolása tömb segítségével",
-                            "Felhasználói adatok és foglalások összekapcsolása UserID alapján",
-                            "Hierarchikus stúdió- és teremadatok kezelése egyetlen dokumentumban",
-                            "Bővíthető struktúra új eszközök, termek vagy mezők hozzáadásához"
+                            "Document-based structure in MongoDB",
+                            "Embedded objects for complex equipment data",
+                            "Hourly bookings stored in arrays",
+                            "Bookings linked to users by UserID",
+                            "Hierarchical room and studio data in documents",
+                            "Easy extension with new tools, rooms, or fields"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A tervezés során fontos szempont volt, hogy az adatbázis egyszerre legyen jól illeszthető a frontend megjelenítési igényeihez és a backend foglalási logikájához. A dokumentumalapú megközelítés előnye ebben a projektben az volt, hogy a kapcsolódó adatokat sok esetben egyetlen lekérdezéssel, összetett join műveletek nélkül lehetett kiszolgálni."
+                        "content": "An important design goal was that the database should work well for both frontend display needs and backend booking logic. The document-based approach helped serve related data with fewer complex joins."
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt jól mutatja, hogyan lehet egy valós üzleti folyamatot - jelen esetben egy próbaterem online foglalási rendszerét - NoSQL adatmodellel támogatni úgy, hogy közben a tartalmi és a tranzakciós adatok is áttekinthető, fejleszthető szerkezetben maradjanak."
+                        "content": "This project shows how a real business flow, in this case an online rehearsal room booking system, can be supported with a NoSQL model while keeping content and transaction data clear and extendable."
                     }
                 ],
                 "image": "/works/gitart_mongo/thumbnail_mongo_gitart.webp",
@@ -1637,45 +1637,144 @@
                     "BSON"
                 ],
                 "projectMeta": {
-                    "type": "Adatbázis projekt",
-                    "role": "NoSQL adatmodell kialakítás és foglalási rendszerhez illeszkedő dokumentumstruktúra tervezése",
-                    "status": "Dokumentált projekt",
+                    "type": "Database project",
+                    "role": "NoSQL data model design and document structure planning for a booking system",
+                    "status": "Documented project",
                     "year": "2025"
                 },
                 "category": "database",
                 "githubUrl": "",
-                "seoTitle": "Gitart - MongoDb| Horváth Tamás",
-                "seoDescription": "Ez a projekt a GitArt próbaterem és stúdió rendszer MongoDB-alapú adatbázisát valósítja meg."
+                "seoTitle": "GitArt MongoDB Database | Thomas Horvath",
+                "seoDescription": "A MongoDB database of the GitArt rehearsal room and studio system, designed for users, rooms, studio data, and booking logic."
+            },
+            {
+                "slug": "kostoljbele-desktop",
+                "featured": false,
+                "title": "Taste It! Desktop App",
+                "cardDescription": "A full-stack Windows desktop app based on the Taste It! recipe website, rebuilt for private local use with local data storage and desktop login.",
+                "intro": "Taste It! Desktop App is the private Windows desktop version of my recipe website. The goal of the project was to turn the public web app into a personal recipe manager that runs locally and stores recipes, images, and user data on the computer.",
+                "detailBlocks": [
+                    {
+                        "type": "paragraph",
+                        "content": "This project started from the older web version, but it was changed for desktop use. The React interface runs inside Electron, so the app feels more like a real desktop program and does not need public hosting."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The app lets users create, edit, and delete recipes, manage local recipe images, browse by category and subcategory, search recipes, save favorites, and use a profile page. It also has admin-based user management and backup export and import."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "One important change in the architecture is that the old Next.js /app/api routes were removed. The React UI now talks to the backend logic through the Electron preload layer and IPC, then the services use Prisma ORM with a SQLite database."
+                    },
+                    {
+                        "type": "list",
+                        "title": "Main features",
+                        "items": [
+                            "Create, edit, and delete recipes",
+                            "Save, replace, and delete recipe images",
+                            "Browse by category and subcategory",
+                            "Recipe search",
+                            "Favorites management",
+                            "Profile page",
+                            "Admin-based user management",
+                            "Backup export and import",
+                            "Remember the last logged-in user in the desktop session",
+                            "Custom desktop authentication"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The stack uses Next.js 15.5, React 19, Electron 41, Prisma ORM 6.16.2, SQLite, and Sass modules. In the installed Windows app, Prisma uses the library engine because it is more stable in this desktop setup."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The desktop version is useful because it does not need a separate server, the database and recipe images stay local, authentication can stay simpler, and the whole app gives a more personal desktop experience."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources and technologies",
+                        "items": [
+                            {
+                                "label": "Desktop framework",
+                                "value": "Electron",
+                                "url": "https://www.electronjs.org/docs/latest/"
+                            },
+                            {
+                                "label": "Frontend framework",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "Data layer",
+                                "value": "Prisma ORM",
+                                "url": "https://www.prisma.io/docs"
+                            },
+                            {
+                                "label": "Embedded database",
+                                "value": "SQLite",
+                                "url": "https://www.sqlite.org/docs.html"
+                            }
+                        ]
+                    }
+                ],
+                "image": "/works/kostolj/thambnail.webp",
+                "gallery": [
+                    "/works/kostolj/1.webp",
+                    "/works/kostolj/2.webp",
+                    "/works/kostolj/3.webp",
+                    "/works/kostolj/4.webp",
+                    "/works/kostolj/5.webp"
+                ],
+                "tags": [
+                    "Next.js 15",
+                    "React 19",
+                    "Electron",
+                    "Prisma ORM 6",
+                    "SQLite",
+                    "Sass",
+                    "JavaScript"
+                ],
+                "projectMeta": {
+                    "type": "Full-stack desktop application",
+                    "role": "Full-stack desktop development, Electron IPC architecture, and local data handling",
+                    "status": "Documented project",
+                    "year": "2025"
+                },
+                "category": "fullstack",
+                "githubUrl": "",
+                "liveUrl": "",
+                "seoTitle": "Taste It! Desktop App | Thomas Horvath",
+                "seoDescription": "Taste It! Desktop App is a private recipe manager built with Next.js, React, Electron, Prisma ORM, and SQLite for local desktop use."
             },
             {
                 "slug": "webp-converter",
                 "featured": false,
                 "title": "WebP Converter - Image Format Conversion Tool",
-                "cardDescription": "Asztali vagy helyi futtatású eszköz képek WebP formátumba történő tömeges átalakítására.",
-                "intro": "A WebP Konverter egy képoptimalizálást segítő eszköz, amelynek célja a képek gyors és kényelmes átalakítása WebP formátumba.",
+                "cardDescription": "A desktop or local tool for converting many images to WebP format.",
+                "intro": "WebP Converter is a practical image optimization tool made to convert images to WebP quickly and easily.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "A projekt gyakorlati problémára készült: nagyobb mennyiségű kép webes felhasználás előtti optimalizálására és tömeges átalakítására."
+                        "content": "The project was made for a practical problem: optimizing and converting larger groups of images before web use."
                     },
                     {
                         "type": "paragraph",
-                        "content": "Az alkalmazás lehetővé teszi, hogy a felhasználó több képet dolgozzon fel egységes módon, és a webes használathoz kedvezőbb formátumba mentse őket."
+                        "content": "The app lets the user process multiple images in one workflow and save them in a format that is better for web use."
                     },
                     {
                         "type": "list",
-                        "title": "A projekt főbb funkciói",
+                        "title": "Main features",
                         "items": [
-                            "Képek WebP formátumba történő konvertálása",
-                            "Tömeges feldolgozás támogatása",
-                            "Egyszerű, célorientált kezelőfelület",
-                            "Webes optimalizálást támogató workflow",
-                            "Gyakorlati fejlesztői segédeszköz jelleg"
+                            "Convert images to WebP format",
+                            "Support for batch processing",
+                            "Simple task-focused interface",
+                            "Workflow that helps web optimization",
+                            "Practical developer utility style"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "A projekt fejlesztése során a hangsúly a képfeldolgozási folyamat egyszerűsítésén, az átlátható használaton és a gyakorlati hasznosságon volt."
+                        "content": "During development, the main focus was on making image handling simpler, easier to use, and more practical."
                     }
                 ],
                 "image": "/works/webp/1.png",
@@ -1690,15 +1789,15 @@
                     "Desktop tooling"
                 ],
                 "projectMeta": {
-                    "type": "Eszköz / utility projekt",
-                    "role": "Saját fejlesztésű képoptimalizáló eszköz",
-                    "status": "Fejlesztett projekt",
+                    "type": "Tool / utility project",
+                    "role": "Custom image optimization tool development",
+                    "status": "Developed project",
                     "year": "2025"
                 },
                 "category": "fullstack",
                 "docsUrl": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
-                "seoTitle": "Gitart - MongoDb | Horváth Tamás",
-                "seoDescription": "Ez a projekt a Gitart webshop MongoDB adatbázisának tervezésére és megvalósítására készült."
+                "seoTitle": "WebP Converter | Thomas Horvath",
+                "seoDescription": "A practical desktop tool for converting many images to WebP format for faster and lighter web use."
             }
         ]
     },

@@ -214,8 +214,8 @@
                     "password": "Password"
                 },
                 "category": "frontend",
-                "githubUrl": "",
-                "liveUrl": "",
+                "githubUrl": "https://github.com/Thomas-Horvath/GITART-frontend",
+                "liveUrl": "https://thomas-horvath.github.io/GITART-frontend/",
                 "seoTitle": "Gitart - frontend | Horváth Tamás",
                 "seoDescription": "Ez a projekt egy fiktív budapesti próbaterem és stúdió weboldalának frontend részét valósítja meg, React és JavaScript használatával."
             },
@@ -802,13 +802,13 @@
                     "status": "Éles rendszer",
                     "year": "2025"
                 },
-                   "credentials": {
+                "credentials": {
                     "username": "test@gmail.com",
                     "password": "password"
                 },
                 "category": "fullstack",
-                "githubUrl": "https://github.com/Thomas-Horvath/EGS-backend",
-                "liveUrl": "https://egs.thomasapi.eu",
+                "githubUrl": "https://github.com/Thomas-Horvath/wordy_english_flashcards_app",
+                "liveUrl": "https://wordy.thomasapi.eu",
                 "seoTitle": "Wordy szókártyás alkalmazás | Horváth Tamás",
                 "seoDescription": "Full-stack nyelvtanuló alkalmazás Next.js, Prisma és SQLite használatával, saját authentikációval és DigitalOcean szerveren futó éles környezettel."
             },
@@ -1844,6 +1844,105 @@
                 "seoDescription": "Ez a projekt a GitArt próbaterem és stúdió rendszer MongoDB-alapú adatbázisát valósítja meg."
             },
             {
+                "slug": "kostoljbele-desktop",
+                "featured": false,
+                "title": "Kóstolj Bele! Desktop App",
+                "cardDescription": "Privát használatra készült full stack Windows desktop alkalmazás a Kóstolj Bele! receptes weboldal Electron alapú továbbfejlesztéseként, helyi adatkezeléssel és saját desktop autentikációval.",
+                "intro": "A Kóstolj Bele! Desktop App a meglévő receptes webalkalmazás privát, helyben futó Windows desktop verziója. A projekt célja az volt, hogy a nyilvános webes működést egy személyes, egyszerűen használható receptkezelő alkalmazás váltsa fel, ahol a receptek, képek és felhasználói adatok teljes egészében lokálisan kezelhetők.",
+                "detailBlocks": [
+                    {
+                        "type": "paragraph",
+                        "content": "Az átalakítás során a korábbi webes alkalmazás desktop környezetre lett szabva, úgy, hogy a Next.js alapú React felület Electron shellben fusson. A rendszer már nem publikus weboldalként működik, hanem egy privát receptgyűjteményként, amely helyi használatra, egyszerűbb üzemeltetésre és személyes adatkezelésre készült."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Az alkalmazás támogatja a receptek létrehozását, szerkesztését és törlését, a receptképek helyi mentését és cseréjét, a kategória és alkategória alapú böngészést, a keresést, a kedvencek kezelését, valamint a profiloldalt és az admin alapú felhasználókezelést. Emellett backup export és import funkció is került bele, így a lokális adatállomány könnyebben menthető és visszaállítható."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Az egyik fontos architekturális váltás, hogy a korábbi Next.js /app/api route-ok ki lettek vezetve, és a React felület már nem HTTP-alapú belső végpontokat hív. Helyette a renderer oldali kliensréteg az Electron preloadon és IPC kommunikáción keresztül éri el a lib/services mappába szervezett üzleti logikát, amely Prisma ORM-en keresztül SQLite adatbázissal dolgozik."
+                    },
+                    {
+                        "type": "list",
+                        "title": "A projekt főbb funkciói",
+                        "items": [
+                            "Receptek létrehozása, szerkesztése és törlése",
+                            "Receptképek mentése, cseréje és törlése",
+                            "Kategória és alkategória alapú böngészés",
+                            "Receptkeresés",
+                            "Kedvencek kezelése",
+                            "Profil oldal",
+                            "Admin alapú felhasználókezelés",
+                            "Backup export és import",
+                            "Utolsó bejelentkezett felhasználó megjegyzése desktop sessionben",
+                            "Saját desktop autentikáció Electron környezetben"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Technológiai szempontból a projekt Next.js 15.5, React 19, Electron 41, Prisma ORM 6.16.2 és SQLite stackre épül, moduláris Sass stílusokkal. A telepített alkalmazásnál a Prisma library engine használata tudatos döntés volt, mert Windows alatt stabilabb működést ad az Electron appon belüli adatbázis-eléréshez."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A desktop verzió előnye, hogy nem igényel külön szervert vagy publikus hosztolást, az adatbázis és a receptképek helyben maradnak, az autentikáció egyszerűbb lehet, és a felhasználó alkalmazásszerűbb élményt kap. Ez a projekt jól mutatja, hogyan lehet egy eredetileg webre tervezett full stack rendszert Electron alapú, privát desktop workflow-vá alakítani."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Desktop keretrendszer",
+                                "value": "Electron",
+                                "url": "https://www.electronjs.org/docs/latest/"
+                            },
+                            {
+                                "label": "Frontend keretrendszer",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "Adatkezelés",
+                                "value": "Prisma ORM",
+                                "url": "https://www.prisma.io/docs"
+                            },
+                            {
+                                "label": "Beágyazott adatbázis",
+                                "value": "SQLite",
+                                "url": "https://www.sqlite.org/docs.html"
+                            }
+                        ]
+                    }
+                ],
+                "image": "/works/kostolj/thambnail.webp",
+                "gallery": [
+                    "/works/kostolj/1.webp",
+                    "/works/kostolj/2.webp",
+                    "/works/kostolj/3.webp",
+                    "/works/kostolj/4.webp",
+                    "/works/kostolj/5.webp"
+                ],
+                "tags": [
+                    "Next.js 15",
+                    "React 19",
+                    "Electron",
+                    "Prisma ORM 6",
+                    "SQLite",
+                    "Sass",
+                    "JavaScript"
+                ],
+                "projectMeta": {
+                    "type": "Full-stack desktop alkalmazás",
+                    "role": "Full-stack desktop fejlesztés, Electron IPC architektúra és helyi adatkezelés",
+                    "status": "Dokumentált projekt",
+                    "year": "2025"
+                },
+                "category": "fullstack",
+                "githubUrl": "",
+                "liveUrl": "",
+                "seoTitle": "Kóstolj Bele! Desktop App | Horváth Tamás",
+                "seoDescription": "A Kóstolj Bele! Desktop App egy Next.js, React, Electron, Prisma ORM és SQLite alapú privát receptkezelő desktop alkalmazás helyi adatkezeléssel és saját autentikációval."
+            },
+            {
                 "slug": "webp-converter",
                 "featured": false,
                 "title": "WebP Konverter - képformátum-átalakító eszköz",
@@ -1936,6 +2035,7 @@
                     "year": "2025"
                 },
                 "category": "fullstack",
+                "githubUrl": "https://github.com/Thomas-Horvath/WebP-Converter",
                 "seoTitle": "WebP Converter | Horváth Tamás",
                 "seoDescription": "A WebP Converter egy Electron, React, Vite, Tailwind CSS és Sharp alapú desktop alkalmazás több képfájl gyors WebP formátumba konvertálásához."
             }
