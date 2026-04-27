@@ -56,7 +56,7 @@ export default function HeroSection() {
             <div className="relative h-125 w-125">
               <Image
                 src="/earth.png"
-                alt="Földgömb"
+                alt={t.homePage.earthAlt}
                 fill
                 className="object-contain opacity-85"
                 priority

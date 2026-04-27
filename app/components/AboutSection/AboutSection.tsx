@@ -26,7 +26,7 @@ export default function AboutSection() {
 
               <Image
                 src="/about-devices.png"
-                alt="Laptop és mobiltelefon webfejlesztéses felületekkel"
+                alt={t.aboutSection.imageAlt}
                 width={1400}
                 height={1000}
                 className="h-auto w-full object-contain"

@@ -42,8 +42,12 @@
         "subTitle": "Modern, gyors és skálázható webalkalmazásokat építek - frontendtől a backendig, React, Next.js és egyéb korszerű webes technológiákkal.",
         "earthLabel1": "Letisztult UI",
         "earthLabel2": "Nagy teljesítmény",
+        "earthAlt": "Földgömb",
         "button1": "Projektjeim",
         "button2": "Kapcsolat"
+    },
+    "common": {
+        "pageUpTitle": "Ugrás a lap tetejére"
     },
     "footer": {
         "policy": "Adatvédelem",
@@ -57,6 +61,7 @@
         "headeringSpan": "Modern frontend és full stack megoldások letisztult szemlélettel és stabil rendszerfelépítéssel.",
         "p1": "Frontend és full stack webfejlesztőként gyors, átgondolt és felhasználóbarát webalkalmazásokat építek React, Next.js és egyéb korszerű webes technológiák segítségével.",
         "p2": "Számomra fontos a tiszta, jól karbantartható kód és az igényes, letisztult felhasználói felület.",
+        "imageAlt": "Laptop és mobiltelefon webfejlesztéses felületekkel",
         "button": "Bővebben rólam"
     },
     "quote": "\"Ne csak dolgozz, alkoss is valamit. Az igazi siker abban rejlik, ha szereted, amit csinálsz.\"",
@@ -97,6 +102,28 @@
             "overview": "Projekt áttekintés",
             "technologies": "Felhasznált technológiák",
             "gallery": "Galéria"
+        },
+        "projectInfo": {
+            "title": "Projektinformációk",
+            "type": "Típus",
+            "role": "Feladataim",
+            "status": "Státusz",
+            "year": "Év"
+        },
+        "credentialsPanel": {
+            "title": "Teszt hozzáférés",
+            "username": "Felhasználó",
+            "password": "Jelszó"
+        },
+        "galleryHelpText": "Asztali nézetben a navigációs nyilak vagy a billentyűzet segítségével is lapozhatsz a képek között. Mobilon érintéssel navigálhatsz, a képre koppintva pedig nagyobb nézetben is megnézheted a részleteket.",
+        "galleryAria": {
+            "thumbnail": "Kép megnyitása nagy nézetben",
+            "thumbnailPreview": "Galéria előnézet",
+            "viewer": "Képnézegető",
+            "closeModal": "Modal bezárása",
+            "previousImage": "Előző kép",
+            "nextImage": "Következő kép",
+            "largeView": "Nagy nézet"
         },
         "modalTexts": {
             "close": "Bezárás",
@@ -2090,6 +2117,7 @@
         "emailFormatErrorMessage": "Kérlek, adj meg egy érvényes email címet.",
         "successMessage": "Az üzenet sikeresen elküldve.",
         "failMessage": "Hiba történt az üzenet küldése közben.",
+        "serviceNotConfiguredMessage": "Az email szolgáltatás nincs beállítva.",
         "submitButtonText": "Üzenet küldése",
         "submittingButtonText": "Küldés...",
         "formLabels": {

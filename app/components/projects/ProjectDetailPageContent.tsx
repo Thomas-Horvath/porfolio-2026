@@ -231,33 +231,33 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
 
                         <div className="border border-slate-200 bg-white px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:px-8">
                             <h2 className="text-lg font-semibold text-slate-900">
-                                Projektinformációk
+                                {t.projectsPage.projectInfo.title}
                             </h2>
 
                             <dl className="mt-5 space-y-4 text-sm">
                                 <div>
-                                    <dt className="text-slate-500">Típus</dt>
+                                    <dt className="text-slate-500">{t.projectsPage.projectInfo.type}</dt>
                                     <dd className="mt-1 font-medium text-slate-900">
                                         {project.projectMeta?.type}
                                     </dd>
                                 </div>
 
                                 <div>
-                                    <dt className="text-slate-500">Feladataim</dt>
+                                    <dt className="text-slate-500">{t.projectsPage.projectInfo.role}</dt>
                                     <dd className="mt-1 font-medium text-slate-900">
                                         {project.projectMeta?.role}
                                     </dd>
                                 </div>
 
                                 <div>
-                                    <dt className="text-slate-500">Státusz</dt>
+                                    <dt className="text-slate-500">{t.projectsPage.projectInfo.status}</dt>
                                     <dd className="mt-1 font-medium text-slate-900">
                                         {project.projectMeta?.status}
                                     </dd>
                                 </div>
 
                                 <div>
-                                    <dt className="text-slate-500">Év</dt>
+                                    <dt className="text-slate-500">{t.projectsPage.projectInfo.year}</dt>
                                     <dd className="mt-1 font-medium text-slate-900">
                                         {project.projectMeta?.year}
                                     </dd>
@@ -267,12 +267,12 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
 
                         {project.credentials ? (
                             <div className="border border-sky-500 bg-sky-100 px-6 py-6 sm:px-8">
-                                <p className="text-sm font-semibold text-slate-900">Teszt hozzáférés</p>
+                                <p className="text-sm font-semibold text-slate-900">{t.projectsPage.credentialsPanel.title}</p>
                                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                                    Felhasználó: <strong>{project.credentials.username}</strong>
+                                    {t.projectsPage.credentialsPanel.username}: <strong>{project.credentials.username}</strong>
                                 </p>
                                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                                    Jelszó: <strong>{project.credentials.password}</strong>
+                                    {t.projectsPage.credentialsPanel.password}: <strong>{project.credentials.password}</strong>
                                 </p>
                             </div>
                         ) : null}
@@ -286,9 +286,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                         {t.projectsPage.detailSections.gallery}
                     </h2>
                     <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-                        Asztali nézetben a navigációs nyilak vagy a billentyűzet segítségével is lapozhatsz a képek
-                        között. Mobilon érintéssel navigálhatsz, a képre koppintva pedig nagyobb nézetben is
-                        megnézheted a részleteket.
+                        {t.projectsPage.galleryHelpText}
                     </p>
 
                     <WorkGalleryClient

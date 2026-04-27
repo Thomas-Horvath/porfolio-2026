@@ -90,7 +90,7 @@ export default function ContactPageContent() {
       const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
       if (!serviceID || !templateID || !publicKey) {
-        setStatusMessage("Email service is not configured.");
+        setStatusMessage(contact.serviceNotConfiguredMessage);
         setIsSending(false);
         return;
       }

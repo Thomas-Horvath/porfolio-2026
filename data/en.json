@@ -42,8 +42,12 @@
         "subTitle": "Developing modern web interfaces and full stack projects with React, Next.js and modern web technologies.",
         "earthLabel1": "Modern UI development",
         "earthLabel2": "Fast and modern web apps",
+        "earthAlt": "Globe",
         "button1": "projects",
         "button2": "contact me"
+    },
+    "common": {
+        "pageUpTitle": "Back to top"
     },
     "footer": {
         "policy": "Privacy Policy",
@@ -57,6 +61,7 @@
         "headeringSpan": "Modern frontend and full stack solutions, with a well-thought-out structure and a clean visual approach.",
         "p1": "As a frontend and full stack web developer, I create modern, fast, and user-friendly web applications with React, Next.js, and cutting-edge web technologies.",
         "p2": "For me, a clean visual appearance, a good user experience, and maintainable code are essential.",
+        "imageAlt": "Laptop and mobile phone with web development interfaces",
         "button": "learn more about me"
     },
     "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
@@ -97,6 +102,28 @@
             "overview": "Project Overview",
             "technologies": "Technologies Used",
             "gallery": "Gallery"
+        },
+        "projectInfo": {
+            "title": "Project Information",
+            "type": "Type",
+            "role": "My role",
+            "status": "Status",
+            "year": "Year"
+        },
+        "credentialsPanel": {
+            "title": "Test Access",
+            "username": "Username",
+            "password": "Password"
+        },
+        "galleryHelpText": "On desktop, you can move through the images with the navigation arrows or the keyboard. On mobile, you can navigate by touch, and you can tap the image to open a larger view.",
+        "galleryAria": {
+            "thumbnail": "Open image in large view",
+            "thumbnailPreview": "Gallery preview",
+            "viewer": "Image viewer",
+            "closeModal": "Close modal",
+            "previousImage": "Previous image",
+            "nextImage": "Next image",
+            "largeView": "Large view"
         },
         "modalTexts": {
             "close": "Close",
@@ -406,6 +433,27 @@
                     {
                         "type": "paragraph",
                         "content": "Possible next steps include portfolio filtering, backend support for the contact form, and stronger SEO work."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Frontend framework",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "UI library",
+                                "value": "React",
+                                "url": "https://react.dev/"
+                            },
+                            {
+                                "label": "Styling",
+                                "value": "Tailwind CSS",
+                                "url": "https://tailwindcss.com/docs"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/csk/thumbnail_csk.webp",
@@ -498,6 +546,27 @@
                     {
                         "type": "paragraph",
                         "content": "The documentation includes the full database structure, the table descriptions, and a detailed explanation of the relationships and business logic."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Database platform",
+                                "value": "Microsoft SQL Server",
+                                "url": "https://learn.microsoft.com/sql/sql-server/"
+                            },
+                            {
+                                "label": "Query language",
+                                "value": "Transact-SQL",
+                                "url": "https://learn.microsoft.com/sql/t-sql/language-reference"
+                            },
+                            {
+                                "label": "Administration tool",
+                                "value": "SQL Server Management Studio",
+                                "url": "https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/egs_mssql/thumbnail_mssql.webp",
@@ -775,30 +844,69 @@
                 "featured": false,
                 "title": "Integrative Medicine - Healing Minerals",
                 "cardDescription": "A desktop app for showing and organizing learning content about healing minerals, with a modern interface and local data handling.",
-                "intro": "The Integrative Medicine project is an app made to organize and display learning content related to minerals in a clear and structured way.",
+                "intro": "The Integrative Medicine project is a desktop app built to organize and display learning content about minerals, health problems, chakras, and zodiac signs in one structured system.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "The goal was to create a modern app with a clear interface, where the content appears in logical groups and is easy to use."
+                        "content": "The goal of the project was to keep all important links between minerals, health problems, chakras, and zodiac signs in one system that can support everyday therapeutic work. The interface and the data structure were designed so the user can quickly review related items."
                     },
                     {
                         "type": "paragraph",
-                        "content": "The app connects the user interface with local data handling, so it not only shows the learning materials but also keeps them organized."
+                        "content": "The main topic of the app is energy healing. A therapist can quickly check which minerals belong to a problem, which ones are useful for a chakra or zodiac sign, and what notes or descriptions belong to each item."
                     },
                     {
                         "type": "list",
                         "title": "Main features",
                         "items": [
-                            "Learning content grouped into categories",
-                            "Modern and clean user interface",
-                            "Local database usage",
-                            "Desktop-style app behavior",
-                            "Content organization and data handling in one project"
+                            "Create and edit minerals",
+                            "Manage health and emotional problems",
+                            "Manage chakra data",
+                            "Manage health, emotional, and recommendation data for zodiac signs",
+                            "Create relations between minerals, problems, chakras, and zodiac signs",
+                            "Separate editable notes for minerals",
+                            "Separate editable notes for problems",
+                            "Separate notes for chakras",
+                            "Local database backup and restore",
+                            "Automatic app restart after restore",
+                            "Protection for unsaved notes during close or navigation"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "During development, the main focus was a clear structure, easy use, and stable work in a local desktop environment."
+                        "content": "One important request in the project was a comfortable note editor for minerals and problems. This was implemented as separately saved rich text notes, which gives a better professional workflow."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "On the technical side, the project was built as an Electron desktop app with a React and Vite frontend in TypeScript. Data handling uses Prisma ORM with a local SQLite database, the UI uses Tailwind CSS, and note editing is supported by React Quill."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The data model is built around four main entities: Mineral, Problem, Chakra, and Zodiac. One mineral can be linked to multiple problems, chakras, and zodiac signs, so the app can show many directions of connection."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A practical part of the project is the local database backup and restore feature. After restore, the app restarts automatically, which makes the workflow simpler and safer."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Desktop framework",
+                                "value": "Electron",
+                                "url": "https://www.electronjs.org/docs/latest/"
+                            },
+                            {
+                                "label": "Data layer",
+                                "value": "Prisma ORM",
+                                "url": "https://www.prisma.io/docs"
+                            },
+                            {
+                                "label": "Note editor",
+                                "value": "React Quill",
+                                "url": "https://github.com/zenoamaro/react-quill"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/integrative/1.png",
@@ -833,26 +941,58 @@
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "The goal was to build a full-stack app that combines public recipe browsing with personal content management for logged-in users."
+                        "content": "The goal was to build a clear and easy-to-use recipe platform that supports both visual recipe browsing and personal content management for logged-in users. The system was planned for daily usability and easy searching."
                     },
                     {
                         "type": "paragraph",
-                        "content": "In the app, users can register, log in, create new recipes, edit them, and manage their own content."
+                        "content": "In the app, users can create, edit, and delete recipes, browse by category, search by name or category, save favorites, and leave ratings. Public registration is removed, and new users can only be created by an admin from the profile page."
                     },
                     {
                         "type": "list",
                         "title": "Main features",
                         "items": [
-                            "Browse and organize recipes by category",
-                            "User registration and login",
-                            "Create and edit personal recipes",
-                            "Protected features behind authentication",
-                            "Database-based content handling"
+                            "Create, edit, and delete recipes",
+                            "Category-based browsing",
+                            "Search by name and category",
+                            "Favorites handling",
+                            "Recipe rating",
+                            "Admin-based user management",
+                            "NextAuth-based authentication",
+                            "Prisma ORM with SQLite development database"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "During development, an important part was the connection between authentication, conditional rendering, and a clear content management flow."
+                        "content": "The permission model is intentionally closed. The default admin user is Tamas, and the seed creates three users: Tamas, Karoly, and Test. Tamas gets the ADMIN role, while the others use the normal USER role."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Technically, the project is built with Next.js 16.2, React 19, Prisma ORM 7, and NextAuth, with modular Sass styling. For Prisma 7, the project uses prisma.config.ts, the generated client is placed in the generated/prisma folder, and SQLite uses the @prisma/adapter-better-sqlite3 adapter."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The project is also prepared for WSL and Linux environments, which is useful for self-hosting or running on DigitalOcean. The standalone output in next.config makes the built app easier to run on a server."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Frontend framework",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "Authentication",
+                                "value": "NextAuth.js",
+                                "url": "https://next-auth.js.org/"
+                            },
+                            {
+                                "label": "Data layer",
+                                "value": "Prisma ORM",
+                                "url": "https://www.prisma.io/docs"
+                            }
+                        ]
                     }
                 ],
                   "image": "/works/kostolj/thambnail.webp",
@@ -1031,6 +1171,27 @@
                     {
                         "type": "paragraph",
                         "content": "During development, there was a strong focus on clean code structure, semantic HTML, accessibility, and validation."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Build tool",
+                                "value": "Webpack",
+                                "url": "https://webpack.js.org/"
+                            },
+                            {
+                                "label": "Date picker",
+                                "value": "Flatpickr",
+                                "url": "https://flatpickr.js.org/"
+                            },
+                            {
+                                "label": "Development basics",
+                                "value": "MDN Web Docs",
+                                "url": "https://developer.mozilla.org/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/coffee_shop/thumbnail_coffee.webp",
@@ -1127,7 +1288,42 @@
                     },
                     {
                         "type": "paragraph",
-                        "content": "The main challenge was to make authentication, booking logic, timed email flows, and a modular server structure work together well. A lot of attention was given to the separation of routes, controllers, models, middleware, and helper functions."
+                        "content": "The Express app is assembled in app.js, while server.js loads environment variables, creates the database connection, and starts the server. This separation is useful because tests can use the app.js instance directly without starting a real HTTP server."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Current known risks include that the GET /bookings endpoint is public, so the full booking list can be read without authentication, and the POST /send-email endpoint is also public, so later it would be worth adding rate limits or extra restrictions. Real keys and passwords from .env must never go into version control."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Backend framework",
+                                "value": "Express",
+                                "url": "https://expressjs.com/"
+                            },
+                            {
+                                "label": "Database and ODM",
+                                "value": "MongoDB, Mongoose",
+                                "url": "https://mongoosejs.com/"
+                            },
+                            {
+                                "label": "Authentication",
+                                "value": "jsonwebtoken",
+                                "url": "https://www.npmjs.com/package/jsonwebtoken"
+                            },
+                            {
+                                "label": "Email service",
+                                "value": "Brevo Transactional Email API",
+                                "url": "https://developers.brevo.com/docs/send-a-transactional-email"
+                            },
+                            {
+                                "label": "Testing",
+                                "value": "Jest, Supertest",
+                                "url": "https://jestjs.io/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/gitart_api/project_7_card.webp",
@@ -1622,6 +1818,27 @@
                     {
                         "type": "paragraph",
                         "content": "This project shows how a real business flow, in this case an online rehearsal room booking system, can be supported with a NoSQL model while keeping content and transaction data clear and extendable."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "NoSQL database",
+                                "value": "MongoDB",
+                                "url": "https://www.mongodb.com/docs/"
+                            },
+                            {
+                                "label": "ODM layer",
+                                "value": "Mongoose",
+                                "url": "https://mongoosejs.com/"
+                            },
+                            {
+                                "label": "Data format",
+                                "value": "BSON",
+                                "url": "https://www.mongodb.com/resources/basics/json-and-bson"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/gitart_mongo/thumbnail_mongo_gitart.webp",
@@ -1751,30 +1968,71 @@
                 "featured": false,
                 "title": "WebP Converter - Image Format Conversion Tool",
                 "cardDescription": "A desktop or local tool for converting many images to WebP format.",
-                "intro": "WebP Converter is a practical image optimization tool made to convert images to WebP quickly and easily.",
+                "intro": "WebP Converter is a desktop app for converting many image files to WebP format quickly. The project is built with Electron, React, Vite, Tailwind CSS, and Sharp, so it combines a native desktop feel with a modern frontend setup.",
                 "detailBlocks": [
                     {
                         "type": "paragraph",
-                        "content": "The project was made for a practical problem: optimizing and converting larger groups of images before web use."
+                        "content": "The goal was to build a fast and easy desktop tool that makes it simple to optimize many images for web use and convert them to WebP. The workflow is practical: the user can process several files and save them into one target folder."
                     },
                     {
                         "type": "paragraph",
-                        "content": "The app lets the user process multiple images in one workflow and save them in a format that is better for web use."
+                        "content": "The user can select many image files at once, add more files to the current list, choose a separate target folder, and optionally set width and height in pixels. If only one size is given, the other side is calculated proportionally. If both are given, the image fits into the given frame without distortion."
                     },
                     {
                         "type": "list",
                         "title": "Main features",
                         "items": [
-                            "Convert images to WebP format",
-                            "Support for batch processing",
-                            "Simple task-focused interface",
-                            "Workflow that helps web optimization",
-                            "Practical developer utility style"
+                            "Select multiple image files at once",
+                            "Add more files to the current list",
+                            "Choose a separate target folder",
+                            "Optional width and height in pixels",
+                            "Keep image ratio with Sharp",
+                            "WebP export with fixed settings: quality 80, effort 4",
+                            "Simple status feedback in the UI",
+                            "Native desktop behavior in Electron"
                         ]
                     },
                     {
                         "type": "paragraph",
-                        "content": "During development, the main focus was on making image handling simpler, easier to use, and more practical."
+                        "content": "The app currently accepts jpg, jpeg, png, bmp, tif, tiff, gif, webp, avif, heic, and heif files as input, and every output file is saved in .webp format. HEIC and HEIF support can depend on the platform because it partly depends on sharp and libvips."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "On the technical side, the Electron main process is in electron/main.js, and communication between the renderer and the main process is handled by preload.js through a secure IPC bridge. Image processing is done by Sharp, the app shows a splash screen at startup, and the desktop window hides the menu bar."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "In development mode, the project starts with npm run dev, which runs both the Vite dev server and the Electron app. The production build is created with npm run build, which first runs the Vite build and then packages the app into the dist folder with electron-builder."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A current limitation is that the app handles only files, not full folders. If two source files have the same name and are saved into the same target folder, they can overwrite each other. The UI gives status feedback, but there is no detailed progress bar yet."
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources",
+                        "items": [
+                            {
+                                "label": "Desktop framework",
+                                "value": "Electron",
+                                "url": "https://www.electronjs.org/docs/latest/"
+                            },
+                            {
+                                "label": "Image processing",
+                                "value": "Sharp",
+                                "url": "https://sharp.pixelplumbing.com/"
+                            },
+                            {
+                                "label": "Frontend build tool",
+                                "value": "Vite",
+                                "url": "https://vite.dev/guide/"
+                            },
+                            {
+                                "label": "Desktop packaging",
+                                "value": "electron-builder",
+                                "url": "https://www.electron.build/"
+                            }
+                        ]
                     }
                 ],
                 "image": "/works/webp/1.png",
@@ -1822,9 +2080,9 @@
         "skillsSubtitle2": "Other Tools"
     },
     "aboutInfo": {
-        "eyebrow": "Rólam",
+        "eyebrow": "About me",
         "title": "A Few More Things About Me",
-        "intro": " sdfgsfg",
+        "intro": "I am not only a developer. These are some personal things that shape how I think and how I work.",
         "firstInfoTitle": "1. The Guitarist",
         "firstInfoContent": "<p>Music has been an integral part of my life since childhood. I have been playing the guitar since I was thirteen, and it remains a lifelong passion.</p><p>I graduated from the Kőbánya Music Studio as a professional guitarist. It was an immense honor to play alongside renowned Hungarian music icons such as Egon Póka, Gyula Babos, and István Vörös.</p><p>On the following page, you can learn more about my musical career: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> theguitarist.thomashorvath.hu</a></p>",
         "secundInfoTitle": "2. The IT Professional",
@@ -1850,6 +2108,7 @@
         "emailFormatErrorMessage": "Please enter a valid email address.",
         "successMessage": "Your message has been sent successfully.",
         "failMessage": "An error occurred while sending your message.",
+        "serviceNotConfiguredMessage": "The email service is not configured.",
         "submitButtonText": "Send Message",
         "submittingButtonText": "Sending...",
         "formLabels": {
@@ -1858,12 +2117,12 @@
             "subject": "Subject",
             "message": "Message"
         },
-        "whenToContactTitle": "Miben tudok segíteni?",
+        "whenToContactTitle": "How I can help",
         "whenToContactItems": [
-            "Webalkalmazások fejlesztése és tervezése",
-            "Meglévő rendszerek továbbfejlesztése",
-            "Hibák javítása és optimalizálás",
-            "Technikai problémák megoldása"
+            "Web application development and planning",
+            "Improving existing systems",
+            "Bug fixing and optimization",
+            "Solving technical problems"
         ],
         "contactInfoItems": [
             {
@@ -1874,13 +2133,13 @@
             {
                 "icon": "FaFacebookMessenger",
                 "title": "Messenger",
-                "subtitle": "Írj üzenetet",
-                "link": "Facebookon"
+                "subtitle": "Send a message",
+                "link": "on Facebook"
             },
             {
                 "icon": "FaClock",
-                "title": "Gyors válasz",
-                "subtitle": "Általában 24 órán belül válaszolok minden megkeresésre."
+                "title": "Quick reply",
+                "subtitle": "I usually reply to all messages within 24 hours."
             }
         ]
     },

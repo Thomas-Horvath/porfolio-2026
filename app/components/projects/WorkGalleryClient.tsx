@@ -363,7 +363,7 @@ export default function WorkGalleryClient({ images }: Props) {
             key={`${src}-${index}`}
             type="button"
             onClick={() => openAt(index)}
-            aria-label={`Kép megnyitása nagy nézetben: ${index + 1}. kép`}
+            aria-label={`${t.projectsPage.galleryAria.thumbnail}: ${index + 1}.`}
             className="group mb-6 shadow-lg/30 cursor-zoom-in border-2 border-sky-500 block w-full break-inside-avoid overflow-hidden  bg-stone-200 text-left transition hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
           >
             {/* ---------------------------------------------------------------
@@ -405,7 +405,7 @@ export default function WorkGalleryClient({ images }: Props) {
               */}
               <img
                 src={src}
-                alt={`Galéria előnézet ${index + 1}`}
+                alt={`${t.projectsPage.galleryAria.thumbnailPreview} ${index + 1}`}
                 loading="lazy"
                 onLoad={() => markImageLoaded(src)}
                 className={`block h-auto w-full  transition duration-300 ${loadedImages.includes(src) ? "opacity-100" : "opacity-0"
@@ -452,7 +452,7 @@ export default function WorkGalleryClient({ images }: Props) {
           }}
           role="dialog"
           aria-modal="true"
-          aria-label="Képnézegető"
+          aria-label={t.projectsPage.galleryAria.viewer}
         >
           {/* -----------------------------------------------------------------
               A MODAL PANEL
@@ -477,7 +477,7 @@ export default function WorkGalleryClient({ images }: Props) {
               <button
                 type="button"
                 onClick={closeModal}
-                aria-label="Modal bezárása"
+                aria-label={t.projectsPage.galleryAria.closeModal}
                 className="inline-flex cursor-pointer items-center justify-center  px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500"
               >
                 {t.projectsPage.modalTexts.close}
@@ -509,7 +509,7 @@ export default function WorkGalleryClient({ images }: Props) {
                   <button
                     type="button"
                     onClick={showPrevImage}
-                    aria-label="Előző kép"
+                    aria-label={t.projectsPage.galleryAria.previousImage}
                     className="absolute left-3 top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white/85 px-4 py-2 text-3xl text-black/80 shadow-md transition hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-sky-500 md:block"
                   >
                     ‹
@@ -518,7 +518,7 @@ export default function WorkGalleryClient({ images }: Props) {
                   <button
                     type="button"
                     onClick={showNextImage}
-                    aria-label="Következő kép"
+                    aria-label={t.projectsPage.galleryAria.nextImage}
                     className="absolute right-3 top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white/85 px-4 py-2 text-3xl text-black/80 shadow-md transition hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-sky-500 md:block"
                   >
                     ›
@@ -570,7 +570,7 @@ export default function WorkGalleryClient({ images }: Props) {
                   <img
                     ref={zoomImageRef}
                     src={activeImageSrc}
-                    alt={`Nagy nézet ${activeIndex + 1}. kép`}
+                    alt={`${t.projectsPage.galleryAria.largeView} ${activeIndex + 1}`}
                     onLoad={() => markImageLoaded(activeImageSrc)}
                     onClick={handleZoomImageClick}
                     onPointerDown={handleZoomPointerDown}
@@ -608,7 +608,7 @@ export default function WorkGalleryClient({ images }: Props) {
                 <button
                   type="button"
                   onClick={showPrevImage}
-                  aria-label="Előző kép"
+                  aria-label={t.projectsPage.galleryAria.previousImage}
                   className="min-w-28 cursor-pointer  bg-white/90 px-4 py-3 text-sm font-medium text-black transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500"
                 >
                   {t.projectsPage.modalTexts.previous}
@@ -617,7 +617,7 @@ export default function WorkGalleryClient({ images }: Props) {
                 <button
                   type="button"
                   onClick={showNextImage}
-                  aria-label="Következő kép"
+                  aria-label={t.projectsPage.galleryAria.nextImage}
                   className="min-w-28 cursor-pointer bg-white/90 px-4 py-3 text-sm font-medium text-black transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500"
                 >
                   {t.projectsPage.modalTexts.next}

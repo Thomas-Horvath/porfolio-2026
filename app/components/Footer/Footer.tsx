@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="flex items-start gap-4">
             <Image
               src="/logo.png"
-              alt="Horváth Tamás logó"
+              alt={t.navLogo.alt}
               width={56}
               height={56}
               className="h-16 w-16 object-contain"

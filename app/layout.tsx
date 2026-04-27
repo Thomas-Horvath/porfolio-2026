@@ -64,7 +64,7 @@ const spaceGrotesk = localFont({
 
 
 export const metadata: Metadata = {
-  description: "Horváth Thomas webfejlesztő portfóliója és szolgáltatásai.",
+  description: "Portfolio and services of Thomas Horvath.",
 };
 
 export default function RootLayout({
