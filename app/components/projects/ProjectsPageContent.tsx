@@ -38,6 +38,7 @@ type Project = {
     tags: string[];
     category: ProjectCategory;
     githubUrl?: string;
+    repoLinks?: { label: string; url: string }[];
     liveUrl?: string;
     docsUrl?: string;
     featured?: boolean;

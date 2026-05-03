@@ -995,7 +995,7 @@
                         ]
                     }
                 ],
-                  "image": "/works/kostolj/thambnail.webp",
+                "image": "/works/kostolj/thambnail.webp",
                 "gallery": [
                     "/works/kostolj/1.webp",
                     "/works/kostolj/2.webp",
@@ -1962,6 +1962,149 @@
                 "liveUrl": "",
                 "seoTitle": "Taste It! Desktop App | Thomas Horvath",
                 "seoDescription": "Taste It! Desktop App is a private recipe manager built with Next.js, React, Electron, Prisma ORM, and SQLite for local desktop use."
+            },
+            {
+                "slug": "tiszta-muhely",
+                "featured": false,
+                "title": "Tiszta Műhely - Cleaning Website and Booking System",
+                "cardDescription": "A full-stack cleaning website and booking system with a Next.js frontend, a PHP + MySQL backend, an admin panel, and a Docker-based dev setup.",
+                "intro": "Tiszta Műhely is a full-stack web project for a cleaning service business. It combines a public cleaning website, a customer quote request and booking flow, and an admin booking management area, with a separate Next.js frontend and PHP + MySQL backend.",
+                "detailBlocks": [
+                    {
+                        "type": "paragraph",
+                        "content": "The goal of this project was to handle the public cleaning website and the real booking flow in one connected system. The frontend was built as a Next.js app prepared for static builds, while the dynamic business logic, admin session handling, booking states, and mail flow were moved into a separate PHP backend layer."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "On the public side, visitors can read about the services, prices, references, and contact options, then choose a date on the quote request page. The booking flow loads weekly slot states from the backend, shows free, pending, and booked time blocks, and creates a new booking with pending status when the form is sent."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The admin area uses session-based authentication. After login, the admin gets a paginated booking list from the backend API, can check the session state, filter by status, change a pending booking to confirmed or cancelled, move an existing booking block to another date or part of the day, and add a new time block to an existing booking."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "On the backend side, cleaner_backend runs in its own PHP 8.4 + Apache setup with a MySQL 8 database, phpMyAdmin, and PDO. During development, the backend uses its own Docker Compose environment, so it can be started, stopped, rebuilt, or fully reset from the cleaner_backend folder. This gives a practical local workflow for checking the API, the database, and the admin flow."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "On the frontend side, the project uses Next.js 16, React 19, TypeScript, App Router, and Tailwind CSS 4. The interface stays compatible with static export, while the browser connects to the PHP backend through API calls built from NEXT_PUBLIC_API_URL. This split structure gives flexible deployment because the marketing pages can be hosted separately, while the backend can manage business logic and admin actions on its own."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The booking model is built on two main tables: bookings and booking_slots. This makes it possible for one booking to have more than one time block, so the system fits real cleaning work better. The backend also has separate public and admin API endpoints, while the mail layer supports log, mail, and smtp modes, so development and production mail flows can be handled in a controlled way."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The route structure is also clear. The public side has the home page, services, prices, references, contact, quote request, imprint, privacy, and cookie information pages, while the admin login and admin dashboard use separate routes. In development, the frontend runs on localhost:3000, the PHP API is available on localhost:8080, the health endpoint can be checked directly, phpMyAdmin is available on localhost:8081, and MySQL can be reached from Docker on 127.0.0.1:3307."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The backend also uses .htaccess-based folder protection, so config, storage, and .env content stay private while the api folder stays reachable without directory listing. The documentation shows that the project is already prepared for an Apache + MySQL shared hosting setup as well, so it is not only for local development. Another useful point is that some public frontend parts can still work in fallback mode when the backend is temporarily not available, while the admin area and the real booking flow still need a live backend connection."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "The test login block currently uses placeholder data because the supplied project notes did not include a fixed demo admin account. The panel is still useful on the portfolio page, and the values can be replaced later with the real test user."
+                    },
+                    {
+                        "type": "list",
+                        "title": "Main features",
+                        "items": [
+                            "Public marketing pages and contact flow",
+                            "Quote request and date selection for customers",
+                            "Weekly booking slot loading and state display",
+                            "Create new bookings with pending status",
+                            "Admin login, logout, and session check",
+                            "Paginated admin booking list with status filters",
+                            "Pending -> confirmed and pending -> cancelled status changes",
+                            "Move an existing booking block",
+                            "Add a new time block to an existing booking",
+                            "Mail layer with log mode or SMTP mode",
+                            "Docker Compose based backend dev environment",
+                            "Local database checking with phpMyAdmin"
+                        ]
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Sources and technologies",
+                        "items": [
+                            {
+                                "label": "Frontend framework",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "UI library",
+                                "value": "React",
+                                "url": "https://react.dev/"
+                            },
+                            {
+                                "label": "Styling",
+                                "value": "Tailwind CSS",
+                                "url": "https://tailwindcss.com/docs"
+                            },
+                            {
+                                "label": "Backend",
+                                "value": "PHP",
+                                "url": "https://www.php.net/docs.php"
+                            },
+                            {
+                                "label": "Database",
+                                "value": "MySQL",
+                                "url": "https://dev.mysql.com/doc/"
+                            },
+                            {
+                                "label": "Container-based development",
+                                "value": "Docker Compose",
+                                "url": "https://docs.docker.com/compose/"
+                            }
+                        ]
+                    }
+                ],
+                "image": "/works/cleaner/thumbnail.webp",
+                "gallery": [
+                    "/works/cleaner/1.webp",
+                    "/works/cleaner/2.webp",
+                    "/works/cleaner/3.webp",
+                    "/works/cleaner/4.webp",
+                    "/works/cleaner/5.webp",
+                    "/works/cleaner/6.webp",
+                    "/works/cleaner/7.webp"
+                ],
+                "tags": [
+                    "Next.js 16",
+                    "React 19",
+                    "TypeScript",
+                    "Tailwind CSS 4",
+                    "PHP 8.4",
+                    "MySQL 8",
+                    "Docker",
+                    "Apache"
+                ],
+                "projectMeta": {
+                    "type": "Full-stack cleaning website and booking web application",
+                    "role": "Frontend development, PHP backend, booking logic, admin workflow, and database integration",
+                    "status": "Documented project",
+                    "year": "2026"
+                },
+                "credentials": {
+                    "username": "muhelygazda",
+                    "password": "TisztaOtthon2026!"
+                },
+                "category": "fullstack",
+                "repoLinks": [
+                    {
+                        "label": "Frontend GitHub",
+                        "url": "https://github.com/Thomas-Horvath/cleaner_landingpage"
+                    },
+                    {
+                        "label": "Backend GitHub",
+                        "url": "https://github.com/Thomas-Horvath/cleaner_landingpage_PHP_MySql_backend"
+                    }
+                ],
+                "liveUrl": "https://cleaner-landingpage.vercel.app/",
+                "seoTitle": "Tiszta Műhely - Cleaning Website | Thomas Horvath",
+                "seoDescription": "Tiszta Műhely is a full-stack cleaning website and booking system built with Next.js, PHP, MySQL, and Docker, with an admin area and booking management."
             },
             {
                 "slug": "webp-converter",

@@ -36,6 +36,7 @@ type Project = {
     tags: string[];
     category: "frontend" | "backend" | "database" | "fullstack";
     githubUrl?: string;
+    repoLinks?: { label: string; url: string }[];
     liveUrl?: string;
     docsUrl?: string;
     featured?: boolean;
@@ -64,6 +65,13 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
     if (!project) {
         return null;
     }
+
+    const repoLinks =
+        project.repoLinks && project.repoLinks.length > 0
+            ? project.repoLinks
+            : project.githubUrl
+                ? [{ label: t.projectsPage.buttons.github, url: project.githubUrl }]
+                : [];
 
     return (
         <main className="bg-slate-50 px-4 py-24 pb-38 own:px-0">
@@ -108,16 +116,17 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                             </p>
 
                             <div className="mt-8 flex flex-wrap gap-4">
-                                {project.githubUrl && (
+                                {repoLinks.map((link) => (
                                     <a
-                                        href={project.githubUrl}
+                                        key={link.url}
+                                        href={link.url}
                                         target="_blank"
                                         rel="noreferrer"
                                         className="btn btn-blue"
                                     >
-                                        {t.projectsPage.buttons.github}
+                                        {link.label}
                                     </a>
-                                )}
+                                ))}
 
                                 {project.liveUrl && (
                                     <a

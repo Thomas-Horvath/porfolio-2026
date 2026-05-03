@@ -1970,6 +1970,149 @@
                 "seoDescription": "A Kóstolj Bele! Desktop App egy Next.js, React, Electron, Prisma ORM és SQLite alapú privát receptkezelő desktop alkalmazás helyi adatkezeléssel és saját autentikációval."
             },
             {
+                "slug": "tiszta-muhely",
+                "featured": false,
+                "title": "Tiszta Műhely - takarító honlap és foglalási rendszer",
+                "cardDescription": "Full-stack takarító honlap és foglalási rendszer Next.js frontenddel, PHP + MySQL backenddel, admin felülettel és Dockeres fejlesztői környezettel.",
+                "intro": "A Tiszta Műhely egy takarító szolgáltatás számára készült full-stack webes rendszer. A projekt egy publikus takarító honlapot, egy ügyféloldali ajánlatkérő és foglaló felületet, valamint egy admin belépéssel védett foglaláskezelő részt fog össze, külön Next.js frontenddel és PHP + MySQL backenddel.",
+                "detailBlocks": [
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt célja az volt, hogy a takarító szolgáltatás publikus webes bemutatását és a tényleges foglalási működést egyetlen összefüggő rendszerben kezelje. A frontend statikus buildre hangolt Next.js alkalmazásként készült, míg a dinamikus üzleti logika, az admin session kezelés, a foglalási állapotok és a levelezési folyamatok külön PHP backend rétegbe kerültek."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A publikus felületen a látogatók megismerhetik a szolgáltatásokat, árakat, referenciákat és kapcsolatfelvételi lehetőségeket, majd az ajánlatkérő oldalon időpontot választhatnak. A foglalási folyamat a backendből kéri le a heti slot állapotokat, megjeleníti a szabad, pending és foglalt idősávokat, majd az űrlap elküldésekor pending státuszú foglalást hoz létre."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Az admin oldal session alapú hitelesítéssel működik. Belépés után az admin a backend API-ból lapozható foglaláslistát kap, lekérdezheti a session állapotot, státusz szerint szűrhet, pending foglalást confirmed vagy cancelled állapotba tehet, meglévő foglalási blokkot másik napra vagy napszakra mozgathat, illetve új időblokkot adhat hozzá egy már létező foglaláshoz."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Backend oldalon a cleaner_backend külön PHP 8.4 + Apache környezetben fut, MySQL 8 adatbázissal, phpMyAdminnal és PDO kapcsolattal. A backend saját Docker Compose környezetet kapott, ezért fejlesztéskor közvetlenül a cleaner_backend mappából indítható, leállítható vagy újraépíthető, sőt szükség esetén teljesen tiszta adatbázis-inicializálással is újrahúzható. Ez kényelmes helyi workflow-t ad az API, az adatbázis és az admin működés ellenőrzéséhez."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Frontend oldalon a projekt Next.js 16, React 19, TypeScript, App Router és Tailwind CSS 4 stackre épül. A felület statikus export-kompatibilis marad, miközben a böngészőből API hívásokkal kapcsolódik a PHP backendhez a NEXT_PUBLIC_API_URL alapján. Ez a szétválasztott felépítés jó deploy rugalmasságot ad, mert a marketing oldalak külön is hosztolhatók, miközben a backend önállóan kezelheti az üzleti logikát és az admin műveleteket."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A foglalási modell tudatosan két fő táblára épül: bookings és booking_slots. Ez lehetővé teszi, hogy egy foglaláshoz több időblokk tartozzon, így a rendszer valós takarítási munkafolyamatokhoz is jól illeszkedik. A backend külön public és admin API végpontokat ad, a levelezési réteg pedig log, mail és smtp módot támogat, így fejlesztés közben biztonságosan naplózható, éles környezetben pedig SMTP-re állítható."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A projekt route-szinten is jól tagolt: a publikus oldalak között szerepel a főoldal, szolgáltatások, árak, referenciák, kapcsolat, ajánlatkérés, impresszum, adatvédelem és cookie tájékoztató, míg külön admin belépési és admin dashboard route is készült. Fejlesztéskor a frontend a localhost:3000 címen fut, a PHP API a localhost:8080 alatt érhető el, a health endpoint külön ellenőrizhető, a phpMyAdmin a localhost:8081 címen nyitható meg, a MySQL pedig Dockerből 127.0.0.1:3307 címen használható."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A backend .htaccess alapú mappavédelmet is használ, így a config, storage és .env tartalmak nem publikusak, miközben az api mappa elérhető marad könyvtárlistázás nélkül. A dokumentáció szerint a projekt Nethelyes Apache + MySQL környezetre is elő van készítve, ezért nem csak helyi fejlesztési célra használható. Fontos szempont volt az is, hogy a frontend backend nélkül se essen szét teljesen: egyes publikus részek fallback módban is működnek, míg az admin és a valódi foglaláskezelés természetesen aktív backend kapcsolatot igényel."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "A teszt belépési blokk most helykitöltő adatokat tartalmaz, mert a kapott projektleírás nem adott meg fix demo admin fiókot. A mezők célja az, hogy a portfólió oldalon meglegyen a szokásos belépési információs panel, és később egyszerűen lecserélhető legyen a valódi teszt felhasználóra."
+                    },
+                    {
+                        "type": "list",
+                        "title": "A projekt főbb funkciói",
+                        "items": [
+                            "Publikus marketing oldalak és kapcsolatfelvételi felület",
+                            "Ajánlatkérés és időpontválasztás ügyféloldalon",
+                            "Heti foglalási slotok lekérése és állapotmegjelenítése",
+                            "Pending státuszú új foglalások létrehozása",
+                            "Admin belépés, kijelentkezés és session ellenőrzés",
+                            "Lapozható admin foglaláslista és státusz szerinti szűrés",
+                            "Pending -> confirmed és pending -> cancelled állapotváltás",
+                            "Meglévő foglalási blokk áthelyezése",
+                            "Új időblokk hozzáadása meglévő foglaláshoz",
+                            "Fejlesztői log alapú vagy SMTP-s levelezési réteg",
+                            "Docker Compose alapú backend fejlesztői környezet",
+                            "phpMyAdmin alapú helyi adatbázis-ellenőrzés"
+                        ]
+                    },
+                    {
+                        "type": "sources",
+                        "title": "Felhasznált források",
+                        "items": [
+                            {
+                                "label": "Frontend keretrendszer",
+                                "value": "Next.js",
+                                "url": "https://nextjs.org/docs"
+                            },
+                            {
+                                "label": "UI könyvtár",
+                                "value": "React",
+                                "url": "https://react.dev/"
+                            },
+                            {
+                                "label": "Stílusozás",
+                                "value": "Tailwind CSS",
+                                "url": "https://tailwindcss.com/docs"
+                            },
+                            {
+                                "label": "Backend",
+                                "value": "PHP",
+                                "url": "https://www.php.net/docs.php"
+                            },
+                            {
+                                "label": "Adatbázis",
+                                "value": "MySQL",
+                                "url": "https://dev.mysql.com/doc/"
+                            },
+                            {
+                                "label": "Konténeres fejlesztés",
+                                "value": "Docker Compose",
+                                "url": "https://docs.docker.com/compose/"
+                            }
+                        ]
+                    }
+                ],
+                "image": "/works/cleaner/thumbnail.webp",
+                "gallery": [
+                    "/works/cleaner/1.webp",
+                    "/works/cleaner/2.webp",
+                    "/works/cleaner/3.webp",
+                    "/works/cleaner/4.webp",
+                    "/works/cleaner/5.webp",
+                    "/works/cleaner/6.webp",
+                    "/works/cleaner/7.webp"
+                ],
+                "tags": [
+                    "Next.js 16",
+                    "React 19",
+                    "TypeScript",
+                    "Tailwind CSS 4",
+                    "PHP 8.4",
+                    "MySQL 8",
+                    "Docker",
+                    "Apache"
+                ],
+                "projectMeta": {
+                    "type": "Full-stack takarító honlap és foglalási webalkalmazás",
+                    "role": "Frontend fejlesztés, PHP backend, foglalási logika, admin workflow és adatbázis-integráció",
+                    "status": "Dokumentált projekt",
+                    "year": "2026"
+                },
+                "credentials": {
+                    "username": "muhelygazda",
+                    "password": "TisztaOtthon2026!"
+                },
+                "category": "fullstack",
+                "repoLinks": [
+                    {
+                        "label": "Frontend GitHub",
+                        "url": "https://github.com/Thomas-Horvath/cleaner_landingpage"
+                    },
+                    {
+                        "label": "Backend GitHub",
+                        "url": "https://github.com/Thomas-Horvath/cleaner_landingpage_PHP_MySql_backend"
+                    }
+                ],
+                "liveUrl": "https://cleaner-landingpage.vercel.app/",
+                "seoTitle": "Tiszta Műhely - takarító honlap | Horváth Tamás",
+                "seoDescription": "A Tiszta Műhely egy Next.js, PHP, MySQL és Docker alapú full-stack takarító honlap és foglalási rendszer admin felülettel."
+            },
+            {
                 "slug": "webp-converter",
                 "featured": false,
                 "title": "WebP Konverter - képformátum-átalakító eszköz",
