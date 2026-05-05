@@ -7,6 +7,7 @@ import { useLanguage } from "@/contexts/useLanguage";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useState } from "react";
 import FlagIcon from "./FlagIcon";
 
@@ -43,6 +44,18 @@ const Navbar = () => {
     { name: t.navLinks.about, href: "/about" },
     { name: t.navLinks.projects, href: "/projects" },
     { name: t.navLinks.contact, href: "/contact" },
+  ];
+  const socialLinks = [
+    {
+      label: "GitHub",
+      href: "https://github.com/Thomas-Horvath",
+      icon: <FaGithub className="text-[18px]" />,
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/thomashorvathweb/",
+      icon: <FaLinkedinIn className="text-[17px]" />,
+    },
   ];
 
 
@@ -120,19 +133,33 @@ const Navbar = () => {
             })}
           </nav>
 
-          {/* Language Switcher */}
-          <div className="hidden md:flex items-center h-10 m-auto">
+          <div className="hidden md:flex items-center gap-2 h-10 m-auto">
+            {socialLinks.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                aria-label={item.label}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-10 w-10 items-center justify-center border border-slate-200 bg-white/80 text-slate-700 shadow-sm backdrop-blur transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-600"
+              >
+                {item.icon}
+              </Link>
+            ))}
+
+            {/* Language Switcher */}
             <button
               onClick={() =>
                 switchLanguage(language === "hu" ? "en" : "hu")
               }
-              className="relative overflow-hidden px-4 py-1 
-             font-medium text-sm w-16
+              className="relative inline-flex h-10 w-16 items-center justify-center overflow-hidden
+             font-medium text-sm
+             border border-slate-200
              shadow-sm
              backdrop-blur
              cursor-pointer transition
              text-slate-700
-             bg-white/80 hover:bg-white"
+             bg-white/80 hover:border-sky-200 hover:bg-sky-50 hover:text-sky-600"
             >
               {/* FLAG BACKGROUND */}
               <div className="absolute inset-0 flex items-center justify-center opacity-[0.2] pointer-events-none z-1">
@@ -189,7 +216,22 @@ const Navbar = () => {
                 })}
               </nav>
 
-              <div className="border-t border-slate-200 px-4 py-4">
+              <div className="border-t border-slate-200 px-4 py-4 space-y-4">
+                <div className="flex items-center justify-center gap-3">
+                  {socialLinks.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      aria-label={item.label}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-600"
+                    >
+                      {item.icon}
+                    </Link>
+                  ))}
+                </div>
+
                 <button
                   onClick={() => {
                     switchLanguage(language === "hu" ? "en" : "hu");

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 type Project = {
     slug: string;
@@ -8,6 +10,9 @@ type Project = {
     image: string;
     tags: string[];
     featured?: boolean;
+    githubUrl?: string;
+    repoLinks?: { label: string; url: string }[];
+    liveUrl?: string;
 };
 
 type Props = {
@@ -16,6 +21,12 @@ type Props = {
 };
 
 export default function ProjectCard({ project, detailsLabel }: Props) {
+    const preferredGithubUrl =
+        project.githubUrl ??
+        project.repoLinks?.find((link) => /frontend/i.test(link.label))?.url ??
+        project.repoLinks?.[0]?.url;
+    const hasProjectLinks = preferredGithubUrl || project.liveUrl;
+
     return (
         <article className="flex flex-col
                             h-full max-w-120 mx-auto
@@ -58,7 +69,35 @@ export default function ProjectCard({ project, detailsLabel }: Props) {
                 </p>
 
                 <div className="mt-8 w-full">
-                    <Link href={`/projects/${project.slug}`} className="justify-between w-full btn btn-blue">
+                    {hasProjectLinks ? (
+                        <div className="mb-3 flex items-center gap-2">
+                            {preferredGithubUrl ? (
+                                <a
+                                    href={preferredGithubUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`${project.title} GitHub`}
+                                    className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
+                                >
+                                    <FaGithub className="text-lg" />
+                                </a>
+                            ) : null}
+
+                            {project.liveUrl ? (
+                                <a
+                                    href={project.liveUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`${project.title} Live`}
+                                    className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
+                                >
+                                    <FiExternalLink className="text-lg" />
+                                </a>
+                            ) : null}
+                        </div>
+                    ) : null}
+
+                    <Link href={`/projects/${project.slug}`} className="justify-between w-full whitespace-nowrap btn btn-blue">
                         {detailsLabel} <span >→</span>
                     </Link>
                 </div>

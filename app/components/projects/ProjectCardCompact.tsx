@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import { useState } from "react";
 
 type ProjectCategory = "frontend" | "backend" | "database" | "fullstack";
@@ -13,6 +15,9 @@ type Project = {
     tags: string[];
     category: ProjectCategory;
     featured?: boolean;
+    githubUrl?: string;
+    repoLinks?: { label: string; url: string }[];
+    liveUrl?: string;
 };
 
 type Props = {
@@ -51,12 +56,15 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
     const styles = categoryStyles[project.category];
     const [loadedImageSrc, setLoadedImageSrc] = useState<string | null>(null);
     const imageLoaded = loadedImageSrc === project.image;
+    const preferredGithubUrl =
+        project.githubUrl ??
+        project.repoLinks?.find((link) => /frontend/i.test(link.label))?.url ??
+        project.repoLinks?.[0]?.url;
+    const hasProjectLinks = preferredGithubUrl || project.liveUrl;
 
     return (
-
-        <Link
-            href={`/projects/${project.slug}`}
-            className={`group relative block shadow-lg  overflow-hidden border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 ${styles.hoverBorder} ${styles.hoverShadow}`}
+        <article
+            className={`group relative block shadow-lg overflow-hidden border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 ${styles.hoverBorder} ${styles.hoverShadow}`}
         >
             <div className="flex h-full flex-col">
                 <div
@@ -72,17 +80,19 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                         </>
                     )}
 
-                    <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className={`object-cover object-top transition duration-700 group-hover:scale-[1.03] ${imageLoaded ? "opacity-100" : "opacity-0"}`}
-                        onLoad={() => setLoadedImageSrc(project.image)}
-                    />
+                    <Link href={`/projects/${project.slug}`} className="absolute inset-0 block">
+                        <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className={`object-cover object-top transition duration-700 group-hover:scale-[1.03] ${imageLoaded ? "opacity-100" : "opacity-0"}`}
+                            onLoad={() => setLoadedImageSrc(project.image)}
+                        />
+                    </Link>
 
                     <div className="absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />
 
-                    <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/30 bg-white/15 text-white/90 opacity-0 shadow-sm backdrop-blur-md transition duration-300 group-hover:opacity-100">
+                    <div className="pointer-events-none absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/30 bg-white/15 text-white/90 opacity-0 shadow-sm backdrop-blur-md transition duration-300 group-hover:opacity-100">
                         <span className="text-base">↗</span>
                     </div>
                 </div>
@@ -90,9 +100,11 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                 <div className="flex h-full flex-col px-5 py-5">
                     <div className="mb-6">
                         <div className="flex items-start justify-between gap-4">
-                            <h3 className="text-lg font-semibold tracking-tight text-slate-900 transition duration-300 group-hover:text-sky-700">
-                                {project.title}
-                            </h3>
+                            <Link href={`/projects/${project.slug}`} className="block">
+                                <h3 className="text-lg font-semibold tracking-tight text-slate-900 transition duration-300 group-hover:text-sky-700">
+                                    {project.title}
+                                </h3>
+                            </Link>
 
                             <span
                                 className={`mt-1 h-2 w-2 shrink-0 transition duration-300 group-hover:scale-125 ${styles.dot}`}
@@ -111,19 +123,45 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                         </div>
                     </div>
 
-                    {/* <div className="mt-auto flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-400 transition duration-300 group-hover:text-slate-700">
-                        <span>{detailsLabel}</span>
-                        <span className="transition duration-300 group-hover:translate-x-1">→</span>
-                    </div> */}
                     <div className="mt-auto">
-                        <span className="w-full inline-flex items-center justify-between gap-2 border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-600 transition 
-                   group-hover:border-sky-200 group-hover:bg-sky-50 group-hover:text-sky-700">
+                        {hasProjectLinks ? (
+                            <div className="mb-3 flex items-center gap-2">
+                                {preferredGithubUrl ? (
+                                    <a
+                                        href={preferredGithubUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        aria-label={`${project.title} GitHub`}
+                                        className="inline-flex h-10 w-10 items-center justify-center border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
+                                    >
+                                        <FaGithub className="text-base" />
+                                    </a>
+                                ) : null}
+
+                                {project.liveUrl ? (
+                                    <a
+                                        href={project.liveUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        aria-label={`${project.title} Live`}
+                                        className="inline-flex h-10 w-10 items-center justify-center border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
+                                    >
+                                        <FiExternalLink className="text-base" />
+                                    </a>
+                                ) : null}
+                            </div>
+                        ) : null}
+
+                        <Link
+                            href={`/projects/${project.slug}`}
+                            className="inline-flex w-full items-center justify-between gap-2 whitespace-nowrap border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-600 transition group-hover:border-sky-200 group-hover:bg-sky-50 group-hover:text-sky-700"
+                        >
                             {detailsLabel}
                             <span className="transition group-hover:translate-x-1">→</span>
-                        </span>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </Link>
+        </article>
     );
 }

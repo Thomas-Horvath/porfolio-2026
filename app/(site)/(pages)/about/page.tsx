@@ -27,6 +27,8 @@ import {
   SiPython,
   SiMysql,
   SiMongodb,
+  SiMongoose,
+  SiPrisma,
   SiGithub,
   SiFigma,
   SiSqlite,
@@ -35,7 +37,6 @@ import {
 import { VscVscode } from "react-icons/vsc";
 import { useState } from "react";
 import AboutInfoShowcase from "./AboutInfoShowcase";
-import Loading from "../../loading";
 
 type AboutInfoItem = {
   title: string;
@@ -92,6 +93,8 @@ export default function AboutPageContent() {
         { name: "MsSQL", icon: <FaDatabase className="text-red-600" /> },
         { name: "SQLite", icon: <SiSqlite className="text-sky-600" /> },
         { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+        { name: "Prisma", icon: <SiPrisma className="text-slate-800" /> },
+        { name: "Mongoose", icon: <SiMongoose className="text-red-700" /> },
       ],
     },
     {
