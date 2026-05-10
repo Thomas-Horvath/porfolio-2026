@@ -34,7 +34,7 @@ type Project = {
     image: string;
     gallery: string[];
     tags: string[];
-    category: "frontend" | "backend" | "database" | "fullstack";
+    category: "frontend" | "backend" | "database" | "fullstack" | "desktop";
     githubUrl?: string;
     repoLinks?: { label: string; url: string }[];
     liveUrl?: string;
@@ -195,7 +195,7 @@ export default function ProjectDetailPageContent({ slug }: { slug: string }) {
                                 if (block.type === "sources") {
                                     return (
                                         <div key={index} className="mt-8 border-t border-slate-200 pt-6">
-                                            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-5600">
+                                            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-600">
                                                 {block.title}:
                                             </h3>
 

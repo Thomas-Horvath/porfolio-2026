@@ -16,25 +16,27 @@ export default function HeroSection() {
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div className="max-w-2xl">
             <RevealOnScroll delay={0}>
-              <div className="mb-5 inline-flex border border-sky-100 bg-white/80 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm backdrop-blur">
+              <div className="mb-8 inline-flex border border-sky-200 bg-white/85 px-2 lg:px-4 py-1 lg:py-2 text-xs lg:text-base font-medium tracking-[0.08em] text-sky-700 shadow-sm backdrop-blur">
                 {t.homePage.profession}
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={70}>
-              <h1 className="heading-font text-[40px]  font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+              <h1 className="heading-font inline-block max-w-full whitespace-nowrap text-[clamp(2.4rem,2rem+3vw,5.7rem)] leading-[0.95] font-bold tracking-[-0.04em] text-transparent bg-linear-to-r from-slate-950 via-slate-800 to-sky-600 bg-clip-text">
                 {t.homePage.name}
               </h1>
             </RevealOnScroll>
 
             <RevealOnScroll delay={140}>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700 sm:text-xl">
-                {t.homePage.subTitle}
-              </p>
+              <div className="mt-8 max-w-lg">
+                <p className="text-base lg:leading-7 text-slate-700 sm:text-lg">
+                  {t.homePage.subTitle}
+                </p>
+              </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={210}>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-10 flex flex-wrap gap-4">
                 <Link
                   href="/projects"
                   className="btn btn-blue"

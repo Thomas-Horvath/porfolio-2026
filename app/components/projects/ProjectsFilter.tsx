@@ -1,6 +1,6 @@
 "use client";
 
-type FilterValue = "all" | "frontend" | "backend" | "database" | "fullstack";
+type FilterValue = "all" | "frontend" | "backend" | "database" | "fullstack" | "desktop";
 
 type Props = {
   activeFilter: FilterValue;
@@ -11,10 +11,11 @@ type Props = {
     backend: string;
     database: string;
     fullstack: string;
+    desktop: string;
   };
 };
 
-const filterOptions: FilterValue[] = ["all", "frontend", "backend", "database", "fullstack"];
+const filterOptions: FilterValue[] = ["all", "frontend", "backend", "database", "fullstack", "desktop"];
 
 export default function ProjectsFilter({
   activeFilter,
@@ -35,6 +36,7 @@ export default function ProjectsFilter({
           backend: "bg-indigo-400 border-indigo-400 text-white",
           database: "bg-teal-400 border-teal-400 text-slate-800",
           fullstack: "bg-amber-400 border-amber-400 text-slate-800",
+          desktop: "bg-red-500 border-rose-400 text-slate-800",
         };
 
         const color = colorMap[activeFilter] ?? "bg-sky-600 border-sky-600 text-white";

@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/contexts/useLanguage";
 
-const page = () => {
+const Page = () => {
   const { t } = useLanguage();
   return (
     <section className="flex min-h-screen max-w-350 m-auto flex-col items-center justify-center px-4 py-24 sm:py-28 own:px-0 lg:py-32">
@@ -21,4 +21,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

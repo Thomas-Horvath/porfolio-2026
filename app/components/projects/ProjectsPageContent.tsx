@@ -6,8 +6,8 @@ import ProjectsFilter from "@/app/components/projects/ProjectsFilter";
 import { useLanguage } from "@/contexts/useLanguage";
 import ProjectCardCompact from "./ProjectCardCompact";
 
-type FilterValue = "all" | "frontend" | "backend" | "database" | "fullstack";
-type ProjectCategory = "frontend" | "backend" | "database" | "fullstack";
+type FilterValue = "all" | "frontend" | "backend" | "database" | "fullstack" | "desktop";
+type ProjectCategory = "frontend" | "backend" | "database" | "fullstack" | "desktop";
 
 type ProjectDetailBlock =
     | {

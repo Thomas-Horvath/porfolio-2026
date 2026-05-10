@@ -3,7 +3,7 @@
 import { useLanguage } from "@/contexts/useLanguage";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
     const { t } = useLanguage();
     return (
         <section className="flex min-h-screen max-w-350 m-auto flex-col items-center justify-center px-4 py-24 sm:py-28 own:px-0 lg:py-32">
@@ -21,7 +21,7 @@ const page = () => {
                 <p className="text-slate-600">{t.cookiesSection.content.cookiesPurpose.types[2].text}</p>
                 <p className="text-slate-600">
                     <u>{t.cookiesSection.content.cookiesPurpose.types[2].link_title}</u>{" "}
-                    <Link href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" className="text-sky-600 hover:text-sky-700 underline transition-colors">
+                    <Link href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 underline transition-colors">
                         {t.cookiesSection.content.cookiesPurpose.types[2].link}
                     </Link>
                 </p>
@@ -59,4 +59,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

@@ -256,7 +256,7 @@ const Navbar = () => {
         )}
 
         {/* Mobile Menu Button */}
-        <button className="flex items-center justify-end md:hidden h-full w-fill cursor-pointer" onClick={HandleHamburger}>
+        <button className="flex items-center justify-end md:hidden h-full w-full cursor-pointer" onClick={HandleHamburger}>
           {isMenuOpen ?
 
             <IoCloseSharp className="text-5xl text-sky-600" />

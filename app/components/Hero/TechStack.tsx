@@ -15,6 +15,8 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiExpress,
+  SiPhp,
+  SiPython
 } from "react-icons/si";
 
 const stackItems = [
@@ -29,6 +31,9 @@ const stackItems = [
   { label: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
   { label: "Git", icon: <FaGitAlt className="text-orange-500" /> },
   { label: "Docker", icon: <FaDocker className="text-sky-500" /> },
+   { label: "PHP", icon: <SiPhp className="text-indigo-500" /> },
+  { label: "Python", icon: <SiPython className="text-yellow-500" /> }
+
 ];
 
 function MarqueeContent() {

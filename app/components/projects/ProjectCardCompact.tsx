@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { useState } from "react";
 
-type ProjectCategory = "frontend" | "backend" | "database" | "fullstack";
+type ProjectCategory = "frontend" | "backend" | "database" | "fullstack" | "desktop";
 
 type Project = {
     slug: string;
@@ -50,6 +50,12 @@ const categoryStyles = {
         hoverBorder: "hover:border-orange-300",
         hoverShadow: "hover:shadow-[0_20px_60px_rgba(249,115,22,0.20)]",
     },
+    desktop: {
+        accent: "from-red-500 via-rose-500 to-red-700",
+        dot: "bg-red-400 group-hover:bg-rose-500",
+        hoverBorder: "hover:border-red-300",
+        hoverShadow: "hover:shadow-[0_20px_60px_rgba(239,68,68,0.20)]",
+    }
 } as const;
 
 export default function ProjectCardCompact({ project, detailsLabel }: Props) {
@@ -90,7 +96,7 @@ export default function ProjectCardCompact({ project, detailsLabel }: Props) {
                         />
                     </Link>
 
-                    <div className="absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />
+                    <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-slate-950/20 via-transparent to-white/0 opacity-80 transition duration-500 group-hover:from-slate-950/30" />
 
                     <div className="pointer-events-none absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/30 bg-white/15 text-white/90 opacity-0 shadow-sm backdrop-blur-md transition duration-300 group-hover:opacity-100">
                         <span className="text-base">↗</span>

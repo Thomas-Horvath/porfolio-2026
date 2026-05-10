@@ -30,6 +30,7 @@ import {
   SiMongoose,
   SiPrisma,
   SiGithub,
+  SiElectron,
   SiFigma,
   SiSqlite,
   SiExpress
@@ -95,6 +96,7 @@ export default function AboutPageContent() {
         { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
         { name: "Prisma", icon: <SiPrisma className="text-slate-800" /> },
         { name: "Mongoose", icon: <SiMongoose className="text-red-700" /> },
+        { name: "Electron", icon: <SiElectron className="text-slate-700" /> },
       ],
     },
     {

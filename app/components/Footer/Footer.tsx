@@ -125,6 +125,7 @@ function SocialIcon({
       href={href}
       aria-label={label}
       target="_blank"
+      rel="noopener noreferrer"
       className="inline-flex h-9 w-9 items-center justify-center border border-slate-200 bg-slate-50 text-slate-600 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-600"
     >
       {children}

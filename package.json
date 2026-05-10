@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sort:projects": "node scripts/sort-projects.cjs ./data/hu.json ./data/en.json"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
