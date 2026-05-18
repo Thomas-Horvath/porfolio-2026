@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import PageUpBtn from "./components/PageUpBtn/PageUpBtn";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import PortfolioChat from "@/app/components/PortfolioChat";
 
 
 const inter = localFont({
@@ -88,6 +89,7 @@ export default function RootLayout({
           </div>
           <Footer />
           <PageUpBtn />
+          <PortfolioChat />
         </LanguageProvider>
       </body>
     </html >

@@ -34,7 +34,7 @@ const PageUpBtn = () => {
   onClick={scrollToTop}
   title={t.common.pageUpTitle}
   aria-label={t.common.pageUpTitle}
-  className={`fixed bottom-6 right-6 z-30 shadow-lg hover:scale-110 border border-sky-100/80
+  className={`fixed bottom-6 left-6 z-30 shadow-lg hover:scale-110 border border-sky-100/80
   flex cursor-pointer rounded-full bg-linear-to-r from-sky-500 via-sky-600 to-cyan-500 p-4
   transition-all duration-500 ease-out
   ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6 pointer-events-none"}
