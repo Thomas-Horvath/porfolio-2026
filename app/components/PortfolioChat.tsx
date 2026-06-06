@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Fragment } from "react";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { RiRobot2Line, RiSendPlaneFill } from "react-icons/ri";
@@ -18,6 +19,69 @@ type ChatMessage = {
 const MAX_MESSAGE_LENGTH = 1000;
 const CHAT_API_URL =
   process.env.NEXT_PUBLIC_CHAT_API_URL?.trim() || "http://localhost:3001/api/chat";
+
+const renderInlineFormatting = (text: string) => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+
+  return parts.map((part, index) => {
+    const boldMatch = part.match(/^\*\*(.*?)\*\*$/);
+
+    if (boldMatch) {
+      return (
+        <strong key={`${part}-${index}`} className="font-semibold text-slate-900">
+          {boldMatch[1]}
+        </strong>
+      );
+    }
+
+    return <Fragment key={`${part}-${index}`}>{part}</Fragment>;
+  });
+};
+
+const renderAssistantContent = (text: string) => {
+  const blocks = text
+    .split(/\n{2,}/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+
+  return blocks.map((block, blockIndex) => {
+    const lines = block
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    const isList = lines.length > 1 && lines.every((line) => /^[-*]\s+/.test(line));
+
+    if (isList) {
+      return (
+        <ul
+          key={`block-${blockIndex}`}
+          className="space-y-2 pl-5 text-[15px] leading-7 text-slate-700 marker:text-sky-600 list-disc"
+        >
+          {lines.map((line, lineIndex) => (
+            <li key={`line-${blockIndex}-${lineIndex}`}>
+              {renderInlineFormatting(line.replace(/^[-*]\s+/, ""))}
+            </li>
+          ))}
+        </ul>
+      );
+    }
+
+    return (
+      <p
+        key={`block-${blockIndex}`}
+        className="text-[15px] leading-7 text-slate-700"
+      >
+        {lines.map((line, lineIndex) => (
+          <Fragment key={`line-${blockIndex}-${lineIndex}`}>
+            {lineIndex > 0 ? <br /> : null}
+            {renderInlineFormatting(line)}
+          </Fragment>
+        ))}
+      </p>
+    );
+  });
+};
 
 const createMessageId = () => {
   if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
@@ -225,13 +289,21 @@ export default function PortfolioChat() {
                   className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                 >
                   <div
-                    className={`max-w-[88%] border px-4 py-3 text-sm leading-6 shadow-sm ${
+                    className={`max-w-[90%] border px-4 py-3 shadow-sm ${
                       message.role === "user"
                         ? "border-sky-600 bg-sky-600 text-white"
-                        : "border-slate-200 bg-slate-50 text-slate-800"
+                        : "border-slate-200 bg-slate-50"
                     }`}
                   >
-                    {message.content}
+                    {message.role === "assistant" ? (
+                      <div className="space-y-3">
+                        {renderAssistantContent(message.content)}
+                      </div>
+                    ) : (
+                      <p className="text-[15px] leading-7 text-white">
+                        {message.content}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
